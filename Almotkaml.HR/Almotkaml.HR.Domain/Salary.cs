@@ -726,11 +726,11 @@ namespace Almotkaml.HR.Domain
             decimal Ab = 0;
 
             int Abs = Employee?.Sanctions.Where(s => s.EmployeeId == EmployeeId
-                && s.Date.Month == MonthDate.Month
-                && s.Date.Year == MonthDate.Year).Sum(abc => abc.Date.Day) ?? 0;
+                && s.DeductionMonth == MonthDate.Month
+                && s.DeductionYear == MonthDate.Year).Sum(abc => abc.Date.Day) ?? 0;
 
             if (Abs != 0)
-                Ab = (BasicSalary + ExtraValue + ExtraGeneralValue + (SalaryPremiums.Where(p => p.Premium.IsSubject==IsSubject.IsSubject).Sum(p => p.Value))) / 30 * Abs;
+                Ab = (BasicSalary) / 30 * Abs;
 
             var value = string.Format("{0:0.000}", Math.Truncate(Ab * 1000) / 1000);
 

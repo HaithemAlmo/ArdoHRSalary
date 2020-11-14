@@ -882,18 +882,18 @@ namespace Almotkaml.HR.Mvc.Controllers
             {
                 SalariesTotal = model2.Grid.Select(s => s.TotalSalary).Sum(),
                 BasicSalaries = salary ,//model2.Grid.Select(s => s.BasicSalary).Sum(),
-                CompanyShareSocialSecurity = model2.Grid.Select(s => s.CompanyShare).Sum(),
+                CompanyShare = model2.Grid.Select(s => s.CompanyShare).Sum(),
+                EmployeeShare = model2 .Grid .Select(s=> s.EmployeeShare).Sum(),
+                SafeShare  = model2.Grid.Select(s => s.SafeShare ).Sum(),
                 ContributionInSecurity = model2.Grid.Select(s => s.SafeShare + s.CompanyShare).Sum(),
                 DeducationTotal = model2.Grid.Select(s => s.DiscountTotal).Sum(),
                 JihadTax = model2.Grid.Select(s => s.JihadTax).Sum(),
                 IncomeTax = model2.Grid.Select(s => s.IncomeTax).Sum(),
                 AdvancePayment = AdvancePaymentInside + AdvancePaymentOutside,
                 GroupLife = model2.Grid.Select(s => s.GroupLife).Sum(),
-                //MawadaFund = MawadaFund ,
-                SafeShareSocialSecurity = model2.Grid.Select(s => s.SafeShare).Sum(),
                 SalariesNet = model2.Grid.Select(s => s.FinalySalary).Sum(),
                 SalariesNumber = model2.Grid.Select(s => s.EmployeeID).Count(),
-                SocialSecurityFund = model2.Grid.Select(s => s.EmployeeShare).Sum(),
+               
                 SolidarityFund = model2.Grid.Select(s => s.SolidarityFund).Sum(),
                 StampTax = model2.Grid.Select(s => s.StampTax).Sum(),
                 Sanction = model2.Grid.Select(s => s.Sanction).Sum(),
@@ -903,6 +903,7 @@ namespace Almotkaml.HR.Mvc.Controllers
                 Premium = model2.Grid.Select(s => s.Premium).Sum(),
                 // OtherDiscount = AdvancePaymentInside + AdvancePaymentOutside,
                 OtherDiscount = model2.Grid.Select(s => s.AdvancePremium).Sum(),
+                Mwada = model2 .Grid .Count() * 2,
             });
             //}
             //add by ali alherbade 26-05-2019

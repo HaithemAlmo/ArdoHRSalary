@@ -1169,7 +1169,7 @@ var salaryLast = UnitOfWork.Salaries.GetLastSalary();
             foreach (var salary in salaries.Where(s => s.IsSuspended == false))
             {
                 row.BasicSalaries += salary.BasicSalary;
-                row.CompanyShareSocialSecurity += salary.CompanyShare(Settings);
+                row.CompanyShare += salary.CompanyShare(Settings);
                 row.ContributionInSecurity += salary.CompanyShare(Settings) + 0;
                 //row.DeducationTotal = ;
                 row.JihadTax += salary.JihadTax(Settings);
@@ -1178,7 +1178,7 @@ var salaryLast = UnitOfWork.Salaries.GetLastSalary();
                 row.SalariesNet += salary.NetSalary(Settings);
                 row.SalariesNumber = count;
                 row.SalariesTotal += salary.TotalSalary(Settings);
-                row.SocialSecurityFund += salary.EmployeeShare(Settings);
+                row.EmployeeShare += salary.EmployeeShare(Settings);
                 row.SolidarityFund += salary.SolidarityFund(Settings);
                 row.StampTax += salary.StampTax(Settings);
                 count += 1;
