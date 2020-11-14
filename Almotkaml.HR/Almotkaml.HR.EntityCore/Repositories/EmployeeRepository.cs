@@ -38,6 +38,7 @@ namespace Almotkaml.HR.EntityCore.Repositories
                 .Include(e => e.AdvancePayments)
                 .Include(e => e.Premiums)
                 .Include(e => e.Extraworks)
+                 .Include(e => e.Salary)
                 .Where(e => e.IsActive);
 
         }
@@ -96,6 +97,7 @@ namespace Almotkaml.HR.EntityCore.Repositories
         public override Employee Find(object id)
         {
             var employee = Context.Employees
+                 .Include(e => e.Salary)
                 .Include(e => e.Premiums)
                 .Include(e => e.Booklet)
                 .Include(e => e.Passport)

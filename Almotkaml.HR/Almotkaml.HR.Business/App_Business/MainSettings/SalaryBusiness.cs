@@ -202,7 +202,7 @@ var salaryLast = UnitOfWork.Salaries.GetLastSalary();
 
             return new SalaryFormModel()
             {
-
+                PremiumActive = -salary.PremiumActive,
                 SafeShare = salary.SafeShare(Settings),
                 // SafeShareReduced= salary.SafeShare(Settings),
                 TotalDiscount = salary.TotalDiscount(Settings),
@@ -267,7 +267,24 @@ var salaryLast = UnitOfWork.Salaries.GetLastSalary();
                 CanSubmit = ApplicationUser.Permissions.Salary_Edit,
             };
         }
+        public bool ActivePremium(bool IsActive)
+        {
+            if (!HavePermission(ApplicationUser.Permissions.Salary_Allow))
+                return Fail(RequestState.NoPermission);
 
+            var salaries = UnitOfWork.Salaries.GetOpenedSalary();
+
+            foreach (var salary in salaries)
+            {
+                salary.Employee.SalaryInfo.ActivePremium(IsActive);
+
+            }
+            if (IsActive)
+                UnitOfWork.Complete(n => n.Salary_PremiumActive);
+            else
+                UnitOfWork.Complete(n => n.Salary_PremiumDeactive);
+            return true;
+        }
         public SalaryFormModel Prepare()
         {
             if (!HavePermission(ApplicationUser.Permissions.Salary_Spent))

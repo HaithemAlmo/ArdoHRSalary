@@ -1349,6 +1349,15 @@ namespace Almotkaml.HR.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إجمالي رصيد الفروقات.
+        /// </summary>
+        public static string Differences {
+            get {
+                return ResourceManager.GetString("Differences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تاريخ المباشرة.
         /// </summary>
         public static string DirectlyDate {
@@ -3028,6 +3037,15 @@ namespace Almotkaml.HR.Resources {
         public static string Premium {
             get {
                 return ResourceManager.GetString("Premium", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to قيمة خصم ايقاف العلاوة.
+        /// </summary>
+        public static string PremiumActive {
+            get {
+                return ResourceManager.GetString("PremiumActive", resourceCulture);
             }
         }
         

@@ -14,7 +14,7 @@ namespace Almotkaml.HR.Domain
 
         public SalaryInfo(BankBranch bankBranch, GuaranteeType guaranteeType, string bondNumber
             , decimal basicSalary, string securityNumber, string financialNumber
-            , string fileNumber, decimal extraValue, decimal extraGeneralValue, bool groupLifeChick)
+            , string fileNumber, decimal extraValue, decimal extraGeneralValue, bool groupLifeChick,decimal premiumActive)
         {
             BankBranchId = bankBranch.BankBranchId;
             BankBranch = bankBranch;
@@ -28,6 +28,8 @@ namespace Almotkaml.HR.Domain
             ExtraValue = extraValue;
             ExtraGeneralValue = extraGeneralValue;
             GroupLifeChich = groupLifeChick;
+            PremiumActive = premiumActive;
+
         }
 
         public SalaryInfo(Employee employee)
@@ -50,12 +52,29 @@ namespace Almotkaml.HR.Domain
         public string NameSecutry { get; set; }
         public bool GroupLifeChich { get; set; }
         public bool AdvancePremiumFreezeState { get;  set; }
+        public bool PremiumIsActive { get; set; }
+        public decimal PremiumActive { get; set; }
+        public decimal Differences { get; set; }
+        public void ActivePremium(bool active)
+        {
+            PremiumIsActive = active;
+        }
+        public decimal GetTotalDifferences()
+        {
+            decimal totalDifferences = 0;
+            if (Employee.Salary.IsClose == false && Employee.Salary.MonthDate.Month == DateTime.Now.Month && Employee.SalaryInfo.PremiumIsActive == false)
+            {
+                totalDifferences += Employee.SalaryInfo.Differences + (-Employee.Salary?.PremiumActive ?? 0);
 
+
+            }
+            return totalDifferences;
+        }
         //builder
         public void Modify(Employee employee, int bankBranchId, GuaranteeType guaranteeType, string bondNumber
             , decimal basicSalary, string securityNumber, string financialNumber, IEnumerable<PremiumDto> premiumDtos
             , string fileNumber, decimal extraValue, decimal extraGeneralValue,
-            GuaranteeType safeType, bool groupLifeChich,decimal tadawl)
+            GuaranteeType safeType, bool groupLifeChich,decimal tadawl, decimal  premiumActive,decimal differences)
         {
             SafeType = safeType;
             Employee = employee;
@@ -71,6 +90,8 @@ namespace Almotkaml.HR.Domain
             ExtraGeneralValue = extraGeneralValue;
             GroupLifeChich = groupLifeChich;
             Tadawl = tadawl;
+            PremiumActive = premiumActive;
+            Differences = differences;
             foreach (var dto in premiumDtos.ToList())
             {
                 var employeePremium = employee.Premiums.FirstOrDefault(e => e.PremiumId == dto.Premium.PremiumId
@@ -100,7 +121,7 @@ namespace Almotkaml.HR.Domain
         }
         public static SalaryInfo New(Employee employee, int bankBranchId, GuaranteeType guaranteeType, string bondNumber
             , decimal basicSalary, string securityNumber, string financialNumber, IEnumerable<PremiumDto> premiumDtos
-            , string fileNumber, decimal extraValue, decimal extraGeneralValue, GuaranteeType safeType, bool groupLifeChich,decimal tadawl)
+            , string fileNumber, decimal extraValue, decimal extraGeneralValue, GuaranteeType safeType, bool groupLifeChich,decimal tadawl, decimal premiumActive,decimal differences)
         {
             var sararyInfo = new SalaryInfo()
             {
@@ -117,8 +138,10 @@ namespace Almotkaml.HR.Domain
                 ExtraValue = extraValue,
                 ExtraGeneralValue = extraGeneralValue,
                 GroupLifeChich = groupLifeChich,
-                Tadawl = tadawl
-        };
+                Tadawl = tadawl,
+                  PremiumActive = premiumActive,
+                Differences=differences,
+            };
 
             foreach (var dto in premiumDtos.ToList())
             {

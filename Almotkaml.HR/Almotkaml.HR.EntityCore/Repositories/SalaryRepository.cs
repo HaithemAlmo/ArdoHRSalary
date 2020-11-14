@@ -742,6 +742,10 @@ namespace Almotkaml.HR.EntityCore.Repositories
             .OrderByDescending(s => s.MonthDate)
             .FirstOrDefault(s => s.IsClose);
 
+        public bool IsPremiumActive() => Context.Salaries
+             .Include(p => p.Employee)
+             .ThenInclude(p => p.SalaryInfo)
+              .Where(p => p.Employee.SalaryInfo.PremiumIsActive).Any();
         public IEnumerable<TemporaryPremium> GetTemporaryPremium(long salaryId)
         {
             return Context.TemporaryPremiums

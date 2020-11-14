@@ -49,10 +49,22 @@ namespace Almotkaml.HR.Domain
         public decimal AccumulatedValue { get; internal set; } //المتراكم
         public decimal RewindValue { get; internal set; } //الترجيع
         public decimal tadawel { get; internal set; }                                                //public bool GroupLifeChick { get; internal set; } // اختيار الحياة الجماعي
-                                                                                                         ////--/////////////////////////////
+        public decimal PremiumActive { get; internal set; }                                                                                ////--/////////////////////////////
         public Premium Premium { get; set; }
+        public decimal Differences { get; internal set; }
         // public decimal Vacation { get; internal set; }  // الإجازات 
 
+        //public decimal GetTotalDifferences()
+        //{
+        //    decimal totalDifferences = 0;
+        //    if (Employee.Salary.IsClose == false && Employee.Salary.MonthDate.Month == DateTime.Now.Month && Employee.SalaryInfo.PremiumIsActive == false)
+        //    {
+        //        totalDifferences += Employee.SalaryInfo.Differences + (-Employee.Salary?.PremiumActive ?? 0);
+
+
+        //    }
+        //    return totalDifferences;
+        //}
 
         public decimal _VacationDays() => Employee?.Vacations?.Where(v => v.VacationTypeId == (int)VacationEssential.Sick &&
          v.DateTo.Date.Month == MonthDate.Date.Month).Sum(v => v.GetDays(v.DateFrom, v.DateTo, v.VacationTypeId)) ?? 0;
@@ -291,7 +303,7 @@ namespace Almotkaml.HR.Domain
             var Advance1 = Employee?.AdvancePayments.Where(s => s.EmployeeId == EmployeeId).Sum(pp => pp.InstallmentValue);
             decimal DiscountValues = 0;
             DiscountValues = +SolidarityFund(settings)
-                     + JihadTax(settings) + IncomeTax(settings)+ Tadawel() + EmployeeShare(settings) + Grouplife(settings) + AdvancePeymentFreez() + AdvancePeymentNOtFreez() + DiscountPrimuimm()/*+ CompanyShare(settings)*/ /*(SalaryPremiums.Where(p => p.Premium.IsSubject == false && p.Premium.IsTemporary == false && p.Premium.DiscountOrBoun == DiscountOrBoun.Discount).Sum(p => p.Value)*/;
+                     + JihadTax(settings) + IncomeTax(settings)+ Tadawel() + EmployeeShare(settings) + Grouplife(settings) + AdvancePeymentFreez() + AdvancePeymentNOtFreez() + DiscountPrimuimm() - (PremiumActive)/*+ CompanyShare(settings)*/ /*(SalaryPremiums.Where(p => p.Premium.IsSubject == false && p.Premium.IsTemporary == false && p.Premium.DiscountOrBoun == DiscountOrBoun.Discount).Sum(p => p.Value)*/;
 
             //if(SalaryPremiums.Any(p=>p.Premium.DiscountOrBoun == DiscountOrBoun.Discount))
             //{
@@ -1116,6 +1128,9 @@ namespace Almotkaml.HR.Domain
                 : Employee.SalaryInfo.ExtraGeneralValue;
             BondNumber = Employee.SalaryInfo.BondNumber;
             FileNumber = Employee.SalaryInfo.FileNumber;
+            PremiumActive = Employee.JobInfo.JobType == JobType.Designation
+               ? Employee.GetPremiumActive(salaryUnits, Employee.JobInfo.SalayClassification ?? 0)
+             : Employee.SalaryInfo.PremiumActive;
             ////حسبة الايام من غير العطل
             //ExtraWorkHoures = extraWorkHoure;
             // حسبة ايام العطل

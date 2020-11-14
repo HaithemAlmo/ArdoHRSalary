@@ -24,6 +24,13 @@ namespace Almotkaml.HR
         [Phrase(typeof(Notifications), nameof(AdjectiveEmployeeType_Create))]
         public bool AdjectiveEmployeeType_Create { get; set; }
 
+        [Phrase(typeof(Notifications), nameof(Salary_PremiumActive))]
+        public bool Salary_PremiumActive { get; set; }
+
+
+        [Phrase(typeof(Notifications), nameof(Salary_PremiumDeactive))]
+        public bool Salary_PremiumDeactive { get; set; }
+
         [Phrase(typeof(Notifications), nameof(AdjectiveEmployeeType_Edit))]
         public bool AdjectiveEmployeeType_Edit { get; set; }
 

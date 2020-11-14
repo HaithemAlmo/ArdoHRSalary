@@ -9,9 +9,10 @@ using Almotkaml.HR;
 namespace Almotkaml.HR.EntityCore.Migrations
 {
     [DbContext(typeof(HrDbContext))]
-    partial class HrDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201114124711_PremuimActive")]
+    partial class PremuimActive
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752")
@@ -945,8 +946,6 @@ namespace Almotkaml.HR.EntityCore.Migrations
 
                     b.Property<int>("Religion");
 
-                    b.Property<long?>("SalaryId");
-
                     b.Property<int>("SocialStatus");
 
                     b.Property<int?>("StaffingClassificationId");
@@ -980,8 +979,6 @@ namespace Almotkaml.HR.EntityCore.Migrations
                     b.HasIndex("NationalityId");
 
                     b.HasIndex("PlaceId");
-
-                    b.HasIndex("SalaryId");
 
                     b.HasIndex("StaffingClassificationId");
 
@@ -1902,8 +1899,6 @@ namespace Almotkaml.HR.EntityCore.Migrations
                     b.Property<string>("BondNumber")
                         .HasMaxLength(128);
 
-                    b.Property<decimal>("Differences");
-
                     b.Property<int?>("EmployeeId");
 
                     b.Property<decimal>("ExtraGeneralValue");
@@ -2781,10 +2776,6 @@ namespace Almotkaml.HR.EntityCore.Migrations
                     b.HasOne("Almotkaml.HR.Domain.Place", "Place")
                         .WithMany("Employees")
                         .HasForeignKey("PlaceId");
-
-                    b.HasOne("Almotkaml.HR.Domain.Salary", "Salary")
-                        .WithMany()
-                        .HasForeignKey("SalaryId");
 
                     b.HasOne("Almotkaml.HR.Domain.StaffingClassification")
                         .WithMany("Employees")

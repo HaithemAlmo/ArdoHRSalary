@@ -66,8 +66,10 @@ namespace Almotkaml.HR.Models
         [Display(ResourceType = typeof(Title),
            Name = nameof(Title.Bounshr))]
         public int? Bounshr { get; set; } // العلاوات
-
-      
+        
+        //      [Display(ResourceType = typeof(Title),
+        //   Name = nameof(Title.Differences))]
+        //public decimal Differences { get; set; } // العلاوات
         //
         //[Required(ErrorMessageResourceType = typeof(SharedMessages),
         //  ErrorMessageResourceName = nameof(SharedMessages.IsRequired))]
@@ -127,7 +129,12 @@ namespace Almotkaml.HR.Models
         public bool CanSubmit { get; set; }
         [Display(ResourceType = typeof(Title), Name = nameof(Title.GroupLifeChich))]
         public bool GroupLifeChich { get; set; }
-        
+        [Display(ResourceType = typeof(Title), Name = nameof(Title.PremiumActive))]
+        public decimal PremiumActive { get; set; }
+        [Display(ResourceType = typeof(Title), Name = nameof(Title.Differences))]
+        public decimal Differences { get; set; }
+
+
         [Display(ResourceType = typeof(Title), Name = nameof(Title.Tadawl))]
         public decimal  Tadawl { get; set; }
     }

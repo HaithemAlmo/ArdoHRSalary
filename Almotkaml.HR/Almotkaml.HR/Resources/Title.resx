@@ -1467,4 +1467,10 @@
   <data name="Tadawl" xml:space="preserve">
     <value>قيمة التداول</value>
   </data>
+  <data name="Differences" xml:space="preserve">
+    <value>إجمالي رصيد الفروقات</value>
+  </data>
+  <data name="PremiumActive" xml:space="preserve">
+    <value>قيمة خصم ايقاف العلاوة</value>
+  </data>
 </root>

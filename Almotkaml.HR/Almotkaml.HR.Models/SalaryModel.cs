@@ -53,6 +53,7 @@ namespace Almotkaml.HR.Models
         public bool CanFreeze { get; set; }
         public bool CanAllow { get; set; }
         public bool AdvancePremiumFreezeState { get; set; }
+        public bool PremiumIsActive { get; set; }
         [Display(ResourceType = typeof(Title), Name = nameof(Title.DateFrom))]
 
         public string DateFrom { get; set; }
@@ -211,6 +212,8 @@ namespace Almotkaml.HR.Models
         public decimal AccumulatedValue { get; set; } //المتراكم
         [Display(ResourceType = typeof(Title), Name = nameof(Title.RewindValue))]
         public decimal RewindValue { get;  set; } //الترجيع
+        [Display(ResourceType = typeof(Title), Name = nameof(Title.PremiumActive))]
+        public decimal PremiumActive { get; set; }
         public TemporaryPremiumModel TemporaryPremium { get; set; } = new TemporaryPremiumModel();
 
        // public TemporaryPremiumModel TemporaryPremium { get; set; } = new TemporaryPremiumModel();

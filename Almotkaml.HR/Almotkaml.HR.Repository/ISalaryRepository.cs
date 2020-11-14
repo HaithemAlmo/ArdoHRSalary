@@ -16,7 +16,7 @@ namespace Almotkaml.HR.Repository
         IEnumerable<Salary> GetSerchSalarySummary(int Year, int Month);
         IEnumerable<Salary> GetSerchSalary(int BankId, int BankBranshId, int Year, int Month);
         IEnumerable<Salary> GetSerchSalaryDifrancess(int BankId, int BankBranshId, int Year, int Month);
-
+        bool IsPremiumActive();
         IEnumerable<Salary> GetClosedSalary();
         IEnumerable<Salary> GetClosedSalaryByMonth(int year, int month);
         IEnumerable<Salary> GetOpenedSalary();

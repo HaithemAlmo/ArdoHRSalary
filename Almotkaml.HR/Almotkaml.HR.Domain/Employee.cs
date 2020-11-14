@@ -57,6 +57,7 @@ namespace Almotkaml.HR.Domain
         //public int? MilitaryDataId { get; set; }
         public MilitaryData MilitaryData { get; set; }
         public SalaryInfo SalaryInfo { get; set; }
+        public Salary Salary { get; set; }
         public byte[] Image { get; set; }
         public bool IsActive { get; internal set; }
         public ICollection<Qualification> Qualifications { get; set; } = new HashSet<Qualification>();
@@ -114,6 +115,24 @@ namespace Almotkaml.HR.Domain
             => settings.YearlyVacationRule.GetYearlyVacationBalance(this);
         
         public string GetFullName() => FirstName + " " + FatherName + " " + GrandfatherName + " " + LastName;
+
+
+        public decimal GetTotalDifferences()
+        {
+            decimal totalDifferences = 0;
+            if (Salary.IsClose == false && Salary.MonthDate.Month == DateTime.Now.Month && SalaryInfo.PremiumIsActive == false)
+            {
+                totalDifferences += SalaryInfo.Differences + (-Salary?.PremiumActive ?? 0);
+
+
+            }
+
+
+
+
+            return totalDifferences;
+        }
+
         /// <summary>
         /// حساب قيمة المرتب الاساسي
         /// </summary>
@@ -179,6 +198,34 @@ namespace Almotkaml.HR.Domain
                 subsended = getsubsended.IsSuspended;
             }
             return subsended;
+        }
+        public decimal GetPremiumActive(IList<SalaryUnit> salaryUnits, SalayClassification salayClassification)
+        {
+            decimal basicSalary = 0;
+            if (JobInfo.JobType == JobType.Designation)
+            {
+                var salaryUnit = salaryUnits.FirstOrDefault(s => s.Degree == JobInfo.DegreeNow
+                    && s.SalayClassification == salayClassification);
+
+                if (salaryUnit == null)
+                    return 0;
+
+                var boun = JobInfo.Bouns ?? 0;
+                if (boun >= 10)
+                    boun = 10;
+
+                //basicSalary = salaryUnit.BeginningValue + salaryUnit.PremiumValue * boun;
+
+                //ايقاف علاوة........
+                if (SalaryInfo != null)
+                    if (!SalaryInfo.PremiumIsActive)
+                        if (JobInfo.SalayClassification == SalayClassification.Default)
+                            basicSalary -= salaryUnit.PremiumValue * 2;
+                        else
+                            basicSalary -= salaryUnit.PremiumValue * (2 * (4 / 10));
+            }
+
+            return basicSalary;
         }
         public decimal GetExtraValueByDegree(IList<SalaryUnit> salaryUnits, SalayClassification salayClassification)
         {

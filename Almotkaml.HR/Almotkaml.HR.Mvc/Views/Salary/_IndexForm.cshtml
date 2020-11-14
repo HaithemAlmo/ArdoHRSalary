@@ -26,7 +26,13 @@
             {
                 <input type="button" value="اغلاق الشهر الحالي" name="closeDialog" class="btn btn-danger btn-outline" data-toggle="modal" data-target="#closeModal" style="margin-bottom: 24px;" />
             }
-
+@if (Model.CanUpdate)
+            {
+                if (!Model.PremiumIsActive)
+                {<input type="button" value="تفعيل العلاوات" name="ActivePremium" class="btn btn-success btn-success" data-toggle="modal" data-target="#ActivePremium" style="margin-bottom: 24px;" />}
+                else
+                {<input type="button" value="إيقاف العلاوات" name="DeactivatePremium" class="btn btn-success btn-danger" data-toggle="modal" data-target="#DeactivatePremium" style="margin-bottom: 24px;" />}
+            }
             @*  <a class="btn btn-warning btn-outline" style="margin-bottom: 24px; width:130px" href="@Url.Action("EndedSalary","SalaryInfo" )"> رواتـب المنتهين </a>*@
 
         </td>
