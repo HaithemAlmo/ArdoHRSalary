@@ -551,6 +551,7 @@ namespace Almotkaml.HR.Models
         public int BankId { get; set; }
         public string JobNumber { get; set; }
      
+             public string financialnumberMinistry { get; set; }
         public string EmployeeID { get; set; }
         public int JobNumberAdvance { get; set; }
 

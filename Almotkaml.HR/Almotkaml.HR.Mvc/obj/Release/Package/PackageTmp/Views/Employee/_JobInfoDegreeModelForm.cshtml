@@ -79,7 +79,7 @@
                     <div class="form-group">
                         @Html.LabelFor(model => model.JobId)
                         @Html.DropDownListFor(model => model.JobId, new SelectList(Model.JobList, nameof(JobListItem.JobId), nameof(JobListItem.Name)), "--اختر--", new { @class = "field_menu form-control" })
-                        @Html.HiddenFor(model => model.JobId, Model.JobId)
+                        @*@Html.HiddenFor(model => model.JobId, Model.JobId)*@
                         @Html.ValidationMessageFor(model => model.JobId)
                     </div>
                 </div>

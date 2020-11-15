@@ -326,7 +326,8 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                     StaffingTypeName = employee?.JobInfo?.Staffing?.StaffingType?.Name,
                     Subunit = employee?.MilitaryData?.Subunit,
                     UnitName = employee?.JobInfo?.Unit?.Name,
-
+                    financialnumberMinistry = employee? .JobInfo ?.financialnumberMinistry .ToString (),
+                    FinancialNumber = employee?.SalaryInfo?.FinancialNumber ,
                 });
             }
 
@@ -789,6 +790,8 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 UnitName = employee?.JobInfo?.Unit?.Name,
                                 EmployeeID = employee?.EmployeeId.ToString(),
                                 PremiumListReport = PremiumCheckListReport,
+                                financialnumberMinistry =employee ?.JobInfo ?.financialnumberMinistry .ToString (),
+                                FinancialNumber =employee ?.SalaryInfo ?.FinancialNumber.ToString(),
 
                             });
 

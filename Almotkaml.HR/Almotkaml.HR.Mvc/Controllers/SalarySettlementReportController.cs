@@ -171,7 +171,7 @@ namespace Almotkaml.HR.Mvc.Controllers
           
 
 
-            /// / // // //
+            /// / // // //جهاز البحوث التطبيقية والتطوير
             var datasources = new HashSet<ClipboardBanking>();
                 foreach (var row in model2.Grid)
                 {
@@ -184,14 +184,16 @@ namespace Almotkaml.HR.Mvc.Controllers
                         CostCenterName = row.dateSalary,
                         CostCenterId = row.BankId,
                         JobNumber = row.JobNumber,
+                        financialnumberMinistry =row .financialnumberMinistry ,
                         BondNumber = row.BondNumber,
                         EmployeeName = row.EmployeeName,
                         BankBranchId = row.BankId,
-                        BankBranchName = row.BankName + " " + row.BankBranchName,
+                        BankBranchName = row.BankName + " " + "فرع" + " " + row.BankBranchName,
                         FinalySalary = row.FinalySalary,
                         NationalNumber = row.NationalNumber,
-                        
-                        
+                        FinancialNumber=row.FinancialNumber,
+
+
                         Tafkeet = new Maths.NumberToWord(Math.Round(model2.Grid.Where(s => s.BankBranchId == row.BankBranchId).Sum(r => r.FinalySalary), 3, MidpointRounding.AwayFromZero)).ConvertToArabic()
                        
                     });

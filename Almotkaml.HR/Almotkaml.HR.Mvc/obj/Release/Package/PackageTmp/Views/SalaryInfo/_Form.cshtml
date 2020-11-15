@@ -37,6 +37,8 @@
                 @Html.ValidationMessageFor(model => model.BondNumber)
             </div>
         </div>
+    </div>
+    <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="form-group">
                 @Html.LabelFor(model => model.DegreeNow)
@@ -73,6 +75,22 @@
                 @Html.ValidationMessageFor(model => model.BasicSalary)
             </div>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Differences)
+                @Html.TextBoxFor(model => model.Differences, new { @class = "field_text form-control" })
+                @Html.ValidationMessageFor(model => model.Differences)
+            </div>
+        </div>
+        @*<div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="form-group">
+                @Html.LabelFor(model => model.DiscountValueBasicSalary)
+                @Html.TextBoxFor(model => model.DiscountValueBasicSalary, new { @class = "field_text form-control" })
+                @Html.ValidationMessageFor(model => model.DiscountValueBasicSalary)
+            </div>
+        </div>*@
         @Html.HiddenFor(model => model.ExtraValue)
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="form-group">
@@ -89,6 +107,8 @@
                 @Html.ValidationMessageFor(model => model.ExtraGeneralValue)
             </div>
         </div>
+    </div>
+    <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="form-group">
                 @Html.LabelFor(model => model.SecurityNumber)
@@ -110,7 +130,6 @@
                 @Html.ValidationMessageFor(model => model.FileNumber)
             </div>
         </div>
-
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="form-group">
                 @Html.LabelFor(model => model.GuaranteeType, new { @class = "control-label" })
@@ -118,6 +137,8 @@
                 @Html.ValidationMessageFor(model => model.GuaranteeType, null, new { @class = "has_error" })
             </div>
         </div>
+    </div>
+    <div class="row">
         @Html.HiddenFor(model => model.SalayClassification)
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="form-group">
@@ -133,14 +154,15 @@
                 @Html.ValidationMessageFor(model => model.GuaranteeTypeSafe, null, new { @class = "has_error" })
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="form-group">
-                @Html.LabelFor(model => model.Tadawl, new { @class = "control-label" })
-                @Html.TextBoxFor(model => model.Tadawl, new { @class = "field_menu form-control" })
-                @Html.ValidationMessageFor(model => model.Tadawl, null, new { @class = "has_error" })
-            </div>
-        </div>
-
+        @*<div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Tadawl, new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.Tadawl, new { @class = "field_menu form-control" })
+                    @Html.ValidationMessageFor(model => model.Tadawl, null, new { @class = "has_error" })
+                </div>
+            </div>*@
+    </div>
+    <div class="row">
         <fieldset class="almotkaml-fieldset-two">
             <legend>العلاوات والخصميات الغير مؤقتة</legend>
 
@@ -158,7 +180,7 @@
                         Value = premium?.Value ?? 0,
                         PremiumId = item.PremiumId,
                         ISAdvancePremmium = item.ISAdvancePremmium,
-                        IsTemporary= item.IsTemporary,
+                        IsTemporary = item.IsTemporary,
 
 
                     });
@@ -183,58 +205,38 @@
 
 
 
-                @*<div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="form-group">
-                            @Html.Label(item.Name, new { @class = "control-label" })
-                            @Html.HiddenFor(model => Model.EmployeePremiumList[i].PremiumId)
-                            @Html.TextBoxFor(model => Model.EmployeePremiumList[i].Value, new { @class = "field_menu form-control" })
-                            @Html.ValidationMessageFor(model => Model.EmployeePremiumList[i].Value)
-                        </div>
-                    </div>*@
                 f++;
             }
-    
-    </fieldset>
-   <br>
-         <fieldset class="almotkaml-fieldset-two">
-        <legend>السلف</legend>
-        @{
-            var p = 0;
-        }
-        @foreach (var item in Model.AdvanseListItem)
-        {
-            if (Model.AdvancPremiumList.All(e => e.PremiumId != item.PremiumId))
-            {
-                var premium = Model.AdvancPremiumList.FirstOrDefault(e => e.PremiumId == item.PremiumId);
 
-                Model.AdvancPremiumList.Add(new EmployeeAdvancePymentListItem()
-                {
-                    Value = premium?.Value ?? 0,
-                    PremiumId = item.PremiumId,
-
-
-
-                });
-                Model.AdvancPremiumList = Model.AdvancPremiumList.OrderBy(a => a.PremiumId).ToList();
+        </fieldset>
+    </div>
+    <div class="row">
+        <fieldset class="almotkaml-fieldset-two">
+            <legend>السلف</legend>
+            @{
+                var p = 0;
             }
+            @foreach (var item in Model.AdvanseListItem)
+            {
+                if (Model.AdvancPremiumList.All(e => e.PremiumId != item.PremiumId))
+                {
+                    var premium = Model.AdvancPremiumList.FirstOrDefault(e => e.PremiumId == item.PremiumId);
 
-
-
-
-
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="form-group">
-                    @Html.Label(item.Name, new { @class = "control-label" })
-                    @Html.HiddenFor(model => Model.AdvancPremiumList[p].PremiumId)
-                    @Html.TextBoxFor(model => Model.AdvancPremiumList[p].Value, new { @class = "field_menu form-control", disabled = "disabled" })
-                    @Html.ValidationMessageFor(model => Model.AdvancPremiumList[p].Value)
+                    Model.AdvancPremiumList.Add(new EmployeeAdvancePymentListItem()
+                    {
+                        Value = premium?.Value ?? 0,
+                        PremiumId = item.PremiumId,
+                    });
+                    Model.AdvancPremiumList = Model.AdvancPremiumList.OrderBy(a => a.PremiumId).ToList();
+                }
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        @Html.Label(item.Name, new { @class = "control-label" })
+                        @Html.HiddenFor(model => Model.AdvancPremiumList[p].PremiumId)
+                        @Html.TextBoxFor(model => Model.AdvancPremiumList[p].Value, new { @class = "field_menu form-control", disabled = "disabled" })
+                        @Html.ValidationMessageFor(model => Model.AdvancPremiumList[p].Value)
+                    </div>
                 </div>
-            </div>
-
-
-
-
-
                 @*<div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="form-group">
                             @Html.Label(item.Name, new { @class = "control-label" })
@@ -244,19 +246,11 @@
                         </div>
                     </div>*@
                 p++;
-                }
-            
-
+            }
         </fieldset>
-
     </div>
 
+</div>
 
-
-
-
-
-
-            </div>
 
 

@@ -96,6 +96,13 @@
                 </div>*@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="form-group">
+                        @Html.LabelFor(model => model.PremiumActive)
+                        @Html.TextBoxFor(model => model.PremiumActive, new { @class = "field_text form-control", disabled = "disabled" })
+                        @Html.ValidationMessageFor(model => model.PremiumActive)
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
                         @Html.LabelFor(model => model.Absence)
                         @Html.TextBoxFor(model => model.Absence, new { @class = "field_text form-control", disabled = "disabled" })
                         @Html.ValidationMessageFor(model => model.ExemptionTax)

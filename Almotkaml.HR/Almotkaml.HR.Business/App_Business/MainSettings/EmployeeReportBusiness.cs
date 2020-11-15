@@ -271,6 +271,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                     ClassificationOnWorkName = employee?.JobInfo?.ClassificationOnSearching?.Name,
                     ClassificationOnSearchingName = employee?.JobInfo?.ClassificationOnSearching?.Name,
                     JobNumber = employee?.JobInfo?.JobClassValu + employee?.JobInfo?.GetJobNumber(),
+                    financialnumberMinistry =(employee ?.JobInfo ?.financialnumberMinistry ??0).ToString (),
                     Phone = employee?.Phone,
                     NationalityName = employee?.Nationality?.Name,
                     Address = employee?.Address,

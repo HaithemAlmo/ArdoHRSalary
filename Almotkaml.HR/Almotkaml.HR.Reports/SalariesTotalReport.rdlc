@@ -1986,7 +1986,9 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!Absence.Value + Fields!Sanction.Value+ Fields!CompanyShare.Value + Fields!JihadTax.Value + Fields!Mwada.Value + Fields!OtherDiscount.Value + Fields!SafeShare.Value + Fields!SolidarityFund.Value</Value>
+                                      <Value>=Fields!Absence.Value + Fields!CompanyShare.Value + Fields!JihadTax.Value
+ + Fields!Mwada.Value + Fields!OtherDiscount.Value + Fields!SafeShare.Value
+  + Fields!Sanction.Value + Fields!EmployeeShare.Value + Fields!SolidarityFund.Value</Value>
                                       <Style>
                                         <Format>#,0.000;(#,0.000)</Format>
                                       </Style>

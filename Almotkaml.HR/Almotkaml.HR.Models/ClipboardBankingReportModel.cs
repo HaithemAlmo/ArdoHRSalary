@@ -20,6 +20,7 @@ namespace Almotkaml.HR.Models
         public int BankId { get; set; }
 
         public string JobNumber { get; set; }
+        public string financialnumberMinistry { get; set; }
         public string EmployeeName { get; set; }
         public string NationalNumber { get; set; }
         public string BondNumber { get; set; }
