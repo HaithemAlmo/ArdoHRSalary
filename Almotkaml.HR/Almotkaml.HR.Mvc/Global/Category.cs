@@ -491,6 +491,15 @@ namespace Almotkaml.HR.Mvc.Global
                             Icon = "handshake-o",
                             IsVisible = permissions.Delegation,
                         },
+
+                                 new Categry()
+                        {
+                            Title = "صحيفة الدوام",
+                            ControllerName = nameof(WorkTimePaperController),
+                            ActoinName=nameof(WorkTimePaperController.Index ),
+                            Icon = "newspaper-o",
+                            IsVisible = permissions.Transfer,
+                        },
                     },
                 },
                 #endregion

@@ -23,7 +23,7 @@ namespace Almotkaml.HR.Business.Extensions
               ArabicFullName = d.GetFullName(),
               DepartmentName = d.JobInfo?.Unit?.Division?.Department?.Name,
               JobNumber = d.JobInfo?.JobClassValu+d.JobInfo?.GetJobNumber(),
-            //  JobNumberLIC = d.JobNumberLIC,
+              FinancialNumber=d.SalaryInfo? .GetFinancialNumber(),
               NationalNumber = d.NationalNumber,
               CenterName = d.JobInfo?.Unit?.Division?.Department?.Center?.Name,
           });

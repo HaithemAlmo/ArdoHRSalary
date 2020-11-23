@@ -1016,6 +1016,7 @@ namespace Almotkaml.HR.Mvc.Controllers
                     {
                         
                         JobNumber = row.JobNumber,
+                        financialnumberMinistry =row .financialnumberMinistry ,
                         Name = row.Name,
                         TotalSalary = row.TotalSalary,
                         SolidarityFund = row.SolidarityFund,
@@ -1758,6 +1759,7 @@ LastName=row.FinalySalary.ToString()
                     TafKeet=row.PremiumumName,
                  
                     JobNumber = row.JobNumber,
+                    financialnumberMinistry=row .financialnumberMinistry ,
                     EmployeeName = row.EmployeeName,
                     Value = row.Value,
                     Date = row.Date,
@@ -1815,7 +1817,7 @@ LastName=row.FinalySalary.ToString()
 
             return File(renderedBytes, mimeType);
         }
-        //
+        //الضرائب
         // tax index report
         public ActionResult TaxIndexReport(SalarySettlementReportModel model2, string savedModel)
         {
@@ -1871,6 +1873,7 @@ LastName=row.FinalySalary.ToString()
                     {
                         JobNumber = row.JobNumber,
                         Name = row.Name,
+                        financialnumberMinistry =row .financialnumberMinistry,
                         ExemptionTax = row.ExemptionTax,
                         IncomeTax = row.IncomeTax,
                         JihadTax = row.JihadTax,
@@ -1953,12 +1956,13 @@ LastName=row.FinalySalary.ToString()
             var datasources = new HashSet<AbstractClipboardBanking>();
             // var BankBranchName = model2.Grid.GroupBy(g => g.BankBranchName);
             List<string> bank = new List<string>();
-            foreach (var row in model2.Grid.OrderBy(o => o.BankName))
+            foreach (var row in model2.Grid/*.OrderBy(o => o.BankName)*/)
             {
-               
-                dd.Add(model2.Grid.Where(w => w.BankBranchId == row.BankBranchId).Sum(s => s.FinalySalary));
-                if (!bank.Contains(row.BankName + " " + row.BankBranchName))
+               // string x = bank.ToList()[0].ToString();
+                if (!bank.Contains(row.BankName + " " + row.BankBranchName) & ((row.BankName + " " + row.BankBranchName)!=" "))
                 {
+                    //dd.Add(model2.Grid.Where(w => w.BankBranchId == row.BankBranchId).Sum(s => s.FinalySalary));
+              
                     bank.Add(row.BankName + " " + row.BankBranchName);
                     //foreach (var item in row.BankBranchName)
                     //{
@@ -2023,40 +2027,25 @@ LastName=row.FinalySalary.ToString()
             //
             lr.SetParameters(reportParameters);
             lr.DataSources.Add(rdc);
-            string reportType = "Excel";//PrintType;
+            //string reportType = "PDF";//PrintType;
             string mimeType;
             string encoding;
-            string fileNameextention;
-            if (reportType == "Excel")
-            {
-                fileNameextention = "xlsx";
-            }
-            else
-            {
-                fileNameextention = "pdf";
-            }
-
+            string filenameextention;
             string deviceinfo =
                 "<DeviceInfo>" +
-                    "<OutPutFormat>" + fileNameextention + "</OutPutFormat>" +
-                    "<PageWidth>11.69in</PageWidth>" +
-                    "<PageHeight>8.27in</PageHeight>" +
-                    "<MarginTop>0.1in</MarginTop>" +
-                    "<MarginLeft>0.1in</MarginLeft>" +
-                    "<MarginRight>0.1in</MarginRight>" +
-                    "<MarginBottom>0.1in</MarginBottom>" +
-                 "</DeviceInfo>";
+                "<OutPutFormat>" + "PDF" + "</OutPutFormat>" +
+                "</DeviceInfo>";
             Warning[] warnings;
             string[] stream;
             byte[] renderedBytes;
             renderedBytes = lr.Render(
-                reportType,
+                "PDF",
                 deviceinfo,
                 out mimeType,
-               out encoding,
-               out fileNameextention,
-               out stream,
-               out warnings);
+                out encoding,
+                out filenameextention,
+                out stream,
+                out warnings);
 
             return File(renderedBytes, mimeType);
 

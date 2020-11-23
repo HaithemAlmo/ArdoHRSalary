@@ -9,9 +9,10 @@ using Almotkaml.HR;
 namespace Almotkaml.HR.EntityCore.Migrations
 {
     [DbContext(typeof(HrDbContext))]
-    partial class HrDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201122135847_addWorkPaper")]
+    partial class addWorkPaper
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752")
@@ -1390,7 +1391,7 @@ namespace Almotkaml.HR.EntityCore.Migrations
 
                     b.Property<int?>("JobNumberApproved");
 
-                    b.Property<int>("JobNumberLIC");
+                    b.Property<int?>("JobNumberLIC");
 
                     b.Property<int>("JobType");
 

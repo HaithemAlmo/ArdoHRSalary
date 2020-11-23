@@ -29,7 +29,7 @@ namespace Almotkaml.HR.Models
     {
         public int EmployeeId { get; set; }
         public string JobNumber { get; set; }
-  
+        public string FinancialNumber { get; set; }
         public string ArabicFullName { get; set; }
         public string NationalNumber { get; set; }
         public string CenterName { get; set; }

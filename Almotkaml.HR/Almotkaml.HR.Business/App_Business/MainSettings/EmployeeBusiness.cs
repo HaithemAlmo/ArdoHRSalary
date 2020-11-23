@@ -799,7 +799,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
 
             if (employee.JobInfo.JobNumberLIC == 0)
             {
-                if (UnitOfWork.Employees.NumIsExisted(model.JobNumberLIC ?? 0))
+                if (UnitOfWork.Employees.NumIsExisted(model.JobNumberLIC))
                     return ModelState.AddError(m => model.JobNumberLIC, SharedMessages.NumIsExisted);
 
             }
@@ -807,7 +807,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             {
                 if (employee.JobInfo.JobNumberLIC != model.JobNumberLIC)
                 {
-                    if (UnitOfWork.Employees.NumIsExisted(model.JobNumber, model.JobNumberLIC ?? 0))
+                    if (UnitOfWork.Employees.NumIsExisted(model.JobNumber, model.JobNumberLIC ))
                         return ModelState.AddError(m => model.JobNumberLIC, SharedMessages.NumIsExisted);
                 }
             }

@@ -2555,7 +2555,7 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>1.02953in</Top>
+                <Top>1.05729in</Top>
                 <Left>0.258in</Left>
                 <Height>0.25in</Height>
                 <Width>1.86758in</Width>
@@ -2602,7 +2602,7 @@
                 <TablixBody>
                   <TablixColumns>
                     <TablixColumn>
-                      <Width>1.83392in</Width>
+                      <Width>1.86758in</Width>
                     </TablixColumn>
                   </TablixColumns>
                   <TablixRows>
@@ -2663,7 +2663,7 @@
                 <Top>2.31945in</Top>
                 <Left>0.258in</Left>
                 <Height>0.25in</Height>
-                <Width>1.83392in</Width>
+                <Width>1.86758in</Width>
                 <ZIndex>40</ZIndex>
                 <Style>
                   <Border>

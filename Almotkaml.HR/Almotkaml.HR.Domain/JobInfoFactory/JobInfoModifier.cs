@@ -51,7 +51,7 @@ namespace Almotkaml.HR.Domain.JobInfoFactory
             return this;
         }
 
-        public JobInfoModifier JobNumberLIC(int? jobNumberLIC)
+        public JobInfoModifier JobNumberLIC(int jobNumberLIC)
         {
             JobInfo.JobNumberLIC = jobNumberLIC;
             return this;

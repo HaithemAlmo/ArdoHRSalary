@@ -86,6 +86,7 @@ namespace Almotkaml.HR.EntityCore
         private ISalaryUnitRepository _salaryUnits;
         private ICoachRepository _coaches;
         private ICourseRepository _courses;
+        private IWorkTimePaperRepository _workTimePapers;
 
         protected UnitOfWork(AppConfig appConfig, int loggedInUserId = 0)
         {
@@ -1030,6 +1031,19 @@ namespace Almotkaml.HR.EntityCore
                 return _courses;
             }
         }
+
+        public IWorkTimePaperRepository WorkTimePapers
+        {
+            get
+            {
+                if (_workTimePapers != null)
+                    return _workTimePapers;
+
+                _workTimePapers = new WorkTimePaperRepository(Context);
+                return _workTimePapers;
+            }
+        }
+
 
         public iHistorySubsended HistorySubsended
         {

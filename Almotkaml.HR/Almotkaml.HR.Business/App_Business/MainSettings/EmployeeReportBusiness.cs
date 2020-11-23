@@ -140,6 +140,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                 ClassificationOnWorkId = model.ClassificationOnWorkId ?? 0,
                 ClassificationOnSearchingId = model.ClassificationOnSearchingId ?? 0,
                 JobNumber = model.JobNumber,
+                //FinancialNumber =model .fi
                 Phone = model.Phone,
                 NationalityId = model.NationalityId ?? 0,
                 Address = model.Address,
@@ -271,7 +272,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                     ClassificationOnWorkName = employee?.JobInfo?.ClassificationOnSearching?.Name,
                     ClassificationOnSearchingName = employee?.JobInfo?.ClassificationOnSearching?.Name,
                     JobNumber = employee?.JobInfo?.JobClassValu + employee?.JobInfo?.GetJobNumber(),
-                    financialnumberMinistry =(employee ?.JobInfo ?.financialnumberMinistry ??0).ToString (),
+                    financialnumberMinistry =(employee ?.SalaryInfo ?.FinancialNumber).ToString (),
                     Phone = employee?.Phone,
                     NationalityName = employee?.Nationality?.Name,
                     Address = employee?.Address,

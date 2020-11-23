@@ -95,7 +95,7 @@ namespace Almotkaml.HR.Business
         private ISalarySettlementReportBusiness _salarySettlementReport;
         private IDiscountSettlementReportBusiness _discountSettlementReport;
         private IPremiumSettlementReportBusiness _premiumSettlementReport;
-
+        private IWorkTimePaperBusiness _workTimePaper;
         private IErpUnitOfWork _erpUnitOfWork;
 
         public HumanResource(StartUp<LoginModel> startUp, AppConfig erAppConfig) : base(startUp)
@@ -1148,6 +1148,19 @@ namespace Almotkaml.HR.Business
                 return _discountSettlementReport;
             }
         }
+
+        public IWorkTimePaperBusiness WorkTimePaper
+        {
+            get
+            {
+                if (_workTimePaper != null)
+                    return _workTimePaper;
+
+                _workTimePaper = new WorkTimePaperBusiness(this);
+                return _workTimePaper;
+            }
+        }
+
         public IPremiumSettlementReportBusiness PremiumSettlementReport
         {
             get

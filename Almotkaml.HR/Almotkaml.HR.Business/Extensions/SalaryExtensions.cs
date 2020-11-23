@@ -19,7 +19,8 @@ namespace Almotkaml.HR.Business.Extensions
               EmployeeName = d.Employee?.GetFullName(),
               BasicSalary = d.BasicSalary,
               FinalSalary = d.FinalSalary(settings),
-              JobNumber = d.Employee?.JobInfo?.GetJobNumber(),
+              //JobNumber = d.Employee?.JobInfo?.GetJobNumber(),
+              FinancialNumber=d.Employee ?.SalaryInfo ?.GetFinancialNumber (),
               MonthDate = d.MonthDate.FormatToString(),
               BankId = d.BankBranch.BankId
 
@@ -37,7 +38,8 @@ namespace Almotkaml.HR.Business.Extensions
                 TotalSalary = d.TotalSalary(settings),
                 IsSuspended = d.IsSuspended,
                 SuspendedNote = d.SuspendedNote,
-                JobNumber = d.Employee?.JobInfo?.GetJobNumber(),
+                //JobNumber = d.Employee?.JobInfo?.GetJobNumber(),
+                FinancialNumber =d.Employee ?.SalaryInfo ?.GetFinancialNumber (),
                 MonthDate = d.MonthDate.FormatToString(),
                 TotalDiscount = d.TotalDiscount(settings),
                 NetSalary = d.NetSalary(settings),

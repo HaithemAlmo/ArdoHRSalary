@@ -290,6 +290,7 @@ namespace Almotkaml.HR.EntityCore
         public DbSet<ClassificationOnSearching> ClassificationOnSearchings { get; set; }
         public DbSet<Coach> Coaches { get; set; }
         public DbSet<Course> Courses { get; set; }
+        public DbSet<WorkTimePaper> WorkTimePapers { get; set; }
 
         #region private
         private void SaveUserGroups()
