@@ -10,7 +10,7 @@ namespace Almotkaml.HR.Models
     {
         public int ISadvanse { get; set; }
         public IEnumerable<AdvanseNameListItem> AdvanseNameList { get; set; } = new HashSet<AdvanseNameListItem>();
-
+        public IEnumerable<PremiumListReport> PremiumListRE { get; set; } = new HashSet<PremiumListReport>();
         public int IsLegal { get; set; }
         public int AbstractClipboard { get; set; }
         public int IsEndJob { get; set; }
@@ -27,6 +27,7 @@ namespace Almotkaml.HR.Models
         public IList<TemEmployeePremiumListItemEE> EmployeePremiumList { get; set; } = new List<TemEmployeePremiumListItemEE>();
 
         public AdvancePaymentReportModel AdvancePaymentReportModel { get; set; } = new AdvancePaymentReportModel();
+       
         public SocialSecurityFundReportModel SocialSecurityFundReportModel { get; set; } = new SocialSecurityFundReportModel();
         public SolidarityFundReportModel SolidarityFundReportModel { get; set; } = new SolidarityFundReportModel();
         public SalaryFormReportModel SalaryFormReportModel { get; set; } = new SalaryFormReportModel();
@@ -91,6 +92,8 @@ namespace Almotkaml.HR.Models
         public SalarySettlement SalarySettlement { get; set; }
         [Display(ResourceType = typeof(Title), Name = nameof(Title.NameAdvanse))]
         public int AdvanseNameID { get; set; }
+        [Display(ResourceType = typeof(Title), Name = nameof(Title.Premium))]
+        public int PremiumNameID { get; set; }
         public DateTime DateTo2 { get; set; }
         public DateTime DateFrom2 { get; set; }
         [Display(ResourceType = typeof(Title), Name = nameof(Title.Clamp))]
@@ -101,6 +104,7 @@ namespace Almotkaml.HR.Models
         public bool PremiumCheck { get; set; }
         public IList<PremiumCheckListItem> PremiumCheckListItem { get; set; } = new List<PremiumCheckListItem>();
         public IList<PremiumCheckListItemReport> PremiumListReport { get; set; } = new List<PremiumCheckListItemReport>();
+    
 
     }
 }
