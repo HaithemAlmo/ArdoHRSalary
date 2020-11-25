@@ -25,7 +25,8 @@ namespace Almotkaml.HR.Models
         public string InstrumentNumber { get; set; }//رقم الصك 
         public int AccreditationNumber { get; set; }
         public IList<TemEmployeePremiumListItemEE> EmployeePremiumList { get; set; } = new List<TemEmployeePremiumListItemEE>();
-
+        public IList<TemEmployeePremiumListItemEE> AdvancePaymentList { get; set; } = new List<TemEmployeePremiumListItemEE>();
+        
         public AdvancePaymentReportModel AdvancePaymentReportModel { get; set; } = new AdvancePaymentReportModel();
         public SocialSecurityFundReportModel SocialSecurityFundReportModel { get; set; } = new SocialSecurityFundReportModel();
         public SolidarityFundReportModel SolidarityFundReportModel { get; set; } = new SolidarityFundReportModel();

@@ -60,10 +60,9 @@
 
                             <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="form-group">
-                                    @Html.LabelFor(model => model.JobNumber)
-                                    @*@Html.TextBoxFor(model => model.JobNumber, new { @class = "field_text form-control" })*@
-                                    <button type="button" class="field_text form-control" style="text-align: right" data-toggle="modal" data-target="#myModal">@Model.JobNumber</button>
-                                    @Html.ValidationMessageFor(model => model.JobNumber)
+                                    @Html.LabelFor(model => model.EmployeeId)
+                                    <button type="button" class="field_text form-control" style="text-align: right" data-toggle="modal" data-target="#myModal">@Model.EmployeeName</button>
+                                    @Html.ValidationMessageFor(model => model.EmployeeId)
                                 </div>
                             </div>
                             @if (Model.SalarySettlement != SalarySettlement.SalaryCertificate)
@@ -237,8 +236,10 @@
     </div>
 </div>
 <!-- End Region EmployeeGrid -->
-@Html.HiddenFor(model => model.EmployeeId)
+@*@Html.HiddenFor(model => model.EmployeeId)*@
 
+<!-- /.panel -->
+<!-- Region EmployeeGrid -->
 <!-- /.panel -->
 <!-- Region EmployeeGrid -->
 <div class="modal fade" id="myModal" role="dialog">
@@ -260,6 +261,7 @@
                                         <tr>
                                             <th width="20%"></th>
                                             <th width="20%">الرقم الوظيفي</th>
+                                            <th width="20%">الرقم المالي</th>
                                             <th width="20%">الاسم</th>
                                             <th width="20%">الإدارة</th>
                                         </tr>
@@ -268,11 +270,11 @@
                                         @foreach (var item in Model.EmployeeGrid)
                                         {
                                             <tr class="odd gradeX">
-                                                <td>@Html.RadioButtonFor(model => model.JobNumber, item.JobNumber, new { onclick = "hideModal('myModal');$('.modal-backdrop').remove();$(this.form).submit();", data_dismiss = "modal" })</td>
+                                                <td>@Html.RadioButtonFor(model => model.EmployeeId, item.EmployeeId, new { onclick = "hideModal('myModal');$('.modal-backdrop').remove();$(this.form).submit();", data_dismiss = "modal" })</td>
                                                 <td>@Html.DisplayFor(modelItem => item.JobNumber)</td>
+                                                <td>@Html.DisplayFor(modelItem => item.FinancialNumberMinistry)</td>
                                                 <td>@Html.DisplayFor(modelItem => item.ArabicFullName)</td>
                                                 <td>@Html.DisplayFor(modelItem => item.DepartmentName)</td>
-
                                             </tr>
                                         }
                                     </tbody>
@@ -289,7 +291,8 @@
     </div>
 </div>
 <!-- End Region EmployeeGrid -->
-@Html.HiddenFor(model => model.JobNumber)
+@Html.HiddenFor(model => model.EmployeeId)
+
 <!-- /.panel Premium -->
 <div class="modal fade" id="PremiumModal" role="dialog">
     <div class="modal-dialog">

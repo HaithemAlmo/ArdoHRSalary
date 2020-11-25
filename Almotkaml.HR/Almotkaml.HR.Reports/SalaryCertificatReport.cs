@@ -20,5 +20,11 @@ namespace Almotkaml.HR.Reports
         public decimal SalaryTotal { get; set; }
         public decimal DiscountTotal { get; set; }
         public decimal NetSalary { get; set; }
+        public decimal EmployeeShare { get; set; }               
+        public decimal Absence { get; set; }                        
+        public decimal Sanction { get; set; }                       
+        public decimal OtherDiscount { get; set; }                 
+        public decimal Mwada { get; set; }
+        public decimal AdvancePayment { get; set; }
     }
 }

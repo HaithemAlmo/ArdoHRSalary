@@ -592,6 +592,111 @@ namespace Almotkaml.HR.Domain
         /// </summary>
         /// <param name="settings"></param>
         /// <returns></returns>
+        public decimal ExtraWorks(ISettings settings, IList<Holiday> holidays,int WState)
+        {
+
+            var year = MonthDate.Year;
+            decimal extraWorkHoure = 0;
+            decimal extraWorkVacationHoure = 0;
+
+            var extraworks = Employee.Extraworks.Where(e => (e.DateFrom.Year == MonthDate.Year
+                                                             && e.DateFrom.Date.Month == MonthDate.Month)
+                                                            || (e.DateTo.Year == MonthDate.Year &&
+                                                                e.DateTo.Month == MonthDate.Month));
+
+            foreach (var extrawork in extraworks)
+            {
+                var calculatedDate = extrawork.DateFrom.Date;
+
+                while (calculatedDate.Day <= extrawork.DateTo.Day)
+                {
+                    if (holidays.Any(h => h.DateFrom(year) <= calculatedDate && h.DateTo(year) >= calculatedDate))
+                    {
+                        extraWorkVacationHoure += extrawork.TimeCount;
+                        calculatedDate = calculatedDate.AddDays(1);
+                        continue;
+                    }
+
+                    switch (calculatedDate.DayOfWeek)
+                    {
+                        case DayOfWeek.Friday:
+                            if (settings.Friday)
+                                extraWorkVacationHoure += extrawork.TimeCount;
+                            else
+                                extraWorkHoure += extrawork.TimeCount;
+                            break;
+
+                        case DayOfWeek.Monday:
+                            if (settings.Monday)
+                                extraWorkVacationHoure += extrawork.TimeCount;
+                            else
+                                extraWorkHoure += extrawork.TimeCount;
+                            break;
+
+                        case DayOfWeek.Saturday:
+                            if (settings.Saturday)
+                                extraWorkVacationHoure += extrawork.TimeCount;
+                            else
+                                extraWorkHoure += extrawork.TimeCount;
+                            break;
+
+                        case DayOfWeek.Sunday:
+                            if (settings.Sunday)
+                                extraWorkVacationHoure += extrawork.TimeCount;
+                            else
+                                extraWorkHoure += extrawork.TimeCount;
+                            break;
+
+                        case DayOfWeek.Thursday:
+                            if (settings.Thursday)
+                                extraWorkVacationHoure += extrawork.TimeCount;
+                            else
+                                extraWorkHoure += extrawork.TimeCount;
+                            break;
+
+                        case DayOfWeek.Tuesday:
+                            if (settings.Tuesday)
+                                extraWorkVacationHoure += extrawork.TimeCount;
+                            else
+                                extraWorkHoure += extrawork.TimeCount;
+                            break;
+
+                        case DayOfWeek.Wednesday:
+                            if (settings.Wednesday)
+                                extraWorkVacationHoure += extrawork.TimeCount;
+                            else
+                                extraWorkHoure += extrawork.TimeCount;
+                            break;
+
+                        default:
+                            throw new ArgumentOutOfRangeException(nameof(calculatedDate));
+                    }
+                    // التأكد من التاريخ(اخر يوم من الشهر)
+                    if (calculatedDate.Day < DateTime.DaysInMonth(calculatedDate.Year, calculatedDate.Month))
+                        calculatedDate = calculatedDate.AddDays(1);
+                    else
+                        break;
+                }
+            }
+            if (extraWorkHoure != 0 && settings.ExtraWork != 0 && WState==1)
+            {
+                //return (BasicSalary + ExtraValue + ExtraGeneralValue) / 210 * (extraWorkHoure * settings.ExtraWork);
+                var value = string.Format("{0:0.000}", Math.Truncate(((BasicSalary + ExtraValue + ExtraGeneralValue) / 210 * (extraWorkHoure * settings.ExtraWork)) * 1000) / 1000);
+
+                return decimal.Parse(value);
+            }
+            if (extraWorkVacationHoure != 0 && settings.ExtraWorkVacation != 0 && WState==2)
+            {
+                //return (BasicSalary + ExtraValue + ExtraGeneralValue) / 210 * (ExtraWorkVacationHoures * settings.ExtraWorkVacation);
+                var value = string.Format("{0:0.000}", Math.Truncate(((BasicSalary + ExtraValue + ExtraGeneralValue) / 210 * (extraWorkVacationHoure * settings.ExtraWorkVacation)) * 1000) / 1000);
+               
+                return decimal.Parse(value);
+            }
+                
+            return 0;
+            
+
+        }
         public decimal ExtraWork(ISettings settings)
         {
             if (ExtraWorkHoures != 0 && settings.ExtraWork != 0)
@@ -658,7 +763,7 @@ namespace Almotkaml.HR.Domain
 
             return decimal.Parse(value);
         }
-
+     
         public decimal Absence(DateTime date)
         {
             decimal Ab = 0;
@@ -745,6 +850,23 @@ namespace Almotkaml.HR.Domain
                 Ab = (BasicSalary) / 30 * Abs;
 
             var value = string.Format("{0:0.000}", Math.Truncate(Ab * 1000) / 1000);
+
+            return decimal.Parse(value);
+
+
+        }
+        public decimal RewardValue()
+        {
+            decimal Rew = 0;
+
+            decimal Reward = Employee?.Rewards.Where(s => s.EmployeeId == EmployeeId
+                && s.Date.Month == MonthDate.Month
+                && s.Date.Year == MonthDate.Year).Sum(r => Convert.ToDecimal(r.Value)) ?? 0;
+
+            if (Reward != 0)
+                Rew = Reward;
+
+            var value = string.Format("{0:0.000}", Math.Truncate(Rew * 1000) / 1000);
 
             return decimal.Parse(value);
 
@@ -878,7 +1000,7 @@ namespace Almotkaml.HR.Domain
             return installmentValueInside + installmentValueOutside;
         }
         public ICollection<EmployeePremium> EmployeePremium { get; } = new HashSet<EmployeePremium>();
-        //public ICollection<EmployeePremium> SalaryPremiums { get; } = new HashSet<SalaryPremium>();
+        //public ICollection<AdvancePayment> AdvancePayment { get; } = new HashSet<AdvancePayment>();
 
         public ICollection<SalaryPremium> SalaryPremiums { get; } = new HashSet<SalaryPremium>();
         // public ICollection<SalaryInfo> SalaryInfo { get; } = new HashSet<SalaryInfo>();
@@ -946,7 +1068,7 @@ namespace Almotkaml.HR.Domain
         }
         public void Modify(decimal extraWorkHoures, decimal extraWorkVacationHoures, int absenceDays
             , decimal prepaidSalary, decimal sanction, decimal advancePremiumInside, decimal advancePremiumOutside, decimal accumulatedValue, decimal rewindValue
-            , IEnumerable<PremiumDto> premiumDtos)
+            , IEnumerable<PremiumDto> premiumDtos/*, decimal rewardValue*/)
         {
             if (IsClose)
                 throw new Exception("cannot modify the salaies is closed");
@@ -960,6 +1082,7 @@ namespace Almotkaml.HR.Domain
             ExtraWorkVacationHoures = extraWorkVacationHoures;
             AccumulatedValue = accumulatedValue;
             RewindValue = rewindValue;
+            //RewardValue = rewardValue;
             foreach (var dto in premiumDtos.ToList())
             {
                 var salaryPremium = SalaryPremiums.FirstOrDefault(e => e.PremiumId == dto.Premium.PremiumId
@@ -1132,9 +1255,10 @@ namespace Almotkaml.HR.Domain
                ? Employee.GetPremiumActive(salaryUnits, Employee.JobInfo.SalayClassification ?? 0)
              : Employee.SalaryInfo.PremiumActive;
             ////حسبة الايام من غير العطل
-            //ExtraWorkHoures = extraWorkHoure;
+            ExtraWorkHoures = extraWorkHoure;
             // حسبة ايام العطل
-            //ExtraWorkVacationHoures = extraWorkVacationHoure;
+            ExtraWorkVacationHoures = extraWorkVacationHoure;
+            
             JobNumber = Employee?.JobInfo?.GetJobNumber();
 
             

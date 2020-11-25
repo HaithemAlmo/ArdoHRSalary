@@ -22,8 +22,8 @@ namespace Almotkaml.HR.Business.Extensions
               EmployeeId = d.EmployeeId,
               ArabicFullName = d.GetFullName(),
               DepartmentName = d.JobInfo?.Unit?.Division?.Department?.Name,
-              JobNumber = d.JobInfo?.JobClassValu+d.JobInfo?.GetJobNumber(),
-            //  JobNumberLIC = d.JobNumberLIC,
+              JobNumber = d.JobInfo?.JobNumber.ToString(),//d.JobInfo?.JobClassValu+d.JobInfo?.GetJobNumber(),
+              FinancialNumberMinistry= d.JobInfo?.financialnumberMinistry.ToString(),        //  JobNumberLIC = d.JobNumberLIC,
               NationalNumber = d.NationalNumber,
               CenterName = d.JobInfo?.Unit?.Division?.Department?.Center?.Name,
           });

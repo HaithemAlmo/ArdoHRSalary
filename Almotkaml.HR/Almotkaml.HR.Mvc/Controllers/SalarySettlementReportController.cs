@@ -883,19 +883,18 @@ namespace Almotkaml.HR.Mvc.Controllers
             datasources.Add(new SalariesTotalReport()
             {
                 SalariesTotal = model2.Grid.Select(s => s.TotalSalary).Sum(),
-                BasicSalaries = salary ,//model2.Grid.Select(s => s.BasicSalary).Sum(),
+                BasicSalaries = salary,//model2.Grid.Select(s => s.BasicSalary).Sum(),
                 CompanyShare = model2.Grid.Select(s => s.CompanyShare).Sum(),
-                EmployeeShare = model2 .Grid .Select(s=> s.EmployeeShare).Sum(),
-                SafeShare  = model2.Grid.Select(s => s.SafeShare ).Sum(),
+                EmployeeShare = model2.Grid.Select(s => s.EmployeeShare).Sum(),
+                SafeShare = model2.Grid.Select(s => s.SafeShare).Sum(),
                 ContributionInSecurity = model2.Grid.Select(s => s.SafeShare + s.CompanyShare).Sum(),
                 DeducationTotal = model2.Grid.Select(s => s.DiscountTotal).Sum(),
                 JihadTax = model2.Grid.Select(s => s.JihadTax).Sum(),
                 IncomeTax = model2.Grid.Select(s => s.IncomeTax).Sum(),
-                AdvancePayment = AdvancePaymentInside + AdvancePaymentOutside,
+                AdvancePayment = model2.AdvancePaymentList.Where(e => e.PremiumId == 2 || e.PremiumId == 5).Select(e => e.Value).Sum(),//سلف المودة1+المودة2// AdvancePaymentInside + AdvancePaymentOutside,
                 GroupLife = model2.Grid.Select(s => s.GroupLife).Sum(),
                 SalariesNet = model2.Grid.Select(s => s.FinalySalary).Sum(),
                 SalariesNumber = model2.Grid.Select(s => s.EmployeeID).Count(),
-               
                 SolidarityFund = model2.Grid.Select(s => s.SolidarityFund).Sum(),
                 StampTax = model2.Grid.Select(s => s.StampTax).Sum(),
                 Sanction = model2.Grid.Select(s => s.Sanction).Sum(),
@@ -904,8 +903,11 @@ namespace Almotkaml.HR.Mvc.Controllers
                 Subsistence = model2.Grid.Select(s => s.Subsistence).Sum(),
                 Premium = model2.Grid.Select(s => s.Premium).Sum(),
                 // OtherDiscount = AdvancePaymentInside + AdvancePaymentOutside,
-                OtherDiscount = model2.Grid.Select(s => s.AdvancePremium).Sum(),
-                Mwada = model2 .Grid .Count() * 2,
+                OtherDiscount = model2.AdvancePaymentList.Where(e => e.PremiumId == 4).Select(e => e.Value).Sum(),
+                Mwada = model2.EmployeePremiumList.Where(e=>e.PremiumId==3).Select(e=>e.Value).Sum(), //model2 .Grid .Count() * 2,
+                ExtraWork =model2.Grid.Select(s => s.ExtraWork).Sum(),
+                ExtraGeneralValue = model2.Grid.Select(s => s.ExtraGeneralValue).Sum(),
+                RewardValue = model2.Grid.Select(s => s.RewardValue).Sum(),
             });
             //}
             //add by ali alherbade 26-05-2019
@@ -1379,73 +1381,75 @@ namespace Almotkaml.HR.Mvc.Controllers
             }
 
 
-            if (!HumanResource.SalarySettlementReport.SearchByDate(model))
+            if (!HumanResource.SalarySettlementReport.SearchByDateByID(model))
                 return AjaxHumanResourceState("_Form", model);
 
             var datasources = new HashSet<SalaryCertificatReport>();
-            var datasources2 = new HashSet<SalaryCertificatReport>();
-
-            foreach (var row in model.Grid)
-            {
 
 
                 datasources.Add(new SalaryCertificatReport()
                 {
 
-                    NationalNumber = row.NationalNumber,
-                    EmployeeName = row.EmployeeName,
-                    MawadaFund = row.MawadaFund,
-                    BasicSalary = row.BasicSalary,
-                    SolidarityFund = row.SolidarityFund,
-                    SocialSecurityFund = row.SocialSecurityFund,
-                    JihadTax = row.JihadTax,
-                    NetSalary = row.FinalySalary,
-                    AdvancePaymentValue = row.AdvancePaymentValue,
-                    DiscountTotal = row.DiscountTotal,
-                    Boun = row.Boun,
-                    SalaryTotal = row.SalaryTotal,
-                    AdvancePaymentName = row.AdvancePaymentName,
-                    Degree = row.Degree.ToString(),
-                    DiscountName = row.DiscountName,
-                    premiumName = row.PremiumumName,
-                    DiscountValue = row.ValueDiscountm,
-                    premiumValue = row.ValuePremiumum
+                    NationalNumber = model.Grid.Select(s=>s.NationalNumber).FirstOrDefault(),
+                    EmployeeName = model.Grid.Select(s => s.EmployeeName).FirstOrDefault(),
+                    MawadaFund = model.EmployeePremiumList.Where(e => e.PremiumId == 3).Select(e => e.Value).Sum(),//row.MawadaFund,
+                    BasicSalary = model.Grid.Select(s => s.BasicSalary).Sum(),
+                    SolidarityFund = model.Grid.Select(s => s.SolidarityFund).Sum(),
+                    SocialSecurityFund = model.Grid.Select(s => s.SocialSecurityFund).Sum(),
+                    JihadTax = model.Grid.Select(s => s.JihadTax).FirstOrDefault(),
+                    NetSalary = model.Grid.Select(s => s.FinalySalary).FirstOrDefault(),
+                    AdvancePaymentValue = model.Grid.Select(s => s.AdvancePaymentValue).Sum(),
+                    DiscountTotal = model.Grid.Select(s => s.DiscountTotal).Sum(),
+                    Boun = model.Grid.Select(s => s.Boun).Sum(),
+                    SalaryTotal = model.Grid.Select(s => s.SalaryTotal).Sum(),
+                    //AdvancePaymentName = model.Grid.Select(s => s.AdvancePaymentName).FirstOrDefault(),
+                    Degree = model.Grid.Select(s => s.Degree).FirstOrDefault().ToString(),
+                    //DiscountName = model.Grid.Select(s => s.DiscountName).ToList()[2],
+                   // premiumName = model.Grid.Select(s => s.PremiumumName).ToList()[0],
+                   // DiscountValue = model.Grid.Select(s => s.ValueDiscountm).Sum(),
+                   // premiumValue = model.Grid.Select(s => s.ValuePremiumum).Sum(),
+                    Absence = model.Grid.Select(s => s.Absence).Sum(),
+                    EmployeeShare= model.Grid.Select(s => s.EmployeeShare).Sum(),
+                    Sanction= model.Grid.Select(s => s.Sanction).Sum(),
+                    Mwada= model.EmployeePremiumList.Where(e => e.PremiumId == 3).Select(e => e.Value).Sum(),
+                    AdvancePayment = model.AdvancePaymentList.Where(e => e.PremiumId == 2 || e.PremiumId == 5).Select(e => e.Value).Sum(),//سلف المودة1+المودة2// AdvancePaymentInside + AdvancePaymentOutside,
+                    OtherDiscount =  model.AdvancePaymentList.Where(e => e.PremiumId == 4).Select(e => e.Value).Sum(),//سلف الجيش الليبي,
                 });
-            }
+            
 
-            var SaveList = datasources.FirstOrDefault();
+            //var SaveList = datasources.FirstOrDefault();
 
-            var delete = datasources.ToList();
-            if(delete.Any())
-                delete.RemoveAt(0);
-            var Newdatasources = delete.ToList();
+            //var delete = datasources.ToList();
+            //if(delete.Any())
+            //    delete.RemoveAt(0);
+            //var Newdatasources = delete.ToList();
 
-            var row2 = Newdatasources.FirstOrDefault();
+            //var row2 = Newdatasources.FirstOrDefault();
 
-            if (SaveList != null)
-            {
-                row2.NationalNumber = SaveList.NationalNumber;
-                row2.EmployeeName = SaveList.EmployeeName;
-                row2.MawadaFund = SaveList.MawadaFund;
-                row2.BasicSalary = SaveList.BasicSalary;
-                row2.SolidarityFund = SaveList.SolidarityFund;
-                row2.SocialSecurityFund = SaveList.SocialSecurityFund;
-                row2.JihadTax = SaveList.JihadTax;
-                row2.NetSalary = SaveList.NetSalary;
-                row2.AdvancePaymentValue = SaveList.AdvancePaymentValue;
-                row2.DiscountTotal = SaveList.DiscountTotal;
-                row2.Boun = SaveList.Boun;
-                row2.SalaryTotal = SaveList.SalaryTotal;
-                row2.AdvancePaymentName = SaveList.AdvancePaymentName;
-                row2.Degree = SaveList.Degree.ToString();
-            }
+            //if (SaveList != null)
+            //{
+            //    row2.NationalNumber = SaveList.NationalNumber;
+            //    row2.EmployeeName = SaveList.EmployeeName;
+            //    row2.MawadaFund = SaveList.MawadaFund;
+            //    row2.BasicSalary = SaveList.BasicSalary;
+            //    row2.SolidarityFund = SaveList.SolidarityFund;
+            //    row2.SocialSecurityFund = SaveList.SocialSecurityFund;
+            //    row2.JihadTax = SaveList.JihadTax;
+            //    row2.NetSalary = SaveList.NetSalary;
+            //    row2.AdvancePaymentValue = SaveList.AdvancePaymentValue;
+            //    row2.DiscountTotal = SaveList.DiscountTotal;
+            //    row2.Boun = SaveList.Boun;
+            //    row2.SalaryTotal = SaveList.SalaryTotal;
+            //    row2.AdvancePaymentName = SaveList.AdvancePaymentName;
+            //    row2.Degree = SaveList.Degree.ToString();
+            //}
 
 
-            var word = new Maths.NumberToWord(Newdatasources.Sum(r => r.NetSalary)).ConvertToArabic();
+            var word = new Maths.NumberToWord(datasources.Sum(r => r.NetSalary)).ConvertToArabic();
 
             DateTime dateFrom = Convert.ToDateTime(model.DateFrom);
             DateTime dateTo = Convert.ToDateTime(model.DateTo);
-            ReportDataSource rdc = new ReportDataSource("SalaryCertificate", Newdatasources);
+            ReportDataSource rdc = new ReportDataSource("SalaryCertificate", datasources);
 
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {

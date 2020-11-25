@@ -29,5 +29,9 @@
         public decimal Mwada { get; set; }                        //دعم صندوق المودة
         public decimal MwadaPaymentValue { get; set; }            //مجموع اقساط سلف صندوق المودة المسترجعة
         public decimal LibyanArmyPaymentValue { get; set; }       //مجموع اقساط سلف صندوق الجيش الليبي المسترجعة
+        public decimal ExtraWork { get; set; }        //العمل الإضافي
+        public decimal ExtraGeneralValue { get; set; }     //الزيادة العامة 
+        public decimal RewardValue { get; set; } //المكافآة
+        
     }
 }

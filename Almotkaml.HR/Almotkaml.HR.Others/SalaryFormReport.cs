@@ -70,7 +70,8 @@ namespace Almotkaml.HR.Others
                     AdvancePremiumInside = row1.AdvancePremiumInside,
                     AdvancePremiumOutside = row1.AdvancePremiumOutside,
                     FinalySalary = row1.FinalSalary,
-                    PrepaidPremium = row1.PrepaidSalary
+                    PrepaidPremium = row1.PrepaidSalary           
+                   
                 });
             }
 

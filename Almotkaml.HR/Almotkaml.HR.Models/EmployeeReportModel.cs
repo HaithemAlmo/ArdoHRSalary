@@ -706,6 +706,7 @@ namespace Almotkaml.HR.Models
         public decimal RewindValue { get; set; } //الترجيع
         public decimal Discound { get; set; }
         public decimal AllBouns { get; set; }
+        public decimal RewardValue { get; set; }
         public IEnumerable<PremiumCheckListItemReport> PremiumListReport { get; set; } = new HashSet<PremiumCheckListItemReport>();
 
 
