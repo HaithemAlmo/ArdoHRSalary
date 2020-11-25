@@ -100,7 +100,7 @@ namespace Almotkaml.HR.Models
         public decimal TotalSalary { get; set; }
         public decimal NetSalary { get; set; }
         public decimal FinalSalary { get; set; }
-        public string JobNumber { get; set; }
+        public string FinancialNumber { get; set; }
         public bool IsSuspended { get; set; }
         [Display(ResourceType = typeof(Title), Name = nameof(Title.SuspendedNote))]
         public string SuspendedNote { get; set; }

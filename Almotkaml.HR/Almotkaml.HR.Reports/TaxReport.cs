@@ -4,6 +4,7 @@
     {
         public string JobNumber { get; set; }
         public string Date { get; set; }
+        public string financialnumberMinistry { get; set; }
         public string Name { get; set; }
         public decimal TotalSalary { get; set; }
         public decimal SubjectSalary { get; set; }

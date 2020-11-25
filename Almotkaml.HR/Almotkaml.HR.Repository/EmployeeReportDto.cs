@@ -81,7 +81,7 @@ namespace Almotkaml.HR.Repository
         public int JobId { get; set; }
         public JobType? JobType { get; set; }
         public string JobNumber { get; set; }
-   
+        public string FinancialNumber { get; set; }
         public int JobNumberInt { get; set; } // الرقم الوظيفي 
         // الرقم الوظيفي 
         public int JobNumberApproved { get; set; } // ر.و لدى الملاك الوظيفي

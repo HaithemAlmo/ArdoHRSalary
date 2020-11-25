@@ -585,5 +585,14 @@ namespace Almotkaml.HR
         public bool AdvancePremium_FreezeState { get; set; }
         [Phrase(typeof(Notifications), nameof(DEAdvancePremium_FreezeState))]
         public bool DEAdvancePremium_FreezeState { get; set; }
+
+        [Phrase(typeof(Notifications), nameof(WorkTimePaper_Create))]
+        public bool WorkTimePaper_Create { get; set; }
+
+        [Phrase(typeof(Notifications), nameof(WorkTimePaper_Edit))]
+        public bool WorkTimePaper_Edit { get; set; }
+
+        [Phrase(typeof(Notifications), nameof(WorkTimePaper_Delete))]
+        public bool WorkTimePaper_Delete { get; set; }
     }
 }

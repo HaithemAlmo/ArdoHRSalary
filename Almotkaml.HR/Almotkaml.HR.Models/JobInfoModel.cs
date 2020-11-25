@@ -211,7 +211,7 @@ namespace Almotkaml.HR.Models
         public int? StaffingClassificationId { get; set; }
 
         [Display(ResourceType = typeof(Title), Name = nameof(Title.JobNumberLIC))]
-        public int? JobNumberLIC { get; set; }
+        public int JobNumberLIC { get; set; }
 
         public IEnumerable<StaffingClassificationListItem> StaffingClassificationList { get; set; } = new HashSet<StaffingClassificationListItem>();
 

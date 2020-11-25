@@ -80,5 +80,6 @@ namespace Almotkaml.HR.Repository
         IClassificationOnWorkRepository ClassificationOnWorks { get; }
         ICoachRepository Coaches { get; }
         ICourseRepository Courses { get; }
+        IWorkTimePaperRepository WorkTimePapers { get; }
     }
 }

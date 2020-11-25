@@ -221,7 +221,7 @@ namespace Almotkaml.HR.Domain
             decimal stampTax = 0;
             stampTax = Convert.ToDecimal(stampTaxLen);//(NetSalary(settings) * settings.StampTax);
             var value = string.Format("{0:0.000}", Math.Truncate(stampTax * 1000) / 1000);
-            return decimal.Parse(value);
+            return (0);
 
         }
 

@@ -49,6 +49,7 @@ namespace Almotkaml.HR.Domain
         public string SecurityNumber { get; set; }
         public string FileNumber { get; set; }
         public string FinancialNumber { get; set; }
+        public string GetFinancialNumber() => FinancialNumber.ToString();
         public string NameSecutry { get; set; }
         public bool GroupLifeChich { get; set; }
         public bool AdvancePremiumFreezeState { get;  set; }

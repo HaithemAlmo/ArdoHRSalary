@@ -46,7 +46,7 @@ namespace Almotkaml.HR.Domain
         public int? ClassificationOnSearchingId { get; internal set; }
         public ClassificationOnSearching ClassificationOnSearching { get; internal set; }
         public int JobNumber { get; internal set; } // الرقم الوظيفي 
-        public int? JobNumberLIC { get; internal set; }      //الرقم الوظيفي للتأمين  
+        public int JobNumberLIC { get; internal set; }      //الرقم الوظيفي للتأمين  
         public int? JobNumberApproved { get; internal set; } // ر.و لدى الملاك الوظيفي
         //public SituationResolveJob SituationResolveJob { get; internal set; } // تسوية الوضع الوظيفي
         public int? CurrentSituationId { get; internal set; }
@@ -89,6 +89,7 @@ namespace Almotkaml.HR.Domain
         public SalayClassification? SalayClassification { get; internal set; }
         public string Notes { get; internal set; }
         public string GetJobNumber() => JobNumberLIC.ToString();
+        public string GetFinancialNumber() => financialnumberMinistry.ToString();
         public int ExpDate => Int32.Parse((DateTime.Now.Year - DirectlyDate.Value.Year).ToString());
         public LeaderType? leaderType  { get; set; }
         public Redirection Redirection { get; set; }

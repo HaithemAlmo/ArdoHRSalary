@@ -1473,4 +1473,25 @@
   <data name="PremiumActive" xml:space="preserve">
     <value>قيمة خصم ايقاف العلاوة</value>
   </data>
+  <data name="Friday" xml:space="preserve">
+    <value>الجمعة</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>الأثنين</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>السبت</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>الأحد</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>الخميس</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>الثلاتاء</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>الإربعاء</value>
+  </data>
 </root>
