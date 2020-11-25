@@ -8,6 +8,7 @@
         public GuaranteeType GuaranteeType { get; set; }
         public decimal EmployeeShare { get; set; }
         public decimal CompanyShare { get; set; }
+        public decimal SafeShare { get; set; }
         public decimal ShareSum { get; set; }
         public string CostCenterName { get; set; }
         public int CostCenterId { get; set; }
@@ -15,5 +16,7 @@
         public string SecurityNumber { get; set; }//الرقم الضمان
         public string InstrumentNumber { get; set; }//رقم الصك 
         public string NationalNumber { get; set; }//الرقم الوطني 
+        public string FinancialNumber { get; set; }//الرقم المالي 
+
     }
 }

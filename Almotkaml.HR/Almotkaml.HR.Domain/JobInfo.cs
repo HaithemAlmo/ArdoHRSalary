@@ -88,7 +88,7 @@ namespace Almotkaml.HR.Domain
         //HAM
         public SalayClassification? SalayClassification { get; internal set; }
         public string Notes { get; internal set; }
-        public string GetJobNumber() => JobNumberLIC.ToString();
+        public string GetJobNumber() => JobNumber.ToString();
         public string GetFinancialNumber() => financialnumberMinistry.ToString();
         public int ExpDate => Int32.Parse((DateTime.Now.Year - DirectlyDate.Value.Year).ToString());
         public LeaderType? leaderType  { get; set; }

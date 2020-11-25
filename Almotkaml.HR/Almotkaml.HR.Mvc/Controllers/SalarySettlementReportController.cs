@@ -126,7 +126,8 @@ namespace Almotkaml.HR.Mvc.Controllers
             if (loadedModel == null)
                 return;
 
-            model.EmployeeGrid = loadedModel.EmployeeGrid;
+             model.EmployeeGrid = loadedModel.EmployeeGrid;
+             
             model.PremiumCheckListItem = loadedModel.PremiumCheckListItem
              .Select(l => new PremiumCheckListItem()
              {
@@ -663,10 +664,12 @@ namespace Almotkaml.HR.Mvc.Controllers
                     {
                       
                         JobNumber = row.JobNumber,
+                        FinancialNumber = row.FinancialNumber ,
                         Name = row.Name,
                         TotalSalary = row.TotalSalary,
                         CompanyShare = row.CompanyShare,
                         EmployeeShare = row.EmployeeShare,
+                        SafeShare = row.SafeShare ,
                         GuaranteeType = row.GuaranteeType,
                         ShareSum = row.ShareSum,
                         CostCenterName = row.CostCenterName,
@@ -1417,7 +1420,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             var SaveList = datasources.FirstOrDefault();
 
             var delete = datasources.ToList();
-            if(delete.Any())
+            if (delete.Any())
                 delete.RemoveAt(0);
             var Newdatasources = delete.ToList();
 

@@ -645,10 +645,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>1.81733in</Top>
-        <Left>2.44581in</Left>
+        <Top>1.70275in</Top>
+        <Left>2.15627in</Left>
         <Height>0.25in</Height>
-        <Width>0.95833in</Width>
+        <Width>1.81298in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -667,7 +667,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>الشئون المالية</Value>
+                <Value>مدير إدارة الشئون المالية</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -675,15 +675,15 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Right</TextAlign>
+              <TextAlign>Center</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>1.81733in</Top>
-        <Left>0.50909in</Left>
+        <Top>1.70275in</Top>
+        <Left>0.27433in</Left>
         <Height>0.25in</Height>
-        <Width>0.95833in</Width>
+        <Width>1.80768in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -702,7 +702,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>المراجع</Value>
+                <Value>المراجع المالي</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -715,10 +715,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>1.81733in</Top>
-        <Left>4.23635in</Left>
+        <Top>1.70275in</Top>
+        <Left>4.03869in</Left>
         <Height>0.25in</Height>
-        <Width>0.95833in</Width>
+        <Width>1.82292in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -737,7 +737,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>وحدة المرتبات</Value>
+                <Value>رئيس وحدة المرتبات</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -745,15 +745,15 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Right</TextAlign>
+              <TextAlign>Center</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>1.81733in</Top>
-        <Left>6.23661in</Left>
+        <Top>1.70275in</Top>
+        <Left>5.91717in</Left>
         <Height>0.25in</Height>
-        <Width>0.95833in</Width>
+        <Width>1.82292in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -889,8 +889,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>PayrollUnit</rd:DefaultName>
-        <Top>2.13678in</Top>
-        <Left>5.74008in</Left>
+        <Top>2.0222in</Top>
+        <Left>5.91717in</Left>
         <Height>0.44792in</Height>
         <Width>1.82292in</Width>
         <ZIndex>8</ZIndex>
@@ -923,8 +923,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>References</rd:DefaultName>
-        <Top>2.13678in</Top>
-        <Left>3.8616in</Left>
+        <Top>2.0222in</Top>
+        <Left>4.03869in</Left>
         <Height>0.44792in</Height>
         <Width>1.82292in</Width>
         <ZIndex>9</ZIndex>
@@ -955,8 +955,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FinancialAuditor</rd:DefaultName>
-        <Top>2.13678in</Top>
-        <Left>1.97918in</Left>
+        <Top>2.0222in</Top>
+        <Left>2.15627in</Left>
         <Height>0.44792in</Height>
         <Width>1.82292in</Width>
         <ZIndex>10</ZIndex>
@@ -989,8 +989,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FinancialAffairs</rd:DefaultName>
-        <Top>2.13678in</Top>
-        <Left>0.09724in</Left>
+        <Top>2.0222in</Top>
+        <Left>0.27433in</Left>
         <Height>0.44792in</Height>
         <Width>1.82292in</Width>
         <ZIndex>11</ZIndex>
@@ -1263,69 +1263,6 @@
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="ExecutionTime">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=Globals!ExecutionTime</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>ExecutionTime</rd:DefaultName>
-          <Top>0.18577in</Top>
-          <Left>3.84933in</Left>
-          <Height>0.25in</Height>
-          <Width>1.57292in</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="TotalPages">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>="TotalPages : "&amp;Globals!TotalPages</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.18577in</Top>
-          <Left>2.32132in</Left>
-          <Height>0.25in</Height>
-          <Width>1.44792in</Width>
-          <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
         <Textbox Name="TotalPages2">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -1333,8 +1270,10 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>="Page: "&amp;Globals!PageNumber &amp;" of :" &amp; Globals!TotalPages</Value>
-                  <Style />
+                  <Value>=Globals!PageNumber</Value>
+                  <Style>
+                    <FontSize>11pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -1344,10 +1283,9 @@
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
           <Top>0.19619in</Top>
-          <Left>0.20675in</Left>
+          <Left>4.00747in</Left>
           <Height>0.25in</Height>
-          <Width>1.39583in</Width>
-          <ZIndex>2</ZIndex>
+          <Width>0.30208in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1355,56 +1293,6 @@
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Image Name="Image2">
-          <Source>Embedded</Source>
-          <Value>Almotkaml</Value>
-          <Sizing>Fit</Sizing>
-          <Top>0.05381in</Top>
-          <Left>6.98964in</Left>
-          <Height>0.36806in</Height>
-          <Width>0.46386in</Width>
-          <ZIndex>3</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
-        <Textbox Name="TotalPages3">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>المتكامل لتقنية المعلومات</Value>
-                  <Style>
-                    <FontStyle>Italic</FontStyle>
-                    <Color>Brown</Color>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.19619in</Top>
-          <Left>5.57851in</Left>
-          <Height>0.23958in</Height>
-          <Width>1.41114in</Width>
-          <ZIndex>4</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>4pt</PaddingTop>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>

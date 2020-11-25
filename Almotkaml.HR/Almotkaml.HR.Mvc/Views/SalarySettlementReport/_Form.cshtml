@@ -66,6 +66,13 @@
                                     @Html.ValidationMessageFor(model => model.JobNumber)
                                 </div>
                             </div>
+                            @*<div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.EmployeeId)
+                                    <button type="button" class="field_text form-control" style="text-align: right" data-toggle="modal" data-target="#myModal">@Model.EmployeeName</button>
+                                    @Html.ValidationMessageFor(model => model.EmployeeId)
+                                </div>
+                            </div>*@
                             @if (Model.SalarySettlement != SalarySettlement.SalaryCertificate)
                             {
                                 <div class="col-lg-3 col-md-4 col-sm-6">
@@ -237,7 +244,7 @@
     </div>
 </div>
 <!-- End Region EmployeeGrid -->
-@Html.HiddenFor(model => model.EmployeeId)
+@*@Html.HiddenFor(model => model.EmployeeId)*@
 
 <!-- /.panel -->
 <!-- Region EmployeeGrid -->
@@ -259,7 +266,7 @@
                                     <thead>
                                         <tr>
                                             <th width="20%"></th>
-                                            <th width="20%">الرقم الوظيفي</th>
+                                            <th width="20%">الرقم المالي</th>
                                             <th width="20%">الاسم</th>
                                             <th width="20%">الإدارة</th>
                                         </tr>
