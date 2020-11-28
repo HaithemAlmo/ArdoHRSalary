@@ -204,6 +204,7 @@ namespace Almotkaml.HR.Models
         public decimal Sanction { get; set; }
         [Display(ResourceType = typeof(Title), Name = nameof(Title.ExtraValue))]
         public decimal ExtraValue { get; set; }
+        public decimal RewardValue { get; set; }
         [Display(ResourceType = typeof(Title), Name = nameof(Title.ExtraGeneralValue))]
         public decimal ExtraGeneralValue { get; set; }
         [Display(ResourceType = typeof(Title), Name = nameof(Title.FileNumber))]

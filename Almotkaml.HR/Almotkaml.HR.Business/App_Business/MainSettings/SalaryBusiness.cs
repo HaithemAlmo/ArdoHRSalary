@@ -193,9 +193,9 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
 
             var salary = UnitOfWork.Salaries.Find(id);
             var employee = UnitOfWork.Employees.Find(salary.EmployeeId);
+            var holiday = UnitOfWork.Holidays.GetAll().ToList();
 
-            
-var salaryLast = UnitOfWork.Salaries.GetLastSalary();
+            var salaryLast = UnitOfWork.Salaries.GetLastSalary();
             if (salary == null)
                 return Null<SalaryFormModel>(RequestState.NotFound);
 
@@ -241,8 +241,10 @@ var salaryLast = UnitOfWork.Salaries.GetLastSalary();
                 FinalSalary = salary.FinalSalary(Settings),
                 TotalSalary = salary.TotalSalary(Settings),
                 Absence = salary.Absence(),
-                ExtraWork = salary.ExtraWork(Settings),
-                ExtraWorkVacation = salary.ExtraWorkVacation(Settings),
+                //ExtraWork = salary.ExtraWork(Settings),
+                ExtraWork = salary.ExtraWorks(Settings,holiday,1),
+                //ExtraWorkVacation = salary.ExtraWorkVacation(Settings),
+                ExtraWorkVacation = salary.ExtraWorks(Settings, holiday,2),
                 MonthDate = salary.MonthDate.FormatToString(),
                 ExtraValue = salary.ExtraValue,
                 ExtraGeneralValue = salary.ExtraGeneralValue,
@@ -265,6 +267,7 @@ var salaryLast = UnitOfWork.Salaries.GetLastSalary();
                     TemporaryPremiumGrid = UnitOfWork.Salaries.GetTemporaryPremium(salary.SalaryId).ToGrid()
                 },
                 CanSubmit = ApplicationUser.Permissions.Salary_Edit,
+                RewardValue = salary.RewardValue(),
             };
         }
         public bool ActivePremium(bool IsActive)
@@ -1013,7 +1016,7 @@ var salaryLast = UnitOfWork.Salaries.GetLastSalary();
                 return false;
 
             var salaries = UnitOfWork.Salaries.GetSalaryByMonth(model.Year, model.Month);
-
+            var holiday = UnitOfWork.Holidays.GetAll().ToList();
             if (salaries == null)
                 return false;
 
@@ -1036,10 +1039,12 @@ var salaryLast = UnitOfWork.Salaries.GetLastSalary();
                     Absence = salary.Absence(),
                     CompanyShare = salary.CompanyShare(Settings),
                     EmployeeShare = salary.EmployeeShare(Settings),
-                    ExtraWork = salary.ExtraWork(Settings),
+                    //ExtraWork = salary.ExtraWork(Settings),
+                    ExtraWork = salary.ExtraWorks(Settings, holiday, 1),
+                    //ExtraWorkVacation = salary.ExtraWorkVacation(Settings),
+                    ExtraWorkVacation = salary.ExtraWorks(Settings, holiday, 2),
                     ExtraValue = salary.ExtraValue,
                     ExtraGeneralValue = salary.ExtraGeneralValue,
-                    ExtraWorkVacation = salary.ExtraWorkVacation(Settings),
                     //PrepaidSalaryAndAdvancePremium = salary.PrepaidSalary + salary.AdvancePremium,
                     Sanction = salary.Sanction,//////////
                     SickVacation = salary.SickVacation(Settings),
@@ -1056,11 +1061,11 @@ var salaryLast = UnitOfWork.Salaries.GetLastSalary();
                     BankId = salary.BankBranch.BankId,
                     BranchId = salary.BankBranchId,
                     AccumulatedValue=salary.AccumulatedValue,
-                    RewindValue=salary.RewindValue
-                
-                
-             
-                    
+                    RewindValue=salary.RewindValue,
+                    RewardValue=salary?.RewardValue()??0,
+
+
+
                     //WithoutPay =/////////////
                 };
 
@@ -1078,7 +1083,7 @@ var salaryLast = UnitOfWork.Salaries.GetLastSalary();
                 return false;
 
             var salaries = UnitOfWork.Salaries.GetSalaryByMonth(model.Year, model.Month).ToList();
-
+            var holiday = UnitOfWork.Holidays.GetAll().ToList();
             //if (salaries == null)
             //    return false;
 
@@ -1098,9 +1103,11 @@ var salaryLast = UnitOfWork.Salaries.GetLastSalary();
                     TotalSalary = salary.TotalSalary(Settings),
                     CompanyShare = salary.CompanyShare(Settings),
                     EmployeeShare = salary.EmployeeShare(Settings),
-                    ExtraWork = salary.ExtraWork(Settings),
+                    //ExtraWork = salary.ExtraWork(Settings),
+                    ExtraWork = salary.ExtraWorks(Settings, holiday, 1),
+                    //ExtraWorkVacation = salary.ExtraWorkVacation(Settings),
+                    ExtraWorkVacation = salary.ExtraWorks(Settings, holiday, 2),
                     Sanction = salary.Sanction,
-                    ExtraWorkVacation = salary.ExtraWorkVacation(Settings),
                     AdvancePremiumOutside = salary.AdvancePremiumOutside,
                     AdvancePremiumInside = salary.AdvancePremiumInside,
                     PrepaidSalary = salary.PrepaidSalary,

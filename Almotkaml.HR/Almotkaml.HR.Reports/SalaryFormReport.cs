@@ -46,6 +46,8 @@ namespace Almotkaml.HR.Reports
         public decimal GroupLife { get; set; }
         public decimal Discound { get; set; }
         public decimal AllBouns { get; set; }
+        public decimal RewardValue { get; set; }
+        
         public IList<PremiumCheckListItem> PremiumCheckListItem { get; set; } = new List<PremiumCheckListItem>();
         public IList<PremiumCheckListItemReport> PremiumCheckListItemReport { get; set; } = new List<PremiumCheckListItemReport>();
 

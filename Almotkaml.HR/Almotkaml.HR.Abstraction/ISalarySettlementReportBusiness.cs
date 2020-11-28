@@ -8,7 +8,7 @@ namespace Almotkaml.HR.Abstraction
         void Refresh(SalarySettlementReportModel model);
         bool Search(SalarySettlementReportModel model);
         bool SearchByDate(SalarySettlementReportModel model);
-
+        bool SearchByDateByID(SalarySettlementReportModel model);
         bool ViewPledge(SalarySettlementReportModel model);
         bool ViewSalaryCertificate(SalarySettlementReportModel model);
         bool ViewPensionFund(SalarySettlementReportModel model);

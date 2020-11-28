@@ -1287,7 +1287,7 @@ namespace Almotkaml.HR.Mvc.Controllers
                         AdvancePremiumOutside = row.AdvancePremiumOutside,
                         FinalySalary = row.FinalSalary,
                         PrepaidPremium = row.PrepaidSalary,
-
+                        RewardValue=row.RewardValue,
 
                     });
                 }

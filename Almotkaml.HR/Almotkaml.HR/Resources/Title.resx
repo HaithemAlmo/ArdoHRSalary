@@ -1494,4 +1494,7 @@
   <data name="Wednesday" xml:space="preserve">
     <value>الإربعاء</value>
   </data>
+  <data name="SalaryCertificatePledge" xml:space="preserve">
+    <value>تعهد لشهادة المرتب</value>
+  </data>
 </root>

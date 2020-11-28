@@ -148,6 +148,13 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="form-group">
+                        @Html.Label("المكافأة")
+                        @Html.TextBoxFor(model => model.RewardValue, Model.RewardValue.ToLyd(), new { @class = "field_text form-control", disabled = "disabled" })
+                        @Html.ValidationMessageFor(model => model.RewardValue)
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
                         @Html.Label("الاجمالي الاول")
                         @Html.TextBoxFor(model => model.TotalSalary, Model.TotalSalary.ToLyd(), new { @class = "field_text form-control", disabled = "disabled" })
                         @Html.ValidationMessageFor(model => model.TotalSalary)
