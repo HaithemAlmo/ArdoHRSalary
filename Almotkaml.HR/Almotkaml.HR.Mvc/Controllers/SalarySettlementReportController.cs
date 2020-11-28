@@ -882,8 +882,9 @@ namespace Almotkaml.HR.Mvc.Controllers
             var zero = decimal.Parse("0,00");
             datasources.Add(new SalariesTotalReport()
             {
+                ExtraValue=model2.Grid.Select(s => s.ExtraValue).Sum(),
                 SalariesTotal = model2.Grid.Select(s => s.TotalSalary).Sum(),
-                BasicSalaries = salary,//model2.Grid.Select(s => s.BasicSalary).Sum(),
+                BasicSalaries = model2.Grid.Select(s => s.BasicSalary).Sum(),
                 CompanyShare = model2.Grid.Select(s => s.CompanyShare).Sum(),
                 EmployeeShare = model2.Grid.Select(s => s.EmployeeShare).Sum(),
                 SafeShare = model2.Grid.Select(s => s.SafeShare).Sum(),
@@ -899,7 +900,7 @@ namespace Almotkaml.HR.Mvc.Controllers
                 StampTax = model2.Grid.Select(s => s.StampTax).Sum(),
                 Sanction = model2.Grid.Select(s => s.Sanction).Sum(),
                 Absence = model2.Grid.Select(s => s.Absence).Sum(),
-                Clamp = model2.Grid.Select(s => s.Clamp).Sum(),
+                Clamp = model2.Grid.Select(s => s.Clamp * 40 / 100).Sum(),
                 Subsistence = model2.Grid.Select(s => s.Subsistence).Sum(),
                 Premium = model2.Grid.Select(s => s.Premium).Sum(),
                 // OtherDiscount = AdvancePaymentInside + AdvancePaymentOutside,

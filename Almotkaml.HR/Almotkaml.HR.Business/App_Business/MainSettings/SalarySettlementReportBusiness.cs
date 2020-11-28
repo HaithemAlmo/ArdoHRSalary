@@ -329,6 +329,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                     //financialnumberMinistry = employee? .JobInfo ?.financialnumberMinistry .ToString (),
                     financialnumberMinistry = employee?.SalaryInfo?.FinancialNumber.ToString(),
                     FinancialNumber = employee?.SalaryInfo?.FinancialNumber ,
+                    ExtraValue = employee.Salary.ExtraValue,
                 });
             }
 
@@ -649,7 +650,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 //AdvancePaymentValue = salary.,
                                 //العلاوة
                                 Boun = salary?.Employee?.JobInfo?.Bouns ?? 0,
-                                AdvancePaymentInside = model.SalarySettlement == SalarySettlement.SalaryForm  ? salary?.ValueAdvancePremiumIsNotTemporary() ?? 0 : salary?.AdvancePremiumInside ?? 0,
+                                AdvancePaymentInside = model.SalarySettlement == SalarySettlement.SalaryForm ? salary?.ValueAdvancePremiumIsNotTemporary() ?? 0 : salary?.AdvancePremiumInside ?? 0,
                                 AdvancePaymentOutside = model.SalarySettlement == SalarySettlement.SalaryForm ? salary?.ValueAdvancePremiumIsTemporary() ?? 0 : salary?.AdvancePremiumInside ?? 0,
 
                                 //تاريخ المرتب
@@ -660,8 +661,8 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 Name = employee?.GetFullName(),
                                 //صندوق التضامن 
                                 SolidarityFund = salary?.IsSubsendedSalary == false ? salary?.SolidarityFund(Settings) + SumSolidrty ?? 0 : SumSolidrty,
-                             
-                               //المرتب الاساس
+
+                                //المرتب الاساس
                                 BasicSalary = salary?.BasicSalary ?? 0,
                                 //هيئة قضائية
                                 //Clamp = salary?.Employee.(Settings) ?? 0,
@@ -677,10 +678,10 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 ExemptionTax = salary?.ExemptionTax(Settings) ?? 0,
                                 //مل اضافي
                                 //ExtraWork = salary?.ExtraWork(Settings) ?? 0,
-                                ExtraWork = salary?.ExtraWorks(Settings, holiday,1) ?? 0,
+                                ExtraWork = salary?.ExtraWorks(Settings, holiday, 1) ?? 0,
                                 //اضافي ممتاز
                                 //ExtraWorkVacation = salary?.ExtraWorkVacation(Settings) ?? 0,
-                                ExtraWorkVacation = salary?.ExtraWorks(Settings, holiday,2) ?? 0,
+                                ExtraWorkVacation = salary?.ExtraWorks(Settings, holiday, 2) ?? 0,
                                 //ضريبة الدخل
                                 IncomeTax = salary?.IncomeTax(Settings) ?? 0,
                                 //ضريبة الجهاد
@@ -714,9 +715,9 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 //النفقة الشرعية
                                 FinalSalaryLegal = salary?.SalaryPremiums?.Where(s => s.PremiumId == 1).FirstOrDefault()?.Value ?? 0,
                                 //المرتب المحول للمصرف
-                                FinalySalary = salary?.IsSubsendedSalary == false ? salary?.FinalSalary(Settings) + SumNet ?? 0 : SumNet,
+                                /* FinalySalary = salary?.IsSubsendedSalary == false ? salary?.FinalSalary(Settings) + SumNet ?? 0 : SumNet*/
 
-
+                                FinalySalary = salary?.FinalSalary(Settings)??0,
                                 FinalSalaryCertified = salary?.FinalSalary(Settings) ?? 0,
 
                                 EmployeeName = employee?.GetFullName(),
@@ -732,7 +733,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 DegreeNote = employee?.JobInfo?.DegreeNote,
                                 NationaltyMother = employee?.NationaltyMother,
 
-
+                                ExtraValue=salary?.ExtraValue??0,
 
                                 DonorFoundation = employee?.Qualifications?.FirstOrDefault()?.NameDonorFoundation,
                                 Qualification = employee?.Qualifications?.FirstOrDefault()?.QualificationType?.Name,

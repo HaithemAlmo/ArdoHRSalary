@@ -32,6 +32,6 @@
         public decimal ExtraWork { get; set; }        //العمل الإضافي
         public decimal ExtraGeneralValue { get; set; }     //الزيادة العامة 
         public decimal RewardValue { get; set; } //المكافآة
-        
+        public decimal ExtraValue { get; set; }
     }
 }

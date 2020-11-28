@@ -329,13 +329,13 @@ namespace Almotkaml.HR.Domain
             if (Employee.SalaryInfo.AdvancePremiumFreezeState == false)
 
             {
-                Advance1 = Employee?.AdvancePayments.Where(s => s.EmployeeId == EmployeeId && s.Premium?.IsFrozen == IsFrozen.IsNotFrozen && s.Premium?.ISAdvancePremmium == ISAdvancePremmium.ISAdvance)?.Sum(pp => pp.InstallmentValue) ?? 0;
+                Advance1 = Employee?.AdvancePayments.Where(s => s.EmployeeId == EmployeeId/* && s.Premium.IsFrozen == IsFrozen.IsNotFrozen *//*&& s.Premium?.ISAdvancePremmium == ISAdvancePremmium.ISAdvance*/).Sum(pp => pp.InstallmentValue)??0;
             }
-            else
-            {
-                Advance1 = Employee?.AdvancePayments.Where(s => s.EmployeeId == EmployeeId && s.Premium?.IsFrozen == IsFrozen.IsNotFrozen && s.Premium?.ISAdvancePremmium == ISAdvancePremmium.ISAdvance)?.Sum(pp => pp.InstallmentValue) ?? 0;
+            //else
+            //{
+            //    Advance1 = Employee?.AdvancePayments.Where(s => s.EmployeeId == EmployeeId && s.Premium?.IsFrozen == IsFrozen.IsNotFrozen && s.Premium?.ISAdvancePremmium == ISAdvancePremmium.ISAdvance)?.Sum(pp => pp.InstallmentValue) ?? 0;
 
-            }
+            //}
             DiscountValues = Advance1;
 
 
@@ -352,7 +352,7 @@ namespace Almotkaml.HR.Domain
             decimal Advance1 = 0;
 
             decimal DiscountValues = 0;
-            if (Employee.SalaryInfo.AdvancePremiumFreezeState==false)
+            if (Employee.SalaryInfo.AdvancePremiumFreezeState==true)
 
             {
                 Advance1 = Employee?.AdvancePayments.Where(s => s.EmployeeId == EmployeeId && s.Premium?.IsFrozen == IsFrozen.IsFrozen && s.Premium?.ISAdvancePremmium == ISAdvancePremmium.ISAdvance)?.Sum(pp => pp.InstallmentValue) ?? 0;
