@@ -3410,6 +3410,15 @@ namespace Almotkaml.HR.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to تعهد لشهادة المرتب.
+        /// </summary>
+        public static string SalaryCertificatePledge {
+            get {
+                return ResourceManager.GetString("SalaryCertificatePledge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to إستمارة مرتب.
         /// </summary>
         public static string SalaryForm {

@@ -44,7 +44,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             return new SalarySettlementReportModel()
             {
                 AdvanseNameList = UnitOfWork.Premiums.GetAll().ToListPremiumums(),
-
+                PremiumListRE = UnitOfWork.Premiums.GetAll().ToListRE(),
                 DateFrom = DateTime.Now.Date.FormatToString(),
                 DateTo = DateTime.Now.Date.FormatToString(),
                 EmployeeGrid = UnitOfWork.Employees.GetAll().ToGrid(),
@@ -57,7 +57,9 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
         public void Refresh(SalarySettlementReportModel model)
         {
             model.AdvanseNameList = UnitOfWork.Premiums.GetAll().ToListPremiumums();
-
+            
+            model.PremiumListRE = UnitOfWork.Premiums.GetAll().ToListRE();
+            
             model.BankList = UnitOfWork.Banks.GetAll().ToList();
             model.CenterList = UnitOfWork.Centers.GetAll().ToList();
 
@@ -825,7 +827,8 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 financialnumberMinistry =employee ?.SalaryInfo?.FinancialNumber,
                                 FinancialNumber =employee ?.SalaryInfo ?.FinancialNumber.ToString(),
                                 ExtraGeneralValue= salary.ExtraGeneralValue + salary.ExtraValue,
-                                RewardValue= salary?.RewardValue()??0
+                                RewardValue= salary?.RewardValue()??0,
+                                 PremiumActive = salary?.PremiumActive ?? 0
                             });
 
                             if (employee.JobInfo?.SalayClassification == SalayClassification.Clamp)
@@ -1429,7 +1432,8 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 financialnumberMinistry = employee?.JobInfo?.financialnumberMinistry.ToString(),
                                 FinancialNumber = employee?.SalaryInfo?.FinancialNumber.ToString(),
                                 ExtraGeneralValue = salary.ExtraGeneralValue + salary.ExtraValue,
-                                RewardValue = salary?.RewardValue() ?? 0
+                                RewardValue = salary?.RewardValue() ?? 0,
+                                PremiumActive = salary?.PremiumActive ?? 0
                             });
 
                             if (employee.JobInfo?.SalayClassification == SalayClassification.Clamp)

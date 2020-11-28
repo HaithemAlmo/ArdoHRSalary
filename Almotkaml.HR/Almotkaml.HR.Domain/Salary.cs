@@ -577,7 +577,7 @@ namespace Almotkaml.HR.Domain
             //else if (Employee.Vacations.Any(d => d.VacationType.VacationEssential == VacationEssential.sickleave))
             //    basicSalary = (BasicSalary + ExtraValue + ExtraGeneralValue + AccumulatedValue) * SickLeave(settings);
             //else
-            basicSalary = (BasicSalary + ExtraValue + ExtraGeneralValue + accumulatedValue());
+            basicSalary = (BasicSalary + ExtraValue + ExtraGeneralValue+PremiumActive);
 
             var employeePremium = Employee.Premiums.Count > 0 ? Employee.Premiums.Where(p => p.Premium.IsSubject == IsSubject.IsSubject).Sum(p => p.Value) : 0;
             var value3 = basicSalary + SalaryPremiums.Where(p => p.Premium.IsSubject==IsSubject.IsSubject &&p.Premium.DiscountOrBoun==DiscountOrBoun.Boun).Sum(p => p.Value) + Employee.Premiums.Where(p => p.Premium.IsSubject == IsSubject.IsSubject && p.Premium.DiscountOrBoun == DiscountOrBoun.Boun).Sum(p => p.Value) + ExtraWork(settings) + ExtraWorkVacation(settings) + ExtraWork(settings) - Absence() - SickVacation(settings) - SickLeave(settings);

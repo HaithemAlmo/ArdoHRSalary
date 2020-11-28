@@ -9,6 +9,9 @@ namespace Almotkaml.HR
         //Pledge = 0,
         [Display(ResourceType = typeof(Title), Name = nameof(Title.SalaryCerit))]
         SalaryCertificate = 1,
+
+        [Display(ResourceType = typeof(Title), Name = nameof(Title.SalaryCertificatePledge ))]
+        SalaryCertificatePledge =17,
         //[Display(ResourceType = typeof(Title), Name = nameof(Title.Pension))]
         //PensionFund = 2,
         [Display(ResourceType = typeof(Title), Name = nameof(Title.Clipord))]
@@ -39,6 +42,7 @@ namespace Almotkaml.HR
         Check = 14,
         [Display(ResourceType = typeof(Title), Name = nameof(Title.AbstractClipboardBanking))]
         AbstractClipboardBanking = 16
+
         //    ,
         //      [Display(ResourceType = typeof(Title), Name = nameof(Title.Check))]
         //Pension = 15

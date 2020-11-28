@@ -37,6 +37,16 @@
                                     </div>
                                 </div>
                             }
+                            @if (Model.SalarySettlement == SalarySettlement.Premmium)
+                            {
+                                <div class="col-lg-3 col-md-4 col-sm-6">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.PremiumNameID)
+                                        @Html.DropDownListFor(model => model.PremiumNameID, new SelectList(Model.PremiumListRE, nameof(PremiumListReport.PremiumNameId), nameof(PremiumListReport.Name)), "--اختر--", new { @class = "field_menu form-control" })
+                                        @Html.ValidationMessageFor(model => model.PremiumNameID)
+                                    </div>
+                                </div>
+                            }
                             @if (Model.SalarySettlement != SalarySettlement.SalaryCertificate)
                             {
                                 <div class="col-lg-3 col-md-4 col-sm-6">
@@ -175,12 +185,16 @@
                                     <div class="form-group">
                                         <input name="print" type="submit" value="طباعة" class="btn btn-info" onclick="this.form.submit()" />
                                     </div>
+                       
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-outline btn-success" onclick="this.form.submit()">Excel</button>
                                         @*<input name="Excel" type="submit" value="Excel" class="btn btn-success" onclick="this.form.submit()"SendValue(this, 'toExcel', ) />*@
                                     </div>
                                 </div>
                             </div>
+
+                          
+
                         </div>
                     </div>
                 </fieldset>

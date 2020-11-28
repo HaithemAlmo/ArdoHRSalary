@@ -1,6 +1,6 @@
 namespace Almotkaml.HR.Reports
 {
-    public class SalaryCertificatReport
+    public class SalaryCertificatePledgeReport
     {
         public decimal premiumValue { get; set; }
         public decimal DiscountValue { get; set; }
@@ -31,6 +31,5 @@ namespace Almotkaml.HR.Reports
         public int BankID { get; set; }
         public string BankName { get; set; }
         public string BondNumber { get; set; }
-        public decimal PremiumActive { get; set; }
     }
 }

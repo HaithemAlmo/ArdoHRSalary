@@ -37,7 +37,8 @@ namespace Almotkaml.HR.Models
         [Display(ResourceType = typeof(Title),
                Name = nameof(Title.AdvacerOr))]
         public ISAdvancePremmium ISAdvancePremmium { get; set; }
-
+        [Display(ResourceType = typeof(Title), Name = nameof(Title.NameAdvanse))]
+        public int PremiumNameId { get; set; }
 
         public decimal AllValue { get; set; }
 
@@ -134,4 +135,14 @@ namespace Almotkaml.HR.Models
         public string PremiumCheck8 { get; set; }
         public string PremiumCheck9 { get; set; }
     }
+
+
+
+public class PremiumListReport
+{
+    public int PremiumNameId { get; set; }
+
+    public string Name { get; set; }
+}
+
 }

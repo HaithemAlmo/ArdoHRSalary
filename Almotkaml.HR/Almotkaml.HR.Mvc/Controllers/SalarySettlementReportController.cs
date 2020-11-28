@@ -33,6 +33,10 @@ namespace Almotkaml.HR.Mvc.Controllers
             else if (form["Excel"] != null)
             { repType = form["Excel"]; }
             repType = form["PDF"];
+
+            if (form["printPledge"] != null)
+                return SalaryCertificatePledgeReport(model, savedModel);
+            
             if (model.TextboxFrom != "" && model.TextboxFrom != null && model.NumberCheck != "" && model.NumberCheck != null)
             {
                 
@@ -68,6 +72,8 @@ namespace Almotkaml.HR.Mvc.Controllers
                     //    return PensionFundReport(model, savedModel);
                     case SalarySettlement.SalaryCertificate:
                         return SalaryCertificateReport(model, savedModel);
+                    case SalarySettlement.SalaryCertificatePledge:
+                        return SalaryCertificatePledgeReport(model, savedModel);
                     case SalarySettlement.Clipord:
                         return ClipordIndexReport(model, savedModel,repType);
                     //case SalarySettlement.SalaryCard:
@@ -663,10 +669,12 @@ namespace Almotkaml.HR.Mvc.Controllers
                     {
                       
                         JobNumber = row.JobNumber,
+                        FinancialNumber = row.FinancialNumber ,
                         Name = row.Name,
                         TotalSalary = row.TotalSalary,
                         CompanyShare = row.CompanyShare,
                         EmployeeShare = row.EmployeeShare,
+                        SafeShare = row.SafeShare ,
                         GuaranteeType = row.GuaranteeType,
                         ShareSum = row.ShareSum,
                         CostCenterName = row.CostCenterName,
@@ -1416,6 +1424,7 @@ namespace Almotkaml.HR.Mvc.Controllers
                     Mwada= model.EmployeePremiumList.Where(e => e.PremiumId == 3).Select(e => e.Value).Sum(),
                     AdvancePayment = model.AdvancePaymentList.Where(e => e.PremiumId == 2 || e.PremiumId == 5).Select(e => e.Value).Sum(),//سلف المودة1+المودة2// AdvancePaymentInside + AdvancePaymentOutside,
                     OtherDiscount =  model.AdvancePaymentList.Where(e => e.PremiumId == 4).Select(e => e.Value).Sum(),//سلف الجيش الليبي,
+                    PremiumActive = model.Grid.Select(s => s.PremiumActive).Sum(),                                                                                                  // premiumValue = model.Grid.Select(s => s.ValuePremiumum).Sum(),
                 });
             
 
@@ -1481,6 +1490,81 @@ namespace Almotkaml.HR.Mvc.Controllers
 
             return File(renderedBytes, mimeType);
         }
+
+        //
+        //تعهد شهادة المرتب
+        public ActionResult SalaryCertificatePledgeReport(SalarySettlementReportModel model, string savedModel)
+        {
+            LoadModel(model, savedModel);
+            //var format = string.Format("yyyy-MM-dd", dateFrom);
+            LocalReport lr = new LocalReport();
+            string path = Path.Combine(Server.MapPath("~/Reports"), "SalaryCertificatePledgeReport.rdlc");
+            if (System.IO.File.Exists(path))
+            {
+                lr.ReportPath = path;
+            }
+            else
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+
+            if (!HumanResource.SalarySettlementReport.SearchByDateByID(model))
+                return AjaxHumanResourceState("_Form", model);
+
+            var datasources = new HashSet<SalaryCertificatePledgeReport>();
+
+
+            datasources.Add(new SalaryCertificatePledgeReport()
+            {
+
+               
+                EmployeeName = model.Grid.Select(s => s.EmployeeName).FirstOrDefault(),
+                BondNumber =model .Grid .Select (s=> s.BondNumber).FirstOrDefault (),
+                BankName = model.Grid.Select(s => s.BankName ).FirstOrDefault() + " " + model.Grid.Select(s => s.BankBranchName).FirstOrDefault(),
+                //BankBranchName  = model.Grid.Select(s => s.BankBranchName).FirstOrDefault(),
+            });
+
+
+            
+            var word = new Maths.NumberToWord(datasources.Sum(r => r.NetSalary)).ConvertToArabic();
+            var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
+
+            DateTime dateFrom = Convert.ToDateTime(model.DateFrom);
+            DateTime dateTo = Convert.ToDateTime(model.DateTo);
+            ReportDataSource rdc = new ReportDataSource("SalaryCertificate", datasources);
+
+            ReportParameterCollection reportParameters = new ReportParameterCollection();
+            reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
+
+            //{
+            //    new ReportParameter("ReportParameter1", word),
+            //}
+
+            lr.SetParameters(reportParameters);
+            lr.DataSources.Add(rdc);
+
+            string mimeType;
+            string encoding;
+            string filenameextention;
+            string deviceinfo =
+                "<DeviceInfo>" +
+                "<OutPutFormat>" + "PDF" + "</OutPutFormat>" +
+                "</DeviceInfo>";
+            Warning[] warnings;
+            string[] stream;
+            var renderedBytes = lr.Render(
+                "PDF",
+                deviceinfo,
+                out mimeType,
+                out encoding,
+                out filenameextention,
+                out stream,
+                out warnings);
+
+            return File(renderedBytes, mimeType);
+        }
+
         public ActionResult SalaryCertificateTotalReport(SalarySettlementReportModel model, string savedModel)
         {
             LoadModel(model, savedModel);

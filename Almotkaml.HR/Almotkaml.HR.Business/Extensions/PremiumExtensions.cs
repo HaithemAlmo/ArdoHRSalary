@@ -70,7 +70,7 @@ namespace Almotkaml.HR.Business.Extensions
               IsSelected = false,
           }).ToList();
         public static ICollection<PremiumListItem> ToList(this IEnumerable<Premium> premiums)
-          => premiums.Select(d => new PremiumListItem()
+          => premiums.Where(s => s.ISAdvancePremmium == ISAdvancePremmium.ISNotAdvance).Select(d => new PremiumListItem()
           {
 
               PremiumId = d.PremiumId,
@@ -79,5 +79,11 @@ namespace Almotkaml.HR.Business.Extensions
               IsTemporary = d.IsTemporary,
               IsSubject = d.IsSubject,
           }).ToList();
+        public static IEnumerable<PremiumListReport> ToListRE(this IEnumerable<Premium> premium)
+         => premium.Where(s => s.ISAdvancePremmium == ISAdvancePremmium.ISNotAdvance  && (s.DiscountOrBoun == DiscountOrBoun.Discount|| s.DiscountOrBoun == DiscountOrBoun.Boun)).Select(d => new PremiumListReport()
+         {
+             Name = d.Name,
+             PremiumNameId = d.PremiumId
+         });
     }
 }
