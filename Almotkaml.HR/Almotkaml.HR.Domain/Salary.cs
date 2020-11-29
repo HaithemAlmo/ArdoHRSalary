@@ -303,7 +303,7 @@ namespace Almotkaml.HR.Domain
             var Advance1 = Employee?.AdvancePayments.Where(s => s.EmployeeId == EmployeeId).Sum(pp => pp.InstallmentValue);
             decimal DiscountValues = 0;
             DiscountValues = +SolidarityFund(settings)
-                     + JihadTax(settings) + IncomeTax(settings)+ Tadawel() + EmployeeShare(settings) + Grouplife(settings) + AdvancePeymentFreez() + AdvancePeymentNOtFreez() + DiscountPrimuimm() - (PremiumActive)/*+ CompanyShare(settings)*/ /*(SalaryPremiums.Where(p => p.Premium.IsSubject == false && p.Premium.IsTemporary == false && p.Premium.DiscountOrBoun == DiscountOrBoun.Discount).Sum(p => p.Value)*/;
+                     + JihadTax(settings) + IncomeTax(settings) + EmployeeShare(settings)  + AdvancePeymentFreez() + AdvancePeymentNOtFreez() + DiscountPrimuimm() - (PremiumActive)/*+ CompanyShare(settings)*/ /*(SalaryPremiums.Where(p => p.Premium.IsSubject == false && p.Premium.IsTemporary == false && p.Premium.DiscountOrBoun == DiscountOrBoun.Discount).Sum(p => p.Value)*/;
 
             //if(SalaryPremiums.Any(p=>p.Premium.DiscountOrBoun == DiscountOrBoun.Discount))
             //{
