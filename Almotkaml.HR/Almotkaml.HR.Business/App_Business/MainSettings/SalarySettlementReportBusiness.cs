@@ -373,7 +373,6 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             };
 
             var GetSalary = UnitOfWork.Salaries.GetSalaryByMonth(model.Year ?? 0, model.Month ?? 0);
-
             var employees = UnitOfWork.Salaries.GetEmployeeReportDate(employeeReportDto).ToList();
             //var banks = UnitOfWork.BankBranches.GetAll().ToList();
             var grid = new List<EmployeeReportGridRow>();
@@ -404,7 +403,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                             Value = row2.AllValue,
                             InstallmentValue = row2.InstallmentValue,
                             Date = row2.DeductionDate,
-
+                            financialnumberMinistry = advancePayments.SalaryInfo?.FinancialNumber,
                             Rest = row2.AllValue - row2.Value + advancePayments.Salaries.Sum(s => s.AdvancePremiumInside)
                         });
                     }
@@ -824,8 +823,8 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 UnitName = employee?.JobInfo?.Unit?.Name,
                                 EmployeeID = employee?.EmployeeId.ToString(),
                                 PremiumListReport = PremiumCheckListReport,
-                                financialnumberMinistry =employee ?.SalaryInfo?.FinancialNumber,
-                                FinancialNumber =employee ?.SalaryInfo ?.FinancialNumber.ToString(),
+                                financialnumberMinistry =employee?.SalaryInfo?.FinancialNumber,
+                                FinancialNumber =employee?.SalaryInfo?.FinancialNumber.ToString(),
                                 ExtraGeneralValue= salary.ExtraGeneralValue + salary.ExtraValue,
                                 RewardValue= salary?.RewardValue()??0,
                                  PremiumActive = salary?.PremiumActive ?? 0

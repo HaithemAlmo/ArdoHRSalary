@@ -1457,15 +1457,16 @@ namespace Almotkaml.HR.Mvc.Controllers
 
 
             var word = new Maths.NumberToWord(datasources.Sum(r => r.NetSalary)).ConvertToArabic();
-
+            var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
             DateTime dateFrom = Convert.ToDateTime(model.DateFrom);
             DateTime dateTo = Convert.ToDateTime(model.DateTo);
             ReportDataSource rdc = new ReportDataSource("SalaryCertificate", datasources);
 
-            ReportParameterCollection reportParameters = new ReportParameterCollection
-            {
-                new ReportParameter("ReportParameter1", word),
-            };
+            ReportParameterCollection reportParameters = new ReportParameterCollection();
+            reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
+             reportParameters.Add(new ReportParameter("ReportParameter1", word));
+           
+
 
             lr.SetParameters(reportParameters);
             lr.DataSources.Add(rdc);
@@ -1536,9 +1537,9 @@ namespace Almotkaml.HR.Mvc.Controllers
 
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
-
+            reportParameters.Add(new ReportParameter("ReportParameter1", word));
             //{
-            //    new ReportParameter("ReportParameter1", word),
+            //    
             //}
 
             lr.SetParameters(reportParameters);

@@ -1055,10 +1055,10 @@ namespace Almotkaml.HR.EntityCore.Repositories
                 }
 
 
-                if (employeeReport.JobNumberInt != 0)
-                {
-                employees = employees.Where(e => e.JobInfo.JobNumber == 1002/*employeeReport.JobNumberInt*/);
-                }
+                //if (employeeReport.JobNumberInt != 0)
+                //{
+                //employees = employees.Where(e => e.JobInfo.JobNumber == 1002/*employeeReport.JobNumberInt*/);
+                //}
 
                 if (employeeReport.UnitId > 0)
                 {
