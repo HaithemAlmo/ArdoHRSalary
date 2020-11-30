@@ -94,8 +94,8 @@ namespace Almotkaml.HR.Mvc.Controllers
                         return AdvancePaymentIndexReport(model, savedModel);
                     case SalarySettlement.EndJob:
                         return SalaryEndJob(model, savedModel);
-                    //case SalarySettlement.Premmium:
-                    ////    return SalaryEndJob(model, savedModel);
+                    case SalarySettlement.Premmium:
+                       return PremiumAndDiscountReport(model, savedModel);
                     case SalarySettlement.Check:
                         return SalaryCheck(model, savedModel);
 
@@ -1906,6 +1906,100 @@ LastName=row.FinalySalary.ToString()
 
             return File(renderedBytes, mimeType);
         }
+
+        // 
+        //العلاوات والخصم
+        public ActionResult PremiumAndDiscountReport(SalarySettlementReportModel model2, string savedModel)
+        {
+            return PremiumAndDiscountIndex(model2.AdvancePaymentReportModel, model2, model2.JobNumber.ToString(), model2.BankId ?? 0, model2.BankBranchId ?? 0, model2.Month ?? 0, model2.Year ?? 0);
+        }
+        public ActionResult PremiumAndDiscountIndex(AdvancePaymentReportModel model, SalarySettlementReportModel model2, string jobNumber, int BankId, int BankBranchId, int Month, int Year)
+        {
+            model.Month = Month;
+            model.Year = Year;
+            model2.ISadvanse = 2;
+            LocalReport lr = new LocalReport();
+            string path = Path.Combine(Server.MapPath("~/Reports"), "PremiumAndDiscountReport.rdlc");
+            if (System.IO.File.Exists(path))
+            {
+                lr.ReportPath = path;
+            }
+            else
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            if (!HumanResource.SalarySettlementReport.SearchByDate(model2))
+                return AjaxHumanResourceState("_Form", model);
+
+            var datasources = new HashSet<ClipboardBankingLegal>();
+
+            foreach (var row in model2.Grid)
+            {
+                datasources.Add(new ClipboardBankingLegal()
+                {
+                    TafKeet = row.PremiumumName,
+
+                    JobNumber = row.JobNumber,
+                    financialnumberMinistry = row.financialnumberMinistry,
+                    EmployeeName = row.EmployeeName,
+                    Value = row.Value,
+                    Date = row.Date,
+                    //DeductionDate = row.DeductionDate,
+                    InstallmentValue = row.InstallmentValue,
+                    Rest = row.Rest
+                });
+            }
+
+            var _dateMonth = HumanResource.Salary.GetMonthDate();
+            //add by ali alherbade 26-05-2019
+            var PayrollUnit = HumanResource.StartUp.CompanyInfo.PayrollUnit;// وحدة المرتبات
+            var References = HumanResource.StartUp.CompanyInfo.References;//المراجع
+            var FinancialAuditor = HumanResource.StartUp.CompanyInfo.FinancialAuditor;//المراقب المالي
+            var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
+            var LongName = HumanResource.StartUp.CompanyInfo.LongName;// اسم الشركة
+            var Department = HumanResource.StartUp.CompanyInfo.Department;// القسم
+            var _advanceName = datasources.FirstOrDefault()?.TafKeet;
+            // end add 
+
+            ReportDataSource rdc = new ReportDataSource("AdvanceDetection", datasources);
+            ReportParameterCollection reportParameters = new ReportParameterCollection();
+            reportParameters.Add(new ReportParameter("Title", "كشف بالسلف الداخلية "));
+            reportParameters.Add(new ReportParameter("DateFrom", _dateMonth));
+            reportParameters.Add(new ReportParameter("DateTo", ""));
+            // add by ali alherbade 26-05-2019
+            reportParameters.Add(new ReportParameter("Department", Department));//القسم
+            reportParameters.Add(new ReportParameter("CompanyName", LongName));// اسم الشركة
+            reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
+            reportParameters.Add(new ReportParameter("FinancialAuditor", FinancialAuditor));//المراقب المالي
+            reportParameters.Add(new ReportParameter("PayrollUnit", PayrollUnit));//وحدة المرتبات
+            reportParameters.Add(new ReportParameter("References", References));// المراجع
+            reportParameters.Add(new ReportParameter("AdvanceName", _advanceName));// السلفة
+            //
+            lr.SetParameters(reportParameters);
+            lr.DataSources.Add(rdc);
+            string mimeType;
+            string encoding;
+            string filenameextention;
+            string deviceinfo =
+                "<DeviceInfo>" +
+                "<OutPutFormat>" + "PDF" + "</OutPutFormat>" +
+                "</DeviceInfo>";
+            Warning[] warnings;
+            string[] stream;
+            byte[] renderedBytes;
+            renderedBytes = lr.Render(
+                "PDF",
+                deviceinfo,
+                out mimeType,
+                out encoding,
+                out filenameextention,
+                out stream,
+                out warnings);
+
+            return File(renderedBytes, mimeType);
+        }
+
         //الضرائب
         // tax index report
         public ActionResult TaxIndexReport(SalarySettlementReportModel model2, string savedModel)
