@@ -388,81 +388,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             var PremiumCheckListReport2 = new List<PremiumCheckListItemReport>();
             //***************************************************************
 
-            if (model.ISadvanse == 1)
-            {
-                var GetAdvanse = UnitOfWork.AdvancePayments.GetAll().Where(s => s.PremiumId == model.AdvanseNameID).ToGrid();
-                foreach (var advancePayments in employees.Where(s => s.AdvancePayments.Count() != 0))
-                {
-
-                    foreach (var row2 in GetAdvanse.Where(s => s.EmployeeID == advancePayments.EmployeeId))
-                    {
-                        grid.Add(new EmployeeReportGridRow()
-                        {
-                            PremiumumName = row2.PremiumName,
-                            EmployeeName = row2.EmployeeName,
-                            JobNumber = advancePayments.JobInfo?.JobNumber.ToString(), ///////
-                            Value = row2.AllValue,
-                            InstallmentValue = row2.InstallmentValue,
-                            Date = row2.DeductionDate,
-
-                            Rest = row2.AllValue - row2.Value + advancePayments.Salaries.Sum(s => s.AdvancePremiumInside),
-                            
-                        });
-                    }
-
-                }
-                model.Grid = grid;
-
-                return true;
-            }
-            else if (model.ISadvanse ==2)
-            {
-                foreach (var employee in employees)
-                {
-
-                    foreach (var row2 in GetSalary?.Where(s => s.EmployeeId == employee.EmployeeId))
-                    {
-                        var PremiumList = row2?.EmployeePremium?.Where(s => s?.PremiumId == model.PremiumNameID).ToList();
-
-                            grid.Add(new EmployeeReportGridRow()
-                            {
-                                //PremiumumName =row2.EmployeePremium,
-                                //EmployeeName = row2.EmployeeName,
-                                //JobNumber = advancePayments.JobInfo?.JobNumber.ToString(), ///////
-                                //Value = row2.AllValue,
-                                //InstallmentValue = row2.InstallmentValue,
-                                //Date = row2.DeductionDate,
-
-                                //Rest = row2.AllValue - row2.Value + advancePayments.Salaries.Sum(s => s.AdvancePremiumInside)
-                            });
-                        }
-                    
-                }
-                        var GetAdvanse = UnitOfWork.AdvancePayments.GetAll().Where(s => s.PremiumId == model.AdvanseNameID).ToGrid();
-                foreach (var advancePayments in employees.Where(s => s.AdvancePayments.Count() != 0))
-                {
-
-                    foreach (var row2 in GetAdvanse.Where(s => s.EmployeeID == advancePayments.EmployeeId))
-                    {
-                        grid.Add(new EmployeeReportGridRow()
-                        {
-                            PremiumumName = row2.PremiumName,
-                            EmployeeName = row2.EmployeeName,
-                            JobNumber = advancePayments.JobInfo?.JobNumber.ToString(), ///////
-                            Value = row2.AllValue,
-                            InstallmentValue = row2.InstallmentValue,
-                            Date = row2.DeductionDate,
-
-                            Rest = row2.AllValue - row2.Value + advancePayments.Salaries.Sum(s => s.AdvancePremiumInside)
-                        });
-                    }
-
-                }
-                model.Grid = grid;
-
-                return true;
-
-            }
+            
 
             var resultSalary = GetSalary?.Where(p => employees.Any(p2 => p2.EmployeeId == p.EmployeeId)).ToList();
 
@@ -497,7 +423,63 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             //var salary2 = GetSalary.ToList();
             if (employees == null)
                 return false;
+            if (model.ISadvanse == 1)
+            {
+                var GetAdvanse = UnitOfWork.AdvancePayments.GetAll().Where(s => s.PremiumId == model.AdvanseNameID).ToGrid();
+                foreach (var advancePayments in employees.Where(s => s.AdvancePayments.Count() != 0))
+                {
 
+                    foreach (var row2 in GetAdvanse.Where(s => s.EmployeeID == advancePayments.EmployeeId))
+                    {
+                        grid.Add(new EmployeeReportGridRow()
+                        {
+                            PremiumumName = row2.PremiumName,
+                            EmployeeName = row2.EmployeeName,
+                            JobNumber = advancePayments.JobInfo?.JobNumber.ToString(), ///////
+                            Value = row2.AllValue,
+                            InstallmentValue = row2.InstallmentValue,
+                            Date = row2.DeductionDate,
+
+                            Rest = row2.AllValue - row2.Value + advancePayments.Salaries.Sum(s => s.AdvancePremiumInside),
+                            financialnumberMinistry = advancePayments.SalaryInfo?.FinancialNumber,
+                        });
+                    }
+
+                }
+                model.Grid = grid;
+
+                return true;
+            }
+            else if (model.ISadvanse == 2)
+            {
+                foreach (var employee in employees)
+                {
+                    var Employeepremiums = UnitOfWork.Salaries.GetNotTemEmployeePremiumBy(employee.EmployeeId);
+
+                    foreach (var row in Employeepremiums?.Where(p => p.PremiumId == model.PremiumNameID))
+                    {
+
+                        grid.Add(new EmployeeReportGridRow()
+                        {
+                            PremiumumName = row.Premium?.Name,
+                            EmployeeName = row.Employee.GetFullName(),
+                            JobNumber = employee.JobInfo?.JobNumber.ToString(), ///////
+                            Value = row.Value,
+                            InstallmentValue = row.Value,
+                            //Date = row2.DeductionDate,
+
+                            Rest = 0,// row2.AllValue - row2.Value + advancePayments.Salaries.Sum(s => s.AdvancePremiumInside)
+                            financialnumberMinistry = employee.SalaryInfo?.FinancialNumber,
+                        });
+                    }
+
+                }
+
+                model.Grid = grid;
+
+                return true;
+
+            }
             //var grid2 = new List<EmployeeReportGridRow>();
 
             decimal _Clamp = 0; // الهيئات القضائية
