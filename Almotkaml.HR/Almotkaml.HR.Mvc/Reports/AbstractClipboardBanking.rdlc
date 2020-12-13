@@ -645,8 +645,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>1.70275in</Top>
-        <Left>2.15627in</Left>
+        <Top>1.75831in</Top>
+        <Left>0.24241in</Left>
         <Height>0.25in</Height>
         <Width>1.81298in</Width>
         <ZIndex>1</ZIndex>
@@ -667,7 +667,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>مدير إدارة الشئون المالية</Value>
+                <Value>مدير إدارة الشؤون المالية</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -680,8 +680,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>1.70275in</Top>
-        <Left>0.27433in</Left>
+        <Top>1.75831in</Top>
+        <Left>4.04005in</Left>
         <Height>0.25in</Height>
         <Width>1.80768in</Width>
         <ZIndex>2</ZIndex>
@@ -715,8 +715,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>1.70275in</Top>
-        <Left>4.03869in</Left>
+        <Top>1.75831in</Top>
+        <Left>2.12483in</Left>
         <Height>0.25in</Height>
         <Width>1.82292in</Width>
         <ZIndex>3</ZIndex>
@@ -750,7 +750,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>1.70275in</Top>
+        <Top>1.75831in</Top>
         <Left>5.91717in</Left>
         <Height>0.25in</Height>
         <Width>1.82292in</Width>
@@ -889,9 +889,9 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>PayrollUnit</rd:DefaultName>
-        <Top>2.0222in</Top>
+        <Top>2.07776in</Top>
         <Left>5.91717in</Left>
-        <Height>0.44792in</Height>
+        <Height>0.26042in</Height>
         <Width>1.82292in</Width>
         <ZIndex>8</ZIndex>
         <Style>
@@ -923,9 +923,9 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>References</rd:DefaultName>
-        <Top>2.0222in</Top>
-        <Left>4.03869in</Left>
-        <Height>0.44792in</Height>
+        <Top>2.07776in</Top>
+        <Left>2.12483in</Left>
+        <Height>0.26042in</Height>
         <Width>1.82292in</Width>
         <ZIndex>9</ZIndex>
         <Style>
@@ -955,9 +955,9 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FinancialAuditor</rd:DefaultName>
-        <Top>2.0222in</Top>
-        <Left>2.15627in</Left>
-        <Height>0.44792in</Height>
+        <Top>2.07776in</Top>
+        <Left>0.24241in</Left>
+        <Height>0.26042in</Height>
         <Width>1.82292in</Width>
         <ZIndex>10</ZIndex>
         <Style>
@@ -989,9 +989,9 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FinancialAffairs</rd:DefaultName>
-        <Top>2.0222in</Top>
-        <Left>0.27433in</Left>
-        <Height>0.44792in</Height>
+        <Top>2.07776in</Top>
+        <Left>4.02962in</Left>
+        <Height>0.26042in</Height>
         <Width>1.82292in</Width>
         <ZIndex>11</ZIndex>
         <Style>
@@ -1283,9 +1283,8 @@
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
           <Top>0.19619in</Top>
-          <Left>4.00747in</Left>
           <Height>0.25in</Height>
-          <Width>0.30208in</Width>
+          <Width>8.17065in</Width>
           <Style>
             <Border>
               <Style>None</Style>

@@ -142,7 +142,7 @@ namespace Almotkaml.HR.Mvc.Controllers
              }).ToList();
         }
        
-        //الحاظفة المصرفية
+        //الحافظة المصرفية
         public ActionResult ClipordIndexReport(SalarySettlementReportModel model2, string savedModel, string PrintType)
         {
             return ReportClipordIndex(model2.ClipboardBankingReportModel, model2, model2.LICJobNumber.ToString(), model2.Month ?? 0, model2.Year ?? 0, model2.BankId, model2.BankBranchId,PrintType);
@@ -215,6 +215,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
             var LongName = HumanResource.StartUp.CompanyInfo.LongName;// اسم الشركة
             var Department = HumanResource.StartUp.CompanyInfo.Department;// القسم
+            var  PrintDate = DateTime.Now.Year +"/"+DateTime.Now.Month  + "/"+DateTime.Now.Day  ;
             // end add 
             
             // add by ali alherbade 26-05-2019
@@ -226,12 +227,13 @@ namespace Almotkaml.HR.Mvc.Controllers
             reportParameters.Add(new ReportParameter("Title", "الحافظة المصرفية"));
             reportParameters.Add(new ReportParameter("Department", Department));//القسم
             reportParameters.Add(new ReportParameter("CompanyName", LongName));// اسم الشركة
-            //reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
-            //reportParameters.Add(new ReportParameter("FinancialAuditor", FinancialAuditor));//المراقب المالي
-            //reportParameters.Add(new ReportParameter("PayrollUnit", PayrollUnit));//وحدة المرتبات
-            //reportParameters.Add(new ReportParameter("References", References));// المراجع
+            reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
+            reportParameters.Add(new ReportParameter("FinancialAuditor", FinancialAuditor));//المراقب المالي
+            reportParameters.Add(new ReportParameter("PayrollUnit", PayrollUnit));//وحدة المرتبات
+            reportParameters.Add(new ReportParameter("References", References));// المراجع
             reportParameters.Add(new ReportParameter("Date", model.Year + "-" + model.Month));
             reportParameters.Add(new ReportParameter("InstrumentNumber", model2.InstrumentNumber));
+            reportParameters.Add(new ReportParameter("PrintDate", PrintDate));
             lr.SetParameters(reportParameters);
             lr.DataSources.Add(rdc);
 
@@ -1780,11 +1782,11 @@ namespace Almotkaml.HR.Mvc.Controllers
                 datasources.Add(new EmployeeReport()
                 {
                     
-DateDegreeNow=row.DateSubsended,
-FullName=row.FullName,
-JobNumber=row.JobNumber,
-Employer=row.IsclodseMessage,
-LastName=row.FinalySalary.ToString()
+                   DateDegreeNow=row.DateSubsended,
+                   FullName=row.FullName,
+                   JobNumber=row.JobNumber,
+                   Employer=row.IsclodseMessage,
+                   LastName=row.FinalySalary.ToString()
 
                 });
             }

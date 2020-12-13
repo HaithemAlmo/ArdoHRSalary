@@ -456,7 +456,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                 {
                     var Employeepremiums = UnitOfWork.Salaries.GetNotTemEmployeePremiumBy(employee.EmployeeId);
 
-                    foreach (var row in Employeepremiums?.Where(p => p.PremiumId == model.PremiumNameID))
+                    foreach (var row in Employeepremiums?.Where(p => p.PremiumId == model.PremiumNameID && p.Value > 0))
                     {
 
                         grid.Add(new EmployeeReportGridRow()
