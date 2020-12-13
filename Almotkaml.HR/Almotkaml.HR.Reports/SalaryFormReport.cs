@@ -48,8 +48,8 @@ namespace Almotkaml.HR.Reports
         public decimal AllBouns { get; set; }
         public decimal RewardValue { get; set; }
         
-        public IList<PremiumCheckListItem> PremiumCheckListItem { get; set; } = new List<PremiumCheckListItem>();
-        public IList<PremiumCheckListItemReport> PremiumCheckListItemReport { get; set; } = new List<PremiumCheckListItemReport>();
+        //public IList<PremiumCheckListItem> PremiumCheckListItem { get; set; } = new List<PremiumCheckListItem>();
+        //public IList<PremiumCheckListItemReport> PremiumCheckListItemReport { get; set; } = new List<PremiumCheckListItemReport>();
 
 
     }

@@ -303,7 +303,7 @@ namespace Almotkaml.HR.Domain
             var Advance1 = Employee?.AdvancePayments.Where(s => s.EmployeeId == EmployeeId).Sum(pp => pp.InstallmentValue);
             decimal DiscountValues = 0;
             DiscountValues = +SolidarityFund(settings)
-                     + JihadTax(settings) + IncomeTax(settings)+ Tadawel() + EmployeeShare(settings) + Grouplife(settings) + AdvancePeymentFreez() + AdvancePeymentNOtFreez() + DiscountPrimuimm() - (PremiumActive)/*+ CompanyShare(settings)*/ /*(SalaryPremiums.Where(p => p.Premium.IsSubject == false && p.Premium.IsTemporary == false && p.Premium.DiscountOrBoun == DiscountOrBoun.Discount).Sum(p => p.Value)*/;
+                     + JihadTax(settings) + IncomeTax(settings)+ Tadawel() + EmployeeShare(settings) + Grouplife(settings) + AdvancePeymentFreez() + AdvancePeymentNOtFreez() + DiscountPrimuimm() - (PremiumActive) + Absence() + Sanction1()/*+ CompanyShare(settings)*/ /*(SalaryPremiums.Where(p => p.Premium.IsSubject == false && p.Premium.IsTemporary == false && p.Premium.DiscountOrBoun == DiscountOrBoun.Discount).Sum(p => p.Value)*/;
 
             //if(SalaryPremiums.Any(p=>p.Premium.DiscountOrBoun == DiscountOrBoun.Discount))
             //{
@@ -831,7 +831,7 @@ namespace Almotkaml.HR.Domain
                 && s.DeductionYear == monthDate.Year).Sum(abc => abc.SanctionDay) ?? 0;
 
             if (Abs != 0)
-                Ab = (BasicSalary + ExtraValue + ExtraGeneralValue) / 30 * Abs;
+                Ab = (BasicSalary) / 30 * Abs;
 
             var value = string.Format("{0:0.000}", Math.Truncate(Ab * 1000) / 1000);
 
@@ -912,7 +912,7 @@ namespace Almotkaml.HR.Domain
         /// <returns></returns>
         public decimal FinalSalary(ISettings settings) => TotalSalary(settings) - TotalDiscount(settings)
             + Math.Round((Employee.Premiums.Where(p => p.Premium.IsSubject == IsSubject.IsNotSubject && p.Premium.DiscountOrBoun == DiscountOrBoun.Boun).Sum(p => p.Value)), 3) 
-            + rewindValue();
+            + rewindValue()+ExtraWork(settings);
           
             //+ SalaryPremiums.Where(p => p.Premium.DiscountOrBoun == DiscountOrBoun.Boun).Sum(p => p.Value)
             //+ Employee.Premiums.Where(p => p.Premium.DiscountOrBoun == DiscountOrBoun.Boun).Sum(p => p.Value)
