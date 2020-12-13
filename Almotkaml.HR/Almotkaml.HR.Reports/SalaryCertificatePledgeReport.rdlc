@@ -556,17 +556,21 @@
             <TextRuns>
               <TextRun>
                 <Value>=Parameters!FinancialAffairs.Value</Value>
-                <Style />
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FinancialAffairs</rd:DefaultName>
-        <Top>5.55556in</Top>
-        <Left>4.405in</Left>
+        <Top>6.29344in</Top>
+        <Left>0.55605in</Left>
         <Height>0.25in</Height>
-        <Width>1in</Width>
+        <Width>1.27083in</Width>
         <ZIndex>13</ZIndex>
         <Style>
           <Border>

@@ -168,8 +168,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>3.45313in</Top>
-            <Left>2.06164in</Left>
+            <Top>3.78646in</Top>
+            <Left>2.09325in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>2</ZIndex>
@@ -202,7 +202,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>3.45313in</Top>
+            <Top>3.78646in</Top>
             <Left>5.55845in</Left>
             <Height>0.25in</Height>
             <Width>1.42387in</Width>
@@ -283,8 +283,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalaryCertificate</DataSetName>
-            <Top>3.45313in</Top>
-            <Left>0.41913in</Left>
+            <Top>3.78646in</Top>
+            <Left>0.45074in</Left>
             <Height>0.25in</Height>
             <Width>1.50051in</Width>
             <ZIndex>4</ZIndex>
@@ -360,7 +360,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalaryCertificate</DataSetName>
-            <Top>3.45313in</Top>
+            <Top>3.78646in</Top>
             <Left>3.99571in</Left>
             <Height>0.25in</Height>
             <Width>1.49331in</Width>
@@ -663,7 +663,7 @@
           <Line Name="Line1">
             <Top>0.1875in</Top>
             <Left>3.64913in</Left>
-            <Height>3.64689in</Height>
+            <Height>3.96982in</Height>
             <Width>0in</Width>
             <ZIndex>9</ZIndex>
             <Style>
@@ -673,7 +673,8 @@
             </Style>
           </Line>
           <Line Name="Line2">
-            <Top>3.38368in</Top>
+            <Top>3.67535in</Top>
+            <Left>0.00001in</Left>
             <Height>0in</Height>
             <Width>7.18608in</Width>
             <ZIndex>10</ZIndex>
@@ -702,7 +703,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.75694in</Top>
+            <Top>0.88194in</Top>
             <Left>2.06164in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
@@ -736,7 +737,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.11804in</Top>
+            <Top>1.24304in</Top>
             <Left>2.06164in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
@@ -770,7 +771,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.43748in</Top>
+            <Top>1.56248in</Top>
             <Left>2.06164in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
@@ -804,7 +805,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>2.07637in</Top>
+            <Top>2.20137in</Top>
             <Left>2.06164in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
@@ -836,7 +837,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>2.71526in</Top>
+            <Top>2.84026in</Top>
             <Left>2.06164in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
@@ -870,7 +871,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.75693in</Top>
+            <Top>1.88193in</Top>
             <Left>2.06164in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
@@ -902,7 +903,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>2.39582in</Top>
+            <Top>2.52082in</Top>
             <Left>2.06164in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
@@ -982,7 +983,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalaryCertificate</DataSetName>
-            <Top>0.75694in</Top>
+            <Top>0.88194in</Top>
             <Left>0.41913in</Left>
             <Height>0.25in</Height>
             <Width>1.50051in</Width>
@@ -1058,7 +1059,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalaryCertificate</DataSetName>
-            <Top>1.11804in</Top>
+            <Top>1.24304in</Top>
             <Left>0.41913in</Left>
             <Height>0.25in</Height>
             <Width>1.50051in</Width>
@@ -1134,7 +1135,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalaryCertificate</DataSetName>
-            <Top>1.43748in</Top>
+            <Top>1.56248in</Top>
             <Left>0.41913in</Left>
             <Height>0.25in</Height>
             <Width>1.50051in</Width>
@@ -1210,7 +1211,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalaryCertificate</DataSetName>
-            <Top>1.75693in</Top>
+            <Top>1.88193in</Top>
             <Left>0.41913in</Left>
             <Height>0.25in</Height>
             <Width>1.50051in</Width>
@@ -1286,7 +1287,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalaryCertificate</DataSetName>
-            <Top>2.07637in</Top>
+            <Top>2.20137in</Top>
             <Left>0.41913in</Left>
             <Height>0.25in</Height>
             <Width>1.50051in</Width>
@@ -1362,7 +1363,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalaryCertificate</DataSetName>
-            <Top>2.39582in</Top>
+            <Top>2.52082in</Top>
             <Left>0.41913in</Left>
             <Height>0.25in</Height>
             <Width>1.50051in</Width>
@@ -1438,7 +1439,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalaryCertificate</DataSetName>
-            <Top>2.71526in</Top>
+            <Top>2.84026in</Top>
             <Left>0.41913in</Left>
             <Height>0.25in</Height>
             <Width>1.50051in</Width>
@@ -1456,7 +1457,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>صندوق التضمان</Value>
+                    <Value>خصم الضمان</Value>
                     <Style>
                       <FontSize>11pt</FontSize>
                     </Style>
@@ -1468,7 +1469,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.39584in</Top>
+            <Top>0.52084in</Top>
             <Left>2.06164in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
@@ -1548,7 +1549,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalaryCertificate</DataSetName>
-            <Top>0.39584in</Top>
+            <Top>0.52084in</Top>
             <Left>0.41913in</Left>
             <Height>0.25in</Height>
             <Width>1.50051in</Width>
@@ -1566,7 +1567,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>سلفة صندوق الجيش الليبي </Value>
+                    <Value>قيمة ايقاف العلاوات</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -1576,7 +1577,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>3.03471in</Top>
+            <Top>3.15971in</Top>
             <Left>2.06164in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
@@ -1656,7 +1657,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalaryCertificate</DataSetName>
-            <Top>3.03471in</Top>
+            <Top>3.15971in</Top>
             <Left>0.41913in</Left>
             <Height>0.25in</Height>
             <Width>1.50051in</Width>
@@ -1671,7 +1672,7 @@
         <KeepTogether>true</KeepTogether>
         <Top>1.25761in</Top>
         <Left>0.23007in</Left>
-        <Height>3.8344in</Height>
+        <Height>4.15732in</Height>
         <Width>7.18609in</Width>
         <Style>
           <Border>
@@ -1688,8 +1689,9 @@
               <TextRun>
                 <Value>مدير الإدارة المالية</Value>
                 <Style>
+                  <FontSize>11pt</FontSize>
                   <FontWeight>Bold</FontWeight>
-                  <TextDecoration>Underline</TextDecoration>
+                  <TextDecoration>None</TextDecoration>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1699,7 +1701,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>6.58511in</Top>
+        <Top>6.61289in</Top>
         <Left>0.55605in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
@@ -1721,7 +1723,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>.......................... </Value>
+                <Value>........................... </Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -1731,7 +1733,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>6.90456in</Top>
+        <Top>6.86289in</Top>
         <Left>0.55605in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
@@ -2077,7 +2079,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
-        <Top>0.84028in</Top>
+        <Top>0.82639in</Top>
         <Left>2.87504in</Left>
         <Height>0.20833in</Height>
         <Width>0.40351in</Width>
@@ -2148,7 +2150,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
-        <Top>0.84028in</Top>
+        <Top>0.8125in</Top>
         <Left>4.39458in</Left>
         <Height>0.20833in</Height>
         <Width>0.35417in</Width>
@@ -2167,7 +2169,9 @@
             <TextRuns>
               <TextRun>
                 <Value>صافي المرتب</Value>
-                <Style />
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style>
@@ -2176,10 +2180,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>6.05728in</Top>
-        <Left>5.99228in</Left>
+        <Top>5.57811in</Top>
+        <Left>6.43436in</Left>
         <Height>0.25in</Height>
-        <Width>1.42387in</Width>
+        <Width>0.77804in</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border>
@@ -2195,7 +2199,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.49329in</Width>
+              <Width>0.62002in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -2215,7 +2219,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>NetSalary</rd:DefaultName>
@@ -2247,10 +2253,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
-        <Top>6.05728in</Top>
-        <Left>4.42955in</Left>
+        <Top>5.57811in</Top>
+        <Left>5.81434in</Left>
         <Height>0.25in</Height>
-        <Width>1.49329in</Width>
+        <Width>0.62002in</Width>
         <ZIndex>12</ZIndex>
         <Style>
           <Border>
@@ -2266,7 +2272,9 @@
             <TextRuns>
               <TextRun>
                 <Value>=Parameters!ReportParameter1.Value</Value>
-                <Style />
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style>
@@ -2275,10 +2283,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox40</rd:DefaultName>
-        <Top>6.05728in</Top>
-        <Left>0.68081in</Left>
+        <Top>5.57811in</Top>
+        <Left>0.24397in</Left>
         <Height>0.25in</Height>
-        <Width>3.69318in</Width>
+        <Width>5.64329in</Width>
         <ZIndex>13</ZIndex>
         <Style>
           <Border>
@@ -2317,6 +2325,40 @@
         <Height>0.25in</Height>
         <Width>1.26268in</Width>
         <ZIndex>14</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="FinancialAffairs">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!FinancialAffairs.Value</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>FinancialAffairs</rd:DefaultName>
+        <Top>6.32122in</Top>
+        <Left>0.55605in</Left>
+        <Height>0.25in</Height>
+        <Width>1.27083in</Width>
+        <ZIndex>15</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2575,153 +2617,6 @@
       <Height>0.55209in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
-      <ReportItems>
-        <Textbox Name="TotalPages">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>="TotalPages : "&amp;Globals!TotalPages</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.125in</Top>
-          <Left>1.93754in</Left>
-          <Height>0.25in</Height>
-          <Width>1.625in</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="TotalPages2">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>="Page: "&amp;Globals!PageNumber &amp;" of :" &amp; Globals!TotalPages</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.125in</Top>
-          <Left>0.20188in</Left>
-          <Height>0.25in</Height>
-          <Width>1.625in</Width>
-          <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="ExecutionTime">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=Globals!ExecutionTime</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>ExecutionTime</rd:DefaultName>
-          <Top>0.125in</Top>
-          <Left>3.6698in</Left>
-          <Height>0.25in</Height>
-          <Width>1.875in</Width>
-          <ZIndex>2</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Image Name="Image2">
-          <Source>Embedded</Source>
-          <Value>Almotkaml</Value>
-          <Sizing>Fit</Sizing>
-          <Top>0.05555in</Top>
-          <Left>7.11875in</Left>
-          <Height>0.29514in</Height>
-          <Width>0.46386in</Width>
-          <ZIndex>3</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
-        <Textbox Name="TotalPages3">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>المتكامل لتقنية المعلومات</Value>
-                  <Style>
-                    <FontStyle>Italic</FontStyle>
-                    <Color>Brown</Color>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.125in</Top>
-          <Left>5.70761in</Left>
-          <Height>0.23958in</Height>
-          <Width>1.41114in</Width>
-          <ZIndex>4</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>4pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-      </ReportItems>
       <Style>
         <Border>
           <Style>None</Style>
@@ -2966,6 +2861,10 @@
       <Nullable>true</Nullable>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FinancialAffairs">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter2</Prompt>
     </ReportParameter>
   </ReportParameters>
   <EmbeddedImages>

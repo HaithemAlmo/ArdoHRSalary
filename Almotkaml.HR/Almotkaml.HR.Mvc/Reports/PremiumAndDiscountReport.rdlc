@@ -23,9 +23,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
         <Top>1.84299in</Top>
-        <Left>0.1161in</Left>
+        <Left>0.14623in</Left>
         <Height>0.25in</Height>
-        <Width>1.8125in</Width>
+        <Width>1.82292in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -40,12 +40,12 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>7.64806in</Width>
+              <Width>7.57514in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.51687in</Height>
+              <Height>1.4127in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -55,25 +55,22 @@
                           <TablixBody>
                             <TablixColumns>
                               <TablixColumn>
-                                <Width>1.14933in</Width>
+                                <Width>1.31158in</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>0.94218in</Width>
+                                <Width>1.10443in</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>1.03101in</Width>
+                                <Width>1.16252in</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>1.00027in</Width>
+                                <Width>2.04334in</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>1.02433in</Width>
+                                <Width>1.20526in</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>1.91517in</Width>
-                              </TablixColumn>
-                              <TablixColumn>
-                                <Width>0.47636in</Width>
+                                <Width>0.63861in</Width>
                               </TablixColumn>
                             </TablixColumns>
                             <TablixRows>
@@ -152,41 +149,6 @@
                                   </TablixCell>
                                   <TablixCell>
                                     <CellContents>
-                                      <Textbox Name="Textbox15">
-                                        <CanGrow>true</CanGrow>
-                                        <KeepTogether>true</KeepTogether>
-                                        <Paragraphs>
-                                          <Paragraph>
-                                            <TextRuns>
-                                              <TextRun>
-                                                <Value>المسدد</Value>
-                                                <Style>
-                                                  <FontWeight>Bold</FontWeight>
-                                                </Style>
-                                              </TextRun>
-                                            </TextRuns>
-                                            <Style>
-                                              <TextAlign>Center</TextAlign>
-                                            </Style>
-                                          </Paragraph>
-                                        </Paragraphs>
-                                        <rd:DefaultName>Textbox15</rd:DefaultName>
-                                        <Style>
-                                          <Border>
-                                            <Color>DimGray</Color>
-                                            <Style>Solid</Style>
-                                          </Border>
-                                          <BackgroundColor>White</BackgroundColor>
-                                          <PaddingLeft>2pt</PaddingLeft>
-                                          <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
-                                          <PaddingBottom>2pt</PaddingBottom>
-                                        </Style>
-                                      </Textbox>
-                                    </CellContents>
-                                  </TablixCell>
-                                  <TablixCell>
-                                    <CellContents>
                                       <Textbox Name="Textbox3">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
@@ -194,7 +156,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>قيمة السلفة</Value>
+                                                <Value>قيمة الكلية</Value>
                                                 <Style>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -229,7 +191,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>الرقم المالي</Value>
+                                                <Value>إسم الموظف</Value>
                                                 <Style>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -264,7 +226,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>اسم الموظف</Value>
+                                                <Value>الرقم المالي</Value>
                                                 <Style>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -339,7 +301,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=Fields!Value.Value-Fields!Rest.Value</Value>
+                                                <Value>=Fields!Value.Value-Fields!InstallmentValue.Value</Value>
                                                 <Style>
                                                   <Format>#,0.000;(#,0.000)</Format>
                                                 </Style>
@@ -400,41 +362,6 @@
                                   </TablixCell>
                                   <TablixCell>
                                     <CellContents>
-                                      <Textbox Name="Textbox16">
-                                        <CanGrow>true</CanGrow>
-                                        <KeepTogether>true</KeepTogether>
-                                        <Paragraphs>
-                                          <Paragraph>
-                                            <TextRuns>
-                                              <TextRun>
-                                                <Value>=Fields!Rest.Value</Value>
-                                                <Style>
-                                                  <Format>#,0.000;(#,0.000)</Format>
-                                                </Style>
-                                              </TextRun>
-                                            </TextRuns>
-                                            <Style>
-                                              <TextAlign>Center</TextAlign>
-                                            </Style>
-                                          </Paragraph>
-                                        </Paragraphs>
-                                        <rd:DefaultName>Textbox16</rd:DefaultName>
-                                        <Style>
-                                          <Border>
-                                            <Color>DimGray</Color>
-                                            <Style>Solid</Style>
-                                          </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
-                                          <PaddingLeft>2pt</PaddingLeft>
-                                          <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
-                                          <PaddingBottom>2pt</PaddingBottom>
-                                        </Style>
-                                      </Textbox>
-                                    </CellContents>
-                                  </TablixCell>
-                                  <TablixCell>
-                                    <CellContents>
                                       <Textbox Name="Value">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
@@ -470,14 +397,14 @@
                                   </TablixCell>
                                   <TablixCell>
                                     <CellContents>
-                                      <Textbox Name="financialnumberMinistry">
+                                      <Textbox Name="EmployeeName">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=Fields!financialnumberMinistry.Value</Value>
+                                                <Value>=Fields!EmployeeName.Value</Value>
                                                 <Style />
                                               </TextRun>
                                             </TextRuns>
@@ -486,7 +413,7 @@
                                             </Style>
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>financialnumberMinistry</rd:DefaultName>
+                                        <rd:DefaultName>EmployeeName</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Color>DimGray</Color>
@@ -503,14 +430,14 @@
                                   </TablixCell>
                                   <TablixCell>
                                     <CellContents>
-                                      <Textbox Name="EmployeeName">
+                                      <Textbox Name="financialnumberMinistry">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=Fields!EmployeeName.Value</Value>
+                                                <Value>=Fields!financialnumberMinistry.Value</Value>
                                                 <Style>
                                                   <Format>#,0.000;(#,0.000)</Format>
                                                 </Style>
@@ -521,7 +448,7 @@
                                             </Style>
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>EmployeeName</rd:DefaultName>
+                                        <rd:DefaultName>financialnumberMinistry</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Color>DimGray</Color>
@@ -585,7 +512,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=sum(Fields!Value.Value)-sum(Fields!Rest.Value)</Value>
+                                                <Value>=sum(Fields!Value.Value)-sum(Fields!InstallmentValue.Value)</Value>
                                                 <Style>
                                                   <FontWeight>Bold</FontWeight>
                                                   <Format>#,0.000;(#,0.000)</Format>
@@ -633,42 +560,6 @@
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>Textbox4</rd:DefaultName>
-                                        <Style>
-                                          <Border>
-                                            <Color>DimGray</Color>
-                                            <Style>Solid</Style>
-                                          </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
-                                          <PaddingLeft>2pt</PaddingLeft>
-                                          <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
-                                          <PaddingBottom>2pt</PaddingBottom>
-                                        </Style>
-                                      </Textbox>
-                                    </CellContents>
-                                  </TablixCell>
-                                  <TablixCell>
-                                    <CellContents>
-                                      <Textbox Name="Textbox23">
-                                        <CanGrow>true</CanGrow>
-                                        <KeepTogether>true</KeepTogether>
-                                        <Paragraphs>
-                                          <Paragraph>
-                                            <TextRuns>
-                                              <TextRun>
-                                                <Value>=Sum(Fields!Rest.Value)</Value>
-                                                <Style>
-                                                  <FontWeight>Bold</FontWeight>
-                                                  <Format>#,0.000;(#,0.000)</Format>
-                                                </Style>
-                                              </TextRun>
-                                            </TextRuns>
-                                            <Style>
-                                              <TextAlign>Center</TextAlign>
-                                            </Style>
-                                          </Paragraph>
-                                        </Paragraphs>
-                                        <rd:DefaultName>Textbox23</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Color>DimGray</Color>
@@ -770,7 +661,6 @@
                               <TablixMember />
                               <TablixMember />
                               <TablixMember />
-                              <TablixMember />
                             </TablixMembers>
                           </TablixColumnHierarchy>
                           <TablixRowHierarchy>
@@ -788,10 +678,10 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>AdvanceDetection</DataSetName>
-                          <Top>0.76687in</Top>
+                          <Top>0.6627in</Top>
                           <Left>0.10938in</Left>
                           <Height>0.75in</Height>
-                          <Width>7.53865in</Width>
+                          <Width>7.46574in</Width>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -819,7 +709,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Title</rd:DefaultName>
                           <Height>0.36458in</Height>
-                          <Width>7.64803in</Width>
+                          <Width>7.57514in</Width>
                           <ZIndex>1</ZIndex>
                           <Style>
                             <Border>
@@ -872,6 +762,7 @@
                         <Border>
                           <Style>None</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                       </Style>
                     </Rectangle>
                   </CellContents>
@@ -898,8 +789,8 @@
         </TablixRowHierarchy>
         <DataSetName>AdvanceDetection</DataSetName>
         <Top>0.12772in</Top>
-        <Height>1.51687in</Height>
-        <Width>7.64806in</Width>
+        <Height>1.4127in</Height>
+        <Width>7.57514in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -928,9 +819,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
         <Top>1.84299in</Top>
-        <Left>3.87696in</Left>
+        <Left>3.90713in</Left>
         <Height>0.25in</Height>
-        <Width>1.82292in</Width>
+        <Width>1.77083in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -963,9 +854,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
         <Top>1.84299in</Top>
-        <Left>1.99132in</Left>
+        <Left>2.02865in</Left>
         <Height>0.25in</Height>
-        <Width>1.8197in</Width>
+        <Width>1.82292in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -1138,7 +1029,7 @@
         <rd:DefaultName>PayrollUnit</rd:DefaultName>
         <Top>2.16244in</Top>
         <Left>5.75222in</Left>
-        <Height>0.23959in</Height>
+        <Height>0.30209in</Height>
         <Width>1.82292in</Width>
         <ZIndex>8</ZIndex>
         <Style>
@@ -1171,8 +1062,8 @@
         </Paragraphs>
         <rd:DefaultName>References</rd:DefaultName>
         <Top>2.16244in</Top>
-        <Left>1.9881in</Left>
-        <Height>0.23959in</Height>
+        <Left>2.02865in</Left>
+        <Height>0.30209in</Height>
         <Width>1.82292in</Width>
         <ZIndex>9</ZIndex>
         <Style>
@@ -1203,8 +1094,8 @@
         </Paragraphs>
         <rd:DefaultName>FinancialAuditor</rd:DefaultName>
         <Top>2.16244in</Top>
-        <Left>0.10568in</Left>
-        <Height>0.23959in</Height>
+        <Left>0.14623in</Left>
+        <Height>0.30209in</Height>
         <Width>1.82292in</Width>
         <ZIndex>10</ZIndex>
         <Style>
@@ -1237,9 +1128,9 @@
         </Paragraphs>
         <rd:DefaultName>FinancialAffairs</rd:DefaultName>
         <Top>2.16244in</Top>
-        <Left>3.87696in</Left>
-        <Height>0.23959in</Height>
-        <Width>1.82292in</Width>
+        <Left>3.90713in</Left>
+        <Height>0.30209in</Height>
+        <Width>1.77083in</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border>
@@ -1455,7 +1346,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>إدن صرف</Value>
+                  <Value>إذن صرف</Value>
                   <Style>
                     <FontSize>16pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -1470,7 +1361,7 @@
           <rd:DefaultName>Textbox14</rd:DefaultName>
           <Top>0.44619in</Top>
           <Left>0.44043in</Left>
-          <Height>0.25in</Height>
+          <Height>0.28125in</Height>
           <Width>1.49187in</Width>
           <ZIndex>3</ZIndex>
           <Style>
@@ -1610,7 +1501,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>0.625in</Height>
+      <Height>0.39932in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -1623,7 +1514,8 @@
                 <TextRun>
                   <Value>=Globals!PageNumber</Value>
                   <Style>
-                    <FontSize>12pt</FontSize>
+                    <FontSize>11pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -1633,8 +1525,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.26042in</Top>
-          <Height>0.25in</Height>
+          <Top>0.06944in</Top>
+          <Height>0.19792in</Height>
           <Width>7.75222in</Width>
           <Style>
             <Border>
