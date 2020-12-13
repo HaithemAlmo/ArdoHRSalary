@@ -699,7 +699,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 //هيئة قضائية
                                 //Clamp = salary?.Employee.(Settings) ?? 0,
                                 //قيمة الغياب
-                                Absence = salary?.IsSubsendedSalary == false ? salary?.Absence() + SumAbsence ?? 0 : SumAbsence,
+                                Absence = salary?.Absence()??0,
                                 //حصة الشركة من الضمان
                                 CompanyShare = salary?.CompanyShare(Settings) ?? 0,
                                 //حصة الخزانة
@@ -726,7 +726,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 AllBouns = (salary?.AllBouns(Settings) ?? 0),
                                 //PrepaidSalaryAndAdvancePremium = row.PrepaidSalaryAndAdvancePremium,
                                 //الاجزاءت
-                                Sanction = salary?.SanctionDiscount() ?? 0,
+                                Sanction = salary?.Sanction1() ?? 0,
                                 //ضريبة اجازة مرضية
                                 SickVacation = salary?.SickVacation(Settings) ?? 0,
                                 //ضريبة الدمغة
@@ -856,7 +856,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 PremiumListReport = PremiumCheckListReport,
                                 financialnumberMinistry =employee ?.SalaryInfo?.FinancialNumber,
                                 FinancialNumber =employee ?.SalaryInfo ?.FinancialNumber.ToString(),
-                                ExtraGeneralValue= salary.ExtraGeneralValue + salary.ExtraValue,
+                                ExtraGeneralValue= salary.ExtraGeneralValue,
                                 RewardValue= salary?.RewardValue()??0,
                                  PremiumActive = salary?.PremiumActive ?? 0
                             });

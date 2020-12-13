@@ -903,7 +903,7 @@ namespace Almotkaml.HR.Mvc.Controllers
                 JihadTax = model2.Grid.Select(s => s.JihadTax).Sum(),
                 IncomeTax = model2.Grid.Select(s => s.IncomeTax).Sum(),
                 AdvancePayment = model2.AdvancePaymentList.Where(e => e.PremiumId == 2 || e.PremiumId == 5).Select(e => e.Value).Sum(),//سلف المودة1+المودة2// AdvancePaymentInside + AdvancePaymentOutside,
-                GroupLife = model2.Grid.Select(s => s.GroupLife).Sum(),
+                GroupLife = model2.EmployeePremiumList.Where(e => e.PremiumId == 1).Select(e => e.Value).Sum(),
                 SalariesNet = model2.Grid.Select(s => s.FinalySalary).Sum(),
                 SalariesNumber = model2.Grid.Select(s => s.EmployeeID).Count(),
                 SolidarityFund = model2.Grid.Select(s => s.SolidarityFund).Sum(),
@@ -919,6 +919,7 @@ namespace Almotkaml.HR.Mvc.Controllers
                 ExtraWork =model2.Grid.Select(s => s.ExtraWork).Sum(),
                 ExtraGeneralValue = model2.Grid.Select(s => s.ExtraGeneralValue).Sum(),
                 RewardValue = model2.Grid.Select(s => s.RewardValue).Sum(),
+                PremiumActive= model2.Grid.Select(s => s.PremiumActive).Sum(),
             });
             //}
             //add by ali alherbade 26-05-2019
@@ -1156,24 +1157,24 @@ namespace Almotkaml.HR.Mvc.Controllers
                         GroupLife = row.GroupLife,
                         AllBouns = row.AllBouns,
                         Discound = row.Discound,
-                        PremiumCheckListItemReport = row.PremiumListReport.ToList(),
+                      //  PremiumCheckListItemReport = row.PremiumListReport.ToList(),
                     });
                 }
                 //********************************************************************
 
-                foreach (var premiumList in model2.PremiumCheckListItem.Where(e => e.EmployeeID.ToString() == row.EmployeeID))
-                {
-                    PremiumCheckListValues.Add(new string[]
-                     {
-                            premiumList.PremiumId.ToString() ,
-                            premiumList.Name,
-                            premiumList.EmployeeID.ToString(),
-                     });
+                //foreach (var premiumList in model2.PremiumCheckListItem.Where(e => e.EmployeeID.ToString() == row.EmployeeID))
+                //{
+                //    PremiumCheckListValues.Add(new string[]
+                //     {
+                //            premiumList.PremiumId.ToString() ,
+                //            premiumList.Name,
+                //            premiumList.EmployeeID.ToString(),
+                //     });
 
 
 
 
-                }
+                //}
                 //*********************************************************************
 
             }
@@ -1190,29 +1191,29 @@ namespace Almotkaml.HR.Mvc.Controllers
             reportParameters.Add(new ReportParameter("Date", model.Year + " - " + model.Month));
             reportParameters.Add(new ReportParameter("Department", Department));
             //*********************************************************************
-            if(model2.PremiumListReport.Count < 0)
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            PremiumCheckListHeader.Add(new string[]
-             {
-                            model2.PremiumListReport.FirstOrDefault().Name,
-             });
-            string[] premiums = (PremiumCheckListHeader.ToList().FirstOrDefault()[0]).Split(',');
-            reportParameters.Add(new ReportParameter("PremiumName1", premiums[0]));
-            reportParameters.Add(new ReportParameter("PremiumName2", premiums[1]));
-            reportParameters.Add(new ReportParameter("PremiumName3", premiums[2]));
-            reportParameters.Add(new ReportParameter("PremiumName4", premiums[3]));
-            reportParameters.Add(new ReportParameter("PremiumName5", premiums[4]));
-            reportParameters.Add(new ReportParameter("PremiumName6", premiums[5]));
-            reportParameters.Add(new ReportParameter("PremiumName7", premiums[6]));
-            reportParameters.Add(new ReportParameter("PremiumName8", premiums[7]));
-            reportParameters.Add(new ReportParameter("PremiumName9", premiums[8]));
-            //********************************
-            reportParameters.Add(new ReportParameter("HiddenCol1", Boolean.FalseString, false));
-            reportParameters.Add(new ReportParameter("HiddenCol2", Boolean.FalseString, false));
-            reportParameters.Add(new ReportParameter("HiddenCol3", Boolean.FalseString, false));
-            reportParameters.Add(new ReportParameter("HiddenColsPremium", Boolean.FalseString, false));
+            //if(model2.PremiumListReport.Count < 0)
+            //{
+            //    return RedirectToAction(nameof(Index));
+            //}
+            //PremiumCheckListHeader.Add(new string[]
+            // {
+            //                model2.PremiumListReport.FirstOrDefault().Name,
+            // });
+            //string[] premiums = (PremiumCheckListHeader.ToList().FirstOrDefault()[0]).Split(',');
+            //reportParameters.Add(new ReportParameter("PremiumName1", premiums[0]));
+            //reportParameters.Add(new ReportParameter("PremiumName2", premiums[1]));
+            //reportParameters.Add(new ReportParameter("PremiumName3", premiums[2]));
+            //reportParameters.Add(new ReportParameter("PremiumName4", premiums[3]));
+            //reportParameters.Add(new ReportParameter("PremiumName5", premiums[4]));
+            //reportParameters.Add(new ReportParameter("PremiumName6", premiums[5]));
+            //reportParameters.Add(new ReportParameter("PremiumName7", premiums[6]));
+            //reportParameters.Add(new ReportParameter("PremiumName8", premiums[7]));
+            //reportParameters.Add(new ReportParameter("PremiumName9", premiums[8]));
+            ////********************************
+            //reportParameters.Add(new ReportParameter("HiddenCol1", Boolean.FalseString, false));
+            //reportParameters.Add(new ReportParameter("HiddenCol2", Boolean.FalseString, false));
+            //reportParameters.Add(new ReportParameter("HiddenCol3", Boolean.FalseString, false));
+            //reportParameters.Add(new ReportParameter("HiddenColsPremium", Boolean.FalseString, false));
             //*********************************************************************
             lr.SetParameters(reportParameters);
             lr.DataSources.Add(rdc);

@@ -21,8 +21,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>6.36291in</Top>
-            <Left>0.30734in</Left>
+            <Top>7.86979in</Top>
+            <Left>0.26811in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <Style>
@@ -55,8 +55,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.35243in</Top>
-            <Left>0.30734in</Left>
+            <Top>6.85931in</Top>
+            <Left>0.26811in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>1</ZIndex>
@@ -87,8 +87,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.65799in</Top>
-            <Left>0.29723in</Left>
+            <Top>7.16487in</Top>
+            <Left>0.258in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>2</ZIndex>
@@ -119,8 +119,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.99832in</Top>
-            <Left>0.29723in</Left>
+            <Top>7.5052in</Top>
+            <Left>0.258in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>3</ZIndex>
@@ -151,8 +151,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.99832in</Top>
-            <Left>1.90724in</Left>
+            <Top>7.5052in</Top>
+            <Left>1.86801in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>4</ZIndex>
@@ -183,8 +183,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>FinancialAuditor</rd:DefaultName>
-            <Top>5.67888in</Top>
-            <Left>1.90724in</Left>
+            <Top>7.18576in</Top>
+            <Left>1.86801in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>5</ZIndex>
@@ -218,8 +218,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.33854in</Top>
-            <Left>1.90724in</Left>
+            <Top>6.84542in</Top>
+            <Left>1.86801in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>6</ZIndex>
@@ -250,8 +250,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>6.36291in</Top>
-            <Left>1.90724in</Left>
+            <Top>7.86979in</Top>
+            <Left>1.86801in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>7</ZIndex>
@@ -282,8 +282,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>6.36291in</Top>
-            <Left>3.80072in</Left>
+            <Top>7.86979in</Top>
+            <Left>3.76149in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>8</ZIndex>
@@ -314,8 +314,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.99832in</Top>
-            <Left>3.80072in</Left>
+            <Top>7.5052in</Top>
+            <Left>3.76149in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>9</ZIndex>
@@ -346,8 +346,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>References</rd:DefaultName>
-            <Top>5.65799in</Top>
-            <Left>3.77436in</Left>
+            <Top>7.16487in</Top>
+            <Left>3.73513in</Left>
             <Height>0.25in</Height>
             <Width>1.29719in</Width>
             <ZIndex>10</ZIndex>
@@ -381,8 +381,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.33854in</Top>
-            <Left>3.80072in</Left>
+            <Top>6.84542in</Top>
+            <Left>3.76149in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>11</ZIndex>
@@ -416,8 +416,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.33854in</Top>
-            <Left>5.74568in</Left>
+            <Top>6.84542in</Top>
+            <Left>5.70645in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>12</ZIndex>
@@ -448,8 +448,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>FinancialAffairs</rd:DefaultName>
-            <Top>5.65799in</Top>
-            <Left>5.74568in</Left>
+            <Top>7.16487in</Top>
+            <Left>5.70645in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>13</ZIndex>
@@ -480,8 +480,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.99832in</Top>
-            <Left>5.74568in</Left>
+            <Top>7.5052in</Top>
+            <Left>5.70645in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>14</ZIndex>
@@ -512,8 +512,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>6.36291in</Top>
-            <Left>5.74568in</Left>
+            <Top>7.86979in</Top>
+            <Left>5.70645in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>15</ZIndex>
@@ -544,7 +544,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.13543in</Top>
+            <Top>0.98606in</Top>
             <Left>5.88496in</Left>
             <Height>0.25in</Height>
             <Width>1.3472in</Width>
@@ -561,6 +561,16 @@
           </Textbox>
           <Rectangle Name="Rectangle2">
             <ReportItems>
+              <Line Name="Line2">
+                <Top>5.73082in</Top>
+                <Height>0in</Height>
+                <Width>7.43382in</Width>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                </Style>
+              </Line>
               <Tablix Name="Tablix1">
                 <TablixBody>
                   <TablixColumns>
@@ -663,8 +673,10 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
+                <Top>1.46343in</Top>
                 <Height>0.25in</Height>
                 <Width>7.37588in</Width>
+                <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
                     <Color>Gray</Color>
@@ -689,11 +701,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>0.40625in</Top>
+                <Top>1.86968in</Top>
                 <Left>5.83633in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
-                <ZIndex>1</ZIndex>
+                <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -721,11 +733,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>4.09721in</Top>
+                <Top>5.83151in</Top>
                 <Left>2.24264in</Left>
-                <Height>0.25in</Height>
+                <Height>0.34203in</Height>
                 <Width>1.14583in</Width>
-                <ZIndex>2</ZIndex>
+                <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -753,11 +765,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>4.3854in</Top>
+                <Top>6.1197in</Top>
                 <Left>5.82758in</Left>
-                <Height>0.25in</Height>
-                <Width>1.27083in</Width>
-                <ZIndex>3</ZIndex>
+                <Height>0.34203in</Height>
+                <Width>1.27084in</Width>
+                <ZIndex>4</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -785,11 +797,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>4.06596in</Top>
+                <Top>5.80026in</Top>
                 <Left>5.82759in</Left>
-                <Height>0.25in</Height>
+                <Height>0.34203in</Height>
                 <Width>1.27083in</Width>
-                <ZIndex>4</ZIndex>
+                <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -817,11 +829,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>0.75174in</Top>
-                <Left>5.83633in</Left>
+                <Top>4.47557in</Top>
+                <Left>5.85537in</Left>
                 <Height>0.25in</Height>
-                <Width>1.27083in</Width>
-                <ZIndex>5</ZIndex>
+                <Width>1.29473in</Width>
+                <ZIndex>6</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -894,11 +906,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>0.40625in</Top>
+                <Top>1.86968in</Top>
                 <Left>3.98513in</Left>
                 <Height>0.25in</Height>
                 <Width>1.70048in</Width>
-                <ZIndex>6</ZIndex>
+                <ZIndex>7</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -967,11 +979,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>0.7639in</Top>
-                <Left>3.99555in</Left>
+                <Top>4.48773in</Top>
+                <Left>4.00417in</Left>
                 <Height>0.25in</Height>
                 <Width>1.70048in</Width>
-                <ZIndex>7</ZIndex>
+                <ZIndex>8</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -987,7 +999,7 @@
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.34203in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -998,7 +1010,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!SalariesNet.Value</Value>
+                                      <Value>=Sum(Fields!SalariesNet.Value, "SalariesTotal")+Sum(Fields!Absence.Value, "SalariesTotal")+Sum(Fields!Absence.Value, "SalariesTotal")-Sum(Fields!RewardValue.Value, "SalariesTotal")</Value>
                                       <Style>
                                         <Format>#,0.000;(#,0.000)</Format>
                                       </Style>
@@ -1040,11 +1052,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>4.3854in</Top>
+                <Top>6.12841in</Top>
                 <Left>3.9868in</Left>
-                <Height>0.25in</Height>
+                <Height>0.34203in</Height>
                 <Width>1.77134in</Width>
-                <ZIndex>8</ZIndex>
+                <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1060,7 +1072,7 @@
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.30036in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -1071,7 +1083,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!SalariesTotal.Value</Value>
+                                      <Value>=Sum(Fields!BasicSalaries.Value, "SalariesTotal")+Sum(Fields!ExtraGeneralValue.Value, "SalariesTotal")+Sum(Fields!ExtraValue.Value, "SalariesTotal")+Sum(Fields!Clamp.Value, "SalariesTotal")+Sum(Fields!ExtraWork.Value, "SalariesTotal")+Sum(Fields!RewardValue.Value, "SalariesTotal")+Sum(Fields!ContributionInSecurity.Value, "SalariesTotal")</Value>
                                       <Style>
                                         <Format>#,0.000;(#,0.000)</Format>
                                       </Style>
@@ -1113,11 +1125,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>4.06596in</Top>
+                <Top>5.80026in</Top>
                 <Left>3.9868in</Left>
-                <Height>0.25in</Height>
+                <Height>0.30036in</Height>
                 <Width>1.77134in</Width>
-                <ZIndex>9</ZIndex>
+                <ZIndex>10</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1125,11 +1137,11 @@
                 </Style>
               </Tablix>
               <Line Name="Line3">
-                <Top>0.06616cm</Top>
+                <Top>0.2777cm</Top>
                 <Left>3.73513in</Left>
-                <Height>4.70138in</Height>
+                <Height>5.62149in</Height>
                 <Width>0in</Width>
-                <ZIndex>10</ZIndex>
+                <ZIndex>11</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -1153,11 +1165,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>0.40625in</Top>
+                <Top>1.86968in</Top>
                 <Left>2.24264in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
-                <ZIndex>11</ZIndex>
+                <ZIndex>12</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1185,11 +1197,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>0.73785in</Top>
+                <Top>2.20128in</Top>
                 <Left>2.24264in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
-                <ZIndex>12</ZIndex>
+                <ZIndex>13</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1217,11 +1229,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>1.37674in</Top>
+                <Top>2.84017in</Top>
                 <Left>2.24264in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
-                <ZIndex>13</ZIndex>
+                <ZIndex>14</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1249,11 +1261,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>1.69618in</Top>
+                <Top>3.15961in</Top>
                 <Left>2.24264in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
-                <ZIndex>14</ZIndex>
+                <ZIndex>15</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1281,11 +1293,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>2.01562in</Top>
+                <Top>3.47905in</Top>
                 <Left>2.24264in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
-                <ZIndex>15</ZIndex>
+                <ZIndex>16</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1313,11 +1325,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>2.68055in</Top>
+                <Top>4.14398in</Top>
                 <Left>2.24264in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
-                <ZIndex>16</ZIndex>
+                <ZIndex>17</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1345,11 +1357,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>3.50346in</Top>
-                <Left>2.24264in</Left>
+                <Top>4.92001in</Top>
+                <Left>2.25275in</Left>
                 <Height>0.40625in</Height>
                 <Width>1.27083in</Width>
-                <ZIndex>17</ZIndex>
+                <ZIndex>18</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1422,11 +1434,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>0.40625in</Top>
+                <Top>1.86968in</Top>
                 <Left>0.258in</Left>
                 <Height>0.25in</Height>
                 <Width>1.86758in</Width>
-                <ZIndex>18</ZIndex>
+                <ZIndex>19</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1495,11 +1507,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>0.73785in</Top>
+                <Top>2.20128in</Top>
                 <Left>0.258in</Left>
                 <Height>0.25in</Height>
                 <Width>1.86758in</Width>
-                <ZIndex>19</ZIndex>
+                <ZIndex>20</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1568,11 +1580,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>1.37674in</Top>
+                <Top>2.84017in</Top>
                 <Left>0.258in</Left>
                 <Height>0.25in</Height>
                 <Width>1.86758in</Width>
-                <ZIndex>20</ZIndex>
+                <ZIndex>21</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1641,11 +1653,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>1.69618in</Top>
+                <Top>3.15961in</Top>
                 <Left>0.258in</Left>
                 <Height>0.25in</Height>
                 <Width>1.86758in</Width>
-                <ZIndex>21</ZIndex>
+                <ZIndex>22</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1714,11 +1726,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>2.01562in</Top>
+                <Top>3.47905in</Top>
                 <Left>0.258in</Left>
                 <Height>0.25in</Height>
                 <Width>1.86758in</Width>
-                <ZIndex>22</ZIndex>
+                <ZIndex>23</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1787,11 +1799,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>2.68055in</Top>
+                <Top>4.14398in</Top>
                 <Left>0.258in</Left>
                 <Height>0.25in</Height>
                 <Width>1.86758in</Width>
-                <ZIndex>23</ZIndex>
+                <ZIndex>24</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1860,11 +1872,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>3.50346in</Top>
-                <Left>0.258in</Left>
+                <Top>4.92001in</Top>
+                <Left>0.26811in</Left>
                 <Height>0.40625in</Height>
                 <Width>1.86758in</Width>
-                <ZIndex>24</ZIndex>
+                <ZIndex>25</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1880,7 +1892,7 @@
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>0.25in</Height>
+                      <Height>0.34203in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -1891,9 +1903,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!Absence.Value + Fields!CompanyShare.Value + Fields!JihadTax.Value
- + Fields!Mwada.Value + Fields!OtherDiscount.Value + Fields!SafeShare.Value
-  + Fields!Sanction.Value + Fields!EmployeeShare.Value + Fields!SolidarityFund.Value</Value>
+                                      <Value>=Fields!DeducationTotal.Value+Sum(Fields!CompanyShare.Value, "SalariesTotal")+Sum(Fields!SafeShare.Value, "SalariesTotal")</Value>
                                       <Style>
                                         <Format>#,0.000;(#,0.000)</Format>
                                       </Style>
@@ -1935,57 +1945,22 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>4.09721in</Top>
+                <Top>5.83151in</Top>
                 <Left>0.258in</Left>
-                <Height>0.25in</Height>
+                <Height>0.34203in</Height>
                 <Width>1.86758in</Width>
-                <ZIndex>25</ZIndex>
+                <ZIndex>26</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
                 </Style>
               </Tablix>
-              <Textbox Name="Textbox58">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>الدمغة</Value>
-                        <Style />
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Right</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>2.95137in</Top>
-                <Left>5.90886in</Left>
-                <Height>0.25in</Height>
-                <Width>1.27083in</Width>
-                <ZIndex>26</ZIndex>
-                <Visibility>
-                  <Hidden>true</Hidden>
-                </Visibility>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
               <Tablix Name="Tablix22">
                 <TablixBody>
                   <TablixColumns>
                     <TablixColumn>
-                      <Width>1.70048in</Width>
+                      <Width>1.85747in</Width>
                     </TablixColumn>
                   </TablixColumns>
                   <TablixRows>
@@ -2001,14 +1976,14 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!StampTax.Value</Value>
+                                      <Value>=Fields!PremiumActive.Value</Value>
                                       <Style>
                                         <Format>#,0.000;(#,0.000)</Format>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
-                                    <TextAlign>Right</TextAlign>
+                                    <TextAlign>Center</TextAlign>
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
@@ -2046,10 +2021,10 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>2.95137in</Top>
-                <Left>4.05766in</Left>
+                <Top>5.39571in</Top>
+                <Left>0.27822in</Left>
                 <Height>0.25in</Height>
-                <Width>1.70048in</Width>
+                <Width>1.85747in</Width>
                 <ZIndex>27</ZIndex>
                 <Style>
                   <Border>
@@ -2057,6 +2032,41 @@
                   </Border>
                 </Style>
               </Tablix>
+              <Textbox Name="Textbox58">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>قيمة إيقاف العلاوة</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Right</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>5.39571in</Top>
+                <Left>2.25275in</Left>
+                <Height>0.25in</Height>
+                <Width>1.27083in</Width>
+                <ZIndex>28</ZIndex>
+                <Visibility>
+                  <Hidden>true</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
               <Textbox Name="Textbox32">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
@@ -2074,11 +2084,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>1.04341in</Top>
+                <Top>2.50684in</Top>
                 <Left>2.24264in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
-                <ZIndex>28</ZIndex>
+                <ZIndex>29</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2151,11 +2161,11 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>1.02953in</Top>
+                <Top>2.49296in</Top>
                 <Left>0.258in</Left>
                 <Height>0.25in</Height>
                 <Width>1.86758in</Width>
-                <ZIndex>29</ZIndex>
+                <ZIndex>30</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2179,11 +2189,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>2.31945in</Top>
+                <Top>3.78288in</Top>
                 <Left>2.24264in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
-                <ZIndex>30</ZIndex>
+                <ZIndex>31</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2256,28 +2266,17 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>2.31945in</Top>
+                <Top>3.78288in</Top>
                 <Left>0.258in</Left>
                 <Height>0.25in</Height>
                 <Width>1.83392in</Width>
-                <ZIndex>31</ZIndex>
+                <ZIndex>32</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
                 </Style>
               </Tablix>
-              <Line Name="Line2">
-                <Top>4.02777in</Top>
-                <Height>0in</Height>
-                <Width>7.43382in</Width>
-                <ZIndex>32</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
               <Textbox Name="Textbox35">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
@@ -2295,8 +2294,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>3.05902in</Top>
-                <Left>2.24264in</Left>
+                <Top>4.47557in</Top>
+                <Left>2.25275in</Left>
                 <Height>0.375in</Height>
                 <Width>1.27083in</Width>
                 <ZIndex>33</ZIndex>
@@ -2372,8 +2371,8 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>3.05902in</Top>
-                <Left>0.258in</Left>
+                <Top>4.47557in</Top>
+                <Left>0.26811in</Left>
                 <Height>0.375in</Height>
                 <Width>1.86758in</Width>
                 <ZIndex>34</ZIndex>
@@ -2400,8 +2399,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>2.54859in</Top>
-                <Left>5.86191in</Left>
+                <Top>3.47905in</Top>
+                <Left>5.84675in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <ZIndex>35</ZIndex>
@@ -2477,8 +2476,8 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>2.54859in</Top>
-                <Left>4.00209in</Left>
+                <Top>3.47905in</Top>
+                <Left>3.98693in</Left>
                 <Height>0.25in</Height>
                 <Width>1.70048in</Width>
                 <ZIndex>36</ZIndex>
@@ -2505,8 +2504,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>1.93747in</Top>
-                <Left>5.86191in</Left>
+                <Top>3.15961in</Top>
+                <Left>5.84675in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <ZIndex>37</ZIndex>
@@ -2540,7 +2539,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value />
+                                      <Value>0</Value>
                                       <Style>
                                         <Format>#,0.000;(#,0.000)</Format>
                                       </Style>
@@ -2582,8 +2581,8 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>1.93747in</Top>
-                <Left>4.00209in</Left>
+                <Top>3.15961in</Top>
+                <Left>3.98693in</Left>
                 <Height>0.25in</Height>
                 <Width>1.70048in</Width>
                 <ZIndex>38</ZIndex>
@@ -2610,8 +2609,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>2.24303in</Top>
-                <Left>5.86191in</Left>
+                <Top>3.7985in</Top>
+                <Left>5.85537in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <ZIndex>39</ZIndex>
@@ -2687,8 +2686,8 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>2.24303in</Top>
-                <Left>4.00209in</Left>
+                <Top>3.7985in</Top>
+                <Left>3.99555in</Left>
                 <Height>0.25in</Height>
                 <Width>1.70048in</Width>
                 <ZIndex>40</ZIndex>
@@ -2715,8 +2714,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>1.08334in</Top>
-                <Left>5.85537in</Left>
+                <Top>2.20128in</Top>
+                <Left>5.84021in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <ZIndex>41</ZIndex>
@@ -2792,8 +2791,8 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>1.08334in</Top>
-                <Left>3.99555in</Left>
+                <Top>2.20128in</Top>
+                <Left>3.98039in</Left>
                 <Height>0.25in</Height>
                 <Width>1.70048in</Width>
                 <ZIndex>42</ZIndex>
@@ -2820,8 +2819,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>1.37674in</Top>
-                <Left>5.85537in</Left>
+                <Top>2.84017in</Top>
+                <Left>5.84021in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <ZIndex>43</ZIndex>
@@ -2897,8 +2896,8 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>1.37674in</Top>
-                <Left>3.99555in</Left>
+                <Top>2.84017in</Top>
+                <Left>3.98039in</Left>
                 <Height>0.25in</Height>
                 <Width>1.70048in</Width>
                 <ZIndex>44</ZIndex>
@@ -2925,8 +2924,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>1.65452in</Top>
-                <Left>5.86191in</Left>
+                <Top>2.50684in</Top>
+                <Left>5.84675in</Left>
                 <Height>0.25in</Height>
                 <Width>1.27083in</Width>
                 <ZIndex>45</ZIndex>
@@ -3002,8 +3001,8 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>SalariesTotal</DataSetName>
-                <Top>1.65452in</Top>
-                <Left>4.00209in</Left>
+                <Top>2.50684in</Top>
+                <Left>3.98693in</Left>
                 <Height>0.25in</Height>
                 <Width>1.70048in</Width>
                 <ZIndex>46</ZIndex>
@@ -3013,10 +3012,114 @@
                   </Border>
                 </Style>
               </Tablix>
+              <Textbox Name="Textbox77">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>الاعاشة لافراد الامن الصناعي</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Right</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>4.10405in</Top>
+                <Left>5.87927in</Left>
+                <Height>0.25in</Height>
+                <Width>1.27083in</Width>
+                <ZIndex>47</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Tablix Name="Tablix31">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>1.70048in</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.25in</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox78">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>0</Value>
+                                      <Style>
+                                        <Format>#,0.000;(#,0.000)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox23</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details29" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>SalariesTotal</DataSetName>
+                <Top>4.10405in</Top>
+                <Left>4.01945in</Left>
+                <Height>0.25in</Height>
+                <Width>1.70048in</Width>
+                <ZIndex>48</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>0.50347in</Top>
-            <Height>4.72743in</Height>
+            <Height>6.56592in</Height>
             <Width>7.43382in</Width>
             <ZIndex>17</ZIndex>
             <Style>
@@ -3085,7 +3188,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalariesTotal</DataSetName>
-            <Top>0.13543in</Top>
+            <Top>0.98606in</Top>
             <Left>4.63296in</Left>
             <Height>0.25in</Height>
             <Width>1.18255in</Width>
@@ -3099,7 +3202,7 @@
         </ReportItems>
         <KeepTogether>true</KeepTogether>
         <Left>0.12189in</Left>
-        <Height>6.90814in</Height>
+        <Height>8.18585in</Height>
         <Width>7.43382in</Width>
         <Style>
           <Border>
@@ -3108,7 +3211,7 @@
         </Style>
       </Rectangle>
     </ReportItems>
-    <Height>6.98105in</Height>
+    <Height>8.51918in</Height>
     <Style>
       <Border>
         <Color>DimGray</Color>
@@ -3320,7 +3423,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>0.45834in</Height>
+      <Height>1.01042in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -3341,8 +3444,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.125in</Top>
-          <Left>1.79785in</Left>
+          <Top>0.61458in</Top>
+          <Left>2.71452in</Left>
           <Height>0.25in</Height>
           <Width>1.625in</Width>
           <Style>
@@ -3372,8 +3475,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.125in</Top>
-          <Left>0.06219in</Left>
+          <Top>0.61458in</Top>
+          <Left>0.97886in</Left>
           <Height>0.25in</Height>
           <Width>1.625in</Width>
           <ZIndex>1</ZIndex>
@@ -3404,8 +3507,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ExecutionTime</rd:DefaultName>
-          <Top>0.125in</Top>
-          <Left>3.53011in</Left>
+          <Top>0.61458in</Top>
+          <Left>4.44678in</Left>
           <Height>0.25in</Height>
           <Width>1.875in</Width>
           <ZIndex>2</ZIndex>
@@ -3416,56 +3519,6 @@
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Image Name="Image2">
-          <Source>Embedded</Source>
-          <Value>Almotkaml</Value>
-          <Sizing>Fit</Sizing>
-          <Top>0.05555in</Top>
-          <Left>6.97906in</Left>
-          <Height>0.29514in</Height>
-          <Width>0.46386in</Width>
-          <ZIndex>3</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
-        <Textbox Name="TotalPages3">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>المتكامل لتقنية المعلومات</Value>
-                  <Style>
-                    <FontStyle>Italic</FontStyle>
-                    <Color>Brown</Color>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.125in</Top>
-          <Left>5.56792in</Left>
-          <Height>0.23958in</Height>
-          <Width>1.41114in</Width>
-          <ZIndex>4</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>4pt</PaddingTop>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
@@ -3608,6 +3661,10 @@
         </Field>
         <Field Name="Premium">
           <DataField>Premium</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="PremiumActive">
+          <DataField>PremiumActive</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="RewardValue">

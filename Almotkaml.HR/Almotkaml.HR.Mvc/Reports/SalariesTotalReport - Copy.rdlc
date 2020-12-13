@@ -177,10 +177,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.09817in</Top>
-            <Left>2.34098in</Left>
-            <Height>0.25in</Height>
-            <Width>1.20591in</Width>
+            <Top>5.02178in</Top>
+            <Left>2.40106in</Left>
+            <Height>0.34203in</Height>
+            <Width>1.14583in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -209,10 +209,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.41761in</Top>
-            <Left>5.98601in</Left>
-            <Height>0.23786in</Height>
-            <Width>1.27083in</Width>
+            <Top>5.34122in</Top>
+            <Left>5.986in</Left>
+            <Height>0.34203in</Height>
+            <Width>1.27084in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -241,9 +241,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.09817in</Top>
+            <Top>5.02178in</Top>
             <Left>5.98601in</Left>
-            <Height>0.25in</Height>
+            <Height>0.34203in</Height>
             <Width>1.27083in</Width>
             <ZIndex>5</ZIndex>
             <Style>
@@ -443,7 +443,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.23786in</Height>
+                  <Height>0.34203in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -454,7 +454,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!SalariesNet.Value, "SalariesTotal")+Sum(Fields!Absence.Value, "SalariesTotal")+100</Value>
+                                  <Value>=Fields!SalariesNet.Value</Value>
                                   <Style>
                                     <Format>#,0.000;(#,0.000)</Format>
                                   </Style>
@@ -496,9 +496,9 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalariesTotal</DataSetName>
-            <Top>5.41761in</Top>
+            <Top>5.34122in</Top>
             <Left>4.14522in</Left>
-            <Height>0.23786in</Height>
+            <Height>0.34203in</Height>
             <Width>1.77134in</Width>
             <ZIndex>9</ZIndex>
             <Style>
@@ -516,7 +516,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.34203in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -527,7 +527,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!BasicSalaries.Value, "SalariesTotal")+Sum(Fields!ExtraGeneralValue.Value, "SalariesTotal")+Sum(Fields!ExtraValue.Value, "SalariesTotal")+Sum(Fields!Clamp.Value, "SalariesTotal")+Sum(Fields!ExtraWork.Value, "SalariesTotal")+Sum(Fields!RewardValue.Value, "SalariesTotal")+Sum(Fields!ContributionInSecurity.Value, "SalariesTotal")</Value>
+                                  <Value>=Fields!SalariesTotal.Value+Sum(Fields!CompanyShare.Value, "SalariesTotal")+Sum(Fields!SafeShare.Value, "SalariesTotal")</Value>
                                   <Style>
                                     <Format>#,0.000;(#,0.000)</Format>
                                   </Style>
@@ -569,9 +569,9 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalariesTotal</DataSetName>
-            <Top>5.09817in</Top>
+            <Top>5.02178in</Top>
             <Left>4.14522in</Left>
-            <Height>0.25in</Height>
+            <Height>0.34203in</Height>
             <Width>1.77134in</Width>
             <ZIndex>10</ZIndex>
             <Style>
@@ -1331,12 +1331,12 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.83028in</Width>
+                  <Width>1.86758in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.34203in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1347,7 +1347,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!DeducationTotal.Value, "SalariesTotal")+Sum(Fields!ContributionInSecurity.Value, "SalariesTotal")</Value>
+                                  <Value>=Sum(Fields!DeducationTotal.Value, "SalariesTotal")+Sum(Fields!CompanyShare.Value, "SalariesTotal")+Sum(Fields!SafeShare.Value, "SalariesTotal")</Value>
                                   <Style>
                                     <Format>#,0.000;(#,0.000)</Format>
                                   </Style>
@@ -1389,10 +1389,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SalariesTotal</DataSetName>
-            <Top>5.09817in</Top>
-            <Left>0.45372in</Left>
-            <Height>0.25in</Height>
-            <Width>1.83028in</Width>
+            <Top>5.02178in</Top>
+            <Left>0.41642in</Left>
+            <Height>0.34203in</Height>
+            <Width>1.86758in</Width>
             <ZIndex>26</ZIndex>
             <Style>
               <Border>
@@ -3213,7 +3213,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!GroupLife.Value</Value>
+                                  <Value>0.00</Value>
                                   <Style>
                                     <Format>#,0.000;(#,0.000)</Format>
                                   </Style>
