@@ -1829,7 +1829,7 @@
                   </Style>
                 </TextRun>
                 <TextRun>
-                  <Value>لشهر</Value>
+                  <Value>عن شهر</Value>
                   <Style>
                     <FontSize>14pt</FontSize>
                   </Style>
@@ -1844,7 +1844,7 @@
           <Top>0.65055in</Top>
           <Left>1.39172in</Left>
           <Height>0.37153in</Height>
-          <Width>0.68401in</Width>
+          <Width>0.84149in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -2149,7 +2149,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>0.30903in</Height>
+      <Height>0.3507in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -2173,9 +2173,9 @@
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
           <Top>0.07986in</Top>
-          <Left>3.94797in</Left>
-          <Height>0.16667in</Height>
-          <Width>0.32291in</Width>
+          <Left>0.05511in</Left>
+          <Height>0.27084in</Height>
+          <Width>8.09712in</Width>
           <Style>
             <Border>
               <Style>None</Style>

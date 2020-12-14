@@ -148,6 +148,13 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="form-group">
+                        @Html.Label("المكافأة")
+                        @Html.TextBoxFor(model => model.RewardValue, Model.RewardValue.ToLyd(), new { @class = "field_text form-control", disabled = "disabled" })
+                        @Html.ValidationMessageFor(model => model.RewardValue)
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
                         @Html.Label("الاجمالي الاول")
                         @Html.TextBoxFor(model => model.TotalSalary, Model.TotalSalary.ToLyd(), new { @class = "field_text form-control", disabled = "disabled" })
                         @Html.ValidationMessageFor(model => model.TotalSalary)
@@ -230,13 +237,13 @@
                     @Html.ValidationMessageFor(model => model.PrepaidSalary)
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            @*<div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="form-group">
                     @Html.LabelFor(model => model.AccumulatedValue)
                     @Html.TextBoxFor(model => model.AccumulatedValue, new { @class = "field_text form-control" })
                     @Html.ValidationMessageFor(model => model.AccumulatedValue)
                 </div>
-            </div>
+            </div>*@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="form-group">
                     @Html.LabelFor(model => model.RewindValue)
@@ -265,13 +272,13 @@
                     @Html.ValidationMessageFor(model => model.TotalDiscount)
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            @*<div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="form-group">
                     @Html.Label("الحياة الجماعي")
                     @Html.TextBoxFor(model => model.GroupLife, new { @class = "field_text form-control", disabled = "disabled" })
                     @Html.ValidationMessageFor(model => model.GroupLife)
                 </div>             
-            </div><br />
+            </div><br />*@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="form-group">
                     @Html.Label("ضريبة الدمغة")
