@@ -1497,4 +1497,10 @@
   <data name="SalaryCertificatePledge" xml:space="preserve">
     <value>تعهد لشهادة المرتب</value>
   </data>
+  <data name="FinancialDepartment" xml:space="preserve">
+    <value>رئيس القسم المالي</value>
+  </data>
+  <data name="InsideReferences" xml:space="preserve">
+    <value>مراجع الداخل</value>
+  </data>
 </root>

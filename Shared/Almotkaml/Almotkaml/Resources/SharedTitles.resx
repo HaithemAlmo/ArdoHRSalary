@@ -126,6 +126,9 @@
   <data name="ChangePassword" xml:space="preserve">
     <value>تغيير كلمة المرور</value>
   </data>
+  <data name="CollectionPaymentUnit" xml:space="preserve">
+    <value>وحدة صرف التحصيل</value>
+  </data>
   <data name="ConfirmPassword" xml:space="preserve">
     <value>تأكيد كلمة المرور</value>
   </data>
@@ -147,8 +150,14 @@
   <data name="FinancialAuditor" xml:space="preserve">
     <value>المراقب المالي</value>
   </data>
+  <data name="FinancialDepartment" xml:space="preserve">
+    <value>رئيس القسم المالي</value>
+  </data>
   <data name="FromDate" xml:space="preserve">
     <value>من تاريخ</value>
+  </data>
+  <data name="InsideReferences" xml:space="preserve">
+    <value>مراجع الداخل</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>شعار الجهة</value>

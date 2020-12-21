@@ -12,12 +12,14 @@
         public string Website { get; set; }
         public string Address { get; set; }
         public string LogoPath { get; set; }
-        // add by ali alherbade 26-05-2019
         public string PayrollUnit { get; set; }// وحدة المرتبات
         public string References { get; set; }// المراجع 
         public string FinancialAuditor { get; set; }// المراقب المالي
         public string FinancialAffairs { get; set; }// الشئون المالية
         public string Department { get; set; }// القسم
+        public string InsideReferences { get; set; }// مراجع الداخل
+        public string FinancialDepartment { get; set; }// رئيس القسم المالي
+        public string CollectionPaymentUnit { get; set; }// وحدة صرف التحصيل
 
 
     }

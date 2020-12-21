@@ -499,7 +499,6 @@
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
-                                      <rd:Selected>true</rd:Selected>
                                     </CellContents>
                                   </TablixCell>
                                   <TablixCell>
@@ -799,40 +798,6 @@
                             </Border>
                           </Style>
                         </Tablix>
-                        <Textbox Name="Title2">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Parameters!AdvanceName.Value</Value>
-                                  <Style>
-                                    <FontSize>14pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Title</rd:DefaultName>
-                          <Left>1.79015in</Left>
-                          <Height>0.36458in</Height>
-                          <Width>3.41667in</Width>
-                          <ZIndex>1</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
                         <Textbox Name="Textbox10">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -857,7 +822,7 @@
                           <Left>6.24875in</Left>
                           <Height>0.25in</Height>
                           <Width>1.21699in</Width>
-                          <ZIndex>2</ZIndex>
+                          <ZIndex>1</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1458,7 +1423,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>إدن صرف</Value>
+                  <Value>كشف بالأقساط المسترجعة </Value>
                   <Style>
                     <FontSize>16pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -1472,9 +1437,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox14</rd:DefaultName>
           <Top>0.44619in</Top>
-          <Left>0.44043in</Left>
-          <Height>0.25in</Height>
-          <Width>1.49187in</Width>
+          <Left>0.10938in</Left>
+          <Height>0.40972in</Height>
+          <Width>2.77681in</Width>
           <ZIndex>3</ZIndex>
           <Style>
             <Border>
@@ -1595,6 +1560,41 @@
           <Height>0.25in</Height>
           <Width>1.36528in</Width>
           <ZIndex>7</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Title2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="من"+Parameters!AdvanceName.Value</Value>
+                  <Style>
+                    <FontSize>14pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Title</rd:DefaultName>
+          <Top>0.81424in</Top>
+          <Left>0.10938in</Left>
+          <Height>0.36458in</Height>
+          <Width>2.77681in</Width>
+          <ZIndex>8</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>

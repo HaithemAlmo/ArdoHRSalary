@@ -18,6 +18,10 @@
         string FinancialAuditor { get; set; }// المراقب المالي
         string FinancialAffairs { get; set; }// الشئون المالية
         string Department { get; set; }// القسم
+        string InsideReferences { get; set; }// مراجع الداخل
+        string FinancialDepartment { get; set; }// رئيس القسم المالي
+        string CollectionPaymentUnit { get; set; }// وحدة صرف التحصيل
+
 
 
     }

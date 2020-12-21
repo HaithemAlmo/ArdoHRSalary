@@ -312,9 +312,23 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
 
             DateTime monthDate;
             monthDate = salaryLast?.MonthDate ?? Settings.Date;
-
+            //return  (monthDate.Year +"/"+ monthDate.Month).ToString();
 
             return monthDate.FormatToString();
+        }
+
+        public string GetMonthDateForReport()
+        {
+            //if (!HavePermission(ApplicationUser.Permissions.Salary_Spent))
+            //    return Null<SalaryFormModel>(RequestState.NoPermission);
+
+            var salaryLast = UnitOfWork.Salaries.GetLastSalary();
+
+            DateTime monthDate;
+            monthDate = salaryLast?.MonthDate ?? Settings.Date;
+            return (monthDate.Year + "/" + monthDate.Month).ToString();
+
+            //return monthDate.FormatToString();
         }
 
         public bool Spent(SalaryFormModel model)

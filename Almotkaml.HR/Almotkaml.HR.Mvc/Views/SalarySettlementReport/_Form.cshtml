@@ -131,8 +131,8 @@
                                 </div>
 
                             }
-                          @if (Model.SalarySettlement == SalarySettlement.SocialSecurety || (Model.SalarySettlement == SalarySettlement.Clipord && (Model .BankId > 0 && Model.BankBranchId > 0)))
-                          {
+                 
+                        
                                <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="form-group">
                                     @Html.LabelFor(model => model.InstrumentNumber)
@@ -140,7 +140,7 @@
                                     @Html.ValidationMessageFor(model => model.InstrumentNumber)
                                 </div>
                             </div>
-                          }
+                         
                             @if (Model.SalarySettlement == SalarySettlement.EndJob)
                             {
                                 <div class="col-lg-3 col-md-4 col-sm-6">

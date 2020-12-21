@@ -1952,6 +1952,15 @@ namespace Almotkaml.HR.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to رئيس القسم المالي.
+        /// </summary>
+        public static string FinancialDepartment {
+            get {
+                return ResourceManager.GetString("FinancialDepartment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to الرقم المالي.
         /// </summary>
         public static string FinancialNumber {
@@ -2227,6 +2236,15 @@ namespace Almotkaml.HR.Resources {
         public static string Inside {
             get {
                 return ResourceManager.GetString("Inside", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to مراجع الداخل.
+        /// </summary>
+        public static string InsideReferences {
+            get {
+                return ResourceManager.GetString("InsideReferences", resourceCulture);
             }
         }
         

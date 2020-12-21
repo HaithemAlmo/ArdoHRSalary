@@ -9,9 +9,9 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>بهدا نتعهد لكم بعدم نقل او قفل حساب المدكور أعلاه الجاري طرفكم تحت رقم                            وذلك طيلة مدة عمله معنا</Value>
+                <Value>بهدا نتعهد لكم بعدم نقل أو قفل حساب المذكور أعلاه الجاري طرفكم تحت رقم                            وذلك طيلة مدة عمله معنا</Value>
                 <Style>
-                  <FontSize>14pt</FontSize>
+                  <FontSize>16pt</FontSize>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -22,9 +22,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>1.7509in</Top>
-        <Left>0.3373in</Left>
+        <Left>0.16344in</Left>
         <Height>0.54166in</Height>
-        <Width>6.68148in</Width>
+        <Width>6.96861in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -42,7 +42,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>مدير الإدارة المالية</Value>
+                <Value>مدير إدارة الشؤون المالية</Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
                   <TextDecoration>None</TextDecoration>
@@ -111,7 +111,7 @@
               <TextRun>
                 <Value>/ الإخوة مصرف</Value>
                 <Style>
-                  <FontSize>13pt</FontSize>
+                  <FontSize>16pt</FontSize>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -122,9 +122,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>0.37154in</Top>
-        <Left>3.6698in</Left>
+        <Left>3.97658in</Left>
         <Height>0.31249in</Height>
-        <Width>1.08307in</Width>
+        <Width>1.38515in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -204,7 +204,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.88542in</Width>
+              <Width>2.14584in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -222,7 +222,7 @@
                             <TextRun>
                               <Value>=Fields!EmployeeName.Value</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -260,9 +260,9 @@
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
         <Top>1.12152in</Top>
-        <Left>2.34635in</Left>
+        <Left>2.08593in</Left>
         <Height>0.31249in</Height>
-        <Width>1.88542in</Width>
+        <Width>2.14584in</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -274,7 +274,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.29567in</Width>
+              <Width>2.40636in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -292,7 +292,7 @@
                             <TextRun>
                               <Value>=Fields!BankName.Value</Value>
                               <Style>
-                                <FontSize>13pt</FontSize>
+                                <FontSize>16pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -331,9 +331,9 @@
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
         <Top>0.37154in</Top>
-        <Left>2.34635in</Left>
+        <Left>1.50078in</Left>
         <Height>0.31249in</Height>
-        <Width>1.29567in</Width>
+        <Width>2.40636in</Width>
         <ZIndex>7</ZIndex>
         <Style>
           <Border>
@@ -345,7 +345,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.25468in</Width>
+              <Width>1.36795in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -402,9 +402,9 @@
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
         <Top>1.7509in</Top>
-        <Left>0.87622in</Left>
+        <Left>0.3373in</Left>
         <Height>0.26041in</Height>
-        <Width>1.25468in</Width>
+        <Width>1.36795in</Width>
         <ZIndex>8</ZIndex>
         <Style>
           <Border>
@@ -421,7 +421,7 @@
               <TextRun>
                 <Value>بعد التحية </Value>
                 <Style>
-                  <FontSize>13pt</FontSize>
+                  <FontSize>14pt</FontSize>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -431,8 +431,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>0.75347in</Top>
-        <Left>3.44272in</Left>
+        <Top>1.12152in</Top>
+        <Left>6.04898in</Left>
         <Height>0.31249in</Height>
         <Width>1.08307in</Width>
         <ZIndex>9</ZIndex>
@@ -455,7 +455,7 @@
               <TextRun>
                 <Value> : الأخ/ت </Value>
                 <Style>
-                  <FontSize>13pt</FontSize>
+                  <FontSize>14pt</FontSize>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -468,7 +468,7 @@
         <Top>1.12152in</Top>
         <Left>4.237in</Left>
         <Height>0.31249in</Height>
-        <Width>0.63515in</Width>
+        <Width>0.73932in</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border>
@@ -487,9 +487,9 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>أعطيت له هذه الرسالة بناء على طلبه للإستعمالها في الأغراض القانونية</Value>
+                <Value>أعطيت له هذه الرسالة بناء على طلبه للاستعمالها في الأغراض القانونية</Value>
                 <Style>
-                  <FontSize>14pt</FontSize>
+                  <FontSize>16pt</FontSize>
                 </Style>
               </TextRun>
             </TextRuns>
