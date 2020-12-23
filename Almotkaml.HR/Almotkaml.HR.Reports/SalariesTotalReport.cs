@@ -34,5 +34,6 @@
         public decimal RewardValue { get; set; } //المكافآة
         public decimal ExtraValue { get; set; }
         public decimal PremiumActive { get; set; }
+       // public decimal TotalDiscound { get; set; }
     }
 }

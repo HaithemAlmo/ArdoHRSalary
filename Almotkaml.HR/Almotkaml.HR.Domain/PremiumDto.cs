@@ -4,6 +4,7 @@ namespace Almotkaml.HR.Domain
     {
         public Premium Premium { get; set; }
         public decimal Value { get; set; }
+      //  public long SalaryId { get; set; }
         public decimal AllValue { get; set; }
         public decimal PartOfvalue { get; set; }
         public int IsAvance { get; set; }

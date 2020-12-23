@@ -888,25 +888,25 @@ namespace Almotkaml.HR.Mvc.Controllers
                 salary = salary - model2.Grid.Select(s => s.Premium).Sum();
                 //salary = salary - model2.PremiumCheckListItem.Select(s => s.Value).Sum();
             }
-
+            var empolyee = HumanResource.SalaryInfo.Find(model2.EmployeeId??0);
             var zero = decimal.Parse("0,00");
             datasources.Add(new SalariesTotalReport()
             {
                 ExtraValue=model2.Grid.Select(s => s.ExtraValue).Sum(),
                 SalariesTotal = model2.Grid.Select(s => s.TotalSalary).Sum(),
                 BasicSalaries = model2.Grid.Select(s => s.BasicSalary).Sum(),
-                CompanyShare = model2.Grid.Select(s => s.CompanyShare).Sum(),
-                EmployeeShare = model2.Grid.Select(s => s.EmployeeShare).Sum(),
-                SafeShare = model2.Grid.Select(s => s.SafeShare).Sum(),
+                CompanyShare = model2.Grid.Select(s => s.BasicSalary + s.ExtraValue + s.ExtraGeneralValue).Sum() * decimal.Parse("0.105"),
+                EmployeeShare = model2.Grid.Select(s => s.BasicSalary + s.ExtraValue + s.ExtraGeneralValue).Sum() * decimal.Parse(" 0.0375"),
+                SafeShare = model2.Grid.Select(s =>   s.BasicSalary + s.ExtraValue + s.ExtraGeneralValue).Sum()*decimal.Parse(" 0.0075"),
                 ContributionInSecurity = model2.Grid.Select(s => s.SafeShare + s.CompanyShare).Sum(),
                 DeducationTotal = model2.Grid.Select(s => s.DiscountTotal).Sum(),
                 JihadTax = model2.Grid.Select(s => s.JihadTax).Sum(),
                 IncomeTax = model2.Grid.Select(s => s.IncomeTax).Sum(),
                 AdvancePayment = model2.AdvancePaymentList.Where(e => e.PremiumId == 2 || e.PremiumId == 5).Select(e => e.Value).Sum(),//سلف المودة1+المودة2// AdvancePaymentInside + AdvancePaymentOutside,
-                GroupLife = model2.EmployeePremiumList.Where(e => e.PremiumId == 1).Select(e => e.Value).Sum(),
+                GroupLife = model2.Grid3.Where(e => e.PremiumId == 1).Select(e => e.Value).Sum(),
                 SalariesNet = model2.Grid.Select(s => s.FinalySalary).Sum(),
                 SalariesNumber = model2.Grid.Select(s => s.EmployeeID).Count(),
-                SolidarityFund = model2.Grid.Select(s => s.SolidarityFund).Sum(),
+                SolidarityFund = model2.Grid.Select(s => s.BasicSalary + s.ExtraValue + s.ExtraGeneralValue).Sum() * decimal.Parse("0.01"),
                 StampTax = model2.Grid.Select(s => s.StampTax).Sum(),
                 Sanction = model2.Grid.Select(s => s.Sanction).Sum(),
                 Absence = model2.Grid.Select(s => s.Absence).Sum(),
@@ -920,6 +920,7 @@ namespace Almotkaml.HR.Mvc.Controllers
                 ExtraGeneralValue = model2.Grid.Select(s => s.ExtraGeneralValue).Sum(),
                 RewardValue = model2.Grid.Select(s => s.RewardValue).Sum(),
                 PremiumActive= model2.Grid.Select(s => s.PremiumActive).Sum(),
+              //  TotalDiscound=model2.Grid2.Select(s=>s.BasicSalary+s.ExtraValue+s.ExtraGeneralValue).Sum()
             });
             //}
             //add by ali alherbade 26-05-2019

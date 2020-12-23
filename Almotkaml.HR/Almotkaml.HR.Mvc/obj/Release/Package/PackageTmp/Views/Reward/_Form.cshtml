@@ -159,7 +159,7 @@
                                     <thead>
                                         <tr>
                                             <th width="20%"></th>
-                                            <th width="20%">الرقم الوظيفي</th>
+                                            <th width="20%">الرقم المالي</th>
                                             <th width="20%">الاسم</th>
                                             <th width="20%">الإدارة</th>
 
@@ -170,7 +170,7 @@
                                         {
                                             <tr class="odd gradeX">
                                                 <td>@Html.RadioButtonFor(model => model.EmployeeId, item.EmployeeId, new { onclick = "hideModal('myModal');$('.modal-backdrop').remove();$(this.form).submit();", data_dismiss = "modal" })</td>
-                                                <td>@Html.DisplayFor(modelItem => item.JobNumber)</td>
+                                                <td>@Html.DisplayFor(modelItem => item.FinancialNumber)</td>
                                                 <td>@Html.DisplayFor(modelItem => item.ArabicFullName)</td>
                                                 <td>@Html.DisplayFor(modelItem => item.DepartmentName)</td>
 

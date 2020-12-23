@@ -185,7 +185,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                     ValueIncpect = model.TemporaryPremiumListItem.FirstOrDefault(e => e.PremiumId == premium.PremiumId)?.Valuinspect ?? 0,
                     ISAdvancePremmium = model.TemporaryPremiumListItem.FirstOrDefault(e => e.PremiumId == premium.PremiumId)?.ISAdvancePremmium ?? 0,
                     IsTemporary = model.TemporaryPremiumListItem.FirstOrDefault(e => e.PremiumId == premium.PremiumId)?.IsTemporary ?? 0,
-                    
+                  //  SalaryId = empolyee?.Salary?.SalaryId ?? 0,
                 };
                 premiumDto.Add(dto);
             }

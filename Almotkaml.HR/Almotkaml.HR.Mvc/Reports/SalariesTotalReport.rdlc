@@ -6,7 +6,6 @@
         <ReportItems>
           <Line Name="Line2">
             <Top>5.11212in</Top>
-            <Left>0in</Left>
             <Height>0in</Height>
             <Width>7.75363in</Width>
             <Style>
@@ -118,9 +117,8 @@
             </TablixRowHierarchy>
             <DataSetName>SalariesTotal</DataSetName>
             <Top>0.36111in</Top>
-            <Left>0in</Left>
             <Height>0.375in</Height>
-            <Width>7.75363in</Width>
+            <Width>7.75362in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1348,7 +1346,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!DeducationTotal.Value, "SalariesTotal")+Sum(Fields!ContributionInSecurity.Value, "SalariesTotal")</Value>
+                                  <Value>=Sum(Fields!Absence.Value, "SalariesTotal")+Sum(Fields!AdvancePayment.Value, "SalariesTotal")+Sum(Fields!CompanyShare.Value, "SalariesTotal")+Sum(Fields!EmployeeShare.Value, "SalariesTotal")+Sum(Fields!Mwada.Value, "SalariesTotal")+Sum(Fields!JihadTax.Value, "SalariesTotal")+Sum(Fields!OtherDiscount.Value, "SalariesTotal")+Sum(Fields!PremiumActive.Value, "SalariesTotal")+Sum(Fields!SafeShare.Value, "SalariesTotal")+Sum(Fields!Sanction.Value, "SalariesTotal")+Sum(Fields!OtherDiscount.Value, "SalariesTotal")</Value>
                                   <Style>
                                     <Format>#,0.000;(#,0.000)</Format>
                                   </Style>
@@ -3334,7 +3332,6 @@
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
           <Top>0.02778in</Top>
-          <Left>0in</Left>
           <Height>0.29166in</Height>
           <Width>7.71065in</Width>
           <Style>
