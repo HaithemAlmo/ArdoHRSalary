@@ -38,6 +38,7 @@ namespace Almotkaml.HR.Models
         public TaxReportModel TaxReportModel { get; set; } = new TaxReportModel();
         public IEnumerable<EmployeeReportGridRow> Grid { get; set; } = new HashSet<EmployeeReportGridRow>();
         public IEnumerable<EmployeeReportGridRow> Grid2 { get; set; } = new HashSet<EmployeeReportGridRow>();
+        public IEnumerable<EmployeePremiumListItem> Grid3 { get; set; } = new HashSet<EmployeePremiumListItem>();
 
         [Display(ResourceType = typeof(Title), Name = nameof(Title.CostCenter))]
         public int? CenterId { get; set; }
