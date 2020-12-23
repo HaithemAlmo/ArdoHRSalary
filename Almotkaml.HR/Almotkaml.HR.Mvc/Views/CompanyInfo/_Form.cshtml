@@ -94,6 +94,27 @@
                 @Html.ValidationMessageFor(model => model.FinancialAffairs)
             </div>
         </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="form-group">
+                @Html.LabelFor(model => model.InsideReferences)
+                @Html.TextBoxFor(model => model.InsideReferences, new { @class = "field_text form-control" })
+                @Html.ValidationMessageFor(model => model.InsideReferences)
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="form-group">
+                @Html.LabelFor(model => model.FinancialDepartment)
+                @Html.TextBoxFor(model => model.FinancialDepartment, new { @class = "field_text form-control" })
+                @Html.ValidationMessageFor(model => model.FinancialDepartment)
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="form-group">
+                @Html.LabelFor(model => model.CollectionPaymentUnit)
+                @Html.TextBoxFor(model => model.CollectionPaymentUnit, new { @class = "field_text form-control" })
+                @Html.ValidationMessageFor(model => model.CollectionPaymentUnit)
+            </div>
+        </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="form-group">

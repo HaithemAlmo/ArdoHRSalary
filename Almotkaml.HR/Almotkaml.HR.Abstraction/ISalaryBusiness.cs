@@ -16,6 +16,7 @@ namespace Almotkaml.HR.Abstraction
         SalaryFormModel Find(long id);
         SalaryFormModel Prepare();
         string GetMonthDate();
+        string GetMonthDateForReport();
         bool Spent(SalaryFormModel model);
         bool Update(SalaryIndexModel model);
         bool Close(SalaryIndexModel model);

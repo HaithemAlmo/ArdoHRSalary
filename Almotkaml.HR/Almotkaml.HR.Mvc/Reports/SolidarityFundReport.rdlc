@@ -812,7 +812,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>................... : رئيس القسم المالي</Value>
+                <Value> رئيس القسم المالي</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -820,15 +820,15 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Right</TextAlign>
+              <TextAlign>Center</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>2.00569in</Top>
-        <Left>2.81109in</Left>
+        <Top>2.46528in</Top>
+        <Left>2.9348in</Left>
         <Height>0.25in</Height>
-        <Width>2.2913in</Width>
+        <Width>2.01303in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -847,7 +847,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>............... : وحدة صرف التحصيل</Value>
+                <Value> وحدة صرف التحصيل</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -855,15 +855,15 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Right</TextAlign>
+              <TextAlign>Center</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>2.00569in</Top>
-        <Left>0.17904in</Left>
+        <Top>2.46528in</Top>
+        <Left>0.462in</Left>
         <Height>0.25in</Height>
-        <Width>2.08497in</Width>
+        <Width>1.91362in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -882,7 +882,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>.................. :مراجع الداخل</Value>
+                <Value>مراجع الداخل</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -890,13 +890,13 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Right</TextAlign>
+              <TextAlign>Center</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>2.00569in</Top>
-        <Left>5.58193in</Left>
+        <Top>2.46528in</Top>
+        <Left>5.57996in</Left>
         <Height>0.25in</Height>
         <Width>1.76428in</Width>
         <ZIndex>3</ZIndex>
@@ -910,12 +910,113 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
+      <Textbox Name="InsideReferences">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!InsideReferences.Value</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>InsideReferences</rd:DefaultName>
+        <Top>2.72917in</Top>
+        <Left>5.57996in</Left>
+        <Height>0.25in</Height>
+        <Width>1.76428in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="FinancialDepartment">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!FinancialDepartment.Value</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>FinancialDepartment</rd:DefaultName>
+        <Top>2.72917in</Top>
+        <Left>2.9348in</Left>
+        <Height>0.25in</Height>
+        <Width>2.01303in</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="CollectionPaymentUnit">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!CollectionPaymentUnit.Value</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>CollectionPaymentUnit</rd:DefaultName>
+        <Top>2.71528in</Top>
+        <Left>0.462in</Left>
+        <Height>0.25in</Height>
+        <Width>1.91362in</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>2.36458in</Height>
+    <Height>3.15278in</Height>
     <Style>
       <Border>
-        <Color>Silver</Color>
-        <Style>Solid</Style>
+        <Style>None</Style>
       </Border>
     </Style>
   </Body>
@@ -967,7 +1068,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value> : لشهر</Value>
+                  <Value> : عن شهر</Value>
                   <Style>
                     <FontSize>14pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -980,10 +1081,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox14</rd:DefaultName>
-          <Top>0.71056in</Top>
-          <Left>1.26023in</Left>
+          <Top>0.85986in</Top>
+          <Left>1.27549in</Left>
           <Height>0.25in</Height>
-          <Width>0.62394in</Width>
+          <Width>0.85311in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -1049,8 +1150,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ReportParameter2</rd:DefaultName>
-          <Top>0.74528in</Top>
-          <Left>0.5173in</Left>
+          <Top>0.89458in</Top>
+          <Left>0.53256in</Left>
           <Height>0.25in</Height>
           <Width>0.79849in</Width>
           <ZIndex>3</ZIndex>
@@ -1085,7 +1186,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>بعد التحية ,,, </Value>
+                  <Value>بعد التحية ،،، </Value>
                   <Style>
                     <FontSize>12pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -1121,7 +1222,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>مقابل تسديد التضامن الإجتماعي للعاملين التابعين لجهاز البحوث التطبيقية والتطوير </Value>
+                  <Value>مقابل تسديد مساهمات موظفي جهاز البحوث التطبيقية والتطوير لصندوق التضامن الاجتماعي  </Value>
                   <Style>
                     <FontSize>12pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -1135,9 +1236,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox14</rd:DefaultName>
           <Top>2.46403in</Top>
-          <Left>2.81109in</Left>
+          <Left>0.42049in</Left>
           <Height>0.25in</Height>
-          <Width>4.72213in</Width>
+          <Width>7.11273in</Width>
           <ZIndex>5</ZIndex>
           <Style>
             <Border>
@@ -1196,7 +1297,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
-          <Top>0.43625in</Top>
+          <Top>0.30083in</Top>
           <Left>4.87273in</Left>
           <Height>0.28125in</Height>
           <Width>2.66988in</Width>
@@ -1231,7 +1332,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
-          <Top>0.74528in</Top>
+          <Top>0.60986in</Top>
           <Left>4.87273in</Left>
           <Height>0.26736in</Height>
           <Width>2.66988in</Width>
@@ -1253,7 +1354,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>كشف التضامن</Value>
+                  <Value>كشف بمساهمات صندوق التضامن الاجتماعي </Value>
                   <Style>
                     <FontSize>16pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -1266,11 +1367,43 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox14</rd:DefaultName>
-          <Top>0.43625in</Top>
-          <Left>0.6423in</Left>
-          <Height>0.25in</Height>
-          <Width>1.49187in</Width>
+          <Top>0.30083in</Top>
+          <Left>0.42049in</Left>
+          <Height>0.56597in</Height>
+          <Width>1.95513in</Width>
           <ZIndex>10</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="TotalPages4">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="الصفحة : " &amp;Globals!PageNumber &amp;" من " &amp; Globals!TotalPages</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>TotalPages</rd:DefaultName>
+          <Top>1.26264in</Top>
+          <Left>0.10938in</Left>
+          <Height>0.22917in</Height>
+          <Width>1.36528in</Width>
+          <ZIndex>11</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1289,73 +1422,10 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>0.92709in</Height>
+      <Height>0.46876in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="ExecutionTime">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=Globals!ExecutionTime</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>ExecutionTime</rd:DefaultName>
-          <Top>0.375in</Top>
-          <Left>3.92904in</Left>
-          <Height>0.25in</Height>
-          <Width>1.57292in</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="TotalPages">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>="TotalPages : "&amp;Globals!TotalPages</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.375in</Top>
-          <Left>2.40104in</Left>
-          <Height>0.25in</Height>
-          <Width>1.44792in</Width>
-          <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
         <Textbox Name="TotalPages2">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -1363,8 +1433,10 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>="Page: "&amp;Globals!PageNumber &amp;" of :" &amp; Globals!TotalPages</Value>
-                  <Style />
+                  <Value>=Globals!PageNumber</Value>
+                  <Style>
+                    <FontSize>11pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -1373,11 +1445,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.3611in</Top>
+          <Top>0.06944in</Top>
           <Left>0.10938in</Left>
-          <Height>0.25in</Height>
-          <Width>1.39583in</Width>
-          <ZIndex>2</ZIndex>
+          <Height>0.30208in</Height>
+          <Width>7.5613in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1388,68 +1459,6 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Image Name="Image2">
-          <Source>Embedded</Source>
-          <Value>Almotkaml</Value>
-          <Sizing>Fit</Sizing>
-          <Top>0.24304in</Top>
-          <Left>7.06936in</Left>
-          <Height>0.36806in</Height>
-          <Width>0.46386in</Width>
-          <ZIndex>3</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
-        <Textbox Name="TotalPages3">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>المتكامل لتقنية المعلومات</Value>
-                  <Style>
-                    <FontStyle>Italic</FontStyle>
-                    <Color>Brown</Color>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.38542in</Top>
-          <Left>5.65822in</Left>
-          <Height>0.23958in</Height>
-          <Width>1.41114in</Width>
-          <ZIndex>4</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>4pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Line Name="Line2">
-          <Top>0.125in</Top>
-          <Left>0.1442in</Left>
-          <Height>0in</Height>
-          <Width>7.35418in</Width>
-          <ZIndex>5</ZIndex>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-          </Style>
-        </Line>
       </ReportItems>
       <Style>
         <Border>
@@ -1560,6 +1569,24 @@
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="Tafkeet">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="InsideReferences">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FinancialDepartment">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CollectionPaymentUnit">
       <DataType>String</DataType>
       <Nullable>true</Nullable>
       <AllowBlank>true</AllowBlank>

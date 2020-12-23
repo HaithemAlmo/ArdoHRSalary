@@ -89,6 +89,15 @@ namespace Almotkaml.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to وحدة صرف التحصيل.
+        /// </summary>
+        public static string CollectionPaymentUnit {
+            get {
+                return ResourceManager.GetString("CollectionPaymentUnit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تأكيد كلمة المرور.
         /// </summary>
         public static string ConfirmPassword {
@@ -152,11 +161,29 @@ namespace Almotkaml.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to رئيس القسم المالي.
+        /// </summary>
+        public static string FinancialDepartment {
+            get {
+                return ResourceManager.GetString("FinancialDepartment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to من تاريخ.
         /// </summary>
         public static string FromDate {
             get {
                 return ResourceManager.GetString("FromDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to مراجع الداخل.
+        /// </summary>
+        public static string InsideReferences {
+            get {
+                return ResourceManager.GetString("InsideReferences", resourceCulture);
             }
         }
         

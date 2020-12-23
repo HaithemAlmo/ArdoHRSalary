@@ -41,6 +41,9 @@ namespace Almotkaml.HR.Business.App_Business.General
                 FinancialAuditor = companyInfo.FinancialAuditor,
                 PayrollUnit = companyInfo.PayrollUnit,
                 References = companyInfo.References,
+                InsideReferences = companyInfo .InsideReferences ,
+                FinancialDepartment =companyInfo .FinancialDepartment,
+                CollectionPaymentUnit =companyInfo .CollectionPaymentUnit ,
                 //
                 CanSubmit = ApplicationUser.Permissions.CompanyInfo_Update,
             };
@@ -71,6 +74,9 @@ namespace Almotkaml.HR.Business.App_Business.General
                 FinancialAuditor = model.FinancialAuditor,
                 PayrollUnit = model.PayrollUnit,
                 References = model.References,
+                InsideReferences = model.InsideReferences,
+                FinancialDepartment = model.FinancialDepartment,
+                CollectionPaymentUnit = model.CollectionPaymentUnit,
                 //
             };
 

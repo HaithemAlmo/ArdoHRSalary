@@ -691,10 +691,17 @@ namespace Almotkaml.HR.Mvc.Controllers
 
             var _tafkeet = datasources.Sum(e => e.CompanyShare + e.EmployeeShare);
 
+            var InsideReferences = HumanResource.StartUp.CompanyInfo.InsideReferences ;//مراقب الداخل
+            var FinancialDepartment  = HumanResource.StartUp.CompanyInfo.FinancialDepartment ;// رئيس القسم المالي
+            var CollectionPaymentUnit = HumanResource.StartUp.CompanyInfo.CollectionPaymentUnit;// وحدة صرف التحصيل
+
             ReportDataSource rdc = new ReportDataSource("SocialSecurityFund", datasources);
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("Title", "كشف التضمان الاجتماعي"));
             reportParameters.Add(new ReportParameter("CompanyName", ""));
+            reportParameters.Add(new ReportParameter("InsideReferences", InsideReferences));
+            reportParameters.Add(new ReportParameter("FinancialDepartment", FinancialDepartment));
+            reportParameters.Add(new ReportParameter("CollectionPaymentUnit", CollectionPaymentUnit));
             reportParameters.Add(new ReportParameter("Date", model.Year + "-" + model.Month));
             reportParameters.Add(new ReportParameter("Tafkeet", new Maths.NumberToWord(Math.Round(_tafkeet, 3, MidpointRounding.AwayFromZero)).ConvertToArabic()));
             reportParameters.Add(new ReportParameter("InstrumentNumber", model2.InstrumentNumber));
@@ -903,7 +910,7 @@ namespace Almotkaml.HR.Mvc.Controllers
                 JihadTax = model2.Grid.Select(s => s.JihadTax).Sum(),
                 IncomeTax = model2.Grid.Select(s => s.IncomeTax).Sum(),
                 AdvancePayment = model2.AdvancePaymentList.Where(e => e.PremiumId == 2 || e.PremiumId == 5).Select(e => e.Value).Sum(),//سلف المودة1+المودة2// AdvancePaymentInside + AdvancePaymentOutside,
-                GroupLife = model2.Grid3.Where(e => e.PremiumId == 1).Select(e => e.Value).Sum(),
+                Alimony = model2.EmployeePremiumList.Where(e=>e.PremiumId==1).Select(e => e.Value).Sum(),
                 SalariesNet = model2.Grid.Select(s => s.FinalySalary).Sum(),
                 SalariesNumber = model2.Grid.Select(s => s.EmployeeID).Count(),
                 SolidarityFund = model2.Grid.Select(s => s.BasicSalary + s.ExtraValue + s.ExtraGeneralValue).Sum() * decimal.Parse("0.01"),
@@ -915,7 +922,7 @@ namespace Almotkaml.HR.Mvc.Controllers
                 Premium = model2.Grid.Select(s => s.Premium).Sum(),
                 // OtherDiscount = AdvancePaymentInside + AdvancePaymentOutside,
                 OtherDiscount = model2.AdvancePaymentList.Where(e => e.PremiumId == 4).Select(e => e.Value).Sum(),
-                Mwada = model2.EmployeePremiumList.Where(e=>e.PremiumId==3).Select(e=>e.Value).Sum(), //model2 .Grid .Count() * 2,
+                Mwada = model2.EmployeePremiumList.Where(e=>e.PremiumId==3).Select(e=>e.Value).Sum(), 
                 ExtraWork =model2.Grid.Select(s => s.ExtraWork).Sum(),
                 ExtraGeneralValue = model2.Grid.Select(s => s.ExtraGeneralValue).Sum(),
                 RewardValue = model2.Grid.Select(s => s.RewardValue).Sum(),
@@ -1049,10 +1056,16 @@ namespace Almotkaml.HR.Mvc.Controllers
 
             var _tafkeet = datasources.Sum(e => e.SolidarityFund);
 
+            var InsideReferences = HumanResource.StartUp.CompanyInfo.InsideReferences;//مراقب الداخل
+            var FinancialDepartment = HumanResource.StartUp.CompanyInfo.FinancialDepartment;// رئيس القسم المالي
+            var CollectionPaymentUnit = HumanResource.StartUp.CompanyInfo.CollectionPaymentUnit;// وحدة صرف التحصيل
 
             ReportDataSource rdc = new ReportDataSource("SolidarityFund", datasources);
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("Title", "كشف التضامن"));
+            reportParameters.Add(new ReportParameter("InsideReferences", InsideReferences));
+            reportParameters.Add(new ReportParameter("FinancialDepartment", FinancialDepartment));
+            reportParameters.Add(new ReportParameter("CollectionPaymentUnit", CollectionPaymentUnit));
             //reportParameters.Add(new ReportParameter("BondNumber", indexModel.SolidarityFundBondNumber));
             //reportParameters.Add(new ReportParameter("CompanyName", ""));
             reportParameters.Add(new ReportParameter("Tafkeet", new Maths.NumberToWord(Math.Round(_tafkeet, 3, MidpointRounding.AwayFromZero)).ConvertToArabic()));
@@ -1820,7 +1833,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             return File(renderedBytes, mimeType);
         }
         // 
-        //السلف والرواتب تقرير
+        //السلف  
         public ActionResult AdvancePaymentIndexReport(SalarySettlementReportModel model2, string savedModel)
         {
             return ReportAdvancePaymentIndex(model2.AdvancePaymentReportModel, model2, model2.JobNumber.ToString(), model2.BankId ?? 0, model2.BankBranchId ?? 0, model2.Month ?? 0, model2.Year ?? 0);
@@ -1873,7 +1886,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             var Department = HumanResource.StartUp.CompanyInfo.Department;// القسم
             var _advanceName = datasources.FirstOrDefault()?.TafKeet;
             // end add 
-
+            
             ReportDataSource rdc = new ReportDataSource("AdvanceDetection", datasources);
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("Title", "كشف بالسلف الداخلية "));
@@ -1887,6 +1900,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             reportParameters.Add(new ReportParameter("PayrollUnit", PayrollUnit));//وحدة المرتبات
             reportParameters.Add(new ReportParameter("References", References));// المراجع
             reportParameters.Add(new ReportParameter("AdvanceName", _advanceName));// السلفة
+            reportParameters.Add(new ReportParameter("InstrumentNumber", model2.InstrumentNumber));
             //
             lr.SetParameters(reportParameters);
             lr.DataSources.Add(rdc);
@@ -2079,10 +2093,20 @@ namespace Almotkaml.HR.Mvc.Controllers
                 }
             var _tafkeet = datasources.Sum(e => e.IncomeTax + e.JihadTax + e.StampTax);
 
+            var PayrollUnit = HumanResource.StartUp.CompanyInfo.PayrollUnit;// وحدة المرتبات
+            var References = HumanResource.StartUp.CompanyInfo.References;//المراجع
+            var FinancialAuditor = HumanResource.StartUp.CompanyInfo.FinancialAuditor;//المراقب المالي
+            var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
+
             ReportDataSource rdc = new ReportDataSource("TaxReport", datasources);
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("Title", "كشف الضرائب"));
             reportParameters.Add(new ReportParameter("CompanyName", ""));
+            reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
+            reportParameters.Add(new ReportParameter("FinancialAuditor", FinancialAuditor));//المراقب المالي
+            reportParameters.Add(new ReportParameter("PayrollUnit", PayrollUnit));//وحدة المرتبات
+            reportParameters.Add(new ReportParameter("References", References));// المراجع
+            reportParameters.Add(new ReportParameter("InstrumentNumber", model2.InstrumentNumber));
             reportParameters.Add(new ReportParameter("Date", model.Year + "-" + model.Month));
             reportParameters.Add(new ReportParameter("Tafkeet", new Maths.NumberToWord(Math.Round(_tafkeet, 3, MidpointRounding.AwayFromZero)).ConvertToArabic()));
             lr.SetParameters(reportParameters);

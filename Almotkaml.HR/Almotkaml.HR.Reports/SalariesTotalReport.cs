@@ -20,9 +20,10 @@
         public decimal Absence { get; set; }                        //ÎÕã ÇáÛíÇÈ
         public decimal Sanction { get; set; }                       // ÎÕã ÇáÌÒÇÁ
         public decimal OtherDiscount { get; set; }                  //ÎÕãíÇÊ ÇÎÑí
-        public decimal IncomeTax { get; set; }                 // ضريبة الدخل
-        public decimal GroupLife { get; set; }                       //الحياة الجماعي
-        public decimal AdvancePayment { get; set; }               // السلف
+        public decimal IncomeTax { get; set; }                      // ضريبة الدخل
+        public decimal GroupLife { get; set; }                      //الحياة الجماعي
+        public decimal Alimony{ get; set; }                         // نفقة شرعية
+        public decimal AdvancePayment { get; set; }                 // السلف
         public decimal Clamp { get; set; }                        //åíÆÇÊ ÞÖÇÆíÉ
         public decimal Subsistence { get; set; }                       // ÇÚÇÔÉ
         public decimal Premium { get; set; }                  //ãßÇÝÆÇÊ

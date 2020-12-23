@@ -49,6 +49,12 @@ namespace Almotkaml.HR.Models
         public string FinancialAffairs { get; set; }// الشئون المالية
         [Display(ResourceType = typeof(SharedTitles), Name = nameof(SharedTitles.Department))]
         public string Department { get; set; }// القسم
+        [Display(ResourceType = typeof(SharedTitles), Name = nameof(SharedTitles.InsideReferences))]
+        public string InsideReferences { get; set; }// مراجع الداخل
+        [Display(ResourceType = typeof(SharedTitles), Name = nameof(SharedTitles.FinancialDepartment))]
+        public string FinancialDepartment { get; set; }// رئيس القسم المالي
+        [Display(ResourceType = typeof(SharedTitles), Name = nameof(SharedTitles.CollectionPaymentUnit))]
+        public string CollectionPaymentUnit { get; set; }// وحدة صرف التحصيل
 
         public bool CanSubmit { get; set; }
     }

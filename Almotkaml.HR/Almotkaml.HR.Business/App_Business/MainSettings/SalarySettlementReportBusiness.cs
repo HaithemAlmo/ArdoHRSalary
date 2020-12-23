@@ -548,7 +548,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
 
                                 foreach (var premiumChecks in PremiumCheckList)
                                 {
-                                    
+                                    var Employeepremiums = UnitOfWork.Salaries.GetNotTemEmployeePremiumBy(employee.EmployeeId);
                                     PremiumValue = salary?.EmployeePremium?.Where(s => s?.PremiumId == premiumChecks.PremiumId).Sum(s => s.Value) ?? 0;
                                     PremiumValue2 = advancePayment?.Where(a => a.PremiumId == premiumChecks.PremiumId).Sum(a => a.InstallmentValue) ?? 0; //salary?.EmployeePremium?.Where(s => s?.AdvancePayment.PremiumId == premiumChecks.PremiumId).Sum(s => s.AdvancePayment.InstallmentValue) ?? 0;
 
@@ -693,7 +693,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 Name = employee?.GetFullName(),
                                 //صندوق التضامن 
                                 SolidarityFund = salary?.IsSubsendedSalary == false ? salary?.SolidarityFund(Settings) + SumSolidrty ?? 0 : SumSolidrty,
-
+                                
                                 //المرتب الاساس
                                 BasicSalary = salary?.BasicSalary ?? 0,
                                 //هيئة قضائية
