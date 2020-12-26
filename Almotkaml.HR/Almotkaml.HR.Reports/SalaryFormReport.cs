@@ -1,4 +1,4 @@
-using Almotkaml.HR.Models;
+﻿using Almotkaml.HR.Models;
 using System.Collections.Generic;
 
 namespace Almotkaml.HR.Reports
@@ -47,7 +47,26 @@ namespace Almotkaml.HR.Reports
         public decimal Discound { get; set; }
         public decimal AllBouns { get; set; }
         public decimal RewardValue { get; set; }
-        
+        public int Degree { get; set; }
+        public int Boun { get; set; }
+        public string CenterName { get; set; } //  الوحدة التنظيمية
+        public decimal Catering { get; set; }  //علاوة تموين
+        public decimal Distinction { get; set; }   //علاوة تمييز
+        public decimal Retention { get; set; }    // علاوة إحتفاظ
+        public decimal Scarred { get; set; }   //علاوة ندب
+        public decimal ExtraValue { get; set; }   //قيمة الزيادة في الرواتب
+        public decimal MawadaFund { get; set; }    // صندوق المودة 
+        public decimal MawadaAdvancePayment { get; set; }   //سلفة صندوق المودة
+        public decimal LibyanArmyAdvancePayment { get; set; }   //سلفة صندوق الجيش الليبي
+        public decimal Alimony { get; set; }   //النفقة الشرعية
+        public decimal OtherDiscount { get; set; }   //خصميات اخرى
+        public decimal TotalDiscount { get; set; }   //خصميات اخرى
+        public string  FinancialNumber { get; set; }
+        public string BondNumber { get; set; }
+        public string BankName { get; set; }
+      
+
+
         //public IList<PremiumCheckListItem> PremiumCheckListItem { get; set; } = new List<PremiumCheckListItem>();
         //public IList<PremiumCheckListItemReport> PremiumCheckListItemReport { get; set; } = new List<PremiumCheckListItemReport>();
 

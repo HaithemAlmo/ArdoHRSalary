@@ -1142,7 +1142,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                             //***************************************************************
                             //if (model.SalarySettlement == SalarySettlement.Summary && model.PremiumCheck)
                             //{
-                            if (model.SalarySettlement == SalarySettlement.Summary || model.SalarySettlement == SalarySettlement.SalaryCertificate)
+                            if (model.SalarySettlement == SalarySettlement.Summary || model.SalarySettlement == SalarySettlement.SalaryCertificate || model.SalarySettlement == SalarySettlement.SalaryForm)
                             {
                                 //var PremiumCheckList = model.PremiumCheckListItem.Where(p => p.IsSelected == true);
                                 var PremiumCheckList = model.PremiumCheckListItem;

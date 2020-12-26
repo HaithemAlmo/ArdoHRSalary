@@ -90,8 +90,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>2.39549in</Top>
-        <Left>6.89476in</Left>
+        <Top>2.76008in</Top>
+        <Left>8.36365in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>2</ZIndex>
@@ -125,8 +125,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>2.39549in</Top>
-        <Left>1.44631in</Left>
+        <Top>2.76008in</Top>
+        <Left>2.9152in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>3</ZIndex>
@@ -160,8 +160,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>2.39549in</Top>
-        <Left>3.05632in</Left>
+        <Top>2.76008in</Top>
+        <Left>4.52521in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>4</ZIndex>
@@ -195,8 +195,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>2.39549in</Top>
-        <Left>4.9498in</Left>
+        <Top>2.76008in</Top>
+        <Left>6.41869in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>5</ZIndex>
@@ -227,8 +227,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>3.05527in</Top>
-        <Left>6.89476in</Left>
+        <Top>3.41986in</Top>
+        <Left>8.36365in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>6</ZIndex>
@@ -259,8 +259,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>3.41986in</Top>
-        <Left>1.44631in</Left>
+        <Top>3.78445in</Top>
+        <Left>2.9152in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>7</ZIndex>
@@ -291,8 +291,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>3.41986in</Top>
-        <Left>3.05632in</Left>
+        <Top>3.78445in</Top>
+        <Left>4.52521in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>8</ZIndex>
@@ -323,8 +323,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>3.41986in</Top>
-        <Left>4.9498in</Left>
+        <Top>3.78445in</Top>
+        <Left>6.41869in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>9</ZIndex>
@@ -355,8 +355,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>3.41986in</Top>
-        <Left>6.89476in</Left>
+        <Top>3.78445in</Top>
+        <Left>8.36365in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>10</ZIndex>
@@ -387,8 +387,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>3.05527in</Top>
-        <Left>1.44631in</Left>
+        <Top>3.41986in</Top>
+        <Left>2.9152in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>11</ZIndex>
@@ -419,8 +419,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>3.05527in</Top>
-        <Left>3.05632in</Left>
+        <Top>3.41986in</Top>
+        <Left>4.52521in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>12</ZIndex>
@@ -451,8 +451,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>3.05527in</Top>
-        <Left>4.9498in</Left>
+        <Top>3.41986in</Top>
+        <Left>6.41869in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>13</ZIndex>
@@ -486,8 +486,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>2.70105in</Top>
-        <Left>6.89476in</Left>
+        <Top>3.06564in</Top>
+        <Left>8.36365in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>14</ZIndex>
@@ -521,8 +521,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>2.70105in</Top>
-        <Left>4.9498in</Left>
+        <Top>3.06564in</Top>
+        <Left>6.41869in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>15</ZIndex>
@@ -556,8 +556,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>2.70105in</Top>
-        <Left>3.05632in</Left>
+        <Top>3.06564in</Top>
+        <Left>4.52521in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>16</ZIndex>
@@ -591,8 +591,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>2.70105in</Top>
-        <Left>1.44631in</Left>
+        <Top>3.06564in</Top>
+        <Left>2.9152in</Left>
         <Height>0.25in</Height>
         <Width>1.27083in</Width>
         <ZIndex>17</ZIndex>
@@ -609,6 +609,12 @@
       <Tablix Name="Tablix3">
         <TablixBody>
           <TablixColumns>
+            <TablixColumn>
+              <Width>1.09469in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1in</Width>
+            </TablixColumn>
             <TablixColumn>
               <Width>1.1605in</Width>
             </TablixColumn>
@@ -628,7 +634,7 @@
               <Width>1.03582in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.10137in</Width>
+              <Width>1.5443in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.65161in</Width>
@@ -641,6 +647,120 @@
             <TablixRow>
               <Height>0.64793in</Height>
               <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>أجمالي الخصميات</Value>
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>صافي المرتب</Value>
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>DimGray</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox6">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>مستحقات</Value>
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>نفقة</Value>
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>خ . أخرى</Value>
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox6</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>DimGray</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Textbox53">
@@ -714,7 +834,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>مساهمة</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -728,7 +848,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>نفقة الشرعية</Value>
+                              <Value>خصم الغياب</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -742,7 +862,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>خ.متنوع</Value>
+                              <Value>خصم الجزاء</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -778,7 +898,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>عمل الإضافي عادي</Value>
+                              <Value>الضمان</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -792,7 +912,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>عمل إضافي ممتاز</Value>
+                              <Value>التضامن</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -806,7 +926,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>المكافأة</Value>
+                              <Value>ض . الجهاد</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -898,7 +1018,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>ايقاف العلاوة</Value>
+                              <Value />
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -912,7 +1032,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>ض.الدخل</Value>
+                              <Value />
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -926,7 +1046,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الجهاد</Value>
+                              <Value>الإجمالي</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -962,7 +1082,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الضمان</Value>
+                              <Value>ع . إحتفاظ</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -976,7 +1096,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>ضريبة الخزانة</Value>
+                              <Value>ع . ندب</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -990,7 +1110,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>ح.المضمون</Value>
+                              <Value />
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -1026,7 +1146,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>م.الخصميات</Value>
+                              <Value>ع.تموين</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -1040,7 +1160,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الخاضع</Value>
+                              <Value>الإضافي</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -1054,7 +1174,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>حد الاعفاء</Value>
+                              <Value>زيادة</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -1090,7 +1210,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>ر.المرضية</Value>
+                              <Value>المرتب الأساسي</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -1104,7 +1224,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الغياب</Value>
+                              <Value>التمييز</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -1118,7 +1238,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الجزاءات</Value>
+                              <Value>مكافأة</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -1154,7 +1274,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الاساسي</Value>
+                              <Value>الدرجة / المربوط</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -1168,7 +1288,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الاجمالي</Value>
+                              <Value>الوحدة التنظيمية</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -1182,7 +1302,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الصافي</Value>
+                              <Value>مرتبات شهر</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -1265,6 +1385,47 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="NationalNumber">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!NationalNumber.Value</Value>
+                              <Style>
+                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>NationalNumber</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>DimGray</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>
+                              =
+                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
+                            </BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <Direction>RTL</Direction>
+                      </Style>
+                    </Textbox>
+                    <ColSpan>2</ColSpan>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell />
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="Textbox39">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -1272,7 +1433,13 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>رقم الحساب </Value>
+                              <Style>
+                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=Fields!BondNumber.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                               </Style>
@@ -1300,47 +1467,10 @@
                         <Direction>RTL</Direction>
                       </Style>
                     </Textbox>
+                    <ColSpan>2</ColSpan>
                   </CellContents>
                 </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox41">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value />
-                              <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox32</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>DimGray</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>
-                              =
-                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
-                            </BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                        <Direction>RTL</Direction>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
+                <TablixCell />
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Textbox42">
@@ -1350,7 +1480,13 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value> المصرف - الفرع </Value>
+                              <Style>
+                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=Fields!BankName.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                               </Style>
@@ -1378,47 +1514,10 @@
                         <Direction>RTL</Direction>
                       </Style>
                     </Textbox>
+                    <ColSpan>2</ColSpan>
                   </CellContents>
                 </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox43">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value />
-                              <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox35</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>DimGray</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>
-                              =
-                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
-                            </BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                        <Direction>RTL</Direction>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
+                <TablixCell />
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Name3">
@@ -1482,22 +1581,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الرقم الوظيفي  </Value>
+                              <Value>الرقم المالي </Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value xml:space="preserve"> </Value>
+                              <Value>=Fields!FinancialNumber.Value</Value>
                               <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>=Fields!JobNumber.Value</Value>
-                              <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1577,6 +1671,84 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="TotalDiscount">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!TotalDiscount.Value</Value>
+                              <Style>
+                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>TotalDiscount</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>DimGray</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>
+                              =
+                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
+                            </BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <Direction>RTL</Direction>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox8">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox8</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>DimGray</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>
+                              =
+                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
+                            </BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <Direction>RTL</Direction>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="Textbox25">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -1584,7 +1756,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!AdvancePremiumInside.Value</Value>
+                              <Value>=Fields!LibyanArmyAdvancePayment.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                               </Style>
@@ -1623,7 +1795,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Discound.Value</Value>
+                              <Value>=Fields!CompanyShare.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                               </Style>
@@ -1662,7 +1834,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!ExtraWork.Value</Value>
+                              <Value>=Fields!EmployeeShare.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <Format>#,0.000;(#,0.000)</Format>
@@ -1695,17 +1867,16 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox46">
+                    <Textbox Name="Textbox7">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!NetSalary.Value</Value>
+                              <Value />
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                                <Format>#,0.000;(#,0.000)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1714,7 +1885,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox8</rd:DefaultName>
+                      <rd:DefaultName>Textbox7</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>DimGray</Color>
@@ -1742,7 +1913,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!EmployeeShare.Value</Value>
+                              <Value>=Fields!Retention.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <Format>#,0.000;(#,0.000)</Format>
@@ -1782,7 +1953,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Discound.Value</Value>
+                              <Value>=Fields!Catering.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <Format>#,0.000;(#,0.000)</Format>
@@ -1822,7 +1993,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!SickVacation.Value</Value>
+                              <Value>=Fields!BasicSalary.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                               </Style>
@@ -1861,7 +2032,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!BasicSalary.Value</Value>
+                              <Value>="درجة"+Fields!Degree.Value + "وعلاوة " +Fields!Boun.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                               </Style>
@@ -1941,6 +2112,84 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="FinalySalary">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!FinalySalary.Value</Value>
+                              <Style>
+                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>FinalySalary</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>DimGray</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>
+                              =
+                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
+                            </BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <Direction>RTL</Direction>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Alimony">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Alimony.Value</Value>
+                              <Style>
+                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Alimony</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>DimGray</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>
+                              =
+                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
+                            </BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <Direction>RTL</Direction>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="RewindValue2">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -1948,7 +2197,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!AdvancePremiumOutside.Value</Value>
+                              <Value>=Fields!MawadaFund.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <Format>#,0.000;(#,0.000)</Format>
@@ -1988,7 +2237,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!AllBouns.Value</Value>
+                              <Value>=Fields!Absence.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <Format>#,0.000;(#,0.000)</Format>
@@ -2028,7 +2277,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!ExtraWorkVacation.Value</Value>
+                              <Value>=Fields!SolidarityFund.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <Format>#,0.000;(#,0.000)</Format>
@@ -2061,17 +2310,16 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Absence2">
+                    <Textbox Name="Textbox11">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!IncomeTax.Value</Value>
+                              <Value />
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                                <Format>#,0.000;(#,0.000)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2080,7 +2328,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Absence</rd:DefaultName>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>DimGray</Color>
@@ -2108,7 +2356,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!GroupLife.Value</Value>
+                              <Value>=Fields!Scarred.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                               </Style>
@@ -2147,7 +2395,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!SubjectSalary.Value</Value>
+                              <Value>=Fields!ExtraWork.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                               </Style>
@@ -2186,7 +2434,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Absence.Value</Value>
+                              <Value>=Fields!Distinction.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                               </Style>
@@ -2225,7 +2473,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!TotalSalary.Value</Value>
+                              <Value>=Fields!CenterName.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                               </Style>
@@ -2306,6 +2554,84 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="Textbox5">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox5</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>DimGray</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>
+                              =
+                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
+                            </BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <Direction>RTL</Direction>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="OtherDiscount">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!OtherDiscount.Value</Value>
+                              <Style>
+                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>OtherDiscount</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>DimGray</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>
+                              =
+                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
+                            </BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <Direction>RTL</Direction>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="Textbox211">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -2313,7 +2639,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!CompanyShare.Value</Value>
+                              <Value>=Fields!MawadaAdvancePayment.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                               </Style>
@@ -2352,7 +2678,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!SituationOnTotal.Value</Value>
+                              <Value>=Fields!Sanction.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <Format>#,0.000;(#,0.000)</Format>
@@ -2392,7 +2718,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!RewindValue.Value</Value>
+                              <Value>=Fields!JihadTax.Value</Value>
                               <Style>
                                 <Format>#,0.000;(#,0.000)</Format>
                               </Style>
@@ -2431,7 +2757,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!JihadTax.Value</Value>
+                              <Value>=Fields!TotalSalary.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <Format>#,0.000;(#,0.000)</Format>
@@ -2464,17 +2790,16 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox215">
+                    <Textbox Name="Textbox2">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!SolidarityFund.Value</Value>
+                              <Value />
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                                <Format>#,0.000;(#,0.000)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2483,7 +2808,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox207</rd:DefaultName>
+                      <rd:DefaultName>Textbox2</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>DimGray</Color>
@@ -2550,7 +2875,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Sanction.Value</Value>
+                              <Value>=Fields!RewardValue.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <Format>#,0.000;(#,0.000)</Format>
@@ -2685,6 +3010,8 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
+            <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -2706,7 +3033,7 @@
         <Top>0.50436in</Top>
         <Left>0.09948in</Left>
         <Height>1.67918in</Height>
-        <Width>10.40199in</Width>
+        <Width>12.93961in</Width>
         <ZIndex>18</ZIndex>
         <Style>
           <Border>
@@ -2715,7 +3042,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>4.11778in</Height>
+    <Height>4.03445in</Height>
     <Style>
       <Border>
         <Color>DimGray</Color>
@@ -2723,7 +3050,7 @@
       </Border>
     </Style>
   </Body>
-  <Width>10.9444in</Width>
+  <Width>13.03909in</Width>
   <Page>
     <PageHeader>
       <Height>1.74083in</Height>
@@ -2764,41 +3091,6 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Textbox29">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>  جهاز البحوث التطبيقية والتطوير</Value>
-                  <Style>
-                    <FontSize>18pt</FontSize>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox14</rd:DefaultName>
-          <Top>0.16668in</Top>
-          <Left>3.89673in</Left>
-          <Height>0.35417in</Height>
-          <Width>4.51042in</Width>
-          <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
         <Textbox Name="Title2">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -2823,7 +3115,7 @@
           <Left>3.89673in</Left>
           <Height>0.40625in</Height>
           <Width>4.51042in</Width>
-          <ZIndex>2</ZIndex>
+          <ZIndex>1</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -2842,41 +3134,10 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>0.38195in</Height>
+      <Height>0.43403in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="ExecutionTime">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=Globals!ExecutionTime</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>ExecutionTime</rd:DefaultName>
-          <Top>0in</Top>
-          <Left>6.45005in</Left>
-          <Height>0.25in</Height>
-          <Width>2.21875in</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
         <Textbox Name="TotalPages2">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -2884,8 +3145,10 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>="Page: "&amp;Globals!PageNumber &amp;" of :" &amp; Globals!TotalPages</Value>
-                  <Style />
+                  <Value>=Globals!PageNumber</Value>
+                  <Style>
+                    <FontSize>11pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -2894,43 +3157,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0in</Top>
-          <Left>1.0474in</Left>
-          <Height>0.25in</Height>
-          <Width>1.39583in</Width>
-          <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="TotalPages">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>="TotalPages : "&amp;Globals!TotalPages</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.02778in</Top>
-          <Left>3.56475in</Left>
-          <Height>0.25in</Height>
-          <Width>1.25in</Width>
-          <ZIndex>2</ZIndex>
+          <Top>0.05556in</Top>
+          <Left>0.09948in</Left>
+          <Height>0.28125in</Height>
+          <Width>10.64583in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -3009,13 +3239,37 @@
           <DataField>AdvancePremiumOutside</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="Alimony">
+          <DataField>Alimony</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="AllBouns">
           <DataField>AllBouns</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="BankName">
+          <DataField>BankName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="BasicSalary">
           <DataField>BasicSalary</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="BondNumber">
+          <DataField>BondNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Boun">
+          <DataField>Boun</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Catering">
+          <DataField>Catering</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CenterName">
+          <DataField>CenterName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CompanyShare">
           <DataField>CompanyShare</DataField>
@@ -3033,8 +3287,16 @@
           <DataField>DateSalary</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Degree">
+          <DataField>Degree</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="Discound">
           <DataField>Discound</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Distinction">
+          <DataField>Distinction</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="EmployeeShare">
@@ -3047,6 +3309,10 @@
         </Field>
         <Field Name="ExemptionTax">
           <DataField>ExemptionTax</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ExtraValue">
+          <DataField>ExtraValue</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="ExtraWork">
@@ -3065,6 +3331,10 @@
           <DataField>FinalySalary</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="FinancialNumber">
+          <DataField>FinancialNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="GroupLife">
           <DataField>GroupLife</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -3080,6 +3350,18 @@
         <Field Name="JobNumber">
           <DataField>JobNumber</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LibyanArmyAdvancePayment">
+          <DataField>LibyanArmyAdvancePayment</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="MawadaAdvancePayment">
+          <DataField>MawadaAdvancePayment</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="MawadaFund">
+          <DataField>MawadaFund</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="MonyeNumber">
           <DataField>MonyeNumber</DataField>
@@ -3097,6 +3379,10 @@
           <DataField>NetSalary</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="OtherDiscount">
+          <DataField>OtherDiscount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="PrepaidPremium">
           <DataField>PrepaidPremium</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -3105,12 +3391,24 @@
           <DataField>PrepaidSalaryAndAdvancePremium</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="Retention">
+          <DataField>Retention</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="RewardValue">
+          <DataField>RewardValue</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="RewindValue">
           <DataField>RewindValue</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="Sanction">
           <DataField>Sanction</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Scarred">
+          <DataField>Scarred</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="SickVacation">
@@ -3144,6 +3442,10 @@
         <Field Name="Tafkeet">
           <DataField>Tafkeet</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TotalDiscount">
+          <DataField>TotalDiscount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="TotalSalary">
           <DataField>TotalSalary</DataField>

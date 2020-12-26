@@ -1128,7 +1128,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             var AdvancePaymentInside = model2.Grid.Select(s => s.AdvancePaymentInside).Sum();
             var AdvancePaymentOutside = model2.Grid.Select(s => s.AdvancePaymentOutside).Sum();
 
-
+            var empolyee = HumanResource.SalaryInfo.Find(model2.EmployeeId ?? 0);
             foreach (var row in model2.Grid)
             {
                 if (row.FinalySalary != 0)
@@ -1139,10 +1139,10 @@ namespace Almotkaml.HR.Mvc.Controllers
                         Name = row.Name,
                         BasicSalary = row.BasicSalary,
                         Absence = row.Absence,
-                        CompanyShare = row.CompanyShare,
+                        CompanyShare = row.CompanyShare + row.SafeShare,
                         EmployeeShare = row.EmployeeShare,
                         ExemptionTax = row.ExemptionTax,
-                        ExtraWork = row.ExtraWork,
+                        ExtraWork = row.ExtraWork + row.ExtraWorkVacation,
                         ExtraWorkConst = row.ExtraWorkConst,
                         ExtraWorkVacation = row.ExtraWorkVacation,
                         IncomeTax = row.IncomeTax,
@@ -1171,7 +1171,25 @@ namespace Almotkaml.HR.Mvc.Controllers
                         GroupLife = row.GroupLife,
                         AllBouns = row.AllBouns,
                         Discound = row.Discound,
-                      //  PremiumCheckListItemReport = row.PremiumListReport.ToList(),
+                        Degree = row.Degree,
+                        Boun = row.Boun,
+                        CenterName = row.CenterName,
+                        RewardValue = row.RewardValue,
+                        Catering = model2.EmployeePremiumList.Where(e => e.PremiumId == 11).Select(e => e.Value).Sum(),    //علاوة تموين
+                        Distinction = model2.EmployeePremiumList.Where(e => e.PremiumId == 8).Select(e => e.Value).Sum(),  //علاوة التمييز
+                        Retention = model2.EmployeePremiumList.Where(e => e.PremiumId == 10).Select(e => e.Value).Sum(),   //علاوة إحتفاظ
+                        Scarred = model2.EmployeePremiumList.Where(e => e.PremiumId == 9).Select(e => e.Value).Sum(),      //علاوة ندب
+                        Alimony = model2.EmployeePremiumList.Where(e => e.PremiumId == 1).Select(e => e.Value).Sum(),      // نفقة شرعية
+                        ExtraValue = row.ExtraValue,
+                        MawadaFund = model2.AdvancePaymentList.Where(e => e.PremiumId == 3).Select(e => e.Value).Sum(),    //صندوق المودة
+                        MawadaAdvancePayment = model2.AdvancePaymentList.Where(e => e.PremiumId == 2 || e.PremiumId == 5).Select(e => e.Value).Sum(),  //سلف المودة1+المودة2
+                        LibyanArmyAdvancePayment = model2.AdvancePaymentList.Where(e => e.PremiumId == 4).Select(e => e.Value).Sum(),  //سلف الجيش الليبي
+                        TotalDiscount = row.DiscountTotal,
+                        FinancialNumber = row.FinancialNumber,
+                        BondNumber = row.BondNumber,
+                        BankName = row.BankName + row.BankBranchName,
+                        DateSalary = "درجة " + row.Degree +  " و علاوة "+ row.Boun ,
+                        //  PremiumCheckListItemReport = row.PremiumListReport.ToList(),
                     });
                 }
                 //********************************************************************
@@ -1198,7 +1216,7 @@ namespace Almotkaml.HR.Mvc.Controllers
 
 
             ReportDataSource rdc = new ReportDataSource("SalaryForm", datasources);
-            ReportDataSource rdc2 = new ReportDataSource("DataSetPremium2", model2.PremiumListReport);
+            //ReportDataSource rdc2 = new ReportDataSource("DataSetPremium2", model2.PremiumListReport);
 
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("Title", "استمارة المرتبات"));
@@ -1231,7 +1249,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             //*********************************************************************
             lr.SetParameters(reportParameters);
             lr.DataSources.Add(rdc);
-            lr.DataSources.Add(rdc2);
+            //lr.DataSources.Add(rdc2);
             string mimeType;
             string encoding;
             string filenameextention;
