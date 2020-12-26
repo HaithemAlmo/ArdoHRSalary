@@ -453,7 +453,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!SalariesNet.Value, "SalariesTotal")+Sum(Fields!Absence.Value, "SalariesTotal")+100</Value>
+                                  <Value>=Sum(Fields!SalariesNet.Value, "SalariesTotal")+Sum(Fields!Absence.Value, "SalariesTotal")</Value>
                                   <Style>
                                     <Format>#,0.000;(#,0.000)</Format>
                                   </Style>
@@ -1346,7 +1346,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Absence.Value, "SalariesTotal")+Sum(Fields!AdvancePayment.Value, "SalariesTotal")+Sum(Fields!CompanyShare.Value, "SalariesTotal")+Sum(Fields!EmployeeShare.Value, "SalariesTotal")+Sum(Fields!Mwada.Value, "SalariesTotal")+Sum(Fields!JihadTax.Value, "SalariesTotal")+Sum(Fields!OtherDiscount.Value, "SalariesTotal")+Sum(Fields!PremiumActive.Value, "SalariesTotal")+Sum(Fields!SafeShare.Value, "SalariesTotal")+Sum(Fields!Sanction.Value, "SalariesTotal")+Sum(Fields!OtherDiscount.Value, "SalariesTotal")</Value>
+                                  <Value>=Sum(Fields!Absence.Value, "SalariesTotal")+Sum(Fields!AdvancePayment.Value, "SalariesTotal")+Sum(Fields!CompanyShare.Value, "SalariesTotal")+Sum(Fields!EmployeeShare.Value, "SalariesTotal")+Sum(Fields!Mwada.Value, "SalariesTotal")+Sum(Fields!JihadTax.Value, "SalariesTotal")+Sum(Fields!SafeShare.Value, "SalariesTotal")+Sum(Fields!Sanction.Value, "SalariesTotal")+Sum(Fields!OtherDiscount.Value, "SalariesTotal")+Sum(Fields!SolidarityFund.Value, "SalariesTotal")+Sum(Fields!Alimony.Value, "SalariesTotal")-(Sum(Fields!PremiumActive.Value, "SalariesTotal"))</Value>
                                   <Style>
                                     <Format>#,0.000;(#,0.000)</Format>
                                   </Style>
