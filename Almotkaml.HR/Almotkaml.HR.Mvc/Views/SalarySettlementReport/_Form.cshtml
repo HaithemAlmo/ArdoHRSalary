@@ -151,33 +151,7 @@
                                     </div>
                                 </div>
                             }
-                            @if (Model.SalarySettlement == SalarySettlement.Summary || Model.SalarySettlement == SalarySettlement.SalaryForm)
-                            {
-                                if (Model.SalarySettlement == SalarySettlement.Summary)
-                                {
-                                    <div class="col-lg-3 col-md-4 col-sm-6">
-                                        <div class="form-group">
-                                            @Html.CheckBoxFor(model => model.ClampCheck)&nbsp;
-                                            @Html.LabelFor(model => model.ClampCheck)
-                                            @Html.ValidationMessageFor(model => model.ClampCheck)
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6">
-                                        <div class="form-group">
-                                            @Html.CheckBoxFor(model => model.SubsistenceCheck)&nbsp;
-                                            @Html.LabelFor(model => model.SubsistenceCheck)
-                                            @Html.ValidationMessageFor(model => model.SubsistenceCheck)
-                                        </div>
-                                    </div>
-                                }
-                                <div class="col-lg-3 col-md-4 col-sm-6">
-                                    <div class="form-group">
-                                        @Html.CheckBoxFor(model => model.PremiumCheck, new { @style = "text-align: right", @data_toggle = "modal", @data_target = "#PremiumModal" })
-                                        @Html.LabelFor(model => model.PremiumCheck)
-                                        @Html.ValidationMessageFor(model => model.PremiumCheck)
-                                    </div>
-                                </div>
-                            }
+                       
 
 
                             <div class="row">
@@ -186,10 +160,10 @@
                                         <input name="print" type="submit" value="طباعة" class="btn btn-info" onclick="this.form.submit()" />
                                     </div>
                        
-                                    <div class="form-group">
+                                    @*<div class="form-group">
                                         <button type="submit" class="btn btn-outline btn-success" onclick="this.form.submit()">Excel</button>
-                                        @*<input name="Excel" type="submit" value="Excel" class="btn btn-success" onclick="this.form.submit()"SendValue(this, 'toExcel', ) />*@
-                                    </div>
+                                       <input name="Excel" type="submit" value="Excel" class="btn btn-success" onclick="this.form.submit()"SendValue(this, 'toExcel', ) />*@
+                                    
                                 </div>
                             </div>
 
