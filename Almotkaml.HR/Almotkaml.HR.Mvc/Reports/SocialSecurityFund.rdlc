@@ -1043,7 +1043,7 @@
                                             <Top>1.25347in</Top>
                                             <Left>0.10315in</Left>
                                             <Height>0.78125in</Height>
-                                            <Width>7.55866in</Width>
+                                            <Width>7.55862in</Width>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -1121,8 +1121,7 @@
                                                           <rd:DefaultName>ShareSum2</rd:DefaultName>
                                                           <Style>
                                                             <Border>
-                                                              <Color>LightGrey</Color>
-                                                              <Style>Solid</Style>
+                                                              <Style>None</Style>
                                                             </Border>
                                                             <PaddingLeft>2pt</PaddingLeft>
                                                             <PaddingRight>2pt</PaddingRight>
@@ -1230,111 +1229,6 @@
                                               <Direction>RTL</Direction>
                                             </Style>
                                           </Textbox>
-                                          <Textbox Name="Textbox34">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value> رئيس القسم المالي</Value>
-                                                    <Style>
-                                                      <FontSize>12pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Center</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox14</rd:DefaultName>
-                                            <Top>3.01043in</Top>
-                                            <Left>3.12013in</Left>
-                                            <Height>0.25in</Height>
-                                            <Width>2.01303in</Width>
-                                            <ZIndex>5</ZIndex>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                          <Textbox Name="Textbox40">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value> وحدة صرف التحصيل</Value>
-                                                    <Style>
-                                                      <FontSize>12pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Center</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox14</rd:DefaultName>
-                                            <Top>3.01043in</Top>
-                                            <Left>0.64733in</Left>
-                                            <Height>0.25in</Height>
-                                            <Width>1.91362in</Width>
-                                            <ZIndex>6</ZIndex>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                          <Textbox Name="Textbox36">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>مراجع الداخل</Value>
-                                                    <Style>
-                                                      <FontSize>12pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Center</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox14</rd:DefaultName>
-                                            <Top>3.01043in</Top>
-                                            <Left>5.76529in</Left>
-                                            <Height>0.25in</Height>
-                                            <Width>1.76428in</Width>
-                                            <ZIndex>7</ZIndex>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
                                           <Textbox Name="Textbox22">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
@@ -1359,7 +1253,7 @@
                                             <Left>6.35304in</Left>
                                             <Height>0.25in</Height>
                                             <Width>1.30877in</Width>
-                                            <ZIndex>8</ZIndex>
+                                            <ZIndex>5</ZIndex>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -1408,7 +1302,7 @@
                                             <Left>3.91901in</Left>
                                             <Height>0.47917in</Height>
                                             <Width>3.7428in</Width>
-                                            <ZIndex>9</ZIndex>
+                                            <ZIndex>6</ZIndex>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -1444,7 +1338,7 @@
                                             <Left>3.12013in</Left>
                                             <Height>0.25in</Height>
                                             <Width>4.54168in</Width>
-                                            <ZIndex>10</ZIndex>
+                                            <ZIndex>7</ZIndex>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -1478,6 +1372,111 @@
                                             <Left>3.91901in</Left>
                                             <Height>0.25in</Height>
                                             <Width>2.42594in</Width>
+                                            <ZIndex>8</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox34">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>مدير إدارة الشؤون المالية</Value>
+                                                    <Style>
+                                                      <FontSize>12pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Right</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox14</rd:DefaultName>
+                                            <Top>2.94409in</Top>
+                                            <Left>4.09362in</Left>
+                                            <Height>0.25in</Height>
+                                            <Width>1.47398in</Width>
+                                            <ZIndex>9</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox36">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>المراجع المالي</Value>
+                                                    <Style>
+                                                      <FontSize>12pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox14</rd:DefaultName>
+                                            <Top>2.94409in</Top>
+                                            <Left>2.07677in</Left>
+                                            <Height>0.25in</Height>
+                                            <Width>1.47398in</Width>
+                                            <ZIndex>10</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox40">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>رئيس وحدة المرتبات</Value>
+                                                    <Style>
+                                                      <FontSize>12pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox14</rd:DefaultName>
+                                            <Top>2.94409in</Top>
+                                            <Left>6.0363in</Left>
+                                            <Height>0.25in</Height>
+                                            <Width>1.47398in</Width>
                                             <ZIndex>11</ZIndex>
                                             <Style>
                                               <Border>
@@ -1489,16 +1488,17 @@
                                               <PaddingBottom>2pt</PaddingBottom>
                                             </Style>
                                           </Textbox>
-                                          <Textbox Name="InsideReferences">
+                                          <Textbox Name="Textbox41">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Parameters!InsideReferences.Value</Value>
+                                                    <Value>المراقب المالي</Value>
                                                     <Style>
                                                       <FontSize>12pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1507,11 +1507,11 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>InsideReferences</rd:DefaultName>
-                                            <Top>3.27432in</Top>
-                                            <Left>5.76529in</Left>
+                                            <rd:DefaultName>Textbox14</rd:DefaultName>
+                                            <Top>2.94409in</Top>
+                                            <Left>0.27586in</Left>
                                             <Height>0.25in</Height>
-                                            <Width>1.76428in</Width>
+                                            <Width>1.47398in</Width>
                                             <ZIndex>12</ZIndex>
                                             <Style>
                                               <Border>
@@ -1523,16 +1523,16 @@
                                               <PaddingBottom>2pt</PaddingBottom>
                                             </Style>
                                           </Textbox>
-                                          <Textbox Name="FinancialDepartment">
+                                          <Textbox Name="PayrollUnit">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Parameters!FinancialDepartment.Value</Value>
+                                                    <Value>=Parameters!PayrollUnit.Value</Value>
                                                     <Style>
-                                                      <FontSize>12pt</FontSize>
+                                                      <FontSize>11pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1541,11 +1541,11 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>FinancialDepartment</rd:DefaultName>
-                                            <Top>3.27432in</Top>
-                                            <Left>3.12013in</Left>
+                                            <rd:DefaultName>PayrollUnit</rd:DefaultName>
+                                            <Top>3.24965in</Top>
+                                            <Left>6.0363in</Left>
                                             <Height>0.25in</Height>
-                                            <Width>2.01303in</Width>
+                                            <Width>1.47398in</Width>
                                             <ZIndex>13</ZIndex>
                                             <Style>
                                               <Border>
@@ -1557,16 +1557,16 @@
                                               <PaddingBottom>2pt</PaddingBottom>
                                             </Style>
                                           </Textbox>
-                                          <Textbox Name="CollectionPaymentUnit">
+                                          <Textbox Name="References">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Parameters!CollectionPaymentUnit.Value</Value>
+                                                    <Value>=Parameters!References.Value</Value>
                                                     <Style>
-                                                      <FontSize>12pt</FontSize>
+                                                      <FontSize>11pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1575,12 +1575,80 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>CollectionPaymentUnit</rd:DefaultName>
-                                            <Top>3.26043in</Top>
-                                            <Left>0.64733in</Left>
+                                            <rd:DefaultName>References</rd:DefaultName>
+                                            <Top>3.24965in</Top>
+                                            <Left>2.07677in</Left>
                                             <Height>0.25in</Height>
-                                            <Width>1.91362in</Width>
+                                            <Width>1.47398in</Width>
                                             <ZIndex>14</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="FinancialAuditor">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=Parameters!FinancialAuditor.Value</Value>
+                                                    <Style>
+                                                      <FontSize>11pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>FinancialAuditor</rd:DefaultName>
+                                            <Top>3.26354in</Top>
+                                            <Left>0.27586in</Left>
+                                            <Height>0.25in</Height>
+                                            <Width>1.47398in</Width>
+                                            <ZIndex>15</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="FinancialAffairs">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=Parameters!FinancialAffairs.Value</Value>
+                                                    <Style>
+                                                      <FontSize>11pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>FinancialAffairs</rd:DefaultName>
+                                            <Top>3.27432in</Top>
+                                            <Left>4.09362in</Left>
+                                            <Height>0.25in</Height>
+                                            <Width>1.47398in</Width>
+                                            <ZIndex>16</ZIndex>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -1599,7 +1667,6 @@
                                           </Border>
                                         </Style>
                                       </Rectangle>
-                                      <rd:Selected>true</rd:Selected>
                                     </CellContents>
                                   </TablixCell>
                                 </TablixCells>
@@ -2086,6 +2153,30 @@
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="CollectionPaymentUnit">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PayrollUnit">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="References">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FinancialAuditor">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FinancialAffairs">
       <DataType>String</DataType>
       <Nullable>true</Nullable>
       <AllowBlank>true</AllowBlank>

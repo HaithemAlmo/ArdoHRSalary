@@ -694,6 +694,10 @@ namespace Almotkaml.HR.Mvc.Controllers
             var InsideReferences = HumanResource.StartUp.CompanyInfo.InsideReferences ;//مراقب الداخل
             var FinancialDepartment  = HumanResource.StartUp.CompanyInfo.FinancialDepartment ;// رئيس القسم المالي
             var CollectionPaymentUnit = HumanResource.StartUp.CompanyInfo.CollectionPaymentUnit;// وحدة صرف التحصيل
+            var PayrollUnit = HumanResource.StartUp.CompanyInfo.PayrollUnit;// وحدة المرتبات
+            var References = HumanResource.StartUp.CompanyInfo.References;//المراجع
+            var FinancialAuditor = HumanResource.StartUp.CompanyInfo.FinancialAuditor;//المراقب المالي
+            var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
 
             ReportDataSource rdc = new ReportDataSource("SocialSecurityFund", datasources);
             ReportParameterCollection reportParameters = new ReportParameterCollection();
@@ -702,6 +706,10 @@ namespace Almotkaml.HR.Mvc.Controllers
             reportParameters.Add(new ReportParameter("InsideReferences", InsideReferences));
             reportParameters.Add(new ReportParameter("FinancialDepartment", FinancialDepartment));
             reportParameters.Add(new ReportParameter("CollectionPaymentUnit", CollectionPaymentUnit));
+            reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
+            reportParameters.Add(new ReportParameter("FinancialAuditor", FinancialAuditor));//المراقب المالي
+            reportParameters.Add(new ReportParameter("PayrollUnit", PayrollUnit));//وحدة المرتبات
+            reportParameters.Add(new ReportParameter("References", References));// المراجع
             reportParameters.Add(new ReportParameter("Date", model.Year + "-" + model.Month));
             reportParameters.Add(new ReportParameter("Tafkeet", new Maths.NumberToWord(Math.Round(_tafkeet, 3, MidpointRounding.AwayFromZero)).ConvertToArabic()));
             reportParameters.Add(new ReportParameter("InstrumentNumber", model2.InstrumentNumber));
@@ -1001,7 +1009,7 @@ namespace Almotkaml.HR.Mvc.Controllers
 
         }
         //
-        //التظامن الاجتماعي
+        //التضامن الاجتماعي
         public ActionResult SolidrtyFoundIndexReport(SalarySettlementReportModel model2, string savedModel)
         {
             return ReportSolidrtyFound(model2.SolidarityFundReportModel, model2, model2.JobNumber.ToString(), model2.BankId ?? 0, model2.BankBranchId ?? 0, model2.Month ?? 0, model2.Year ?? 0);
@@ -1059,6 +1067,11 @@ namespace Almotkaml.HR.Mvc.Controllers
             var InsideReferences = HumanResource.StartUp.CompanyInfo.InsideReferences;//مراقب الداخل
             var FinancialDepartment = HumanResource.StartUp.CompanyInfo.FinancialDepartment;// رئيس القسم المالي
             var CollectionPaymentUnit = HumanResource.StartUp.CompanyInfo.CollectionPaymentUnit;// وحدة صرف التحصيل
+            var PayrollUnit = HumanResource.StartUp.CompanyInfo.PayrollUnit;// وحدة المرتبات
+            var References = HumanResource.StartUp.CompanyInfo.References;//المراجع
+            var FinancialAuditor = HumanResource.StartUp.CompanyInfo.FinancialAuditor;//المراقب المالي
+            var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
+
 
             ReportDataSource rdc = new ReportDataSource("SolidarityFund", datasources);
             ReportParameterCollection reportParameters = new ReportParameterCollection();
@@ -1066,7 +1079,11 @@ namespace Almotkaml.HR.Mvc.Controllers
             reportParameters.Add(new ReportParameter("InsideReferences", InsideReferences));
             reportParameters.Add(new ReportParameter("FinancialDepartment", FinancialDepartment));
             reportParameters.Add(new ReportParameter("CollectionPaymentUnit", CollectionPaymentUnit));
-            //reportParameters.Add(new ReportParameter("BondNumber", indexModel.SolidarityFundBondNumber));
+            reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
+            reportParameters.Add(new ReportParameter("FinancialAuditor", FinancialAuditor));//المراقب المالي
+            reportParameters.Add(new ReportParameter("PayrollUnit", PayrollUnit));//وحدة المرتبات
+            reportParameters.Add(new ReportParameter("References", References));// المراجع
+            reportParameters.Add(new ReportParameter("InstrumentNumber", model2.InstrumentNumber));
             //reportParameters.Add(new ReportParameter("CompanyName", ""));
             reportParameters.Add(new ReportParameter("Tafkeet", new Maths.NumberToWord(Math.Round(_tafkeet, 3, MidpointRounding.AwayFromZero)).ConvertToArabic()));
             reportParameters.Add(new ReportParameter("Date", model.Year + "-" + model.Month));
@@ -1179,15 +1196,17 @@ namespace Almotkaml.HR.Mvc.Controllers
                         Distinction = model2.EmployeePremiumList.Where(e => e.PremiumId == 8).Select(e => e.Value).Sum(),  //علاوة التمييز
                         Retention = model2.EmployeePremiumList.Where(e => e.PremiumId == 10).Select(e => e.Value).Sum(),   //علاوة إحتفاظ
                         Scarred = model2.EmployeePremiumList.Where(e => e.PremiumId == 9).Select(e => e.Value).Sum(),      //علاوة ندب
-                        Alimony = model2.EmployeePremiumList.Where(e => e.PremiumId == 1).Select(e => e.Value).Sum(),      // نفقة شرعية
                         ExtraValue = row.ExtraValue,
-                        MawadaFund = model2.AdvancePaymentList.Where(e => e.PremiumId == 3).Select(e => e.Value).Sum(),    //صندوق المودة
+                        Alimony = model2.EmployeePremiumList.Where(e => e.PremiumId == 1).Select(e => e.Value).Sum(),      // نفقة شرعية
+                        
+                        MawadaFund = model2.EmployeePremiumList.Where(e => e.PremiumId == 3).Select(e => e.Value).Sum(),    //صندوق المودة
                         MawadaAdvancePayment = model2.AdvancePaymentList.Where(e => e.PremiumId == 2 || e.PremiumId == 5).Select(e => e.Value).Sum(),  //سلف المودة1+المودة2
                         LibyanArmyAdvancePayment = model2.AdvancePaymentList.Where(e => e.PremiumId == 4).Select(e => e.Value).Sum(),  //سلف الجيش الليبي
+
                         TotalDiscount = row.DiscountTotal,
                         FinancialNumber = row.FinancialNumber,
                         BondNumber = row.BondNumber,
-                        BankName = row.BankName + row.BankBranchName,
+                        BankName = row.BankName +" "+ row.BankBranchName,
                         DateSalary = "درجة " + row.Degree +  " و علاوة "+ row.Boun ,
                         //  PremiumCheckListItemReport = row.PremiumListReport.ToList(),
                     });
@@ -1215,6 +1234,8 @@ namespace Almotkaml.HR.Mvc.Controllers
             var Department = HumanResource.StartUp.CompanyInfo.Department;// القسم
 
 
+            var ReportMaker = HumanResource.StartUp.ApplicationUser.Title; 
+
             ReportDataSource rdc = new ReportDataSource("SalaryForm", datasources);
             //ReportDataSource rdc2 = new ReportDataSource("DataSetPremium2", model2.PremiumListReport);
 
@@ -1222,6 +1243,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             reportParameters.Add(new ReportParameter("Title", "استمارة المرتبات"));
             reportParameters.Add(new ReportParameter("Date", model.Year + " - " + model.Month));
             reportParameters.Add(new ReportParameter("Department", Department));
+            reportParameters.Add(new ReportParameter("ReportMaker", ReportMaker));
             //*********************************************************************
             //if(model2.PremiumListReport.Count < 0)
             //{

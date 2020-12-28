@@ -1270,8 +1270,7 @@
     <Height>4.09598in</Height>
     <Style>
       <Border>
-        <Color>Silver</Color>
-        <Style>Solid</Style>
+        <Style>None</Style>
       </Border>
     </Style>
   </Body>

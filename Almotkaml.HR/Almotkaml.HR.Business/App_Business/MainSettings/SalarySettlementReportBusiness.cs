@@ -537,7 +537,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                             //***************************************************************
                             //if (model.SalarySettlement == SalarySettlement.Summary && model.PremiumCheck)
                             //{
-                            if (model.SalarySettlement == SalarySettlement.Summary)
+                            if (model.SalarySettlement == SalarySettlement.Summary || model.SalarySettlement == SalarySettlement.SalaryForm)
                             {
                                 //var PremiumCheckList = model.PremiumCheckListItem.Where(p => p.IsSelected == true);
                                 var PremiumCheckList = model.PremiumCheckListItem;
@@ -578,7 +578,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 }
                                
                             }
-                            else if (model.SalarySettlement == SalarySettlement.SalaryForm && model.PremiumCheck)
+                            else if (model.SalarySettlement == SalarySettlement.SalaryForm)
                             {
                                 var PremiumList = model.PremiumCheckListItem.Where(p => p.IsSelected == true).Take(9).ToList(); //UnitOfWork.Premiums.GetAll().ToEmployeePremiumList();
                                 var EmployeePremiumList = salary.SalaryPremiums.ToList();
@@ -1150,11 +1150,12 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 decimal? PremiumValue2 = 0;
 
                                 var advancePayment = UnitOfWork.AdvancePayments.GetAll().Where(s => s.EmployeeId == employee.EmployeeId);
+                                var employeesPr = UnitOfWork.Employees.GetEmployeePremium(employee.EmployeeId);
 
                                 foreach (var premiumChecks in PremiumCheckList)
                                 {
 
-                                    PremiumValue = salary?.EmployeePremium?.Where(s => s?.PremiumId == premiumChecks.PremiumId).Sum(s => s.Value) ?? 0;
+                                    PremiumValue = employeesPr?.Where(a => a.PremiumId == premiumChecks.PremiumId).Sum(a => a.Value) ?? 0;//salary?.EmployeePremium?.Where(s => s?.PremiumId == premiumChecks.PremiumId).Sum(s => s.Value) ?? 0;
                                     PremiumValue2 = advancePayment?.Where(a => a.PremiumId == premiumChecks.PremiumId).Sum(a => a.InstallmentValue) ?? 0; //salary?.EmployeePremium?.Where(s => s?.AdvancePayment.PremiumId == premiumChecks.PremiumId).Sum(s => s.AdvancePayment.InstallmentValue) ?? 0;
 
                                     PremiumCheckListValues.Add(new PremiumCheckListItem()
@@ -1183,7 +1184,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 }
 
                             }
-                            else if (model.SalarySettlement == SalarySettlement.SalaryForm && model.PremiumCheck)
+                            else if (model.SalarySettlement == SalarySettlement.SalaryForm)
                             {
                                 var PremiumList = model.PremiumCheckListItem.Where(p => p.IsSelected == true).Take(9).ToList(); //UnitOfWork.Premiums.GetAll().ToEmployeePremiumList();
                                 var EmployeePremiumList = salary.SalaryPremiums.ToList();

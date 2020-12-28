@@ -224,7 +224,10 @@ namespace Almotkaml.HR.EntityCore.Repositories
            .ThenInclude(s => s.AdvancePayments)
 
       ;
-
+        public IEnumerable<EmployeePremium> GetEmployeePremium(int employeeId) => Context.EmployeePremiums
+            .Include(e => e.Premium)
+            .Include(e => e.Employee)
+            .Where(e => e.EmployeeId == employeeId);
         public IEnumerable<EmployeePremium> GetTemEmployeePremiumBy(int employeeId)
       {
         var pr = Context.EmployeePremiums

@@ -10,7 +10,8 @@ namespace Almotkaml.HR.Repository
     {
         IEnumerable<Employee> GetGride();
         IEnumerable<EmployeePremium> GetEmployeePremium();
-       IEnumerable<AdvancePayment> GetEmployeeAdvance();
+        IEnumerable<EmployeePremium> GetEmployeePremium(int employeeId);
+        IEnumerable<AdvancePayment> GetEmployeeAdvance();
         IEnumerable<SalaryInfo> GettSalaryInfo();
         Employee GetEmployeeNameById(int id);
         IEnumerable<Employee> GetRetirementEmployee();
