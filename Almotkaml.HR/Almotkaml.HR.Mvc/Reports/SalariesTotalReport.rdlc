@@ -453,7 +453,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!SalariesNet.Value, "SalariesTotal")+Sum(Fields!Absence.Value, "SalariesTotal")</Value>
+                                  <Value>=(Sum(Fields!BasicSalaries.Value, "SalariesTotal")+Sum(Fields!ExtraGeneralValue.Value, "SalariesTotal")+Sum(Fields!ExtraValue.Value, "SalariesTotal")+Sum(Fields!Clamp.Value, "SalariesTotal")+Sum(Fields!ExtraWork.Value, "SalariesTotal")+Sum(Fields!RewardValue.Value, "SalariesTotal")+Sum(Fields!ContributionInSecurity.Value, "SalariesTotal"))-(Sum(Fields!Absence.Value, "SalariesTotal")+Sum(Fields!AdvancePayment.Value, "SalariesTotal")+Sum(Fields!CompanyShare.Value, "SalariesTotal")+Sum(Fields!EmployeeShare.Value, "SalariesTotal")+Sum(Fields!Mwada.Value, "SalariesTotal")+Sum(Fields!JihadTax.Value, "SalariesTotal")+Sum(Fields!SafeShare.Value, "SalariesTotal")+Sum(Fields!Sanction.Value, "SalariesTotal")+Sum(Fields!OtherDiscount.Value, "SalariesTotal")+Sum(Fields!SolidarityFund.Value, "SalariesTotal")+Sum(Fields!Alimony.Value, "SalariesTotal")-(Sum(Fields!PremiumActive.Value, "SalariesTotal")))</Value>
                                   <Style>
                                     <Format>#,0.000;(#,0.000)</Format>
                                   </Style>
@@ -2397,7 +2397,7 @@
                     <Value>المراقب المالي</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
-                      <TextDecoration>Underline</TextDecoration>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -2560,7 +2560,7 @@
                     <Value>المراجعة الداخلية</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
-                      <TextDecoration>Underline</TextDecoration>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
