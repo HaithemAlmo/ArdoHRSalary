@@ -63,7 +63,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>الاســــاسي والعــــــلاوات</Value>
+                                  <Value>الأســــاسي والعــــــلاوات</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -122,7 +122,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>المرتب الاساسي</Value>
+                    <Value>المرتب الأساسي</Value>
                     <Style>
                       <FontSize>11pt</FontSize>
                     </Style>
@@ -156,7 +156,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>اجمالي الخصميات</Value>
+                    <Value>إجمالي الخصميات</Value>
                     <Style>
                       <FontSize>11pt</FontSize>
                     </Style>
@@ -178,7 +178,6 @@
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
@@ -190,7 +189,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>اجمالي المرتب</Value>
+                    <Value>إجمالي المرتب</Value>
                     <Style>
                       <FontSize>11pt</FontSize>
                     </Style>
@@ -704,7 +703,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.88194in</Top>
-            <Left>2.06164in</Left>
+            <Left>2.09325in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>11</ZIndex>
@@ -713,7 +712,6 @@
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
@@ -738,7 +736,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>1.24304in</Top>
-            <Left>2.06164in</Left>
+            <Left>2.09325in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>12</ZIndex>
@@ -747,7 +745,6 @@
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
@@ -772,7 +769,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>1.56248in</Top>
-            <Left>2.06164in</Left>
+            <Left>2.09325in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>13</ZIndex>
@@ -781,7 +778,6 @@
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
@@ -806,7 +802,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>2.20137in</Top>
-            <Left>2.06164in</Left>
+            <Left>2.09325in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>14</ZIndex>
@@ -815,7 +811,6 @@
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
@@ -838,7 +833,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>2.84026in</Top>
-            <Left>2.06164in</Left>
+            <Left>2.09325in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>15</ZIndex>
@@ -847,7 +842,6 @@
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
@@ -872,7 +866,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>1.88193in</Top>
-            <Left>2.06164in</Left>
+            <Left>2.09325in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>16</ZIndex>
@@ -881,7 +875,6 @@
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
@@ -904,7 +897,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>2.52082in</Top>
-            <Left>2.06164in</Left>
+            <Left>2.09325in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>17</ZIndex>
@@ -913,7 +906,6 @@
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
@@ -1470,7 +1462,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.52084in</Top>
-            <Left>2.06164in</Left>
+            <Left>2.09325in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>25</ZIndex>
@@ -1479,7 +1471,6 @@
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
@@ -1578,7 +1569,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>3.15971in</Top>
-            <Left>2.06164in</Left>
+            <Left>2.09325in</Left>
             <Height>0.25in</Height>
             <Width>1.27083in</Width>
             <ZIndex>27</ZIndex>
@@ -1587,7 +1578,6 @@
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
@@ -1687,9 +1677,9 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>مدير الإدارة المالية</Value>
+                <Value>مدير إدارة الشؤون المالية</Value>
                 <Style>
-                  <FontSize>11pt</FontSize>
+                  <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <TextDecoration>None</TextDecoration>
                 </Style>
@@ -1704,7 +1694,7 @@
         <Top>6.61289in</Top>
         <Left>0.55605in</Left>
         <Height>0.25in</Height>
-        <Width>1.27083in</Width>
+        <Width>1.62527in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -1723,7 +1713,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>........................... </Value>
+                <Value>....................................... </Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -1736,7 +1726,7 @@
         <Top>6.86289in</Top>
         <Left>0.55605in</Left>
         <Height>0.25in</Height>
-        <Width>1.27083in</Width>
+        <Width>1.62527in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -1755,7 +1745,20 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>يشهد جهاز البحوث التطبيقية والتطوير بأن الأخ/ ت:                                        رقمه الوطني /                          هو أحد الموظفين به ، ومصنف على الدرجة [        ] جدول والمربوط          يتقاضى في مرتب شهري على النحو التالي</Value>
+                <Value>يشهد جهاز البحوث التطبيقية والتطوير بأن الأخ/ ت:                                      ـ رقم وطني                            ـ</Value>
+                <Style>
+                  <FontSize>13pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>هو أحد الموظفين العاملين به ، ومصنف على الدرجة :      بجدول المرتبات / علاوة :        ، ويتقاضى في مرتب شهري على النحو التالي</Value>
                 <Style>
                   <FontSize>13pt</FontSize>
                 </Style>
@@ -1821,7 +1824,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>اعطيت له هذه الشهادة بناء على طلبه ولاستعمالها في الاغراض المسموح بها القانون -</Value>
+                <Value>أعطيت له هذه الشهادة بناء على طلبه لاستعمالها في الأغراض المسموح بها قانوناً-</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -1832,9 +1835,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>7.22401in</Top>
-        <Left>3.44272in</Left>
+        <Left>3.51564in</Left>
         <Height>0.25in</Height>
-        <Width>3.97343in</Width>
+        <Width>3.90051in</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -1853,7 +1856,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>كل كشط او تغيير يلغيها -</Value>
+                <Value>. كل كشط أو تغيير يلغيها -</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -1864,9 +1867,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>7.54345in</Top>
-        <Left>6.18125in</Left>
+        <Left>6.12917in</Left>
         <Height>0.25in</Height>
-        <Width>1.2349in</Width>
+        <Width>1.28698in</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -1905,7 +1908,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -1937,7 +1940,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
-        <Top>0.59028in</Top>
+        <Top>0.63195in</Top>
         <Left>2.51265in</Left>
         <Height>0.20833in</Height>
         <Width>1.88542in</Width>
@@ -2008,8 +2011,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
-        <Top>0.59028in</Top>
-        <Left>0.16344in</Left>
+        <Top>0.61112in</Top>
+        <Left>0.44469in</Left>
         <Height>0.20833in</Height>
         <Width>1.29567in</Width>
         <ZIndex>8</ZIndex>
@@ -2058,7 +2061,6 @@
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
@@ -2080,7 +2082,7 @@
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
         <Top>0.82639in</Top>
-        <Left>2.87504in</Left>
+        <Left>2.09525in</Left>
         <Height>0.20833in</Height>
         <Width>0.40351in</Width>
         <ZIndex>9</ZIndex>
@@ -2094,7 +2096,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.35417in</Width>
+              <Width>0.375in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -2129,7 +2131,6 @@
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
@@ -2150,10 +2151,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
-        <Top>0.8125in</Top>
-        <Left>4.39458in</Left>
+        <Top>0.84028in</Top>
+        <Left>4.02307in</Left>
         <Height>0.20833in</Height>
-        <Width>0.35417in</Width>
+        <Width>0.375in</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border>
@@ -2344,7 +2345,8 @@
               <TextRun>
                 <Value>=Parameters!FinancialAffairs.Value</Value>
                 <Style>
-                  <FontSize>11pt</FontSize>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -2357,7 +2359,7 @@
         <Top>6.32122in</Top>
         <Left>0.55605in</Left>
         <Height>0.25in</Height>
-        <Width>1.27083in</Width>
+        <Width>1.62527in</Width>
         <ZIndex>15</ZIndex>
         <Style>
           <Border>
@@ -2486,41 +2488,6 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Textbox25">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=FormatDateTime(Now, DateFormat.ShortDate)</Value>
-                  <Style>
-                    <FontWeight>Bold</FontWeight>
-                    <Format>yyyy-MM-dd</Format>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>0.61461in</Top>
-          <Left>0.16344in</Left>
-          <Height>0.25in</Height>
-          <Width>1.29567in</Width>
-          <ZIndex>3</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
         <Image Name="Image4">
           <Source>Embedded</Source>
           <Value>ID41651271_1112165392281337_5638247171414294528_n</Value>
@@ -2529,7 +2496,7 @@
           <Left>3.11131in</Left>
           <Height>1.13069in</Height>
           <Width>1.28676in</Width>
-          <ZIndex>4</ZIndex>
+          <ZIndex>3</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -2560,7 +2527,7 @@
           <Left>4.81319in</Left>
           <Height>0.28125in</Height>
           <Width>2.66988in</Width>
-          <ZIndex>5</ZIndex>
+          <ZIndex>4</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -2595,6 +2562,40 @@
           <Left>4.81319in</Left>
           <Height>0.26736in</Height>
           <Width>2.66988in</Width>
+          <ZIndex>5</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="PrintDate">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Parameters!PrintDate.Value</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>PrintDate</rd:DefaultName>
+          <Top>0.60636in</Top>
+          <Left>0.55605in</Left>
+          <Height>0.25in</Height>
+          <Width>1in</Width>
           <ZIndex>6</ZIndex>
           <Style>
             <Border>
@@ -2864,6 +2865,12 @@
     </ReportParameter>
     <ReportParameter Name="FinancialAffairs">
       <DataType>String</DataType>
+      <Prompt>ReportParameter2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PrintDate">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter2</Prompt>
     </ReportParameter>
   </ReportParameters>

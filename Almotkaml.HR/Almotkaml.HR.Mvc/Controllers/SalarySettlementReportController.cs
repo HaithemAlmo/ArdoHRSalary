@@ -1515,14 +1515,16 @@ namespace Almotkaml.HR.Mvc.Controllers
 
             var word = new Maths.NumberToWord(datasources.Sum(r => r.NetSalary)).ConvertToArabic();
             var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
+            var PrintDate = DateTime.Now.Year + "/" + DateTime.Now.Month + "/" + DateTime.Now.Day;
             DateTime dateFrom = Convert.ToDateTime(model.DateFrom);
             DateTime dateTo = Convert.ToDateTime(model.DateTo);
             ReportDataSource rdc = new ReportDataSource("SalaryCertificate", datasources);
 
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
-             reportParameters.Add(new ReportParameter("ReportParameter1", word));
-           
+            reportParameters.Add(new ReportParameter("ReportParameter1", word));
+            reportParameters.Add(new ReportParameter("PrintDate", PrintDate));
+            
 
 
             lr.SetParameters(reportParameters);
@@ -1584,7 +1586,8 @@ namespace Almotkaml.HR.Mvc.Controllers
             });
 
 
-            
+
+            var PrintDate = DateTime.Now.Year + "/" + DateTime.Now.Month + "/" + DateTime.Now.Day;
             var word = new Maths.NumberToWord(datasources.Sum(r => r.NetSalary)).ConvertToArabic();
             var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
 
@@ -1595,6 +1598,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
             reportParameters.Add(new ReportParameter("ReportParameter1", word));
+            reportParameters.Add(new ReportParameter("PrintDate", PrintDate));
             //{
             //    
             //}
@@ -1903,8 +1907,8 @@ namespace Almotkaml.HR.Mvc.Controllers
             {
                 datasources.Add(new AdvanceDetection()
                 {
-                    TafKeet=row.PremiumumName,
-                 
+
+                 AdvanceName=row .PremiumumName ,
                     JobNumber = row.JobNumber,
                     financialnumberMinistry=row .financialnumberMinistry ,
                     EmployeeName = row.EmployeeName,
@@ -1912,10 +1916,15 @@ namespace Almotkaml.HR.Mvc.Controllers
                     Date = row.Date,
                     //DeductionDate = row.DeductionDate,
                     InstallmentValue = row.InstallmentValue,
-                    Rest = row.Rest
+                    Rest = row.Rest,
+
+                    //TafKeet = new Maths.NumberToWord(row.InstallmentValue).ConvertToArabic(),
+                    TafKeet = new Maths.NumberToWord(Math.Round(model2.Grid.Where(s => s.BankBranchId == row.BankBranchId).Sum(r => r.InstallmentValue), 3, MidpointRounding.AwayFromZero)).ConvertToArabic()
                 });
             }
 
+
+            //var _tafkeet = datasources.Sum(e => e.InstallmentValue);
             var _dateMonth = HumanResource.Salary.GetMonthDate();
             //add by ali alherbade 26-05-2019
             var PayrollUnit = HumanResource.StartUp.CompanyInfo.PayrollUnit;// وحدة المرتبات
@@ -1924,6 +1933,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
             var LongName = HumanResource.StartUp.CompanyInfo.LongName;// اسم الشركة
             var Department = HumanResource.StartUp.CompanyInfo.Department;// القسم
+
             var _advanceName = datasources.FirstOrDefault()?.TafKeet;
             // end add 
             
@@ -1932,6 +1942,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             reportParameters.Add(new ReportParameter("Title", "كشف بالسلف الداخلية "));
             reportParameters.Add(new ReportParameter("DateFrom", _dateMonth));
             reportParameters.Add(new ReportParameter("DateTo", ""));
+            //reportParameters.Add(new ReportParameter("Tafkeet", new Maths.NumberToWord(Math.Round(_tafkeet, 3, MidpointRounding.AwayFromZero)).ConvertToArabic()));
             // add by ali alherbade 26-05-2019
             reportParameters.Add(new ReportParameter("Department", Department));//القسم
             reportParameters.Add(new ReportParameter("CompanyName", LongName));// اسم الشركة
@@ -2034,6 +2045,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             reportParameters.Add(new ReportParameter("PayrollUnit", PayrollUnit));//وحدة المرتبات
             reportParameters.Add(new ReportParameter("References", References));// المراجع
             reportParameters.Add(new ReportParameter("AdvanceName", _advanceName));// السلفة
+            reportParameters.Add(new ReportParameter("InstrumentNumber", model2.InstrumentNumber));
             //
             lr.SetParameters(reportParameters);
             lr.DataSources.Add(rdc);

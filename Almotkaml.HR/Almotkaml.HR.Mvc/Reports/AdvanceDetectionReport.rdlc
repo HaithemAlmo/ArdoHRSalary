@@ -22,8 +22,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>2.48189in</Top>
-        <Left>0.1257in</Left>
+        <Top>2.83951in</Top>
+        <Left>0.14094in</Left>
         <Height>0.25in</Height>
         <Width>1.82292in</Width>
         <Style>
@@ -969,36 +969,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <Textbox Name="InstrumentNumber">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Parameters!InstrumentNumber.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>InstrumentNumber</rd:DefaultName>
-                          <Top>0.50123in</Top>
-                          <Left>3.53in</Left>
-                          <Height>0.25in</Height>
-                          <Width>1in</Width>
-                          <ZIndex>6</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
                       </ReportItems>
                       <KeepTogether>true</KeepTogether>
                       <Style>
@@ -1007,7 +977,6 @@
                         </Border>
                       </Style>
                     </Rectangle>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -1061,8 +1030,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>2.48189in</Top>
-        <Left>3.8866in</Left>
+        <Top>2.83951in</Top>
+        <Left>3.90184in</Left>
         <Height>0.25in</Height>
         <Width>1.82292in</Width>
         <ZIndex>2</ZIndex>
@@ -1096,8 +1065,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>2.48189in</Top>
-        <Left>2.00812in</Left>
+        <Top>2.83951in</Top>
+        <Left>2.02336in</Left>
         <Height>0.25in</Height>
         <Width>1.82292in</Width>
         <ZIndex>3</ZIndex>
@@ -1131,8 +1100,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>2.48189in</Top>
-        <Left>5.76854in</Left>
+        <Top>2.83951in</Top>
+        <Left>5.78378in</Left>
         <Height>0.25in</Height>
         <Width>1.82292in</Width>
         <ZIndex>4</ZIndex>
@@ -1166,8 +1135,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>3.408in</Top>
-        <Left>0.28755in</Left>
+        <Top>3.76562in</Top>
+        <Left>0.30279in</Left>
         <Height>0.25in</Height>
         <Width>1.64583in</Width>
         <ZIndex>5</ZIndex>
@@ -1201,8 +1170,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>3.72745in</Top>
-        <Left>0.28755in</Left>
+        <Top>4.08507in</Top>
+        <Left>0.30279in</Left>
         <Height>0.25in</Height>
         <Width>1.64583in</Width>
         <ZIndex>6</ZIndex>
@@ -1236,8 +1205,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>4.07294in</Top>
-        <Left>0.28755in</Left>
+        <Top>4.43056in</Top>
+        <Left>0.30279in</Left>
         <Height>0.25in</Height>
         <Width>1.64583in</Width>
         <ZIndex>7</ZIndex>
@@ -1270,8 +1239,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>PayrollUnit</rd:DefaultName>
-        <Top>2.80134in</Top>
-        <Left>5.76854in</Left>
+        <Top>3.15896in</Top>
+        <Left>5.78378in</Left>
         <Height>0.26042in</Height>
         <Width>1.82292in</Width>
         <ZIndex>8</ZIndex>
@@ -1304,8 +1273,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>References</rd:DefaultName>
-        <Top>2.80134in</Top>
-        <Left>2.00812in</Left>
+        <Top>3.15896in</Top>
+        <Left>2.02336in</Left>
         <Height>0.26042in</Height>
         <Width>1.82292in</Width>
         <ZIndex>9</ZIndex>
@@ -1336,8 +1305,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FinancialAuditor</rd:DefaultName>
-        <Top>2.80134in</Top>
-        <Left>0.1257in</Left>
+        <Top>3.15896in</Top>
+        <Left>0.14094in</Left>
         <Height>0.26042in</Height>
         <Width>1.82292in</Width>
         <ZIndex>10</ZIndex>
@@ -1370,8 +1339,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FinancialAffairs</rd:DefaultName>
-        <Top>2.80134in</Top>
-        <Left>3.8866in</Left>
+        <Top>3.15896in</Top>
+        <Left>3.90184in</Left>
         <Height>0.26042in</Height>
         <Width>1.82292in</Width>
         <ZIndex>11</ZIndex>
@@ -1405,8 +1374,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>3.408in</Top>
-        <Left>1.98103in</Left>
+        <Top>3.76562in</Top>
+        <Left>1.99627in</Left>
         <Height>0.25in</Height>
         <Width>0.95833in</Width>
         <ZIndex>12</ZIndex>
@@ -1440,8 +1409,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>3.72745in</Top>
-        <Left>1.98103in</Left>
+        <Top>4.08507in</Top>
+        <Left>1.99627in</Left>
         <Height>0.25in</Height>
         <Width>0.95833in</Width>
         <ZIndex>13</ZIndex>
@@ -1475,8 +1444,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>4.08683in</Top>
-        <Left>1.98103in</Left>
+        <Top>4.44445in</Top>
+        <Left>1.99627in</Left>
         <Height>0.25in</Height>
         <Width>0.95833in</Width>
         <ZIndex>14</ZIndex>
@@ -1490,8 +1459,78 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
+      <Textbox Name="TafKeet">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!TafKeet.Value)</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>TafKeet</rd:DefaultName>
+        <Top>2.27479in</Top>
+        <Left>0.1257in</Left>
+        <Height>0.25in</Height>
+        <Width>6.21228in</Width>
+        <ZIndex>15</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox45">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>المبلغ بالحروف</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox14</rd:DefaultName>
+        <Top>2.27479in</Top>
+        <Left>6.44961in</Left>
+        <Height>0.25in</Height>
+        <Width>1.03153in</Width>
+        <ZIndex>16</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>4.40626in</Height>
+    <Height>4.75001in</Height>
     <Style>
       <Border>
         <Style>None</Style>
@@ -1735,14 +1774,14 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Title2">
+        <Textbox Name="AdvanceName">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>="من "+Parameters!AdvanceName.Value</Value>
+                  <Value>="من "+First(Fields!AdvanceName.Value, "AdvanceDetection")</Value>
                   <Style>
                     <FontSize>12pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -1754,11 +1793,11 @@
               </Style>
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>Title</rd:DefaultName>
-          <Top>0.71355in</Top>
-          <Left>0.10938in</Left>
-          <Height>0.24653in</Height>
-          <Width>2.77681in</Width>
+          <rd:DefaultName>AdvanceName</rd:DefaultName>
+          <Top>0.71008in</Top>
+          <Left>0.1257in</Left>
+          <Height>0.25in</Height>
+          <Width>2.74525in</Width>
           <ZIndex>8</ZIndex>
           <Style>
             <Border>
@@ -1845,6 +1884,10 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
+        <Field Name="AdvanceName">
+          <DataField>AdvanceName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="CostCenterId">
           <DataField>CostCenterId</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
@@ -1955,6 +1998,12 @@
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="InstrumentNumber">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Tafkeet">
       <DataType>String</DataType>
       <Nullable>true</Nullable>
       <AllowBlank>true</AllowBlank>

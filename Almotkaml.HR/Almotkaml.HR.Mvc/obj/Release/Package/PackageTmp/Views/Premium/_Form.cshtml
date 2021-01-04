@@ -98,12 +98,11 @@
                                             <th>ر.ت</th>
                                             <th>النوع</th>
                                             <th>علاوة/خصم</th>
-
                                             <th> مؤقتة/غير مؤقة</th>
-
                                             <th>تخضع للضرائب/لا تخضع للضرائب</th>
-                                            <th> سلفة/غير سلفة</th>
                                             <th>مجمدة/غير مجمدة</th>
+                                            <th> سلفة/غير سلفة</th>
+
                                             <th>@Html.Show(Model.CanEdit)</th>
                                             @if (Model.CanDelete)
                                             {
@@ -123,11 +122,14 @@
                                                 <td>@typeof(DiscountOrBoun).DisplayFieldName(item.DiscountOrBoun.ToString())</td>
 
                                                 <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                                                <td>@Html.DisplayFor(modelItem => item.IsTemporary)</td>
+                                                <td>@typeof(IsTemporary).DisplayFieldName(item.IsTemporary.ToString())</td>
+                                                <td>@typeof(IsSubject).DisplayFieldName(item.IsSubject.ToString())</td>
+                                                <td>@typeof(IsFrozen).DisplayFieldName(item.IsFrozen.ToString())</td>
+                                                @*<td>@Html.DisplayFor(modelItem => item.IsFrozen)</td>*@
 
-                                                <td>@Html.DisplayFor(modelItem => item.IsSubject)</td>
-                                                <td>@Html.DisplayFor(modelItem => item.IsFrozen)</td>
                                                 <td>@typeof(ISAdvancePremmium).DisplayFieldName(item.ISAdvancePremmium.ToString())</td>
+
+
 
                                                 <td>
                                                     <button name="editPremiumId" value="@item.PremiumId" class="btn btn-info">@Html.Show(Model.CanEdit)</button>
@@ -151,3 +153,5 @@
     </div>
 </div>
 <!-- /.panel -->
+
+

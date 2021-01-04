@@ -549,7 +549,9 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 foreach (var premiumChecks in PremiumCheckList)
                                 {
                                     var Employeepremiums = UnitOfWork.Salaries.GetNotTemEmployeePremiumBy(employee.EmployeeId);
-                                    PremiumValue = salary?.EmployeePremium?.Where(s => s?.PremiumId == premiumChecks.PremiumId).Sum(s => s.Value) ?? 0;
+                                   // var Employeepremiums2 = UnitOfWork.Employees.GetEmployeePremium().Where(e=>e.EmployeeId==employee.EmployeeId).ToList();
+
+                                    PremiumValue = Employeepremiums?.Where(s => s?.PremiumId == premiumChecks.PremiumId).Sum(s => s.Value) ?? 0;
                                     PremiumValue2 = advancePayment?.Where(a => a.PremiumId == premiumChecks.PremiumId).Sum(a => a.InstallmentValue) ?? 0; //salary?.EmployeePremium?.Where(s => s?.AdvancePayment.PremiumId == premiumChecks.PremiumId).Sum(s => s.AdvancePayment.InstallmentValue) ?? 0;
 
                                     PremiumCheckListValues.Add(new PremiumCheckListItem()
@@ -559,7 +561,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                         EmployeeID= employee.EmployeeId,
                                         IsSelected = premiumChecks?.IsSelected ?? false
                                     });
-                                    if(salary.EmployeePremium.Any(s => s?.PremiumId == premiumChecks.PremiumId))
+                                    if(Employeepremiums.Any(s => s?.PremiumId == premiumChecks.PremiumId))
                                         employeePremiumList.Add(new TemEmployeePremiumListItemEE()
                                         {
                                             EmployeeId  = employee.EmployeeId,

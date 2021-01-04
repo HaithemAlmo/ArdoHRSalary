@@ -76,7 +76,7 @@
                                                             <Paragraph>
                                                               <TextRuns>
                                                                 <TextRun>
-                                                                  <Value>مجموع الحصتين</Value>
+                                                                  <Value>المجموع</Value>
                                                                   <Style>
                                                                     <FontWeight>Bold</FontWeight>
                                                                   </Style>
@@ -1249,8 +1249,8 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Textbox14</rd:DefaultName>
-                                            <Top>0.54513in</Top>
-                                            <Left>6.35304in</Left>
+                                            <Top>0.55902in</Top>
+                                            <Left>6.37873in</Left>
                                             <Height>0.25in</Height>
                                             <Width>1.30877in</Width>
                                             <ZIndex>5</ZIndex>
@@ -1271,7 +1271,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>الإخوة : صندوق الضمان الإجتماعي </Value>
+                                                    <Value>الإخوة : صندوق الضمان الاجتماعي </Value>
                                                     <Style>
                                                       <FontSize>12pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
@@ -1298,8 +1298,8 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Textbox1</rd:DefaultName>
-                                            <Top>0.0243in</Top>
-                                            <Left>3.91901in</Left>
+                                            <Top>0.01389in</Top>
+                                            <Left>3.9447in</Left>
                                             <Height>0.47917in</Height>
                                             <Width>3.7428in</Width>
                                             <ZIndex>6</ZIndex>
@@ -1321,7 +1321,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>مقابل تسديد الضمان الإجتماعي للعاملين التابعين لجهاز البحوث التطبيقية والتطوير </Value>
+                                                    <Value>مقابل تسديد الضمان الاجتماعي للعاملين التابعين لجهاز البحوث التطبيقية والتطوير </Value>
                                                     <Style>
                                                       <FontSize>12pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
@@ -1334,8 +1334,8 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Textbox14</rd:DefaultName>
-                                            <Top>0.8368in</Top>
-                                            <Left>3.12013in</Left>
+                                            <Top>0.85069in</Top>
+                                            <Left>3.21054in</Left>
                                             <Height>0.25in</Height>
                                             <Width>4.54168in</Width>
                                             <ZIndex>7</ZIndex>
@@ -1368,8 +1368,8 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>InstrumentNumber</rd:DefaultName>
-                                            <Top>0.55902in</Top>
-                                            <Left>3.91901in</Left>
+                                            <Top>0.57291in</Top>
+                                            <Left>3.9447in</Left>
                                             <Height>0.25in</Height>
                                             <Width>2.42594in</Width>
                                             <ZIndex>8</ZIndex>
@@ -1667,6 +1667,7 @@
                                           </Border>
                                         </Style>
                                       </Rectangle>
+                                      <rd:Selected>true</rd:Selected>
                                     </CellContents>
                                   </TablixCell>
                                 </TablixCells>
@@ -1795,7 +1796,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>كشف الضمان الإجتماعي</Value>
+                  <Value>كشف الضمان الاجتماعي</Value>
                   <Style>
                     <FontSize>16pt</FontSize>
                     <FontWeight>Bold</FontWeight>

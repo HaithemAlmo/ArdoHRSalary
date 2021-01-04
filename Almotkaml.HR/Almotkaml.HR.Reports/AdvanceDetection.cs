@@ -12,6 +12,8 @@
         public decimal Rest { get; set; }
         public string Date { get; set; }
         public string TafKeet { get; set; }
+        public string AdvanceName { get; set; }
+        
 
         
     }

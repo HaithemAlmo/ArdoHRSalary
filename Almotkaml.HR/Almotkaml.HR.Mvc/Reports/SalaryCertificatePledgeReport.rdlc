@@ -9,22 +9,22 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>بهدا نتعهد لكم بعدم نقل أو قفل حساب المذكور أعلاه الجاري طرفكم تحت رقم                            وذلك طيلة مدة عمله معنا</Value>
+                <Value>بهدا نتعهد لكم بعدم نقل أو قفل حساب المذكور أعلاه الجاري طرفكم تحت رقم  </Value>
                 <Style>
                   <FontSize>16pt</FontSize>
                 </Style>
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Right</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>1.7509in</Top>
-        <Left>0.16344in</Left>
-        <Height>0.54166in</Height>
-        <Width>6.96861in</Width>
+        <Left>1.60094in</Left>
+        <Height>0.28124in</Height>
+        <Width>5.53111in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -44,6 +44,7 @@
               <TextRun>
                 <Value>مدير إدارة الشؤون المالية</Value>
                 <Style>
+                  <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <TextDecoration>None</TextDecoration>
                 </Style>
@@ -56,9 +57,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>6.58511in</Top>
-        <Left>0.55605in</Left>
+        <Left>0.3373in</Left>
         <Height>0.25in</Height>
-        <Width>1.27083in</Width>
+        <Width>1.66666in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -77,7 +78,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>.......................... </Value>
+                <Value>.................................... </Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -88,9 +89,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>6.90456in</Top>
-        <Left>0.55605in</Left>
+        <Left>0.3373in</Left>
         <Height>0.25in</Height>
-        <Width>1.27083in</Width>
+        <Width>1.66666in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -204,7 +205,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.14584in</Width>
+              <Width>3.1164in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -260,9 +261,9 @@
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
         <Top>1.12152in</Top>
-        <Left>2.08593in</Left>
+        <Left>1.50078in</Left>
         <Height>0.31249in</Height>
-        <Width>2.14584in</Width>
+        <Width>3.1164in</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -345,12 +346,12 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.36795in</Width>
+              <Width>1.42644in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.26041in</Height>
+              <Height>0.28124in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -402,9 +403,9 @@
         </TablixRowHierarchy>
         <DataSetName>SalaryCertificate</DataSetName>
         <Top>1.7509in</Top>
-        <Left>0.3373in</Left>
-        <Height>0.26041in</Height>
-        <Width>1.36795in</Width>
+        <Left>0.10505in</Left>
+        <Height>0.28124in</Height>
+        <Width>1.42644in</Width>
         <ZIndex>8</ZIndex>
         <Style>
           <Border>
@@ -466,16 +467,15 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>1.12152in</Top>
-        <Left>4.237in</Left>
+        <Left>3.65185in</Left>
         <Height>0.31249in</Height>
-        <Width>0.73932in</Width>
+        <Width>1.70988in</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
           <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
@@ -528,15 +528,15 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Right</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>3.6259in</Top>
-        <Left>0.45057in</Left>
-        <Height>0.54166in</Height>
-        <Width>6.68148in</Width>
+        <Left>3.23233in</Left>
+        <Height>0.34374in</Height>
+        <Width>2.1294in</Width>
         <ZIndex>12</ZIndex>
         <Style>
           <Border>
@@ -557,7 +557,8 @@
               <TextRun>
                 <Value>=Parameters!FinancialAffairs.Value</Value>
                 <Style>
-                  <FontSize>11pt</FontSize>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -568,10 +569,42 @@
         </Paragraphs>
         <rd:DefaultName>FinancialAffairs</rd:DefaultName>
         <Top>6.29344in</Top>
-        <Left>0.55605in</Left>
+        <Left>0.3373in</Left>
         <Height>0.25in</Height>
-        <Width>1.27083in</Width>
+        <Width>1.66666in</Width>
         <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>وذلك طيلة مدة عمله معنا</Value>
+                <Style>
+                  <FontSize>16pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>2.05992in</Top>
+        <Left>5.29872in</Left>
+        <Height>0.30298in</Height>
+        <Width>1.83333in</Width>
+        <ZIndex>14</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -699,41 +732,6 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Textbox25">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=FormatDateTime(Now, DateFormat.ShortDate)</Value>
-                  <Style>
-                    <FontWeight>Bold</FontWeight>
-                    <Format>yyyy-MM-dd</Format>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>0.61461in</Top>
-          <Left>0.16344in</Left>
-          <Height>0.25in</Height>
-          <Width>1.29567in</Width>
-          <ZIndex>3</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
         <Image Name="Image4">
           <Source>Embedded</Source>
           <Value>ID41651271_1112165392281337_5638247171414294528_n</Value>
@@ -742,7 +740,7 @@
           <Left>3.11131in</Left>
           <Height>1.13069in</Height>
           <Width>1.28676in</Width>
-          <ZIndex>4</ZIndex>
+          <ZIndex>3</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -773,7 +771,7 @@
           <Left>4.81319in</Left>
           <Height>0.28125in</Height>
           <Width>2.66988in</Width>
-          <ZIndex>5</ZIndex>
+          <ZIndex>4</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -808,6 +806,40 @@
           <Left>4.81319in</Left>
           <Height>0.26736in</Height>
           <Width>2.66988in</Width>
+          <ZIndex>5</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="PrintDate">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Parameters!PrintDate.Value</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>PrintDate</rd:DefaultName>
+          <Top>0.60636in</Top>
+          <Left>0.473in</Left>
+          <Height>0.25in</Height>
+          <Width>1in</Width>
           <ZIndex>6</ZIndex>
           <Style>
             <Border>
@@ -1073,6 +1105,12 @@
     </ReportParameter>
     <ReportParameter Name="FinancialAffairs">
       <DataType>String</DataType>
+      <Prompt>ReportParameter2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PrintDate">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter2</Prompt>
     </ReportParameter>
   </ReportParameters>

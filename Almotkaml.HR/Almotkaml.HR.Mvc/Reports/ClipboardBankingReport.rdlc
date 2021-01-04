@@ -6,12 +6,12 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>7.61013in</Width>
+              <Width>7.655in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>3.01612in</Height>
+              <Height>2.49529in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -577,8 +577,8 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>ClipboardBanking</DataSetName>
-                          <Top>1.01216in</Top>
-                          <Left>0.08426in</Left>
+                          <Top>1.18229in</Top>
+                          <Left>0.12913in</Left>
                           <Height>0.78125in</Height>
                           <Width>7.52587in</Width>
                           <Style>
@@ -648,8 +648,8 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>ClipboardBanking</DataSetName>
-                          <Top>0.14409in</Top>
-                          <Left>1.48488in</Left>
+                          <Top>0.13021in</Top>
+                          <Left>1.71509in</Left>
                           <Height>0.25in</Height>
                           <Width>4.81366in</Width>
                           <ZIndex>1</ZIndex>
@@ -666,7 +666,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value> : إسم المصرف</Value>
+                                  <Value> : اسم المصرف</Value>
                                   <Style>
                                     <FontSize>14pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -679,8 +679,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox14</rd:DefaultName>
-                          <Top>0.13021in</Top>
-                          <Left>6.24299in</Left>
+                          <Top>0.11633in</Top>
+                          <Left>6.4732in</Left>
                           <Height>0.26388in</Height>
                           <Width>1.1818in</Width>
                           <ZIndex>2</ZIndex>
@@ -714,10 +714,10 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox40</rd:DefaultName>
-                          <Top>2.0191in</Top>
-                          <Left>6.21993in</Left>
+                          <Top>2.03299in</Top>
+                          <Left>6.22498in</Left>
                           <Height>0.25in</Height>
-                          <Width>1.26041in</Width>
+                          <Width>1.38515in</Width>
                           <ZIndex>3</ZIndex>
                           <Style>
                             <Border>
@@ -750,10 +750,10 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox40</rd:DefaultName>
-                          <Top>2.0191in</Top>
-                          <Left>0.17852in</Left>
+                          <Top>2.03299in</Top>
+                          <Left>0.18357in</Left>
                           <Height>0.25in</Height>
-                          <Width>5.97197in</Width>
+                          <Width>6.09671in</Width>
                           <ZIndex>4</ZIndex>
                           <Style>
                             <Border>
@@ -776,6 +776,7 @@
                                 <TextRun>
                                   <Value>=Parameters!InstrumentNumber.Value</Value>
                                   <Style>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -786,10 +787,10 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>InstrumentNumber</rd:DefaultName>
-                          <Top>0.43576in</Top>
-                          <Left>5.36923in</Left>
+                          <Top>0.46353in</Top>
+                          <Left>5.1793in</Left>
                           <Height>0.25in</Height>
-                          <Width>1in</Width>
+                          <Width>1.20578in</Width>
                           <ZIndex>5</ZIndex>
                           <Style>
                             <Border>
@@ -810,6 +811,7 @@
                                 <TextRun>
                                   <Value EvaluationMode="Constant">: نرفق لكم الصك رقم</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -820,10 +822,10 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox3</rd:DefaultName>
-                          <Top>0.43576in</Top>
-                          <Left>6.39701in</Left>
+                          <Top>0.46353in</Top>
+                          <Left>6.41286in</Left>
                           <Height>0.25in</Height>
-                          <Width>1.04167in</Width>
+                          <Width>1.24214in</Width>
                           <ZIndex>6</ZIndex>
                           <Style>
                             <Border>
@@ -842,8 +844,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>وهو يمثل صافي مرتبات الموظفين عن شهر</Value>
+                                  <Value>الذي يمثل صافي مرتبات الموظفين عن شهر</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -854,10 +857,10 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
-                          <Top>0.43576in</Top>
-                          <Left>3.31481in</Left>
+                          <Top>0.44965in</Top>
+                          <Left>2.68543in</Left>
                           <Height>0.25in</Height>
-                          <Width>2.0822in</Width>
+                          <Width>2.46609in</Width>
                           <ZIndex>7</ZIndex>
                           <Style>
                             <Border>
@@ -877,7 +880,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>="/ "+Parameters!Date.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -886,10 +891,10 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Date</rd:DefaultName>
-                          <Top>0.43576in</Top>
-                          <Left>2.74189in</Left>
+                          <Top>0.44965in</Top>
+                          <Left>2.01773in</Left>
                           <Height>0.25in</Height>
-                          <Width>0.57292in</Width>
+                          <Width>0.6677in</Width>
                           <ZIndex>8</ZIndex>
                           <Style>
                             <Border>
@@ -908,21 +913,59 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>.يرجي قيد المبلغ لحسابتهم المفتوحة لديكم وفقا لما يلي</Value>
+                                  <Value>يرجي قيد المبلغ لحسابتهم المفتوحة </Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox6</rd:DefaultName>
-                          <Top>0.43576in</Top>
-                          <Left>0.17939in</Left>
-                          <Height>0.25in</Height>
-                          <Width>2.5625in</Width>
+                          <Top>0.43577in</Top>
+                          <Left>0.08426in</Left>
+                          <Height>0.27777in</Height>
+                          <Width>2.03893in</Width>
                           <ZIndex>9</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox7">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>. لديكم وفقا لما يلي</Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <Top>0.78298in</Top>
+                          <Left>4.82592in</Left>
+                          <Height>0.23958in</Height>
+                          <Width>2.82908in</Width>
+                          <ZIndex>10</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -969,9 +1012,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>ClipboardBanking</DataSetName>
-        <Top>0.06944in</Top>
-        <Height>3.01612in</Height>
-        <Width>7.61013in</Width>
+        <Top>0.08332in</Top>
+        <Height>2.49529in</Height>
+        <Width>7.655in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1274,7 +1317,7 @@
       </Border>
     </Style>
   </Body>
-  <Width>7.70924in</Width>
+  <Width>7.76393in</Width>
   <Page>
     <PageHeader>
       <Height>1.89583in</Height>
