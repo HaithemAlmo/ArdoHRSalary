@@ -27,7 +27,7 @@
                                 <Width>0.84149in</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>0.92869in</Width>
+                                <Width>0.74345in</Width>
                               </TablixColumn>
                               <TablixColumn>
                                 <Width>0.89024in</Width>
@@ -36,7 +36,7 @@
                                 <Width>0.88573in</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>1.67683in</Width>
+                                <Width>1.86207in</Width>
                               </TablixColumn>
                               <TablixColumn>
                                 <Width>0.86458in</Width>
@@ -75,10 +75,10 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -110,10 +110,10 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -145,10 +145,10 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -180,10 +180,10 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -215,10 +215,10 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -233,7 +233,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>الاسم</Value>
+                                                <Value>الاســـــــــــم</Value>
                                                 <Style>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -250,10 +250,10 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -285,10 +285,10 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -320,10 +320,10 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -360,10 +360,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                           <Direction>RTL</Direction>
                                         </Style>
@@ -396,10 +395,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                           <Direction>RTL</Direction>
                                         </Style>
@@ -430,10 +428,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                           <Direction>RTL</Direction>
                                         </Style>
@@ -466,10 +463,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                           <Direction>RTL</Direction>
                                         </Style>
@@ -502,10 +498,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                           <Direction>RTL</Direction>
                                         </Style>
@@ -536,10 +531,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                           <Direction>RTL</Direction>
                                         </Style>
@@ -570,10 +564,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>3pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                           <Direction>RTL</Direction>
                                         </Style>
@@ -591,7 +584,7 @@
                                               <TextRun>
                                                 <Value>=RowNumber("Details1")</Value>
                                                 <Style>
-                                                  <FontWeight>Bold</FontWeight>
+                                                  <FontWeight>Normal</FontWeight>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
@@ -606,7 +599,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -648,7 +641,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -684,7 +677,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -720,7 +713,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -757,7 +750,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -794,7 +787,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -813,14 +806,14 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>الإجمالي</Value>
+                                                <Value>الإجــــمـــــــالــــــي</Value>
                                                 <Style>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style>
-                                              <TextAlign>Left</TextAlign>
+                                              <TextAlign>Center</TextAlign>
                                             </Style>
                                           </Paragraph>
                                         </Paragraphs>
@@ -830,7 +823,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -877,8 +870,8 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>TaxReport</DataSetName>
-                          <Top>1.44792in</Top>
-                          <Left>0.26121in</Left>
+                          <Top>1.27084in</Top>
+                          <Left>0.27506in</Left>
                           <Height>0.75in</Height>
                           <Width>7.61039in</Width>
                           <Style>
@@ -891,7 +884,7 @@
                           <TablixBody>
                             <TablixColumns>
                               <TablixColumn>
-                                <Width>4.61676in</Width>
+                                <Width>6.44724in</Width>
                               </TablixColumn>
                             </TablixColumns>
                             <TablixRows>
@@ -924,6 +917,7 @@
                                           <Border>
                                             <Style>None</Style>
                                           </Border>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -947,10 +941,10 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>TaxReport</DataSetName>
-                          <Top>2.43056in</Top>
-                          <Left>2.09165in</Left>
+                          <Top>2.26389in</Top>
+                          <Left>0.27506in</Left>
                           <Height>0.25in</Height>
-                          <Width>4.61676in</Width>
+                          <Width>6.44724in</Width>
                           <ZIndex>1</ZIndex>
                           <Style>
                             <Border>
@@ -979,7 +973,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value> : مجموع ض.الدخل</Value>
+                                  <Value> -: مجموع ض.الدخل</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -992,8 +986,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox14</rd:DefaultName>
-                          <Top>2.43056in</Top>
-                          <Left>6.63642in</Left>
+                          <Top>2.26389in</Top>
+                          <Left>6.65031in</Left>
                           <Height>0.25in</Height>
                           <Width>1.23519in</Width>
                           <ZIndex>2</ZIndex>
@@ -1001,6 +995,7 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1014,7 +1009,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value> : مجموع الجهاد</Value>
+                                  <Value> -: مـجـمـوع الـجـهاـد</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -1027,8 +1022,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox14</rd:DefaultName>
-                          <Top>2.70833in</Top>
-                          <Left>6.63642in</Left>
+                          <Top>2.54166in</Top>
+                          <Left>6.65031in</Left>
                           <Height>0.25in</Height>
                           <Width>1.23519in</Width>
                           <ZIndex>3</ZIndex>
@@ -1036,6 +1031,7 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1049,7 +1045,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value> : مجموع الدمغة</Value>
+                                  <Value> -: مـجـمـوع الـدمغـة</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -1062,8 +1058,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox14</rd:DefaultName>
-                          <Top>2.98611in</Top>
-                          <Left>6.63641in</Left>
+                          <Top>2.81944in</Top>
+                          <Left>6.6503in</Left>
                           <Height>0.25in</Height>
                           <Width>1.23519in</Width>
                           <ZIndex>4</ZIndex>
@@ -1071,6 +1067,7 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1081,7 +1078,7 @@
                           <TablixBody>
                             <TablixColumns>
                               <TablixColumn>
-                                <Width>4.63065in</Width>
+                                <Width>6.46113in</Width>
                               </TablixColumn>
                             </TablixColumns>
                             <TablixRows>
@@ -1114,6 +1111,7 @@
                                           <Border>
                                             <Style>None</Style>
                                           </Border>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -1137,10 +1135,10 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>TaxReport</DataSetName>
-                          <Top>2.70833in</Top>
-                          <Left>2.09165in</Left>
+                          <Top>2.54166in</Top>
+                          <Left>0.27506in</Left>
                           <Height>0.25in</Height>
-                          <Width>4.63065in</Width>
+                          <Width>6.46113in</Width>
                           <ZIndex>5</ZIndex>
                           <Style>
                             <Border>
@@ -1154,7 +1152,7 @@
                           <TablixBody>
                             <TablixColumns>
                               <TablixColumn>
-                                <Width>4.63064in</Width>
+                                <Width>6.46108in</Width>
                               </TablixColumn>
                             </TablixColumns>
                             <TablixRows>
@@ -1187,6 +1185,7 @@
                                           <Border>
                                             <Style>None</Style>
                                           </Border>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -1210,10 +1209,10 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>TaxReport</DataSetName>
-                          <Top>2.98611in</Top>
-                          <Left>2.09165in</Left>
+                          <Top>2.81944in</Top>
+                          <Left>0.2751in</Left>
                           <Height>0.25in</Height>
-                          <Width>4.63064in</Width>
+                          <Width>6.46108in</Width>
                           <ZIndex>6</ZIndex>
                           <Style>
                             <Border>
@@ -1230,7 +1229,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value> : المجموع الكلي</Value>
+                                  <Value> -: الـمـجـمـوع الـكلي</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -1243,8 +1242,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox14</rd:DefaultName>
-                          <Top>3.25in</Top>
-                          <Left>6.63642in</Left>
+                          <Top>3.08333in</Top>
+                          <Left>6.65031in</Left>
                           <Height>0.25in</Height>
                           <Width>1.23519in</Width>
                           <ZIndex>7</ZIndex>
@@ -1252,6 +1251,7 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1262,7 +1262,7 @@
                           <TablixBody>
                             <TablixColumns>
                               <TablixColumn>
-                                <Width>4.63064in</Width>
+                                <Width>6.46108in</Width>
                               </TablixColumn>
                             </TablixColumns>
                             <TablixRows>
@@ -1295,6 +1295,7 @@
                                           <Border>
                                             <Style>None</Style>
                                           </Border>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -1318,10 +1319,10 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>TaxReport</DataSetName>
-                          <Top>3.25in</Top>
-                          <Left>2.09165in</Left>
+                          <Top>3.08333in</Top>
+                          <Left>0.2751in</Left>
                           <Height>0.25in</Height>
-                          <Width>4.63064in</Width>
+                          <Width>6.46108in</Width>
                           <ZIndex>8</ZIndex>
                           <Style>
                             <Border>
@@ -1338,7 +1339,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>المبلغ بالحروف: </Value>
+                                  <Value>الـمـبـلغ بالحـروف :- </Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -1351,15 +1352,16 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox14</rd:DefaultName>
-                          <Top>3.54167in</Top>
-                          <Left>6.73619in</Left>
+                          <Top>3.375in</Top>
+                          <Left>6.65031in</Left>
                           <Height>0.25in</Height>
-                          <Width>1.13541in</Width>
+                          <Width>1.23518in</Width>
                           <ZIndex>9</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1404,6 +1406,7 @@
                                           <Border>
                                             <Style>None</Style>
                                           </Border>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -1428,8 +1431,8 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>SocialSecurityFund</DataSetName>
-                          <Top>3.54167in</Top>
-                          <Left>0.26121in</Left>
+                          <Top>3.375in</Top>
+                          <Left>0.2751in</Left>
                           <Height>0.25in</Height>
                           <Width>6.46109in</Width>
                           <ZIndex>10</ZIndex>
@@ -1481,10 +1484,11 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>المراجع المالي</Value>
+                                  <Value>المــراجــع المــالــي</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1551,10 +1555,11 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>المراقب المالي</Value>
+                                  <Value>المـــراقـــب المـــالــي</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1586,7 +1591,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value> : نرفق لكم الصك رقم</Value>
+                                  <Value> -: نرفق لكم الصك رقم</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -1599,8 +1604,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox14</rd:DefaultName>
-                          <Top>0.63195in</Top>
-                          <Left>6.44868in</Left>
+                          <Top>0.59376in</Top>
+                          <Left>6.57671in</Left>
                           <Height>0.25in</Height>
                           <Width>1.30877in</Width>
                           <ZIndex>15</ZIndex>
@@ -1621,23 +1626,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>الإخوة : مصلحة الضرائب </Value>
+                                  <Value>الإخوة :- مصلحة الضرائب  </Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>بعد التحية ،،، </Value>
-                                  <Style>
-                                    <FontSize>12pt</FontSize>
+                                    <FontSize>14pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1648,10 +1639,9 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox1</rd:DefaultName>
-                          <Top>0.15278in</Top>
-                          <Left>4.01464in</Left>
-                          <Height>0.47917in</Height>
-                          <Width>3.7428in</Width>
+                          <Left>1.77807in</Left>
+                          <Height>0.27084in</Height>
+                          <Width>6.10738in</Width>
                           <ZIndex>16</ZIndex>
                           <Style>
                             <Border>
@@ -1662,41 +1652,6 @@
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                             <Direction>RTL</Direction>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="Textbox23">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>مقابل تسديد االضرائب للعاملين التابعين لجهاز البحوث التطبيقية والتطوير </Value>
-                                  <Style>
-                                    <FontSize>12pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox14</rd:DefaultName>
-                          <Top>0.89584in</Top>
-                          <Left>3.09291in</Left>
-                          <Height>0.25in</Height>
-                          <Width>4.66455in</Width>
-                          <ZIndex>17</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
                         <Textbox Name="PayrollUnit">
@@ -1722,7 +1677,7 @@
                           <Left>6.28346in</Left>
                           <Height>0.25in</Height>
                           <Width>1.47398in</Width>
-                          <ZIndex>18</ZIndex>
+                          <ZIndex>17</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1756,7 +1711,7 @@
                           <Left>2.32393in</Left>
                           <Height>0.25in</Height>
                           <Width>1.47398in</Width>
-                          <ZIndex>19</ZIndex>
+                          <ZIndex>18</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1790,7 +1745,7 @@
                           <Left>0.52302in</Left>
                           <Height>0.25in</Height>
                           <Width>1.47398in</Width>
-                          <ZIndex>20</ZIndex>
+                          <ZIndex>19</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1824,7 +1779,7 @@
                           <Left>4.34078in</Left>
                           <Height>0.25in</Height>
                           <Width>1.47398in</Width>
-                          <ZIndex>21</ZIndex>
+                          <ZIndex>20</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1854,10 +1809,45 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>InstrumentNumber</rd:DefaultName>
-                          <Top>0.64584in</Top>
-                          <Left>4.11863in</Left>
+                          <Top>0.59376in</Top>
+                          <Left>4.24666in</Left>
                           <Height>0.25in</Height>
                           <Width>2.42708in</Width>
+                          <ZIndex>21</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>5pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>بعد التحية ،،، </Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Top>0.3125in</Top>
+                          <Left>1.7781in</Left>
+                          <Height>0.23959in</Height>
+                          <Width>6.10738in</Width>
                           <ZIndex>22</ZIndex>
                           <Style>
                             <Border>
@@ -1865,6 +1855,42 @@
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Direction>RTL</Direction>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox10">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>. مقابل تسديد االضرائب للعاملين التابعين لجهاز البحوث التطبيقية والتطوير </Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox10</rd:DefaultName>
+                          <Top>0.87154in</Top>
+                          <Left>3.7905in</Left>
+                          <Height>0.25in</Height>
+                          <Width>4.20911in</Width>
+                          <ZIndex>23</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>7pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
@@ -1877,7 +1903,6 @@
                         </Border>
                       </Style>
                     </Rectangle>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -1933,16 +1958,10 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value> : </Value>
+                  <Value> -: عن شهر</Value>
                   <Style>
-                    <FontSize>14pt</FontSize>
+                    <FontSize>12pt</FontSize>
                     <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-                <TextRun>
-                  <Value>عن شهر</Value>
-                  <Style>
-                    <FontSize>14pt</FontSize>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -1952,10 +1971,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox14</rd:DefaultName>
-          <Top>0.65055in</Top>
-          <Left>1.40918in</Left>
-          <Height>0.37153in</Height>
-          <Width>0.84149in</Width>
+          <Top>0.63666in</Top>
+          <Left>1.10042in</Left>
+          <Height>0.24653in</Height>
+          <Width>0.77205in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1975,7 +1994,7 @@
                 <TextRun>
                   <Value>كشف الضرائب</Value>
                   <Style>
-                    <FontSize>16pt</FontSize>
+                    <FontSize>14pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -1987,7 +2006,7 @@
           </Paragraphs>
           <rd:DefaultName>Title</rd:DefaultName>
           <Top>0.35541in</Top>
-          <Left>0.78192in</Left>
+          <Left>0.47319in</Left>
           <Height>0.28125in</Height>
           <Width>1.46875in</Width>
           <ZIndex>1</ZIndex>
@@ -2049,7 +2068,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
           <Top>0.35541in</Top>
-          <Left>4.99538in</Left>
+          <Left>5.4023in</Left>
           <Height>0.28125in</Height>
           <Width>2.66988in</Width>
           <ZIndex>4</ZIndex>
@@ -2084,7 +2103,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
           <Top>0.66444in</Top>
-          <Left>4.99538in</Left>
+          <Left>5.4023in</Left>
           <Height>0.26736in</Height>
           <Width>2.66988in</Width>
           <ZIndex>5</ZIndex>
@@ -2108,6 +2127,7 @@
                   <Value>=Parameters!Date.Value</Value>
                   <Style>
                     <FontSize>12pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -2117,11 +2137,45 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Date</rd:DefaultName>
-          <Top>0.67833in</Top>
-          <Left>0.65809in</Left>
-          <Height>0.25in</Height>
+          <Top>0.63666in</Top>
+          <Left>0.40375in</Left>
+          <Height>0.24653in</Height>
           <Width>0.86458in</Width>
           <ZIndex>6</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>6pt</PaddingRight>
+            <PaddingTop>3pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="TotalPages4">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="الصفحة :- " &amp;Globals!PageNumber &amp; " من "  &amp; Globals!TotalPages</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>TotalPages</rd:DefaultName>
+          <Top>1.13319in</Top>
+          <Left>0.34763in</Left>
+          <Height>0.25in</Height>
+          <Width>1.52484in</Width>
+          <ZIndex>7</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>

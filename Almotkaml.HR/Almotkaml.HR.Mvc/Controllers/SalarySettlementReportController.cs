@@ -1470,11 +1470,12 @@ namespace Almotkaml.HR.Mvc.Controllers
                     Boun = model.Grid.Select(s => s.Boun).Sum(),
                     SalaryTotal = model.Grid.Select(s => s.SalaryTotal).Sum(),
                     //AdvancePaymentName = model.Grid.Select(s => s.AdvancePaymentName).FirstOrDefault(),
+                    //Degree = model.Grid.Select(s => s.Degree).FirstOrDefault().ToString(),
                     Degree = model.Grid.Select(s => s.Degree).FirstOrDefault().ToString(),
                     //DiscountName = model.Grid.Select(s => s.DiscountName).ToList()[2],
-                   // premiumName = model.Grid.Select(s => s.PremiumumName).ToList()[0],
-                   // DiscountValue = model.Grid.Select(s => s.ValueDiscountm).Sum(),
-                   // premiumValue = model.Grid.Select(s => s.ValuePremiumum).Sum(),
+                    // premiumName = model.Grid.Select(s => s.PremiumumName).ToList()[0],
+                    // DiscountValue = model.Grid.Select(s => s.ValueDiscountm).Sum(),
+                    // premiumValue = model.Grid.Select(s => s.ValuePremiumum).Sum(),
                     Absence = model.Grid.Select(s => s.Absence).Sum(),
                     EmployeeShare= model.Grid.Select(s => s.EmployeeShare).Sum(),
                     Sanction= model.Grid.Select(s => s.Sanction).Sum(),
@@ -1586,7 +1587,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             });
 
 
-
+            var BankNameParmeter = "  الإخوة مصرف / " + model.Grid.Select(s => s.BankName).FirstOrDefault() + " " + model.Grid.Select(s => s.BankBranchName).FirstOrDefault();
             var PrintDate = DateTime.Now.Year + "/" + DateTime.Now.Month + "/" + DateTime.Now.Day;
             var word = new Maths.NumberToWord(datasources.Sum(r => r.NetSalary)).ConvertToArabic();
             var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
@@ -1599,6 +1600,8 @@ namespace Almotkaml.HR.Mvc.Controllers
             reportParameters.Add(new ReportParameter("FinancialAffairs", FinancialAffairs));// الشئون المالية
             reportParameters.Add(new ReportParameter("ReportParameter1", word));
             reportParameters.Add(new ReportParameter("PrintDate", PrintDate));
+            reportParameters.Add(new ReportParameter("Title", BankNameParmeter));
+            
             //{
             //    
             //}
@@ -2276,10 +2279,11 @@ namespace Almotkaml.HR.Mvc.Controllers
             var FinancialAffairs = HumanResource.StartUp.CompanyInfo.FinancialAffairs;// الشئون المالية
             var LongName = HumanResource.StartUp.CompanyInfo.LongName;// اسم الشركة
             var Department = HumanResource.StartUp.CompanyInfo.Department;// القسم
+            var datePrint = model2.Year + " - "  + model2.Month;
             // end add 
             ReportDataSource rdc = new ReportDataSource("AbstractCliboardBanking", datasources);
             ReportParameterCollection reportParameters = new ReportParameterCollection();
-            reportParameters.Add(new ReportParameter("Title", "ملخص الحافظة المصرفية  "));
+            reportParameters.Add(new ReportParameter("Title", datePrint));
             // add by ali alherbade 26-05-2019
             reportParameters.Add(new ReportParameter("Department", Department));//القسم
             reportParameters.Add(new ReportParameter("CompanyName", LongName));// اسم الشركة

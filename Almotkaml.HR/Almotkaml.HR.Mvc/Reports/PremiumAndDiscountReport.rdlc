@@ -9,10 +9,11 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>المراقب المالي</Value>
+                <Value>المـــراقـــب المـــالــي</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -103,7 +104,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>White</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -138,7 +139,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>White</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -173,7 +174,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>White</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -208,7 +209,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>White</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -243,7 +244,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>White</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -278,7 +279,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>White</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -318,10 +319,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>4pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -351,10 +351,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>4pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -386,10 +385,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>4pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -419,10 +417,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>4pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -454,10 +451,9 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>=IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>4pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -474,7 +470,7 @@
                                               <TextRun>
                                                 <Value>=RowNumber("Details1")</Value>
                                                 <Style>
-                                                  <FontWeight>Bold</FontWeight>
+                                                  <FontWeight>Normal</FontWeight>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
@@ -489,10 +485,10 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>White</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingTop>4pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
@@ -530,7 +526,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -565,7 +561,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -601,7 +597,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -619,14 +615,14 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>الإجمالي :</Value>
+                                                <Value>الإجـــــــمــــــــــــالــــــي </Value>
                                                 <Style>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style>
-                                              <TextAlign>Left</TextAlign>
+                                              <TextAlign>Center</TextAlign>
                                             </Style>
                                           </Paragraph>
                                         </Paragraphs>
@@ -636,7 +632,7 @@
                                             <Color>DimGray</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>Gainsboro</BackgroundColor>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -728,7 +724,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>: صرف بصك رقم</Value>
+                                  <Value>-: صرف بصك رقم</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -787,7 +783,7 @@
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingTop>4pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
@@ -875,10 +871,11 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>المراجع المالي</Value>
+                <Value>المــراجــع المــالــي</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1184,7 +1181,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>اسم المستلم</Value>
+                <Value>اسـم المستلم</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -1219,7 +1216,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>التوقيع</Value>
+                <Value>الــــتوقــيـــع</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -1254,7 +1251,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>التاريخ</Value>
+                <Value>الــتـــاريــــخ</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -1299,8 +1296,9 @@
       <ReportItems>
         <Line Name="Line1">
           <Top>1.7066in</Top>
+          <Left>0.10938in</Left>
           <Height>0in</Height>
-          <Width>7.75222in</Width>
+          <Width>7.46576in</Width>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -1315,7 +1313,9 @@
               <TextRuns>
                 <TextRun>
                   <Value>=Parameters!DateFrom.Value</Value>
-                  <Style />
+                  <Style>
+                    <FontSize>12pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -1324,8 +1324,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>DateFrom</rd:DefaultName>
-          <Top>1.41493in</Top>
-          <Left>0.10938in</Left>
+          <Top>0.783in</Top>
+          <Left>0.38834in</Left>
           <Height>0.25in</Height>
           <Width>0.92496in</Width>
           <ZIndex>1</ZIndex>
@@ -1335,7 +1335,7 @@
             </Border>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
+            <PaddingTop>3pt</PaddingTop>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
@@ -1346,7 +1346,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>التاريخ</Value>
+                  <Value>-: التاريخ</Value>
                   <Style>
                     <FontSize>12pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -1359,10 +1359,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox14</rd:DefaultName>
-          <Top>1.41493in</Top>
-          <Left>1.01749in</Left>
+          <Top>0.783in</Top>
+          <Left>1.29645in</Left>
           <Height>0.25in</Height>
-          <Width>0.45717in</Width>
+          <Width>0.62061in</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -1383,7 +1383,7 @@
                 <TextRun>
                   <Value>إذن صرف</Value>
                   <Style>
-                    <FontSize>16pt</FontSize>
+                    <FontSize>14pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -1503,20 +1503,20 @@
                 <TextRun>
                   <Value>="الصفحة : " &amp;Globals!PageNumber &amp;" من " &amp; Globals!TotalPages</Value>
                   <Style>
-                    <FontSize>12pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
               <Style>
-                <TextAlign>Center</TextAlign>
+                <TextAlign>Left</TextAlign>
               </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>1.17882in</Top>
-          <Left>0.14623in</Left>
+          <Top>1.40104in</Top>
+          <Left>0.10938in</Left>
           <Height>0.25in</Height>
-          <Width>1.36528in</Width>
+          <Width>1.69633in</Width>
           <ZIndex>7</ZIndex>
           <Style>
             <Border>

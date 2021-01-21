@@ -108,7 +108,7 @@
               <Width>1.14472in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.80299in</Width>
+              <Width>1.07378in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.16626in</Width>
@@ -123,16 +123,16 @@
               <Width>0.73145in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.17073in</Width>
+              <Width>0.8999in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.1869in</Width>
+              <Width>0.92648in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.04295in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.20164in</Width>
+              <Width>1.46206in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>0.59845in</Width>
@@ -153,27 +153,25 @@
                             <TextRun>
                               <Value>أجمالي الخصميات</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>صافي المرتب</Value>
+                              <Value>صــافــي الـمـرتـب</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -185,7 +183,7 @@
                         </Border>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingRight>4pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
@@ -201,43 +199,40 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>مستحقات</Value>
+                              <Value>مــــســتـحـقـــات</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>نفقة</Value>
+                              <Value>النــفقة الشـرعية</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>خ . أخرى</Value>
+                              <Value>خصميات أخرى</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -249,7 +244,7 @@
                         </Border>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingRight>4pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
@@ -265,43 +260,40 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>س. جيش الليبي</Value>
+                              <Value>سلفة الجيش الليبي</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>خصم المودة</Value>
+                              <Value>خــــصــم الــمـودة</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>سلفة المودة</Value>
+                              <Value>ســلــفـــة الــمــودة</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -313,7 +305,7 @@
                         </Border>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingRight>4pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
@@ -329,15 +321,14 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>مساهمة</Value>
+                              <Value>الــمـسـاهـمـة</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
@@ -345,13 +336,12 @@
                             <TextRun>
                               <Value>خصم الغياب</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
@@ -359,13 +349,12 @@
                             <TextRun>
                               <Value>خصم الجزاء</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -377,7 +366,7 @@
                         </Border>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingRight>4pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
@@ -393,43 +382,40 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الضمان</Value>
+                              <Value>الــــضـــمـــان</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>التضامن</Value>
+                              <Value>الــتـــضـامـــن</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>ض . الجهاد</Value>
+                              <Value>ضريبة الجهاد</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -441,7 +427,7 @@
                         </Border>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingRight>4pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
@@ -459,8 +445,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -473,8 +458,7 @@
                             <TextRun>
                               <Value>الإجمالي</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -487,8 +471,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -521,29 +504,27 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>ع . إحتفاظ</Value>
+                              <Value>علاوة إحتفاظ</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>ع . ندب</Value>
+                              <Value>علاوة  نــدب</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
@@ -551,8 +532,7 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -569,7 +549,7 @@
                         </Border>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingRight>4pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
@@ -585,43 +565,40 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>ع.تموين</Value>
+                              <Value>علاوة تموين</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الإضافي</Value>
+                              <Value>الإضــــافـــي</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>زيادة</Value>
+                              <Value>الـــــزيـــــادة</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -633,7 +610,7 @@
                         </Border>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingRight>4pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
@@ -651,41 +628,38 @@
                             <TextRun>
                               <Value>المرتب الأساسي</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>التمييز</Value>
+                              <Value>عــلاوة تــمــيـيـز</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>مكافأة</Value>
+                              <Value>الــــمـــكــــافـــــأة</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -697,7 +671,7 @@
                         </Border>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingRight>4pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
@@ -713,15 +687,14 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الدرجة / المربوط</Value>
+                              <Value>الدرجة / العلاوة</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
@@ -729,27 +702,25 @@
                             <TextRun>
                               <Value>الوحدة التنظيمية</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>مرتبات شهر</Value>
+                              <Value>مــرتــبــات شهر</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>11pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -761,7 +732,7 @@
                         </Border>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingRight>4pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
@@ -831,7 +802,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الرقم الوطني </Value>
+                              <Value>الرقم الوطني : </Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -880,7 +851,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>رقم الحساب </Value>
+                              <Value>رقم الحساب : </Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -929,9 +900,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value xml:space="preserve"> </Value>
+                              <Value> مصرف : </Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                                <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -939,6 +911,7 @@
                               <Value>=Fields!BankName.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                                <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -978,15 +951,8 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الاسم</Value>
+                              <Value>الاسم : </Value>
                               <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value xml:space="preserve">  </Value>
-                              <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -1033,7 +999,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الرقم المالي </Value>
+                              <Value>الرقم المالي : </Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1489,7 +1455,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -1927,11 +1893,12 @@
                               <Value>=Fields!CenterName.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -2375,7 +2342,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -2481,7 +2448,7 @@
         </TablixRowHierarchy>
         <KeepTogether>true</KeepTogether>
         <DataSetName>SalaryForm</DataSetName>
-        <Top>0.27519in</Top>
+        <Top>0.67102in</Top>
         <Left>0.33517in</Left>
         <Height>1.64793in</Height>
         <Width>11.00859in</Width>
@@ -2492,18 +2459,6 @@
           </Border>
         </Style>
       </Tablix>
-      <Line Name="Line1">
-        <Top>0.06944in</Top>
-        <Left>0.33517in</Left>
-        <Height>0in</Height>
-        <Width>11.00859in</Width>
-        <ZIndex>4</ZIndex>
-        <Style>
-          <Border>
-            <Style>Solid</Style>
-          </Border>
-        </Style>
-      </Line>
       <Textbox Name="ReportMaker">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
@@ -2525,6 +2480,41 @@
         <Left>1.1889in</Left>
         <Height>0.25in</Height>
         <Width>2.04167in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox30">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>إســــتـــمــــارة مـــــرتــــبــــات</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox14</rd:DefaultName>
+        <Top>0.06944in</Top>
+        <Left>0.33517in</Left>
+        <Height>0.30959in</Height>
+        <Width>11.00859in</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -2547,7 +2537,7 @@
   <Width>11.45576in</Width>
   <Page>
     <PageHeader>
-      <Height>1.41791in</Height>
+      <Height>1.82416in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -2571,8 +2561,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Date</rd:DefaultName>
-          <Top>0.82236in</Top>
-          <Left>1.97948in</Left>
+          <Top>0.79515in</Top>
+          <Left>0.98683in</Left>
           <Height>0.25in</Height>
           <Width>0.80299in</Width>
           <Style>
@@ -2592,9 +2582,9 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value> : عن شهر </Value>
+                  <Value> -: عن شهر </Value>
                   <Style>
-                    <FontSize>14pt</FontSize>
+                    <FontSize>12pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2605,10 +2595,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox14</rd:DefaultName>
-          <Top>0.79458in</Top>
-          <Left>2.71996in</Left>
+          <Top>0.79515in</Top>
+          <Left>1.68565in</Left>
           <Height>0.25in</Height>
-          <Width>0.83333in</Width>
+          <Width>0.86802in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -2629,7 +2619,7 @@
                 <TextRun>
                   <Value>إستمارة مرتبات</Value>
                   <Style>
-                    <FontSize>18pt</FontSize>
+                    <FontSize>14pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2640,10 +2630,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox14</rd:DefaultName>
-          <Top>0.44333in</Top>
-          <Left>1.81371in</Left>
+          <Top>0.48556in</Top>
+          <Left>0.98683in</Left>
           <Height>0.30959in</Height>
-          <Width>1.63541in</Width>
+          <Width>1.39583in</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -2691,7 +2681,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
           <Top>0.45778in</Top>
-          <Left>7.64666in</Left>
+          <Left>8.28208in</Left>
           <Height>0.37152in</Height>
           <Width>2.66988in</Width>
           <ZIndex>4</ZIndex>
@@ -2726,10 +2716,56 @@
           </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
           <Top>0.87097in</Top>
-          <Left>7.64666in</Left>
+          <Left>8.28208in</Left>
           <Height>0.26736in</Height>
           <Width>2.66988in</Width>
           <ZIndex>5</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Line Name="Line1">
+          <Top>1.6436in</Top>
+          <Left>0.33517in</Left>
+          <Height>0in</Height>
+          <Width>11.00859in</Width>
+          <ZIndex>6</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+          </Style>
+        </Line>
+        <Textbox Name="TotalPages4">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="الصفحة :- " &amp;Globals!PageNumber &amp; " من "  &amp; Globals!TotalPages</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>TotalPages</rd:DefaultName>
+          <Top>1.33804in</Top>
+          <Left>0.33517in</Left>
+          <Height>0.25in</Height>
+          <Width>1.52484in</Width>
+          <ZIndex>7</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
