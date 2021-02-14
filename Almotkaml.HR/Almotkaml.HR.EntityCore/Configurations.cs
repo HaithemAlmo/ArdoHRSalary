@@ -474,6 +474,11 @@ namespace Almotkaml.HR.EntityCore
             salaryInfo.HasOne(a => a.BankBranch)
                 .WithMany()
                 .OnDelete(DeleteBehavior.Restrict);
+
+  
+
+
+
         }
         public static void ConfigureEmploymentValues(EntityTypeBuilder<EmploymentValues> employmentValues)
         {
@@ -661,6 +666,17 @@ namespace Almotkaml.HR.EntityCore
 
             SharedConfigurations(country);
         }
+
+        public static void ConfigureCourt(EntityTypeBuilder<Court> court)
+        {
+            court.Property(p => p.CourtName).IsRequired().HasMaxLength(SmallField);
+
+
+       
+            SharedConfigurations(court);
+            
+        }
+
 
         public static void ConfigureCity(EntityTypeBuilder<City> city)
         {
@@ -1055,5 +1071,18 @@ namespace Almotkaml.HR.EntityCore
 
             SharedConfigurations(course);
         }
+
+
+        public static void ConfigureClipboardBanking(EntityTypeBuilder<ClipboardBanking> clipboardBanking)
+        {
+         
+
+            clipboardBanking.HasOne(a => a.BankBranch)
+                .WithMany()
+                .OnDelete(DeleteBehavior.Restrict);
+
+            SharedConfigurations(clipboardBanking);
+        }
+        
     }
 }

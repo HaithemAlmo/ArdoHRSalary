@@ -465,7 +465,8 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             //HALEEM     
             var jobcalssnum = employee.JobInfo?.JobClassValu ?? 0;
             JobClass num = (JobClass)jobcalssnum;
-            var jobnmber = jobcalssnum.ToString() + jobNumber.ToString();
+            //var jobnmber = jobcalssnum.ToString() + jobNumber.ToString();
+            var jobnmber =  jobNumber.ToString();
             //end
             var documents = UnitOfWork.Documents.GetByEmployee(employee);
             var Qualification = UnitOfWork.Qualifications.GetQualificationByEmployee(employee);
@@ -540,73 +541,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                     SituionsNumber=employee.JobInfo?.SituionsNumber??0,
                    JobNumberLIC=employee.JobInfo?.JobNumberLIC ?? 0
                 },
-                //JobInfoDegreeModel =
-                //{
-                //    // JobNumber = int.Parse(jobnmber),
-                //    AdjectiveEmployeeId = employee.JobInfo?.AdjectiveEmployeeId ?? 0,
-                //    AdjectiveEmployeeTypeId = employee.JobInfo?.AdjectiveEmployee?.AdjectiveEmployeeTypeId ?? 0,
-                //    EmploymentValues = employee.JobInfo?.EmploymentValues?.ToModel(),
-                //    //SituationResolveJob =employee.JobInfo?.SituationResolveJob?.ToModel(),
-                //    EmployeeId = employee.EmployeeId,
-                //    Bouns = employee.JobInfo?.Bouns ?? 0,
-                //    DateMeritBouns = employee.JobInfo?.DateMeritBouns.FormatToString() ?? "",
-                //    //StaffingId = employee.JobInfo?.StaffingId ?? 0,
-                //   // StaffingClassificationId= employee.JobInfo?.StaffingClassificationId ?? 0,
-                //    //JobNumberApproved = employee.JobInfo?.JobNumberApproved ?? 0,
-                //   // UnitId = employee.JobInfo?.UnitId ?? 0,
-                //    DateMeritDegreeNow = employee.JobInfo?.DateMeritDegreeNow.FormatToString() ?? "",
-                //    DegreeNow = employee.JobInfo?.DegreeNow ?? 0,
-                //    DateDegreeNow = employee.JobInfo?.DateDegreeNow.FormatToString() ?? "",
-                //   // CurrentSituationId = employee.JobInfo?.CurrentSituationId ?? 0,
-                //    DateBouns = employee.JobInfo?.DateBouns.FormatToString() ?? "",
-                //    //StaffingTypeId = employee.JobInfo?.Staffing?.StaffingTypeId ?? 0,
-                //    JobId = employee.JobInfo?.JobId ?? 0,
-                //    DirectlyDate = employee.JobInfo?.DirectlyDate.FormatToString() ?? "",
-                //    Degree = employee.JobInfo?.Degree ?? 0,
-                //    //DepartmentId = employee.JobInfo?.Unit?.Division?.DepartmentId ?? 0,
-                //    //DivisionId = employee.JobInfo?.Unit?.DivisionId ?? 0,
-                //    //CenterId = centerId,
-                //    //JobClass=num,
-                //    //AdjectiveEmployeeList = UnitOfWork.AdjectiveEmployees.GetAdjectiveEmployeeWithType(adjectiveEmployeeTypeId).ToList(),
-                //    //AdjectiveEmployeeTypeList = UnitOfWork.AdjectiveEmployeeTypes.GetAll().ToList(),
-                //    //CurrentSituationList = UnitOfWork.CurrentSituations.GetAll().ToList(),
-                //    JobList = UnitOfWork.Jobs.GetAll().ToList(),
-                //    //NoteList = UnitOfWork..GetPlaceWithBranch(branchId).ToList(),//////
-                //    //StaffingList = UnitOfWork.Staffings.GetStaffingWithStaffingType(staffingTypeId).ToList(),
-                //    //StaffingClassificationList= UnitOfWork.StaffingClassification.GetWithStaffings(staffingId).ToList(),
-                //    //StaffingTypeList = UnitOfWork.StaffingTypes.GetAll().ToList(),
-                //    //CenterList = UnitOfWork.Centers.GetAll().ToList(),
-                //    //DepartmentList = UnitOfWork.Departments.GetDepartmentWithCenter(centerId).ToList(),
-                //    //DivisionList = UnitOfWork.Divisions.GetDivisionWithDepartment(departmentId).ToList(),
-                //    //UnitList = UnitOfWork.Units.GetUnitWithDivision(divisionId).ToList(),
-                //    JobType = employee.JobInfo?.JobType ?? 0,
-                //    //FinancialData = employee.JobInfo?.FinancialData?.ToModel(),
-                //    //BankBranchList = UnitOfWork.BankBranches.GetBankBranchWithBank(bankId).ToList(),
-                //    //BankList = UnitOfWork.Banks.GetAll().ToList(),
-                //    //BankId = bankId,
-                //    //NoteList = ,
-                //    //VacationBalance = employee.JobInfo?.VacationBalance ?? 0,
-                //    //Notes = employee.JobInfo?.Notes,
-                //    ClampDegree =  (ClampDegree?) employee.JobInfo?.Degree,
-                //    ClampDegreeNow =(ClampDegree?) employee.JobInfo?.DegreeNow,
-                //    SalayClassification = employee.JobInfo?.SalayClassification??0,
-                //    ClassificationOnSearchingId = classificationOnSearchingId,
-                //    ClassificationOnWorkId = classificationOnWorkId,
-                //    //JobClass = employee.JobInfo?.JobClass??0,
-                //    //CenterNumber = employee.JobInfo?.Unit?.Division?.Department?.Center?.CenterNumber??0,
-                //    //ClassificationOnSearchingList = UnitOfWork.ClassificationOnSearchings.GetAll().ToList(),
-                //    //ClassificationOnWorkList = UnitOfWork.ClassificationOnWorks.GetAll().ToList(),
-                //    //Redirection = employee.JobInfo?.Redirection??0,
-                //    //RedirectionNote = employee.JobInfo?.RedirectionNote,
-                //    //OldJobNumber = employee.JobInfo?.OldJobNumber,
-                //    CanSubmit = ApplicationUser.Permissions.Employee_Edit,
-                //    CanEdit=ApplicationUser.Permissions.Employee_Edit,
-                //    CanPromotion= ApplicationUser.Permissions.Employee_Promotion,
-                //    CanSettlement= ApplicationUser.Permissions.Employee_Settlement,
-
-                //       Situons=employee.JobInfo?.Situons??0,
-                //    //SituionsNumber=employee.JobInfo?.SituionsNumber??0,
-                //},
+       
                 MilitaryDataModel =
                 {
                     EmployeeId = employee.EmployeeId,
@@ -797,20 +732,20 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             if (employee.JobInfo == null)
                 return false;
 
-            if (employee.JobInfo.JobNumberLIC == 0)
-            {
-                if (UnitOfWork.Employees.NumIsExisted(model.JobNumberLIC))
-                    return ModelState.AddError(m => model.JobNumberLIC, SharedMessages.NumIsExisted);
+            //if (employee.JobInfo.JobNumberLIC == 0)
+            //{
+            //    //if (UnitOfWork.Employees.NumIsExisted(model.JobNumberLIC))
+            //    //    return ModelState.AddError(m => model.JobNumberLIC, SharedMessages.NumIsExisted);
 
-            }
-            else if (employee.JobInfo.JobNumberLIC > 0)
-            {
-                if (employee.JobInfo.JobNumberLIC != model.JobNumberLIC)
-                {
-                    if (UnitOfWork.Employees.NumIsExisted(model.JobNumber, model.JobNumberLIC ))
-                        return ModelState.AddError(m => model.JobNumberLIC, SharedMessages.NumIsExisted);
-                }
-            }
+            //}
+            //else if (employee.JobInfo.JobNumberLIC > 0)
+            //{
+            //    if (employee.JobInfo.JobNumberLIC != model.JobNumberLIC)
+            //    {
+            //        if (UnitOfWork.Employees.NumIsExisted(model.JobNumber, model.JobNumberLIC ))
+            //            return ModelState.AddError(m => model.JobNumberLIC, SharedMessages.NumIsExisted);
+            //    }
+            //}
             //if (UnitOfWork.Employees.NumIsExisted(model.JobNumberLIC ?? 0))
             //    return ModelState.AddError(m => model.JobNumberLIC, SharedMessages.NumIsExisted);
 
@@ -847,7 +782,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                  .WithSituons(model.Situons)
                 .WithSituionsNumber(model.SituionsNumber)
                 .Adjective(model.Adjective)
-                .JobNumberLIC(model.JobNumberLIC)
+                //.JobNumberLIC(model.JobNumberLIC)
             .LeaderType(model.LeaderType);
 
 

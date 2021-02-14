@@ -22,8 +22,8 @@ namespace Almotkaml.HR.Models
         //    ErrorMessageResourceName = nameof(SharedMessages.ShouldSelected))]
         //[Range(1, int.MaxValue, ErrorMessageResourceType = typeof(SharedMessages),
         //    ErrorMessageResourceName = nameof(SharedMessages.ShouldSelected))]
-        //[Display(ResourceType = typeof(Title), Name = nameof(Title.Employee))]
 
+        [Display(ResourceType = typeof(Title), Name = nameof(Title.EmployeeName))]
         public int EmployeeId { get; set; }
 
         public IEnumerable<EmployeeGridRow> EmployeeGrid { get; set; } = new HashSet<EmployeeGridRow>();

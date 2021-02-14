@@ -21,13 +21,13 @@
                           <TablixBody>
                             <TablixColumns>
                               <TablixColumn>
-                                <Width>4.46673cm</Width>
+                                <Width>5.23402cm</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>0.46742cm</Width>
+                                <Width>3.69534cm</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>4.81069cm</Width>
+                                <Width>2.98507cm</Width>
                               </TablixColumn>
                             </TablixColumns>
                             <TablixRows>
@@ -62,43 +62,15 @@
                                           </Border>
                                           <VerticalAlign>Middle</VerticalAlign>
                                           <PaddingLeft>2pt</PaddingLeft>
-                                          <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingRight>70pt</PaddingRight>
+                                          <PaddingTop>4pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
+                                      <ColSpan>2</ColSpan>
                                     </CellContents>
                                   </TablixCell>
-                                  <TablixCell>
-                                    <CellContents>
-                                      <Textbox Name="Textbox48">
-                                        <CanGrow>true</CanGrow>
-                                        <KeepTogether>true</KeepTogether>
-                                        <Paragraphs>
-                                          <Paragraph>
-                                            <TextRuns>
-                                              <TextRun>
-                                                <Value />
-                                                <Style />
-                                              </TextRun>
-                                            </TextRuns>
-                                            <Style />
-                                          </Paragraph>
-                                        </Paragraphs>
-                                        <rd:DefaultName>Textbox48</rd:DefaultName>
-                                        <Style>
-                                          <Border>
-                                            <Color>LightGrey</Color>
-                                            <Style>None</Style>
-                                          </Border>
-                                          <PaddingLeft>2pt</PaddingLeft>
-                                          <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
-                                          <PaddingBottom>2pt</PaddingBottom>
-                                        </Style>
-                                      </Textbox>
-                                    </CellContents>
-                                  </TablixCell>
+                                  <TablixCell />
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="FinalySalary">
@@ -127,7 +99,7 @@
                                           </Border>
                                           <VerticalAlign>Middle</VerticalAlign>
                                           <PaddingLeft>2pt</PaddingLeft>
-                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingRight>5pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
@@ -155,7 +127,8 @@
                                               </TextRun>
                                             </TextRuns>
                                             <Style>
-                                              <TextAlign>Center</TextAlign>
+                                              <TextAlign>Right</TextAlign>
+                                              <LineHeight>12pt</LineHeight>
                                             </Style>
                                           </Paragraph>
                                         </Paragraphs>
@@ -167,7 +140,7 @@
                                           </Border>
                                           <VerticalAlign>Top</VerticalAlign>
                                           <PaddingLeft>2pt</PaddingLeft>
-                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingRight>35pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
@@ -206,10 +179,10 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>DataSet1</DataSetName>
-                          <Top>2.28678cm</Top>
-                          <Left>7.2888cm</Left>
+                          <Top>2.41378cm</Top>
+                          <Left>4.95518cm</Left>
                           <Height>1.64979cm</Height>
-                          <Width>9.74484cm</Width>
+                          <Width>11.91442cm</Width>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -463,7 +436,7 @@
                           <Top>0.52599cm</Top>
                           <Left>13.24431cm</Left>
                           <Height>0.6cm</Height>
-                          <Width>2.26187cm</Width>
+                          <Width>2.26188cm</Width>
                           <ZIndex>2</ZIndex>
                           <Style>
                             <Border>
@@ -582,7 +555,6 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0in</Top>
         <Left>0.04487in</Left>
         <Height>2.70014in</Height>
         <Width>6.9123in</Width>
@@ -593,7 +565,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>6.85835cm</Height>
+    <Height>6.85836cm</Height>
     <Style>
       <Border>
         <Color>Silver</Color>

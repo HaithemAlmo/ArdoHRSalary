@@ -62,11 +62,38 @@ namespace Almotkaml.HR.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to الرجاء التأكد من علاوة الموظف.
+        /// </summary>
+        public static string Bouns {
+            get {
+                return ResourceManager.GetString("Bouns", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to يجب إدخال رقم البطاقة الشخصية أو رقم جواز السفر ..
         /// </summary>
         public static string CardNumberORPassportNumberMustSet {
             get {
                 return ResourceManager.GetString("CardNumberORPassportNumberMustSet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تأكد من عدد الأبناء.
+        /// </summary>
+        public static string ChildernCount {
+            get {
+                return ResourceManager.GetString("ChildernCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الرجاء التاكد من درجة الموظف.
+        /// </summary>
+        public static string Degree {
+            get {
+                return ResourceManager.GetString("Degree", resourceCulture);
             }
         }
         

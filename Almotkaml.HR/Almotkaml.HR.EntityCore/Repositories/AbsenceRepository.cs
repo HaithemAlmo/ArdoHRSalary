@@ -49,5 +49,13 @@ namespace Almotkaml.HR.EntityCore.Repositories
                         && e.Date.Date >= dateFrom.Date
                         && e.Date.Date <= dateTo.Date);
         }
+
+        public bool CheckDeductionAbsence( int datemonth,int dateyear)
+        {
+            return Context.Salaries 
+                .Include(e => e.Employee)
+                .Any(e => e.MonthDate.Month   == datemonth   && e.MonthDate.Year  == dateyear && e.IsClose );
+        }
+        
     }
 }

@@ -3,7 +3,7 @@ using System.Web.Mvc;
 
 namespace Almotkaml.HR.Mvc.Controllers
 {
-    public class CountryController : BaseController
+    public class CountryController : BaseController  
     {
         // GET: CostCenter
         public ActionResult Index()

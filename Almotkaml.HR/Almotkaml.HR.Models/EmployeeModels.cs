@@ -62,6 +62,7 @@ namespace Almotkaml.HR.Models
             Name = nameof(Title.Number))]
         public string Number { get; set; }
 
+        [RegularExpression(@"^[0-9]*$", ErrorMessage = "االرجاء إدخال ارقام فقط")]
         [Display(ResourceType = typeof(Title),
             Name = nameof(Title.AutoNumber))]
         public string AutoNumber { get; set; }

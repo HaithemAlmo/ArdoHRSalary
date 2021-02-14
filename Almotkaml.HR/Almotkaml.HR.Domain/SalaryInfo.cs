@@ -14,7 +14,7 @@ namespace Almotkaml.HR.Domain
 
         public SalaryInfo(BankBranch bankBranch, GuaranteeType guaranteeType, string bondNumber
             , decimal basicSalary, string securityNumber, string financialNumber
-            , string fileNumber, decimal extraValue, decimal extraGeneralValue, bool groupLifeChick,decimal premiumActive)
+            , string fileNumber, decimal extraValue, decimal extraGeneralValue, bool groupLifeChick,decimal premiumActive, decimal alimony)
         {
             BankBranchId = bankBranch.BankBranchId;
             BankBranch = bankBranch;
@@ -29,6 +29,9 @@ namespace Almotkaml.HR.Domain
             ExtraGeneralValue = extraGeneralValue;
             GroupLifeChich = groupLifeChick;
             PremiumActive = premiumActive;
+            //CourtId = courtid.CourtId ;
+            //CourtName  = courtname ;
+            Alimony = alimony;
 
         }
 
@@ -39,6 +42,9 @@ namespace Almotkaml.HR.Domain
         public Employee Employee { get; set; }
         public int BankBranchId { get; set; }
         public BankBranch BankBranch { get; set; }
+        //public int? CourtId { get; set; }
+        //public int CourtName { get; set; }
+        //public Court Court { get; set; }
         public GuaranteeType GuaranteeType { get; set; }
         public GuaranteeType SafeType { get; set; }
         public string BondNumber { get; set; }
@@ -56,7 +62,9 @@ namespace Almotkaml.HR.Domain
         public bool PremiumIsActive { get; set; }
         public decimal PremiumActive { get; set; }
         public decimal Differences { get; set; }
+        public decimal Alimony { get; set; }
         public void ActivePremium(bool active)
+
         {
             PremiumIsActive = active;
         }
@@ -75,7 +83,7 @@ namespace Almotkaml.HR.Domain
         public void Modify(Employee employee, int bankBranchId, GuaranteeType guaranteeType, string bondNumber
             , decimal basicSalary, string securityNumber, string financialNumber, IEnumerable<PremiumDto> premiumDtos
             , string fileNumber, decimal extraValue, decimal extraGeneralValue,
-            GuaranteeType safeType, bool groupLifeChich,decimal tadawl, decimal  premiumActive,decimal differences)
+            GuaranteeType safeType, bool groupLifeChich,decimal tadawl, decimal  premiumActive,decimal differences, decimal alimony)
         {
             SafeType = safeType;
             Employee = employee;
@@ -93,6 +101,8 @@ namespace Almotkaml.HR.Domain
             Tadawl = tadawl;
             PremiumActive = premiumActive;
             Differences = differences;
+            //CourtName  = courtname ;
+            Alimony = alimony;
             foreach (var dto in premiumDtos.ToList())
             {
                 var employeePremium = employee.Premiums.FirstOrDefault(e => e.PremiumId == dto.Premium.PremiumId
@@ -122,7 +132,8 @@ namespace Almotkaml.HR.Domain
         }
         public static SalaryInfo New(Employee employee, int bankBranchId, GuaranteeType guaranteeType, string bondNumber
             , decimal basicSalary, string securityNumber, string financialNumber, IEnumerable<PremiumDto> premiumDtos
-            , string fileNumber, decimal extraValue, decimal extraGeneralValue, GuaranteeType safeType, bool groupLifeChich,decimal tadawl, decimal premiumActive,decimal differences)
+            , string fileNumber, decimal extraValue, decimal extraGeneralValue, GuaranteeType safeType, bool groupLifeChich
+            ,decimal tadawl, decimal premiumActive,decimal differences, decimal alimony)
         {
             var sararyInfo = new SalaryInfo()
             {
@@ -142,7 +153,9 @@ namespace Almotkaml.HR.Domain
                 Tadawl = tadawl,
                   PremiumActive = premiumActive,
                 Differences=differences,
-            };
+                //CourtName  = courtname ,
+                Alimony = alimony,
+        };
 
             foreach (var dto in premiumDtos.ToList())
             {
@@ -169,50 +182,7 @@ namespace Almotkaml.HR.Domain
             }
             return sararyInfo;
         }
-        //public void AddListSalaryinfos(IList<SalaryUnit> salaryUnits,IList<SalaryInfo> infos)
-        //{
-        //    HrDbContext hh = new HrDbContext();
-        //    if (Employee?.JobInfo?.CurrentSituationId != 26 && Employee?.SalaryInfo?.BasicSalary == 0 )
-        //    {
 
-        //        var mm = infos.Where(s => s.Employee.EmployeeId == Employee.EmployeeId).FirstOrDefault();
-        //        var dd = hh.SalaryInfos.Find(mm);
-        //        dd.BasicSalary = Employee.JobInfo.JobType == JobType.Designation
-        //                                         ? Employee.GetBasicSalaryByDegree(salaryUnits, Employee.JobInfo.SalayClassification ?? 0) 
-        //                                         : Employee.SalaryInfo.BasicSalary;
-        //        dd.ExtraValue = Employee.JobInfo.JobType == JobType.Designation
-        //                                         ? Employee.GetExtraValueByDegree(salaryUnits, Employee.JobInfo.SalayClassification ?? 0) 
-        //                                         : Employee.SalaryInfo.ExtraValue;
-        //        dd.ExtraGeneralValue = Employee.JobInfo.JobType == JobType.Designation
-        //                                         ? Employee.GetExtraGeneralValueByDegree(salaryUnits
-        //                                                , Employee.JobInfo.SalayClassification ?? 0) 
-        //                                         : Employee.SalaryInfo.ExtraGeneralValue;
-
-
-
-
-        //        hh.SaveChanges();
-
-        //    };
-        //    if (Employee?.JobInfo?.CurrentSituationId != 26 && Employee?.SalaryInfo?.BasicSalary == 0)
-        //    {
-        //            var mm = infos.Where(s => s.Employee.EmployeeId == Employee.EmployeeId).FirstOrDefault();
-        //       var ff= hh.SalaryInfos.Find(mm.Employee.EmployeeId);
-        //        ff.BasicSalary = Employee.JobInfo.JobType == JobType.Designation
-        //                                              ? Employee.GetBasicSalaryByDegree(salaryUnits, Employee.JobInfo.SalayClassification ?? 0) / 2
-        //                                              : Employee.SalaryInfo.BasicSalary;
-        //        ff.ExtraValue = Employee.JobInfo.JobType == JobType.Designation
-        //                                         ? Employee.GetExtraValueByDegree(salaryUnits, Employee.JobInfo.SalayClassification ?? 0) / 2
-        //                                         : Employee.SalaryInfo.ExtraValue;
-        //        ff.ExtraGeneralValue = Employee.JobInfo.JobType == JobType.Designation
-        //                                         ? Employee.GetExtraGeneralValueByDegree(salaryUnits
-        //                                                , Employee.JobInfo.SalayClassification ?? 0) / 2
-        //                                         : Employee.SalaryInfo.ExtraGeneralValue;
-        //        hh.SalaryInfos.Update(ff);
-        //        hh.SaveChanges();
-        //    };
-
-        //}
         public void GetSalary(DateTime monthDate, DateTime monthdate2, DateTime date, IList<Holiday> holidays, IList<Salary> salarySubsended, ISettings settings,
               IList<SalaryUnit> salaryUnits)
         {
@@ -424,22 +394,6 @@ namespace Almotkaml.HR.Domain
                     //WithoutPay = // معادلة الاجازة بدون مرتب
                 };
 
-
-
-
-                //foreach (var premium in Employee.Premiums)
-                //{
-                //    salary.SalaryPremiums.Add(new SalaryPremium()
-                //    {
-                //        PremiumId = premium.PremiumId,
-                //        Premium = premium.Premium,
-                //        Salary = salary,
-                //        Value = premium.Value,
-                //        MonthDate = monthDate,
-                //        IsAdvansePremmium = premium.Premium?.ISAdvancePremmium ?? 0,
-                //        IsTemporary = premium.Premium?.IsTemporary ?? 0,
-                //    });
-                //}
 
                 Employee.Salaries.Add(salary);
             }

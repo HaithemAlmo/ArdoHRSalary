@@ -105,6 +105,7 @@ namespace Almotkaml.HR.Models
         [Display(ResourceType = typeof(Title), Name = nameof(Title.SuspendedNote))]
         public string SuspendedNote { get; set; }
         public string MonthDate { get; set; }
+        public int BankBranchId { get; set; }
 
     }
     public class SalaryFormModel

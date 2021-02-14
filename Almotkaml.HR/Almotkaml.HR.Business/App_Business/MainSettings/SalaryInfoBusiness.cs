@@ -103,6 +103,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             var extraGeneralValue = employee.GetExtraGeneralValueByDegree(salaryUnits, salayClassification ?? 0);
 
             var bankId = employee.SalaryInfo?.BankBranch?.BankId ?? 0;
+            //var courtId = employee.SalaryInfo?.Court?.CourtId?? 0;
             if (employee.JobInfo?.CurrentSituation?.CurrentSituationId == 26)
             {
                 var newSalary = basicSalary / 2;
@@ -127,6 +128,8 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                 BankId = bankId,
                 BankBranchList = UnitOfWork.BankBranches.GetBankBranchWithBank(bankId).ToList(),
                 BankList = UnitOfWork.Banks.GetAll().ToList(),
+                //CourtsList=UnitOfWork.Courts.GetAll().ToList(),
+               //CourtId= courtId,
                 BasicSalary = employee.JobInfo.JobType == JobType.Designation ?
                                 basicSalary : employee.SalaryInfo?.BasicSalary ?? 0,
                 BondNumber = employee.SalaryInfo?.BondNumber,
@@ -151,6 +154,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                         : typeof(SalayClassification).DisplayFieldName(employee.JobInfo.SalayClassification.ToString()),
                 IsDesignation = employee.JobInfo?.JobType == JobType.Designation,
                 FileNumber = employee.SalaryInfo?.FileNumber,
+                Alimony =employee .SalaryInfo ?.Alimony ??0,
                 CanSubmit = ApplicationUser.Permissions.SalaryInfo_Save
             };
 
@@ -210,7 +214,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             {
                 var salaryInfo = SalaryInfo.New(empolyee, model.BankBranchId, model.GuaranteeType, model.BondNumber,
                     model.BasicSalary, model.SecurityNumber, model.FinancialNumber, premiumDto
-                    , model.FileNumber, model.ExtraValue, model.ExtraGeneralValue, model.GuaranteeTypeSafe, model.GroupLifeChich,model .Tadawl ,model.PremiumActive,model.Differences
+                    , model.FileNumber, model.ExtraValue, model.ExtraGeneralValue, model.GuaranteeTypeSafe, model.GroupLifeChich,model .Tadawl ,model.PremiumActive,model.Differences,model.Alimony 
                    );
                 empolyee.JobInfo.Modify().Bouns(model.Bouns);
                 UnitOfWork.Employees.AddSalaryInfo(salaryInfo);
@@ -219,7 +223,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             {
                 empolyee.SalaryInfo.Modify(empolyee, model.BankBranchId, model.GuaranteeType, model.BondNumber
                     , model.BasicSalary, model.SecurityNumber, model.FinancialNumber, premiumDto
-                    , model.FileNumber, model.ExtraValue, model.ExtraGeneralValue, model.GuaranteeTypeSafe, model.GroupLifeChich,model .Tadawl,model.PremiumActive, model.Differences);///////////////
+                    , model.FileNumber, model.ExtraValue, model.ExtraGeneralValue, model.GuaranteeTypeSafe, model.GroupLifeChich,model .Tadawl,model.PremiumActive, model.Differences, model.Alimony);///////////////
                 empolyee.JobInfo.Modify().Bouns(model.Bouns);
             }
 

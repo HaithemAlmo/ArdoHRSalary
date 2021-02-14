@@ -324,7 +324,7 @@ namespace Almotkaml.HR.Mvc.Controllers
 
             model2.IsLegal = 1;
             LocalReport lr = new LocalReport();
-            string path = Path.Combine(Server.MapPath("~/Reports"), "ClipboardBankingLegal.rdlc");
+            string path = Path.Combine(Server.MapPath("~/Reports"), "AlimonyReport.rdlc");
 
 
             if (System.IO.File.Exists(path))
@@ -342,30 +342,25 @@ namespace Almotkaml.HR.Mvc.Controllers
             if (!HumanResource.SalarySettlementReport.SearchByDate(model2))
                 return AjaxHumanResourceState("_Form", model);
 
-
-         
-
-
-
-            /// / // // //hafeeda
-            var datasources = new HashSet<ClipboardBanking>();
+            
+            var datasources = new HashSet<ClipboardBankingLegal>();
 
             foreach (var row in model2.Grid)
             {
-                datasources.Add(new ClipboardBanking()
+                datasources.Add(new ClipboardBankingLegal()
                 {
-                    JobNumber = row.JobNumber,
-                    BondNumber = row.BondNumber,
+                   JobNumber = row.JobNumber,
                     EmployeeName = row.EmployeeName,
-                    BankBranchId = row.BankBranchId,
-                    BankBranchName = row.BankBranchName,
-                    FinalySalary = row.FinalSalaryLegal,
-                    NationalNumber = row.NationalNumber,
-                    Tafkeet = new Maths.NumberToWord(Math.Round(model2.Grid.Where(s => s.BankBranchId == row.BankBranchId)
-                                                    .Sum(r => r.FinalSalaryLegal), 3, MidpointRounding.AwayFromZero))
-                                                    .ConvertToArabic()
+                   NationalNumber = row.NationalNumber,
+                   CourtName =row .Courtid.ToString (),
+                   Value =row .Alimony 
+                   
+                    //Tafkeet = new Maths.NumberToWord(Math.Round(model2.Grid.Where(s => s.BankBranchId == row.BankBranchId)
+                    //                                .Sum(r => r.FinalSalaryLegal), 3, MidpointRounding.AwayFromZero))
+                    //                                .ConvertToArabic()
 
-                });
+                }
+                );
             }
 
 
@@ -1769,14 +1764,16 @@ namespace Almotkaml.HR.Mvc.Controllers
 
             foreach (var row in model2.Grid)
             {
-                
+
 
                 datasources.Add(new ClipboardBanking()
                 {
-                    BankBranchId=row.BankBranchId,
-                    FinalySalary=row.FinalySalary,
-           JobNumber=row.DateSalary,
-           BankBranchName=row.BankBranchName,
+                    BankBranchId = row.BankBranchId,
+                    FinalySalary = row.FinalySalary,
+                    JobNumber = DateTime .Now .Year +"/"+ DateTime.Now.Month +"/" +DateTime.Now.Day ,
+                    BankBranchName = row.BankName + " " + row.BankBranchName,
+                    
+                    DatePrint = DateTime.Now.ToString(),
 
                         Tafkeet = new Maths.NumberToWord(Math.Round(model2.Grid.Where(s => s.BankBranchId == row.BankBranchId).Sum(r => r.FinalySalary), 3, MidpointRounding.AwayFromZero)).ConvertToArabic()
 
@@ -1887,6 +1884,7 @@ namespace Almotkaml.HR.Mvc.Controllers
         }
         public ActionResult ReportAdvancePaymentIndex(AdvancePaymentReportModel model, SalarySettlementReportModel model2,string jobNumber, int BankId, int BankBranchId, int Month, int Year)
         {
+            string a = "";
             model.Month = Month;
             model.Year = Year;
             model2.ISadvanse = 1;
@@ -1920,14 +1918,14 @@ namespace Almotkaml.HR.Mvc.Controllers
                     //DeductionDate = row.DeductionDate,
                     InstallmentValue = row.InstallmentValue,
                     Rest = row.Rest,
-
+                   
                     //TafKeet = new Maths.NumberToWord(row.InstallmentValue).ConvertToArabic(),
                     TafKeet = new Maths.NumberToWord(Math.Round(model2.Grid.Where(s => s.BankBranchId == row.BankBranchId).Sum(r => r.InstallmentValue), 3, MidpointRounding.AwayFromZero)).ConvertToArabic()
                 });
             }
 
 
-            //var _tafkeet = datasources.Sum(e => e.InstallmentValue);
+           
             var _dateMonth = HumanResource.Salary.GetMonthDate();
             //add by ali alherbade 26-05-2019
             var PayrollUnit = HumanResource.StartUp.CompanyInfo.PayrollUnit;// وحدة المرتبات

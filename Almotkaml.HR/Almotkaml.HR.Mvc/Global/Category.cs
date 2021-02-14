@@ -124,6 +124,66 @@ namespace Almotkaml.HR.Mvc.Global
                                 Icon = "info",
                                 IsVisible = permissions.CompanyInfo,
                             },
+                            //new Categry()
+                            //{
+                            //    Title = "صلاحيات المستخدمين",
+                            //    ControllerName = nameof(UserGroupController),
+                            //    ActoinName=nameof(UserGroupController.Index ),
+                            //    Icon = "users",
+                            //    IsVisible = permissions.UserGroup,
+                            //},
+                            //new Categry()
+                            //{
+                            //    Title = "إدارة المستخدمين",
+                            //    ControllerName = nameof(UserController),
+                            //    ActoinName=nameof(UserController.Index ),
+                            //    Icon = "user",
+                            //    IsVisible = permissions.User,
+                            //},
+                            //new Categry()
+                            //{
+                            //    Title = "مراقبة المستخدمين",
+                            //    ControllerName = nameof(UserActivityController),
+                            //    ActoinName=nameof(UserActivityController.Index ),
+                            //    Icon = "eye",
+                            //    IsVisible = permissions.UserActivity,
+                            //},
+                            new Categry()
+                            {
+                                Title = "النسخ الاحتياطي",
+                                ControllerName = nameof(BackUpRestoreController),
+                                ActoinName=nameof(BackUpRestoreController.Index ),
+                                Icon = "database",
+                                IsVisible = permissions.BackUp || permissions.Restore,
+                                AddedPermissions = {nameof(permissions.BackUp), nameof(permissions.Restore)}
+                            },
+                        },
+                    },
+                    #endregion
+                    #region إدارة المستخدمين
+            
+                    new BaseCategory()
+                    {
+                        Title = "إدارة المستخدمين",
+                        Icon = "cogs",
+                        Categories =
+                        {
+                            //new Categry()
+                            //{
+                            //    Title = "إعدادات المنظومة",
+                            //    ControllerName = nameof(SettingController),
+                            //    ActoinName=nameof(SettingController.Index ),
+                            //    Icon = "cog",
+                            //    IsVisible = permissions.Setting,
+                            //},
+                            //new Categry()
+                            //{
+                            //    Title = "بيانات الجهة",
+                            //    ControllerName = nameof(CompanyInfoController),
+                            //    ActoinName=nameof(CompanyInfoController.Index ),
+                            //    Icon = "info",
+                            //    IsVisible = permissions.CompanyInfo,
+                            //},
                             new Categry()
                             {
                                 Title = "صلاحيات المستخدمين",
@@ -134,7 +194,7 @@ namespace Almotkaml.HR.Mvc.Global
                             },
                             new Categry()
                             {
-                                Title = "إدارة المستخدمين",
+                                Title = " المستخدمين",
                                 ControllerName = nameof(UserController),
                                 ActoinName=nameof(UserController.Index ),
                                 Icon = "user",
@@ -148,23 +208,23 @@ namespace Almotkaml.HR.Mvc.Global
                                 Icon = "eye",
                                 IsVisible = permissions.UserActivity,
                             },
-                            new Categry()
-                            {
-                                Title = "النسخ الاحتياطي",
-                                ControllerName = nameof(BackUpRestoreController),
-                                ActoinName=nameof(BackUpRestoreController.Index ),
-                                Icon = "database",
-                                IsVisible = permissions.BackUp || permissions.Restore,
-                                AddedPermissions = {nameof(permissions.BackUp), nameof(permissions.Restore)}
-                            },
+                            //new Categry()
+                            //{
+                            //    Title = "النسخ الاحتياطي",
+                            //    ControllerName = nameof(BackUpRestoreController),
+                            //    ActoinName=nameof(BackUpRestoreController.Index ),
+                            //    Icon = "database",
+                            //    IsVisible = permissions.BackUp || permissions.Restore,
+                            //    AddedPermissions = {nameof(permissions.BackUp), nameof(permissions.Restore)}
+                            //},
                         },
                     },
                     #endregion
-                #region الإعدادات الأساسية
+                #region إعدادات البيانات الأساسية
                 
                     new BaseCategory()
                     {
-                        Title = "الإعدادات الأساسية",
+                        Title = "إعدادات البيانات الأساسية",
                         Icon = "wrench",
                         Categories =
                         {
@@ -252,11 +312,11 @@ namespace Almotkaml.HR.Mvc.Global
                         },
                     },
                     #endregion
-                #region إعدادات الهيكلية التنظيمية
+                #region إعدادات الهيكل التنظيمي
                 
                     new BaseCategory()
                     {
-                        Title = "إعدادات الهيكلية التنظيمية",
+                        Title = "إعدادات الهيكل التنظيمي",
                         Icon = "puzzle-piece",
                         Categories =
                         {
@@ -292,6 +352,20 @@ namespace Almotkaml.HR.Mvc.Global
                                 Icon = "cube",
                                 IsVisible = permissions.Unit,
                             },
+              
+                        },
+                    },
+                    #endregion
+                    #region إعدادات البيانات الوظيفية
+                
+                    new BaseCategory()
+                    {
+                        Title = "إعدادات البيانات الوظيفية",
+                        Icon = "puzzle-piece",
+                        Categories =
+                        {
+                      
+            
                             new Categry()
                             {
                                 Title = "المسمى الوظيفي",
@@ -308,14 +382,28 @@ namespace Almotkaml.HR.Mvc.Global
                                 Icon = "tags",
                                 IsVisible = permissions.AdjectiveEmployeeType,
                             },
-                            //new Categry()
-                            //{
-                            //    Title = "صفة الموظف",
-                            //    ControllerName = nameof(AdjectiveEmployeeController),
-                            //    ActoinName=nameof(AdjectiveEmployeeController.Index ),
-                            //    Icon = "address-book-o",
-                            //    IsVisible = permissions.AdjectiveEmployee,
-                            //},
+
+                            new Categry()
+                            {
+                                Title = "الوضع الحالي للموظف",
+                                ControllerName = nameof(CurrentSituationController),
+                                ActoinName=nameof(CurrentSituationController.Index ),
+                                Icon = "hand-o-down",
+                                IsVisible = permissions.CurrentSituation,
+                            },
+                        },
+                    },
+                    #endregion
+                    #region إعدادات بيانات الملاك الوظيفي
+                
+                    new BaseCategory()
+                    {
+                        Title = "إعدادات بيانات الملاك الوظيفي",
+                        Icon = "puzzle-piece",
+                        Categories =
+                        {
+
+
                             new Categry()
                             {
                                 Title = "نوع الملاك الوظيفي",
@@ -356,14 +444,7 @@ namespace Almotkaml.HR.Mvc.Global
                                 Icon = "indent",
                                 IsVisible = permissions.ClassificationOnSearching,
                             },
-                            new Categry()
-                            {
-                                Title = "الوضع الحالي للموظف",
-                                ControllerName = nameof(CurrentSituationController),
-                                ActoinName=nameof(CurrentSituationController.Index ),
-                                Icon = "hand-o-down",
-                                IsVisible = permissions.CurrentSituation,
-                            },
+                  
                         },
                     },
                     #endregion
@@ -413,7 +494,7 @@ namespace Almotkaml.HR.Mvc.Global
                 
                 new BaseCategory()
                 {
-                    Title = "مصارف و فروع",
+                    Title = "إعدادات البيانات المالية",
                     Icon = "bank",
                     Categories =
                     {
@@ -433,6 +514,14 @@ namespace Almotkaml.HR.Mvc.Global
                             Icon = "share-alt-square",
                             IsVisible = permissions.BankBranch,
                         },
+                         new Categry()
+                        {
+                            Title = "المحاكم",
+                            ControllerName = nameof(CourtController),
+                            ActoinName=nameof(CourtController.Index ),
+                            Icon = "share-alt-square",
+                            IsVisible = permissions.Court ,
+                        },
                     },
                 },
                 #endregion
@@ -440,7 +529,7 @@ namespace Almotkaml.HR.Mvc.Global
                 
                 new BaseCategory()
                 {
-                    Title = "شؤون الموظفين",
+                    Title = "إدارة شؤون الموظفين",
                     Icon = "address-book",
                     Categories =
                     {
@@ -459,14 +548,14 @@ namespace Almotkaml.HR.Mvc.Global
                                 nameof(Permission.Document_Delete),
                             }
                         },
-                        new Categry()
-                        {
-                            Title = "البيانات العلمية",
-                            ControllerName = nameof(QualificationController),
-                            ActoinName=nameof(QualificationController.Index ),
-                            Icon = "pencil-square-o",
-                            IsVisible = permissions.Qualification,
-                        },
+                        //new Categry()
+                        //{
+                        //    Title = "البيانات العلمية",
+                        //    ControllerName = nameof(QualificationController),
+                        //    ActoinName=nameof(QualificationController.Index ),
+                        //    Icon = "pencil-square-o",
+                        //    IsVisible = permissions.Qualification,
+                        //},
                 //        new Categry()
                 //        {
                 //            Title = "الدورات التدريبية",
@@ -775,11 +864,11 @@ namespace Almotkaml.HR.Mvc.Global
                     },
                 },
                 #endregion
-                #region التقارير
+                #region تقارير الموارد البشرية
                 
                 new BaseCategory()
                 {
-                    Title = "التقارير",
+                    Title = "تقارير الموارد البشرية",
                     Icon = "file-text-o",
                     Categories =
                     {
@@ -799,15 +888,7 @@ namespace Almotkaml.HR.Mvc.Global
                             Icon = "bar-chart",
                             IsVisible = permissions.QualificationType,
                         },
-                       new Categry()
-                       {
-                           Title="تقارير المالية",
-                            ControllerName = nameof(SalarySettlementReportController ),
-                            ActoinName=nameof(SalarySettlementReportController.Index ),
-                            Icon = "newspaper-o",
-                            IsVisible = false,
-
-                       },
+            
                         new Categry()
                         {
                             Title = "إنهاء الخدمة",
@@ -848,6 +929,32 @@ namespace Almotkaml.HR.Mvc.Global
                             Icon = "bar-chart",
                             IsVisible = permissions.SettlementAbsenceReport,
                         },
+
+
+
+                    },
+                },
+                #endregion
+                #region تقارير الشؤون المالية
+                
+                new BaseCategory()
+                {
+                    Title = "تقارير الشؤون المالية",
+                    Icon = "file-text-o",
+                    Categories =
+                    {
+               
+           
+                       new Categry()
+                       {
+                           Title="تقارير المالية",
+                            ControllerName = nameof(SalarySettlementReportController ),
+                            ActoinName=nameof(SalarySettlementReportController.Index ),
+                            Icon = "newspaper-o",
+                            IsVisible = false,
+
+                       },
+            
                         //new Categry()
                         //{
                         //    Title = " مرتبات",
@@ -915,7 +1022,8 @@ namespace Almotkaml.HR.Mvc.Global
 
                             Icon = "newspaper-o",
                             IsVisible = permissions.Salary
-                        },  new Categry()
+                        },
+                        new Categry()
                         {
                             Title = "كشف السلف والرواتب المقدمة",
                             ControllerName = nameof(SalaryController),
@@ -923,7 +1031,8 @@ namespace Almotkaml.HR.Mvc.Global
 
                             Icon = "newspaper-o",
                             IsVisible = permissions.Salary
-                        },  new Categry()
+                        },
+                        new Categry()
                         {
                             Title = "الحافظة المصرفية",
                             ControllerName = nameof(SalaryController),

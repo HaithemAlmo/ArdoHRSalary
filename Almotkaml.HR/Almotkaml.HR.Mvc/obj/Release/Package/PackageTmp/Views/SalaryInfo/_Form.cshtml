@@ -53,13 +53,7 @@
                 @Html.ValidationMessageFor(model => model.Bouns)
             </div>
         </div>
-        @*<div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="form-group">
-                @Html.LabelFor(model => model.GroupLifeChich)
-                @Html.CheckBoxFor(model => model.GroupLifeChich, new { @class = "field_text form-control" })
-                @Html.ValidationMessageFor(model => model.GroupLifeChich)
-            </div>
-        </div>*@
+    
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="form-group">
                 @Html.LabelFor(model => model.BasicSalary)
@@ -84,13 +78,7 @@
                 @Html.ValidationMessageFor(model => model.Differences)
             </div>
         </div>
-        @*<div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="form-group">
-                @Html.LabelFor(model => model.DiscountValueBasicSalary)
-                @Html.TextBoxFor(model => model.DiscountValueBasicSalary, new { @class = "field_text form-control" })
-                @Html.ValidationMessageFor(model => model.DiscountValueBasicSalary)
-            </div>
-        </div>*@
+
         @Html.HiddenFor(model => model.ExtraValue)
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="form-group">
@@ -154,14 +142,25 @@
                 @Html.ValidationMessageFor(model => model.GuaranteeTypeSafe, null, new { @class = "has_error" })
             </div>
         </div>
-        @*<div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="form-group">
-                    @Html.LabelFor(model => model.Tadawl, new { @class = "control-label" })
-                    @Html.TextBoxFor(model => model.Tadawl, new { @class = "field_menu form-control" })
-                    @Html.ValidationMessageFor(model => model.Tadawl, null, new { @class = "has_error" })
+                    @Html.LabelFor(model => model.Alimony, new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.Alimony, new { @class = "field_text form-control" })
+                    @Html.ValidationMessageFor(model => model.Alimony, null, new { @class = "has_error" })
                 </div>
-            </div>*@
+            </div>
+    @*<div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="form-group">
+                @Html.LabelFor(model => model.CourtId)
+                @Html.DropDownListFor(model => model.CourtId, new SelectList(Model.CourtsList, nameof(CourtListItem.CourtId), nameof(CourtListItem.CourtName)), "--اختر--", new { @class = "field_menu form-control" })
+                @Html.ValidationMessageFor(model => model.CourtId)
+            </div>
+        </div>*@
+ 
     </div>
+
+   
+
     <div class="row">
         <fieldset class="almotkaml-fieldset-two">
             <legend>العلاوات والخصميات الغير مؤقتة</legend>

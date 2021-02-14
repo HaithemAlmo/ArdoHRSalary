@@ -32,7 +32,7 @@ namespace Almotkaml.HR
         //SalaryCard = 10,
         [Display(ResourceType = typeof(Title), Name = nameof(Title.Advance))]
         Advance = 11,
-             [Display(ResourceType = typeof(Title), Name = nameof(Title.LegalReport))]
+        [Display(ResourceType = typeof(Title), Name = nameof(Title.LegalReport))]
         Legal = 12,
         [Display(ResourceType = typeof(Title), Name = nameof(Title.EndJob))]
         EndJob = 13,

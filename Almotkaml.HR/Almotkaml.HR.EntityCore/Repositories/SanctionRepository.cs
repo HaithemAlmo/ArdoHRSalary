@@ -21,7 +21,16 @@ namespace Almotkaml.HR.EntityCore.Repositories
             return Context.Sanctions
                 .Include(e => e.Employee)
                 .Include(s => s.SanctionType)
+           
                 .Where(e => e.EmployeeId == employeeid);
         }
+
+        public bool CheckDeductionSanction(int datemonth, int dateyear)
+        {
+            return Context.Salaries
+                .Include(e => e.Employee)
+                .Any(e => e.MonthDate.Month == datemonth && e.MonthDate.Year == dateyear && e.IsClose);
+        }
+        
     }
 }

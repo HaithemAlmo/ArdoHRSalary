@@ -58,7 +58,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             model.EmployeeId = reward.EmployeeId;
             model.EfficiencyEstimate = reward.EfficiencyEstimate;
             model.RewardTypeId = reward.RewardTypeId;
-            model.Date = reward.Date.ToString();
+            model.Date = reward.Date.FormatToString();
             model.Note = reward.Note;
             model.Value = reward.Value;
 

@@ -3,6 +3,7 @@ using Almotkaml.HR.Abstraction;
 using Almotkaml.HR.Business.Extensions;
 using Almotkaml.HR.Domain;
 using Almotkaml.HR.Models;
+using System;
 
 namespace Almotkaml.HR.Business.App_Business.MainSettings
 {
@@ -56,7 +57,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             model.EmployeeId = absence.EmployeeId;
             model.Note = absence.Note;
             model.AbsenceType = absence.AbsenceType;
-            model.Date = absence.Date.ToString();
+            model.Date = absence.Date.FormatToString ();
             model.DeductionMonth = absence.DeductionMonth;
             model.DeductionYear = absence.DeductionYear;
             model.AbsenceDay = absence.AbsenceDay;
@@ -72,6 +73,9 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                 return false;
 
             if (UnitOfWork.Absences.CheckAbsenceBy(model.EmployeeId, model.Date.ToDateTime()))
+                return false;
+
+            if (UnitOfWork.Absences.CheckDeductionAbsence(model.DeductionMonth,model.DeductionYear))
                 return false;
 
             var absence = Absence.New()
@@ -110,6 +114,9 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
 
             if (absence == null)
                 return Fail(RequestState.NotFound);
+
+            if (UnitOfWork.Absences.CheckDeductionAbsence(model.DeductionMonth, model.DeductionYear))
+                return false;
 
             absence.Modify()
               .AbsenceType(model.AbsenceType)

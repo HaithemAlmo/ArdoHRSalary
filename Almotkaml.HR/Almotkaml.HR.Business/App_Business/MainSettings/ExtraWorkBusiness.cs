@@ -56,9 +56,9 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                 return Fail(RequestState.NotFound);
             model.ExtraWorkId = extraWork.ExtraworkId;
             model.EmployeeId = extraWork.EmployeeId;
-            model.Date = extraWork.Date.ToString();
-            model.DateFrom = extraWork.DateFrom.ToString();
-            model.DateTo = extraWork.DateTo.ToString();
+            model.Date = extraWork.Date.FormatToString();
+            model.DateFrom = extraWork.DateFrom.FormatToString();
+            model.DateTo = extraWork.DateTo.FormatToString();
             model.DecisionNumber = extraWork.DecisionNumber;
             model.TimeCount = extraWork.TimeCount;
 

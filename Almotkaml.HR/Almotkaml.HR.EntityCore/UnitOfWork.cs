@@ -60,6 +60,7 @@ namespace Almotkaml.HR.EntityCore
         private IBankRepository _banks;
         private IBankBranchRepository _bankBranches;
         private ICountryRepository _countries;
+        private ICourtRepository _courts;
         private ICityRepository _cities;
         private IAbsenceRepository _absences;
         private ITransferRepository _transfers;
@@ -280,6 +281,20 @@ namespace Almotkaml.HR.EntityCore
                 return _adjectiveEmployees;
             }
         }
+
+
+        public ICourtRepository Courts
+        {
+            get
+            {
+                if (_courts != null)
+                    return _courts;
+
+                _courts = new CourtRepository(Context);
+                return _courts;
+            }
+        }
+
 
         public IAdjectiveEmployeeTypeRepository AdjectiveEmployeeTypes
         {

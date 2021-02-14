@@ -562,7 +562,7 @@
     <value>نوع الوثيقة</value>
   </data>
   <data name="DonorFoundationType" xml:space="preserve">
-    <value>المؤسسة المانحة</value>
+    <value>حكومية / أهلية</value>
   </data>
   <data name="Duration" xml:space="preserve">
     <value>مدة الدورة</value>
@@ -940,7 +940,7 @@
     <value>إسم السلفة</value>
   </data>
   <data name="NameDonorFoundation" xml:space="preserve">
-    <value>حكومية/أهلية</value>
+    <value>المؤسسة المانحة</value>
   </data>
   <data name="NameReport" xml:space="preserve">
     <value>إسم التقرير</value>
@@ -1057,7 +1057,7 @@
     <value>قيمة العلاوة السنوية</value>
   </data>
   <data name="Premmium" xml:space="preserve">
-    <value>العلاوات</value>
+    <value>العلاوات والخصميات</value>
   </data>
   <data name="PrepaidSalary" xml:space="preserve">
     <value>مرتب مقدم</value>
@@ -1502,5 +1502,14 @@
   </data>
   <data name="InsideReferences" xml:space="preserve">
     <value>مراجع الداخل</value>
+  </data>
+  <data name="BackUpPath" xml:space="preserve">
+    <value>مسار النسخة الإحتياطية</value>
+  </data>
+  <data name="Court" xml:space="preserve">
+    <value>إسم المحكمة</value>
+  </data>
+  <data name="Alimony" xml:space="preserve">
+    <value>قيمة النفقة الشرعية</value>
   </data>
 </root>

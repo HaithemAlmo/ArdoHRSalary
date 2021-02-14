@@ -43,7 +43,7 @@ namespace Almotkaml.HR.Business.Extensions
                 MonthDate = d.MonthDate.FormatToString(),
                 TotalDiscount = d.TotalDiscount(settings),
                 NetSalary = d.NetSalary(settings),
-                
+                BankBranchId=d.BankBranchId,
             });
         public static IEnumerable<TemporaryPremiumGridRow> ToGrid(this IEnumerable<TemporaryPremium> temporaryPremium)
             => temporaryPremium.Select(d => new TemporaryPremiumGridRow()

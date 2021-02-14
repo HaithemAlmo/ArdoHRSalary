@@ -80,7 +80,7 @@ namespace Almotkaml.HR.Models
         public IEnumerable<BankBranchListItem> BankBranchList { get; set; } = new HashSet<BankBranchListItem>();
         public ICollection<TemporaryPremiumList> TemporaryList { get; set; } = new HashSet<TemporaryPremiumList>();
         public ICollection<NotTemporaryPremiumList> NotTemporaryList { get; set; } = new HashSet<NotTemporaryPremiumList>();
-
+        //public IEnumerable<CourtListItem> CourtsList { get; set; } = new HashSet<CourtListItem>();
         public ICollection<AdvanseListItem> AdvanseListItem { get; set; } = new HashSet<AdvanseListItem>();
         public IList<TemporaryPremmiumListItem> TemporaryPremiumListItem { get; set; } = new List<TemporaryPremmiumListItem>();
         public IList<NotTemporaryPremmiumListE> NotTemporaryPremiumList { get; set; } = new List<NotTemporaryPremmiumListE>();
@@ -88,7 +88,7 @@ namespace Almotkaml.HR.Models
         public IList<EmployeeAdvancePymentListItem> AdvancPremiumList { get; set; } = new List<EmployeeAdvancePymentListItem>();
         //  public IList<EmployeeAdvancePymentListItem> AdvancPremiumList { get; set; } = new List<EmployeeAdvancePymentListItem>();
         public IList<NotTemEmployeePremiumListItemEE> NotTemEmployeePremiumListItem { get; set; } = new List<NotTemEmployeePremiumListItemEE>();
-    public IList<TemEmployeePremiumListItemEE> TemEmployeePremiumListItem { get; set; } = new List<TemEmployeePremiumListItemEE>();
+        public IList<TemEmployeePremiumListItemEE> TemEmployeePremiumListItem { get; set; } = new List<TemEmployeePremiumListItemEE>();
         [Display(ResourceType = typeof(Title), Name = nameof(Title.NameSecurtey))]
         public string NameSecurity { get; set; }
         //[Required(ErrorMessageResourceType = typeof(SharedMessages),
@@ -96,6 +96,8 @@ namespace Almotkaml.HR.Models
         [Display(ResourceType = typeof(Title), Name = nameof(Title.BankBranch))]
         public int BankBranchId { get; set; }
 
+        //[Display(ResourceType = typeof(Title), Name = nameof(Title.Court))]
+        //public int CourtId { get; set; }
 
         [Display(ResourceType = typeof(Title), Name = nameof(Title.stamptest))]
         public GuaranteeType GuaranteeTypeSafe { get; set; }
@@ -133,7 +135,8 @@ namespace Almotkaml.HR.Models
         public decimal PremiumActive { get; set; }
         [Display(ResourceType = typeof(Title), Name = nameof(Title.Differences))]
         public decimal Differences { get; set; }
-
+        [Display(ResourceType = typeof(Title), Name = nameof(Title.Alimony))]
+        public decimal Alimony {get; set;}
 
         [Display(ResourceType = typeof(Title), Name = nameof(Title.Tadawl))]
         public decimal  Tadawl { get; set; }

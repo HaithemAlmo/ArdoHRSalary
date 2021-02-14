@@ -71,7 +71,8 @@ namespace Almotkaml.HR.Models
         public string Cause { get; set; }
         public int EmployeeId { get; set; }
         public string EmployeeName { get; set; }
-        //public int SanctionsDay { get; set; }
+        public short DeductionMonth { get; set; }
+        public short DeductionYear { get; set; }
     }
 
 

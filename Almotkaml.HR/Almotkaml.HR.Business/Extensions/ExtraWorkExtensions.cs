@@ -2,6 +2,7 @@
 using Almotkaml.HR.Models;
 using System.Collections.Generic;
 using System.Linq;
+using Almotkaml.Extensions;
 
 namespace Almotkaml.HR.Business.Extensions
 {

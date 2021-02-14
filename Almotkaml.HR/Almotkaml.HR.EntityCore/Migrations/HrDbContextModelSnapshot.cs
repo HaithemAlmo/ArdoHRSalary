@@ -358,6 +358,36 @@ namespace Almotkaml.HR.EntityCore.Migrations
                     b.ToTable("ClassificationOnWorks");
                 });
 
+            modelBuilder.Entity("Almotkaml.HR.Domain.ClipboardBanking", b =>
+                {
+                    b.Property<int>("ClipboardBankingId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("BankBranchID");
+
+                    b.Property<string>("InstrumentNumber");
+
+                    b.Property<bool>("IsDelivered");
+
+                    b.Property<DateTime>("SalaryMonth");
+
+                    b.Property<decimal>("TotalSalaries");
+
+                    b.Property<int>("_CreatedBy");
+
+                    b.Property<DateTime>("_DateCreated");
+
+                    b.Property<DateTime>("_DateModified");
+
+                    b.Property<int>("_ModifiedBy");
+
+                    b.HasKey("ClipboardBankingId");
+
+                    b.HasIndex("BankBranchID");
+
+                    b.ToTable("ClipboardBankings");
+                });
+
             modelBuilder.Entity("Almotkaml.HR.Domain.Coach", b =>
                 {
                     b.Property<int>("CoachId")
@@ -523,6 +553,18 @@ namespace Almotkaml.HR.EntityCore.Migrations
                     b.HasIndex("CityId");
 
                     b.ToTable("Courses");
+                });
+
+            modelBuilder.Entity("Almotkaml.HR.Domain.Court", b =>
+                {
+                    b.Property<int>("CourtId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("CourtName");
+
+                    b.HasKey("CourtId");
+
+                    b.ToTable("Courts");
                 });
 
             modelBuilder.Entity("Almotkaml.HR.Domain.CurrentSituation", b =>
@@ -1895,12 +1937,16 @@ namespace Almotkaml.HR.EntityCore.Migrations
 
                     b.Property<bool>("AdvancePremiumFreezeState");
 
+                    b.Property<decimal>("Alimony");
+
                     b.Property<int>("BankBranchId");
 
                     b.Property<decimal>("BasicSalary");
 
                     b.Property<string>("BondNumber")
                         .HasMaxLength(128);
+
+                    b.Property<int?>("CourtId");
 
                     b.Property<decimal>("Differences");
 
@@ -1936,6 +1982,8 @@ namespace Almotkaml.HR.EntityCore.Migrations
                     b.HasKey("SalaryInfoId");
 
                     b.HasIndex("BankBranchId");
+
+                    b.HasIndex("CourtId");
 
                     b.HasIndex("EmployeeId")
                         .IsUnique();
@@ -2693,6 +2741,13 @@ namespace Almotkaml.HR.EntityCore.Migrations
                         .HasForeignKey("CountryId");
                 });
 
+            modelBuilder.Entity("Almotkaml.HR.Domain.ClipboardBanking", b =>
+                {
+                    b.HasOne("Almotkaml.HR.Domain.BankBranch", "BankBranch")
+                        .WithMany()
+                        .HasForeignKey("BankBranchID");
+                });
+
             modelBuilder.Entity("Almotkaml.HR.Domain.Coach", b =>
                 {
                     b.HasOne("Almotkaml.HR.Domain.Employee", "Employee")
@@ -3024,6 +3079,10 @@ namespace Almotkaml.HR.EntityCore.Migrations
                     b.HasOne("Almotkaml.HR.Domain.BankBranch", "BankBranch")
                         .WithMany()
                         .HasForeignKey("BankBranchId");
+
+                    b.HasOne("Almotkaml.HR.Domain.Court")
+                        .WithMany("SalaryInfos")
+                        .HasForeignKey("CourtId");
 
                     b.HasOne("Almotkaml.HR.Domain.Employee", "Employee")
                         .WithOne("SalaryInfo")

@@ -32,7 +32,7 @@ namespace Almotkaml.HR.Models
         public string OldJobNumber { get; set; }
         [Display(ResourceType = typeof(Title),
             Name = nameof(Title.DirectlyDate))]
-    
+
         public string DirectlyDate { get; set; } // تاريخ المباشرة
         [Display(ResourceType = typeof(Title),
                 Name = nameof(Title.LeaderType))]
@@ -71,7 +71,7 @@ namespace Almotkaml.HR.Models
             Name = nameof(Title.JobNumber))]
         public int JobNumber { get; set; } // الرقم الوظيفي 
 
-      
+
         [Display(ResourceType = typeof(Title),
             Name = nameof(Title.JobNumberApproved))]
         public int? JobNumberApproved { get; set; } // ر.و لدى الملاك الوظيفي
@@ -80,9 +80,9 @@ namespace Almotkaml.HR.Models
         //    Name = nameof(Title.SituationResolveJob))]
         //public SituationResolveJob SituationResolveJob { get; set; } // تسوية الوضع الوظيفي
 
-      //  [Required(ErrorMessageResourceType = typeof(SharedMessages),
-      //ErrorMessageResourceName = nameof(SharedMessages.IsRequired))]
-      //  [Range(1, int.MaxValue, ErrorMessageResourceType = typeof(SharedMessages), ErrorMessageResourceName = nameof(SharedMessages.ShouldSelected))]
+        //  [Required(ErrorMessageResourceType = typeof(SharedMessages),
+        //ErrorMessageResourceName = nameof(SharedMessages.IsRequired))]
+        //  [Range(1, int.MaxValue, ErrorMessageResourceType = typeof(SharedMessages), ErrorMessageResourceName = nameof(SharedMessages.ShouldSelected))]
 
         [Display(ResourceType = typeof(Title),
             Name = nameof(Title.CurrentSituation))]
@@ -211,7 +211,7 @@ namespace Almotkaml.HR.Models
         public int? StaffingClassificationId { get; set; }
 
         [Display(ResourceType = typeof(Title), Name = nameof(Title.JobNumberLIC))]
-        public int JobNumberLIC { get; set; }
+        public int? JobNumberLIC { get; set; }
 
         public IEnumerable<StaffingClassificationListItem> StaffingClassificationList { get; set; } = new HashSet<StaffingClassificationListItem>();
 
@@ -270,7 +270,7 @@ namespace Almotkaml.HR.Models
 
         public int? CenterNumber { get; set; }
         public virtual string GetJobNumber() => JobNumber.ToString();
-     
+
         public bool CanSubmit { get; set; }
     }
 
@@ -293,6 +293,7 @@ namespace Almotkaml.HR.Models
 
         //[Required(ErrorMessageResourceType = typeof(SharedMessages),
         //ErrorMessageResourceName = nameof(SharedMessages.IsRequired))]
+        [RegularExpression(@"^[\u0600-\u06FF,-][ \u0600-\u06FF,-]*$", ErrorMessage = "الرجاء إدخال حروف عربية فقط")]
         [Display(ResourceType = typeof(Title),
             Name = nameof(Title.DesignationIssue))]
         public string DesignationIssue { get; set; } // جهة الصدور للتعيين

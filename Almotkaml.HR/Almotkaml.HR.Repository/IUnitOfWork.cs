@@ -49,6 +49,7 @@ namespace Almotkaml.HR.Repository
         IBankRepository Banks { get; }
         IBankBranchRepository BankBranches { get; }
         ICountryRepository Countries { get; }
+        ICourtRepository Courts { get; }
         ICityRepository Cities { get; }
         IAbsenceRepository Absences { get; }
         ITransferRepository Transfers { get; }

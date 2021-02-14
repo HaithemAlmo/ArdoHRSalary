@@ -14,7 +14,7 @@
         public int CostCenterId { get; set; }
         public string Tafkeet { get; set; }
         public string FinancialNumber { get; set; }
-       
+       public string DatePrint { get; set; }
 
     }
 }

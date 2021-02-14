@@ -65,7 +65,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             model.EmployeeId = evaluation.EmployeeId;
             model.Grade = evaluation.Grade;
             model.Ratio = evaluation.Ratio.GetValueOrDefault();
-            model.Date = evaluation.Date.ToString();
+            model.Date = evaluation.Date.FormatToString();
             model.Year = evaluation.Year.GetValueOrDefault();
             model.Note = evaluation.Note;
 

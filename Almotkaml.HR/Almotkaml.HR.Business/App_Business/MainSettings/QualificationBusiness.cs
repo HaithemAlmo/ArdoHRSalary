@@ -122,6 +122,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                 .WithGraduationCountry(model.GraduationCountry)
                 .WithNameDonorFoundation(model.NameDonorFoundation);
 
+
             IAquiredSpecialtyHolder builder;
 
             switch (model.GetRequestedType())
@@ -140,7 +141,8 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             }
 
 
-            var qualification = builder.WithAquiredSpecialty(model.AquiredSpecialty)
+            var qualification = builder
+                .WithAquiredSpecialty(model.AquiredSpecialty)
                 .WithDonorFoundationType(model.DonorFoundationType)
                 .WithGrade(model.Grade)
                 .Biuld();

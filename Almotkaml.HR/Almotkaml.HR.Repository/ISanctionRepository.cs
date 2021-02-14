@@ -7,5 +7,6 @@ namespace Almotkaml.HR.Repository
     public interface ISanctionRepository : IRepository<Sanction>
     {
         IEnumerable<Sanction> GetSanctionByEmployeeId(int employeeid);
+        bool CheckDeductionSanction(int datempnth, int dateyear);
     }
 }

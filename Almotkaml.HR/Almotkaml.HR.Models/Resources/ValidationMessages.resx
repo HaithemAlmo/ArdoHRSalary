@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Bouns" xml:space="preserve">
+    <value>الرجاء التأكد من علاوة الموظف</value>
+  </data>
   <data name="CardNumberORPassportNumberMustSet" xml:space="preserve">
     <value>يجب إدخال رقم البطاقة الشخصية أو رقم جواز السفر .</value>
+  </data>
+  <data name="ChildernCount" xml:space="preserve">
+    <value>تأكد من عدد الأبناء</value>
+  </data>
+  <data name="Degree" xml:space="preserve">
+    <value>الرجاء التاكد من درجة الموظف</value>
   </data>
   <data name="HolidayError" xml:space="preserve">
     <value>تأكد من التاريخ</value>

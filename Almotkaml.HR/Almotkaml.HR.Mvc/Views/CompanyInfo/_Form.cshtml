@@ -3,6 +3,8 @@
 <div class="panel-body">
     @Html.AntiForgeryToken()
     @Html.SavedModel(Model)
+
+
     <div>
         @Html.AjaxNote()
     </div>
@@ -28,8 +30,7 @@
                 @Html.ValidationMessageFor(model => model.EnglishName)
             </div>
         </div>
-    </div>
-    <div class="row">
+
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="form-group">
                 @Html.LabelFor(model => model.Phone)
@@ -58,7 +59,6 @@
                 @Html.ValidationMessageFor(model => model.Website)
             </div>
         </div>
-        @*add by ali alherbade 26-05-2019*@
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="form-group">
                 @Html.LabelFor(model => model.Department)
@@ -115,7 +115,6 @@
                 @Html.ValidationMessageFor(model => model.CollectionPaymentUnit)
             </div>
         </div>
-
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="form-group">
                 @Html.LabelFor(model => model.Address)
@@ -138,4 +137,9 @@
                 </div>
             </div>*@
     </div>
+
+
+
 </div>
+
+

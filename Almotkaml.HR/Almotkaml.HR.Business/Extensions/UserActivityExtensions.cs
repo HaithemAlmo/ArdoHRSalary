@@ -16,6 +16,6 @@ namespace Almotkaml.HR.Business.Extensions
               ActivityId = i.ActivityId,
               Type = typeof(Notify).GetAttribute<PhraseAttribute>(i.Type)?.Display,
               Title = i.FiredBy_User.UserName
-          });
+          }).OrderByDescending(u=>u.DateTime);
     }
 }

@@ -9,8 +9,8 @@ using Almotkaml.HR;
 namespace Almotkaml.HR.EntityCore.Migrations
 {
     [DbContext(typeof(HrDbContext))]
-    [Migration("20201122135847_addWorkPaper")]
-    partial class addWorkPaper
+    [Migration("20210207120926_fix001")]
+    partial class fix001
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -524,6 +524,18 @@ namespace Almotkaml.HR.EntityCore.Migrations
                     b.HasIndex("CityId");
 
                     b.ToTable("Courses");
+                });
+
+            modelBuilder.Entity("Almotkaml.HR.Domain.Court", b =>
+                {
+                    b.Property<int>("CourtId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("CourtName");
+
+                    b.HasKey("CourtId");
+
+                    b.ToTable("Courts");
                 });
 
             modelBuilder.Entity("Almotkaml.HR.Domain.CurrentSituation", b =>
@@ -1391,7 +1403,7 @@ namespace Almotkaml.HR.EntityCore.Migrations
 
                     b.Property<int?>("JobNumberApproved");
 
-                    b.Property<int?>("JobNumberLIC");
+                    b.Property<int>("JobNumberLIC");
 
                     b.Property<int>("JobType");
 
@@ -1896,12 +1908,16 @@ namespace Almotkaml.HR.EntityCore.Migrations
 
                     b.Property<bool>("AdvancePremiumFreezeState");
 
+                    b.Property<decimal>("Alimony");
+
                     b.Property<int>("BankBranchId");
 
                     b.Property<decimal>("BasicSalary");
 
                     b.Property<string>("BondNumber")
                         .HasMaxLength(128);
+
+                    b.Property<int?>("CourtId");
 
                     b.Property<decimal>("Differences");
 
@@ -1937,6 +1953,8 @@ namespace Almotkaml.HR.EntityCore.Migrations
                     b.HasKey("SalaryInfoId");
 
                     b.HasIndex("BankBranchId");
+
+                    b.HasIndex("CourtId");
 
                     b.HasIndex("EmployeeId")
                         .IsUnique();
@@ -3025,6 +3043,10 @@ namespace Almotkaml.HR.EntityCore.Migrations
                     b.HasOne("Almotkaml.HR.Domain.BankBranch", "BankBranch")
                         .WithMany()
                         .HasForeignKey("BankBranchId");
+
+                    b.HasOne("Almotkaml.HR.Domain.Court")
+                        .WithMany("SalaryInfos")
+                        .HasForeignKey("CourtId");
 
                     b.HasOne("Almotkaml.HR.Domain.Employee", "Employee")
                         .WithOne("SalaryInfo")

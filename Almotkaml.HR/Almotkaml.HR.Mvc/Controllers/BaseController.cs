@@ -63,7 +63,7 @@ namespace Almotkaml.HR.Mvc.Controllers
             if (HumanResource.IsLogged && Controller != "Main" && Action != "Index")
                 IsSigned();
 
-            else if( Controller != "Main" && Action != "Index")
+            else if (Controller != "Main" && Action != "Index")
                 RedirectToLogin();
 
             ShowCategory();

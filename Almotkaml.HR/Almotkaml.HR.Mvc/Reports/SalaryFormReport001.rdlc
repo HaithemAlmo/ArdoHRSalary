@@ -802,14 +802,16 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الرقم الوطني : </Value>
-                              <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>=Fields!NationalNumber.Value</Value>
+                              <Value>=" الرقم المالي : " 
++Fields!FinancialNumber.Value 
++"     إسم الموظف : " 
++Fields!Name.Value 
++"      المصرف :"
++Fields!BankName.Value+
+"       رقم الحساب : " 
++Fields!BondNumber.Value 
++"      الرقم الوطني :"
++Fields!NationalNumber.Value</Value>
                               <Style>
                                 <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -822,6 +824,16 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>NationalNumber</rd:DefaultName>
+                      <ToolTip>=" الرقم المالي : " 
++Fields!FinancialNumber.Value 
++"     إسم الموظف : " 
++Fields!Name.Value 
++"      المصرف :"
++Fields!BankName.Value+
+"       رقم الحساب : " 
++Fields!BondNumber.Value 
++"      الرقم الوطني :"
++Fields!NationalNumber.Value</ToolTip>
                       <Style>
                         <Border>
                           <Color>DimGray</Color>
@@ -838,248 +850,19 @@
                         <Direction>RTL</Direction>
                       </Style>
                     </Textbox>
-                    <ColSpan>2</ColSpan>
+                    <ColSpan>11</ColSpan>
                   </CellContents>
                 </TablixCell>
                 <TablixCell />
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox39">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>رقم الحساب : </Value>
-                              <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>=Fields!BondNumber.Value</Value>
-                              <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox31</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>DimGray</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>
-                              =
-                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
-                            </BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                        <Direction>RTL</Direction>
-                      </Style>
-                    </Textbox>
-                    <ColSpan>2</ColSpan>
-                  </CellContents>
-                </TablixCell>
                 <TablixCell />
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox42">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value> مصرف : </Value>
-                              <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                                <FontSize>9pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>=Fields!BankName.Value</Value>
-                              <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                                <FontSize>9pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox34</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>DimGray</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>
-                              =
-                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
-                            </BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                        <Direction>RTL</Direction>
-                      </Style>
-                    </Textbox>
-                    <ColSpan>2</ColSpan>
-                  </CellContents>
-                </TablixCell>
                 <TablixCell />
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Name3">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>الاسم : </Value>
-                              <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>=Fields!Name.Value</Value>
-                              <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Name2</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>DimGray</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>
-                              =
-                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
-                            </BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                        <Direction>RTL</Direction>
-                      </Style>
-                    </Textbox>
-                    <ColSpan>2</ColSpan>
-                  </CellContents>
-                </TablixCell>
                 <TablixCell />
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="JobNumber2">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>الرقم المالي : </Value>
-                              <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>=Fields!FinancialNumber.Value</Value>
-                              <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>JobNumber1</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>DimGray</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>
-                              =
-                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
-                            </BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                        <Direction>RTL</Direction>
-                      </Style>
-                    </Textbox>
-                    <ColSpan>2</ColSpan>
-                  </CellContents>
-                </TablixCell>
                 <TablixCell />
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox44">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value />
-                              <Style>
-                                <FontFamily>=Microsoft.VisualBasic.Interaction.IIf(Fields!EmployeeStat.Value = 0, "Arial", "Arial Black")</FontFamily>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox40</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>None</Style>
-                        </Border>
-                        <RightBorder>
-                          <Color>Black</Color>
-                          <Style>Solid</Style>
-                          <Width>1pt</Width>
-                        </RightBorder>
-                        <BackgroundColor>
-                              =
-                              IIf(RowNumber(nothing) mod 2 =0,"WhiteSmoke","White")
-                            </BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                        <Direction>RTL</Direction>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
               </TablixCells>
             </TablixRow>
             <TablixRow>
@@ -2443,9 +2226,12 @@
                 <TablixMember />
                 <TablixMember />
               </TablixMembers>
+              <KeepTogether>true</KeepTogether>
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <RepeatRowHeaders>true</RepeatRowHeaders>
+        <FixedRowHeaders>true</FixedRowHeaders>
         <KeepTogether>true</KeepTogether>
         <DataSetName>SalaryForm</DataSetName>
         <Top>0.67102in</Top>
@@ -2807,8 +2593,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>0.05556in</Top>
-          <Left>0.09948in</Left>
+          <Top>0.06944in</Top>
+          <Left>0.69793in</Left>
           <Height>0.28125in</Height>
           <Width>10.64583in</Width>
           <Style>

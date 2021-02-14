@@ -100,6 +100,7 @@ namespace Almotkaml.HR.EntityCore
             modelBuilder.Entity<ClassificationOnSearching>(Configurations.ConfigureClassificationOnSearching);
             modelBuilder.Entity<Coach>(Configurations.ConfigureCoach);
             modelBuilder.Entity<Course>(Configurations.ConfigureCourse);
+            modelBuilder.Entity<ClipboardBanking>(Configurations.ConfigureClipboardBanking);
 
             //modelBuilder.Ignore<ClassificationOnSearching>();
             //modelBuilder.Ignore<DevelopmentState>();
@@ -255,6 +256,7 @@ namespace Almotkaml.HR.EntityCore
         public DbSet<BankBranch> BankBranches { get; set; }
         public DbSet<SituationResolveJob> SituationResolveJobs { get; set; }
         public DbSet<Country> Countries { get; set; }
+        public DbSet<Court > Courts { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<Absence> Absences { get; set; }
         public DbSet<Transfer> Transfers { get; set; }
@@ -291,6 +293,7 @@ namespace Almotkaml.HR.EntityCore
         public DbSet<Coach> Coaches { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<WorkTimePaper> WorkTimePapers { get; set; }
+        public DbSet<ClipboardBanking > ClipboardBankings { get; set; }
 
         #region private
         private void SaveUserGroups()

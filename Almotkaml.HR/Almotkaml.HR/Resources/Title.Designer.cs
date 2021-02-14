@@ -260,6 +260,15 @@ namespace Almotkaml.HR.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to قيمة النفقة الشرعية.
+        /// </summary>
+        public static string Alimony {
+            get {
+                return ResourceManager.GetString("Alimony", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to الكل.
         /// </summary>
         public static string All {
@@ -337,6 +346,15 @@ namespace Almotkaml.HR.Resources {
         public static string B {
             get {
                 return ResourceManager.GetString("B", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to مسار النسخة الإحتياطية.
+        /// </summary>
+        public static string BackUpPath {
+            get {
+                return ResourceManager.GetString("BackUpPath", resourceCulture);
             }
         }
         
@@ -899,6 +917,15 @@ namespace Almotkaml.HR.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إسم المحكمة.
+        /// </summary>
+        public static string Court {
+            get {
+                return ResourceManager.GetString("Court", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to الوضع الحالي.
         /// </summary>
         public static string CurrentSituation {
@@ -1448,7 +1475,7 @@ namespace Almotkaml.HR.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to المؤسسة المانحة.
+        ///   Looks up a localized string similar to حكومية / أهلية.
         /// </summary>
         public static string DonorFoundationType {
             get {
@@ -2726,7 +2753,7 @@ namespace Almotkaml.HR.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to حكومية/أهلية.
+        ///   Looks up a localized string similar to المؤسسة المانحة.
         /// </summary>
         public static string NameDonorFoundation {
             get {
@@ -3095,7 +3122,7 @@ namespace Almotkaml.HR.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to العلاوات.
+        ///   Looks up a localized string similar to العلاوات والخصميات.
         /// </summary>
         public static string Premmium {
             get {

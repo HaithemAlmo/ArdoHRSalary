@@ -53,6 +53,7 @@ namespace Almotkaml.HR
         public bool SituationResolveJob { get; set; }
         public bool City { get; set; }
         public bool Country { get; set; }
+        public bool Court { get; set; }
         public bool Absence { get; set; }
         public bool Transfer { get; set; }
         public bool Corporation { get; set; }

@@ -28,9 +28,9 @@ namespace Almotkaml.HR
         decimal StampTax { get; }
         decimal Grouplife { get; }
         decimal ChilderPermium { get; }
-
-         //decimal AccumulatedValue { get; } //المتراكم
-         //decimal RewindValue { get; } //الترجيع
+        string BackUpPath { get;  }
+        //decimal AccumulatedValue { get; } //المتراكم
+        //decimal RewindValue { get; } //الترجيع
         bool Saturday { get; }
         bool Sunday { get; }
         bool Monday { get; }

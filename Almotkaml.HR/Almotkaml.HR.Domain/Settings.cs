@@ -44,6 +44,7 @@ namespace Almotkaml.HR.Domain
         public bool Friday { get; protected set; }
         public bool VacationIncludesHolidays { get; set; }
         public decimal Grouplife { get; set; }
+        public string BackUpPath { get; set; }
 
         public decimal AccumulatedValue { get; protected set; } //المتراكم
         public decimal RewindValue { get; protected set; } //الترجيع
@@ -86,7 +87,7 @@ namespace Almotkaml.HR.Domain
             Tuesday = setting.Tuesday;
             Friday = setting.Friday;
             VacationIncludesHolidays = setting.VacationIncludesHolidays;
-            //AccumulatedValue = setting.AccumulatedValue;
+            BackUpPath = setting.BackUpPath;
             //RewindValue = setting.RewindValue;
 
         }
@@ -95,12 +96,16 @@ namespace Almotkaml.HR.Domain
         {
 
         }
-        public Settings(decimal sickVacation, decimal sickLeave, decimal extraWork, decimal extraWorkVacation, decimal solidarityFund, decimal employeeShareAll
-            , decimal employeeShareReduced, decimal employeeShareWithoutReduced, decimal employeeShareReduced35Year, decimal companyShareAll
-            , decimal companyShareReduced, decimal companyShareWithoutReduced, decimal companyShareReduced35Year, decimal jihadTax
-            , decimal exemptionTaxOne, decimal exemptionTaxTwo, decimal stampTax, decimal childerPermium, decimal incomeTaxOne
+        public Settings(decimal sickVacation, decimal sickLeave, decimal extraWork, decimal extraWorkVacation, decimal solidarityFund
+            , decimal employeeShareAll, decimal employeeShareReduced, decimal employeeShareWithoutReduced, decimal employeeShareReduced35Year
+            , decimal companyShareAll, decimal companyShareReduced, decimal companyShareWithoutReduced, decimal companyShareReduced35Year
+            , decimal jihadTax , decimal exemptionTaxOne, decimal exemptionTaxTwo, decimal stampTax, decimal childerPermium, decimal incomeTaxOne
             , decimal incomeTaxTwo, DateTime date, bool saturday, bool sunday, bool monday, bool thursday, bool wednesday
-            , bool tuesday, bool friday,bool vacationIncludesHolidays, decimal safeShareAll, decimal safeShareReduced,string textboxFrom,string textboxTo,int number,string numberCheck/*,decimal rewindValue,decimal accumulatedValue*/)
+            , bool tuesday, bool friday,bool vacationIncludesHolidays, decimal safeShareAll, decimal safeShareReduced,string textboxFrom
+            ,string textboxTo,int number,string numberCheck, string backUpPath)
+           
+            
+            
         {
             NumberCheck = numberCheck;
             Number = number;
@@ -137,7 +142,7 @@ namespace Almotkaml.HR.Domain
             Tuesday = tuesday;
             Friday = friday;
             VacationIncludesHolidays = vacationIncludesHolidays;
-            //AccumulatedValue = accumulatedValue;
+            BackUpPath = backUpPath;
             //RewindValue = rewindValue;
 
         }
@@ -149,7 +154,7 @@ namespace Almotkaml.HR.Domain
             , decimal exemptionTaxOne, decimal exemptionTaxTwo, decimal stampTax, decimal childerPermium
             , decimal incomeTaxOne, decimal incomeTaxTwo, DateTime dateTime, bool saturday, bool sunday
             , bool monday, bool thursday, bool wednesday, bool tuesday, bool friday, decimal safeShareAll
-            , decimal safeShareReduced, string textboxFrom, string textboxTo, int number, string numberCheck,bool vacationIncludesHolidays)
+            , decimal safeShareReduced, string textboxFrom, string textboxTo, int number, string numberCheck, string backUpPath)//, bool vacationIncludesHolidays )
         {
             Grouplife = grouplife;
             SickVacation = sickVacation;
@@ -187,8 +192,8 @@ namespace Almotkaml.HR.Domain
             TextboxTo = textboxTo;
             Number = number;
             NumberCheck = numberCheck;
-            VacationIncludesHolidays = vacationIncludesHolidays;
-            //AccumulatedValue = accumulatedValue;
+            //VacationIncludesHolidays = vacationIncludesHolidays;
+            BackUpPath =  backUpPath;
             //RewindValue = rewindValue;
         }
     }

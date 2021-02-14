@@ -64,6 +64,7 @@ namespace Almotkaml.HR.Business.App_Business.General
                 Tuesday = settings.Tuesday,
                 Friday = settings.Friday,
                 VacationIncludesHolidays=settings.VacationIncludesHolidays,
+                BackUpPath=settings .BackUpPath 
             };
         }
 
@@ -75,13 +76,21 @@ namespace Almotkaml.HR.Business.App_Business.General
             if (!ModelState.IsValid(model))
                 return false;
 
-            var settings = new Settings(model.Grouplife, model.SickVacation,model.SickLeave, model.ExtraWork, model.ExtraWorkVacation,
+            var settings = new Settings( model.SickVacation,model.SickLeave, model.ExtraWork, model.ExtraWorkVacation,
                 model.SolidarityFund, model.EmployeeShareAll, model.EmployeeShareReduced,
                 model.EmployeeShareWithoutReduced, model.EmployeeShareReduced35Year, model.CompanyShareAll,
                 model.CompanyShareReduced, model.CompanyShareWithoutReduced, model.CompanyShareReduced35Year
                 , model.JihadTax, model.ExemptionTaxOne, model.ExemptionTaxTwo, model.StampTax, model.ChilderPermium
                 , model.IncomeTaxOne, model.IncomeTaxTwo, model.Date.ToDateTime(), model.Saturday, model.Sunday, model.Monday
-                , model.Thursday, model.Wednesday, model.Tuesday, model.Friday, model.SafeShareAll, model.SafeShareReduced, model.TextboxFrom, model.TextboxTo, model.Number, model.NumberCheck,model.VacationIncludesHolidays);
+                , model.Thursday, model.Wednesday, model.Tuesday, model.Friday,model .VacationIncludesHolidays , model.SafeShareAll
+                , model.SafeShareReduced, model.TextboxFrom, model.TextboxTo, model.Number, model.NumberCheck,model.BackUpPath );
+
+           
+
+
+
+
+
 
             UnitOfWork.Settings.Save(settings);
 

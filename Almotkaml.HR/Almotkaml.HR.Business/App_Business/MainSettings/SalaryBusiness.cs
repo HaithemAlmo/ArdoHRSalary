@@ -433,6 +433,26 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                
             }
 
+            var BankBranchList = UnitOfWork.BankBranches.GetAll().Where(b=>salaries.Any(s=>s.BankBranchId==b.BankBranchId)).ToList();
+            var salaryGrid = UnitOfWork.Salaries.GetOpenedSalary().ToGrid(Settings).ToList();
+            var clipboardBanking = new Collection<ClipboardBanking>();
+            foreach (var salaryBankBranch in BankBranchList)
+            {
+                var salaryBB = salaryGrid.Where(s => s.BankBranchId == salaryBankBranch.BankBranchId).ToList();
+                var dto = new ClipboardBanking()
+                {
+                    BankBranchID = salaryBankBranch.BankBranchId,
+                    SalaryMonth = salaryBB.Select(s=>s.MonthDate ).FirstOrDefault().ToDateTime(),
+                    TotalSalaries = salaryGrid.Where(s => s.BankBranchId == salaryBankBranch.BankBranchId).Select(s => s.FinalSalary).Sum(),
+                    InstrumentNumber = "",
+                    IsDelivered = false,
+                };
+                if(salaries.Select(s=>s.IsClose).FirstOrDefault())
+
+                clipboardBanking.Add(dto);
+                //UnitOfWork.Complete(n => n. );
+            }
+
             UnitOfWork.Complete(n => n.Salary_Update);
           
             var historey = UnitOfWork.HistorySubsended.GetAll().Where(s => DateTime.Parse(s.MonthDate).Year >= monthDate.Year &&

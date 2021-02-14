@@ -1,4 +1,4 @@
-using Almotkaml.Resources;
+﻿using Almotkaml.Resources;
 using System.ComponentModel.DataAnnotations;
 using Almotkaml.HR.Resources;
 
@@ -15,6 +15,7 @@ namespace Almotkaml.HR.Models
         public string TextboxTo { get; set; }
 
         public string NumberCheck { get; set; }
+        
         [Required(ErrorMessageResourceType = typeof(SharedMessages),
      ErrorMessageResourceName = nameof(SharedMessages.IsRequired))]
         public int Number { get; set; }
@@ -110,6 +111,8 @@ namespace Almotkaml.HR.Models
         [Display(ResourceType = typeof(Title), Name = nameof(Title.ChilderPermium))]
         public decimal ChilderPermium { get; set; }
 
+
+
         public bool Saturday { get; set; }
         public bool Sunday { get; set; }
         public bool Monday { get; set; }
@@ -124,5 +127,9 @@ namespace Almotkaml.HR.Models
         [Display(ResourceType = typeof(Title), Name = nameof(Title.VacationIncludesHolidays))]
         public bool VacationIncludesHolidays { get; set; }
         public decimal Grouplife { get; set; }
+
+ 
+        [Display(ResourceType = typeof(Title), Name = nameof(Title.BackUpPath))]
+        public string BackUpPath { get; set; }
     }
 }

@@ -33,7 +33,7 @@ namespace Almotkaml.HR.Mvc.Controllers
         private PartialViewResult AjaxIndex(SpecialtyModel model, FormCollection form)
         {
             var editSpecialtyId = IntValue(form["editSpecialtyId"]);
-            var deleteSpecialtyId = IntValue(form["editSpecialtyId"]);
+            var deleteSpecialtyId = IntValue(form["deleteSpecialtyId"]);
 
             // Select
             if (editSpecialtyId > 0)

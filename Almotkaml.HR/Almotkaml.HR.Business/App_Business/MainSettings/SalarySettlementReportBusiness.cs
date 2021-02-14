@@ -671,6 +671,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 dateSalary = salary?.MonthDate.Month + "/" + salary?.MonthDate.Year,
 
                                 BankName = employee?.SalaryInfo?.BankBranch?.Bank?.Name,
+                                //Courtid  =employee .SalaryInfo? .CourtId??0 ,
                                 // d = salary?.AdvancePremiumInside??0,
                                 //اجمالي الخصميات
                                 DiscountTotal = salary?.TotalDiscount(Settings) ?? 0,
@@ -860,7 +861,8 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                                 FinancialNumber =employee ?.SalaryInfo ?.FinancialNumber.ToString(),
                                 ExtraGeneralValue= salary.ExtraGeneralValue,
                                 RewardValue= salary?.RewardValue()??0,
-                                 PremiumActive = salary?.PremiumActive ?? 0
+                                 PremiumActive = salary?.PremiumActive ?? 0,
+                                 Alimony=   employee?.SalaryInfo?.Alimony ??0
                             });
 
                             if (employee.JobInfo?.SalayClassification == SalayClassification.Clamp)
@@ -1584,6 +1586,9 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             return true;
 
         }
+
+  
+
 
     }
 

@@ -10,6 +10,7 @@ namespace Almotkaml.HR.Repository
         IEnumerable<Absence> GetAbsenceByEmployeeId(int employeeid);
         bool CheckAbsenceBy(int employeeId, DateTime date);
         int AbsentEmployeesCount(DateTime date);
+        bool CheckDeductionAbsence(int datempnth,int dateyear);
         IEnumerable<Absence> GetAbsentEmployeesBy(DateTime dateFrom, DateTime dateTo, AbsenceType absenceType);
     }
 }

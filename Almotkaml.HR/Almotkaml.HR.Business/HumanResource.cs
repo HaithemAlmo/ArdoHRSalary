@@ -19,6 +19,7 @@ namespace Almotkaml.HR.Business
         private IBankBranchBusiness _bankBranch;
         private ISituationResolveJobBusiness _situationResolveJob;
         private ICountryBusiness _country;
+        private ICourtBusiness _court;
         private ICityBusiness _city;
         private IAbsenceBusiness _absence;
         private ITransferBusiness _transfer;
@@ -300,6 +301,19 @@ namespace Almotkaml.HR.Business
                 return _classificationOnSearching;
             }
         }
+
+        public ICourtBusiness Court
+        {
+            get
+            {
+                if (_court != null)
+                    return _court;
+
+                _court = new CourtBusiness(this);
+                return _court;
+            }
+        }
+
 
         //public IJobInfoBusiness JobInfo { get; }
         //public IMilitaryDataBusiness MilitaryData { get; }

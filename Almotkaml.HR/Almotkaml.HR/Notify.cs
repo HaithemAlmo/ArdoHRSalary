@@ -398,6 +398,17 @@ namespace Almotkaml.HR
         [Phrase(typeof(Notifications), nameof(Country_Delete))]
         public bool Country_Delete { get; set; }
 
+
+        [Phrase(typeof(Notifications), nameof(Court_Create))]
+        public bool Court_Create { get; set; }
+
+        [Phrase(typeof(Notifications), nameof(Court_Edit))]
+        public bool Court_Edit { get; set; }
+
+        [Phrase(typeof(Notifications), nameof(Court_Delete))]
+        public bool Court_Delete { get; set; }
+        
+
         [Phrase(typeof(Notifications), nameof(Absence_Create))]
         public bool Absence_Create { get; set; }
 
@@ -594,5 +605,11 @@ namespace Almotkaml.HR
 
         [Phrase(typeof(Notifications), nameof(WorkTimePaper_Delete))]
         public bool WorkTimePaper_Delete { get; set; }
+
+        //[Phrase(typeof(Notifications), nameof(ClipboardBankings_Create))]
+        //public bool ClipboardBankings_Create { get; set; }
+
+        //[Phrase(typeof(Notifications), nameof(ClipboardBankings_Edit))]
+        //public bool ClipboardBankings_Edit { get; set; }
     }
 }

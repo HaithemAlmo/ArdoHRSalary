@@ -4,6 +4,7 @@ using Almotkaml.HR.Business.Extensions;
 using Almotkaml.HR.Domain;
 using Almotkaml.HR.Models;
 
+
 namespace Almotkaml.HR.Business.App_Business.MainSettings
 {
     public class SanctionBusiness : Business, ISanctionBusiness
@@ -61,9 +62,11 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             model.EmployeeId = sanction.EmployeeId;
             model.Cause = sanction.Cause;
             model.SanctionTypeId = sanction.SanctionTypeId;
-            model.Date = sanction.Date.ToString();
+            model.Date = sanction.Date.FormatToString();
             model.SanctionsDay = sanction.SanctionDay;
-            //model.DeductionMonth = sanction.DeductionMonth;
+        
+            model.DeductionMonth = (short)sanction.DeductionMonth;
+            model.DeductionYear = (short)sanction.DeductionYear;
             return true;
         }
 
@@ -73,6 +76,9 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                 return Fail(RequestState.NoPermission);
 
             if (!ModelState.IsValid(model))
+                return false;
+
+            if (UnitOfWork.Sanctions .CheckDeductionSanction (model.DeductionMonth, model.DeductionYear))
                 return false;
 
             var sanction = Sanction.New()
@@ -106,6 +112,9 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
 
             if (sanction == null)
                 return Fail(RequestState.NotFound);
+
+            if (UnitOfWork.Sanctions.CheckDeductionSanction(model.DeductionMonth, model.DeductionYear))
+                return false;
 
             sanction.Modify()
                 .SanctionType(model.SanctionTypeId)
