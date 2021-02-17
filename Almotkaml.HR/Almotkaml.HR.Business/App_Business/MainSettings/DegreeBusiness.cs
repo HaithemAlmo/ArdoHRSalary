@@ -14,18 +14,18 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
         }
 
         private bool HavePermission(bool permission = true)
-            => ApplicationUser.Permissions.Degree && permission;
+            => ApplicationUser.Permissions.JobInfoDegree && permission;
 
         public DegreeModel Prepare()
         {
-            if (!HavePermission(ApplicationUser.Permissions.Degree))
+            if (!HavePermission(ApplicationUser.Permissions.JobInfoDegree))
                 return Null<DegreeModel>(RequestState.NoPermission);
 
             var grid = UnitOfWork.Employees.GetEmployeeDegree();
 
             return new DegreeModel()
             {
-                CanSubmit = ApplicationUser.Permissions.Degree_Add,
+                CanSubmit = ApplicationUser.Permissions.JobInfoDegree_Create,
                 DegreeGrid = grid.ToDegreeGrid(),
                 JobList = UnitOfWork.Jobs.GetAll().ToList().ToList()
             };
@@ -33,7 +33,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
 
         public bool Submit(DegreeModel model)
         {
-            if (!HavePermission(ApplicationUser.Permissions.Degree_Add))
+            if (!HavePermission(ApplicationUser.Permissions.JobInfoDegree_Create))
                 return Fail(RequestState.NoPermission);
 
             if (model == null)
@@ -117,7 +117,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                 }
             }
 
-            UnitOfWork.Complete(n => n.Degree_Add);
+            UnitOfWork.Complete(n => n.JobInfoDegree_Create);
 
             return SuccessCreate();
 
@@ -125,7 +125,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
 
         public bool Submit(JobInfoDegreeModel model, int type)
         {
-            if (!HavePermission(ApplicationUser.Permissions.Degree_Add))
+            if (!HavePermission(ApplicationUser.Permissions.JobInfoDegree_Create))
                 return Fail(RequestState.NoPermission);
 
             if (model == null)
@@ -179,7 +179,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                            .Bouns(bouns)
                            .Job(model.NewJobId)
                            .Confirm();
-                        UnitOfWork.Complete(n => n.Degree_Add);
+                        UnitOfWork.Complete(n => n.JobInfoDegree_Create);
 
                         return SuccessCreate();
                     }
@@ -260,14 +260,14 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
 
 
 
-            UnitOfWork.Complete(n => n.Degree_Add);
+            UnitOfWork.Complete(n => n.JobInfoDegree_Create);
 
             return SuccessCreate();
 
         }
         public bool Cancel(DegreeModel model)
         {
-            if (!HavePermission(ApplicationUser.Permissions.Degree_Add))
+            if (!HavePermission(ApplicationUser.Permissions.JobInfoDegree_Create))
                 return Fail(RequestState.NoPermission);
 
             if (model == null)
@@ -282,7 +282,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
                 .DateDegreeNow(employee.JobInfo?.DateDegreeNow?.AddYears(1))
                 .Confirm();
 
-            UnitOfWork.Complete(n => n.Degree_Add);
+            UnitOfWork.Complete(n => n.JobInfoDegree_Create);
 
             return SuccessCreate();
 

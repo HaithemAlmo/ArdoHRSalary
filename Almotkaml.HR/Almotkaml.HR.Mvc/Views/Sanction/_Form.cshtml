@@ -92,7 +92,7 @@
                                             <th>العقوبة</th>
                                             <th>التاريخ</th>
                                             <th>السبب</th>
-                                            <th>تاريخ الإستقطاع</th>
+                                            @*<th>تاريخ الإستقطاع</th>*@
                                             <th>@Html.Show(Model.CanEdit)</th>
                                             @if (Model.CanDelete)
                                             {
@@ -113,7 +113,7 @@
                                                 <td>@Html.DisplayFor(modelItem => item.SanctionTypeName)</td>
                                                 <td>@Html.DisplayFor(modelItem => item.Date)</td>
                                                 <td>@Html.DisplayFor(modelItem => item.Cause)</td>
-                                                <td>@Html.DisplayFor(modelItem =>(item.DeductionMonth )+"-"+ ( item.DeductionYear))</td>
+                                                @*<td>@Html.DisplayFor(modelItem =>(item.DeductionMonth )+"-"+ ( item.DeductionYear))</td>*@
                                                 <td>
                                                     @*@Html.ActionLink(Html.Show(Model.CanEdit), "Edit", new { id = item.SanctionId }, new { @class = "btn btn-info" })*@
                                                     <button name="editSanctionId" value="@item.SanctionId" class="btn btn-info">@Html.Show(Model.CanEdit)</button>

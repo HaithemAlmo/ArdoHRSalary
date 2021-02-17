@@ -1303,7 +1303,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
 
             modifier.Confirm();
 
-            UnitOfWork.Complete(n => n.Degree_Edit);
+            UnitOfWork.Complete(n => n.JobInfoDegree_Edit);
 
             return SuccessEdit();
         }

@@ -367,8 +367,8 @@ namespace Almotkaml.HR
         [Phrase(typeof(Notifications), nameof(Bouns_Add))]
         public bool Bouns_Add { get; set; }
 
-        [Phrase(typeof(Notifications), nameof(Degree_Add))]
-        public bool Degree_Add { get; set; }
+        [Phrase(typeof(Notifications), nameof(JobInfoDegree_Create))]
+        public bool JobInfoDegree_Create { get; set; }
 
 
         [Phrase(typeof(Notifications), nameof(SituationResolveJob_Create))]
@@ -589,8 +589,8 @@ namespace Almotkaml.HR
         public bool Employee_Settlement { get; set; }
         [Phrase(typeof(Notifications), nameof(Employee_Promotion))]
         public bool Employee_Promotion { get; set; }
-        [Phrase(typeof(Notifications), nameof(Degree_Edit))]
-        public bool Degree_Edit { get; set; }
+        [Phrase(typeof(Notifications), nameof(JobInfoDegree_Edit))]
+        public bool JobInfoDegree_Edit { get; set; }
 
         [Phrase(typeof(Notifications), nameof(AdvancePremium_FreezeState))]
         public bool AdvancePremium_FreezeState { get; set; }

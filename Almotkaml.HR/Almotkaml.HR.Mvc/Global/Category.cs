@@ -753,14 +753,7 @@ namespace Almotkaml.HR.Mvc.Global
                             Icon = "mortar-board",
                             IsVisible = permissions.RequestedQualification,
                         },
-                        new Categry()
-                        {
-                            Title = "التسجيل",
-                            ControllerName = nameof(TrainingController),
-                            ActoinName=nameof(TrainingController.Index ),
-                            Icon = "file-text",
-                            IsVisible = permissions.Training,
-                        },
+
                         new Categry()
                         {
                             Title = "المستوى الاول",
@@ -792,6 +785,14 @@ namespace Almotkaml.HR.Mvc.Global
                             ActoinName=nameof(DevelopmentTypeDController.Index ),
                             Icon = "credit-card-alt",
                             IsVisible = permissions.DevelopmentTypeD,
+                        },
+                        new Categry()
+                        {
+                            Title = "التسجيل",
+                            ControllerName = nameof(TrainingController),
+                            ActoinName=nameof(TrainingController.Index ),
+                            Icon = "file-text",
+                            IsVisible = permissions.Training,
                         },
                     },
                 },

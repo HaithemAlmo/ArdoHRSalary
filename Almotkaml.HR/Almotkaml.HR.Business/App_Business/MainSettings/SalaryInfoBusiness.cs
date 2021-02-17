@@ -214,7 +214,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             {
                 var salaryInfo = SalaryInfo.New(empolyee, model.BankBranchId, model.GuaranteeType, model.BondNumber,
                     model.BasicSalary, model.SecurityNumber, model.FinancialNumber, premiumDto
-                    , model.FileNumber, model.ExtraValue, model.ExtraGeneralValue, model.GuaranteeTypeSafe, model.GroupLifeChich,model .Tadawl ,model.PremiumActive,model.Differences,model.Alimony 
+                    , model.FileNumber, model.ExtraValue, model.ExtraGeneralValue, model.GuaranteeTypeSafe, model.GroupLifeChich,model .Tadawl ,model.PremiumActive,model.Differences,model.Alimony, model.CourtName 
                    );
                 empolyee.JobInfo.Modify().Bouns(model.Bouns);
                 UnitOfWork.Employees.AddSalaryInfo(salaryInfo);
@@ -223,7 +223,7 @@ namespace Almotkaml.HR.Business.App_Business.MainSettings
             {
                 empolyee.SalaryInfo.Modify(empolyee, model.BankBranchId, model.GuaranteeType, model.BondNumber
                     , model.BasicSalary, model.SecurityNumber, model.FinancialNumber, premiumDto
-                    , model.FileNumber, model.ExtraValue, model.ExtraGeneralValue, model.GuaranteeTypeSafe, model.GroupLifeChich,model .Tadawl,model.PremiumActive, model.Differences, model.Alimony);///////////////
+                    , model.FileNumber, model.ExtraValue, model.ExtraGeneralValue, model.GuaranteeTypeSafe, model.GroupLifeChich,model .Tadawl,model.PremiumActive, model.Differences, model.Alimony, model.CourtName);///////////////
                 empolyee.JobInfo.Modify().Bouns(model.Bouns);
             }
 

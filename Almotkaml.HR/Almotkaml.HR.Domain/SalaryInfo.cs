@@ -14,7 +14,7 @@ namespace Almotkaml.HR.Domain
 
         public SalaryInfo(BankBranch bankBranch, GuaranteeType guaranteeType, string bondNumber
             , decimal basicSalary, string securityNumber, string financialNumber
-            , string fileNumber, decimal extraValue, decimal extraGeneralValue, bool groupLifeChick,decimal premiumActive, decimal alimony)
+            , string fileNumber, decimal extraValue, decimal extraGeneralValue, bool groupLifeChick,decimal premiumActive, decimal alimony, int courtname)
         {
             BankBranchId = bankBranch.BankBranchId;
             BankBranch = bankBranch;
@@ -30,7 +30,7 @@ namespace Almotkaml.HR.Domain
             GroupLifeChich = groupLifeChick;
             PremiumActive = premiumActive;
             //CourtId = courtid.CourtId ;
-            //CourtName  = courtname ;
+            CourtName = courtname;
             Alimony = alimony;
 
         }
@@ -43,7 +43,7 @@ namespace Almotkaml.HR.Domain
         public int BankBranchId { get; set; }
         public BankBranch BankBranch { get; set; }
         //public int? CourtId { get; set; }
-        //public int CourtName { get; set; }
+        public int CourtName { get; set; }
         //public Court Court { get; set; }
         public GuaranteeType GuaranteeType { get; set; }
         public GuaranteeType SafeType { get; set; }
@@ -83,7 +83,7 @@ namespace Almotkaml.HR.Domain
         public void Modify(Employee employee, int bankBranchId, GuaranteeType guaranteeType, string bondNumber
             , decimal basicSalary, string securityNumber, string financialNumber, IEnumerable<PremiumDto> premiumDtos
             , string fileNumber, decimal extraValue, decimal extraGeneralValue,
-            GuaranteeType safeType, bool groupLifeChich,decimal tadawl, decimal  premiumActive,decimal differences, decimal alimony)
+            GuaranteeType safeType, bool groupLifeChich,decimal tadawl, decimal  premiumActive,decimal differences, decimal alimony, int courtname)
         {
             SafeType = safeType;
             Employee = employee;
@@ -101,7 +101,7 @@ namespace Almotkaml.HR.Domain
             Tadawl = tadawl;
             PremiumActive = premiumActive;
             Differences = differences;
-            //CourtName  = courtname ;
+            CourtName = courtname;
             Alimony = alimony;
             foreach (var dto in premiumDtos.ToList())
             {
@@ -133,7 +133,7 @@ namespace Almotkaml.HR.Domain
         public static SalaryInfo New(Employee employee, int bankBranchId, GuaranteeType guaranteeType, string bondNumber
             , decimal basicSalary, string securityNumber, string financialNumber, IEnumerable<PremiumDto> premiumDtos
             , string fileNumber, decimal extraValue, decimal extraGeneralValue, GuaranteeType safeType, bool groupLifeChich
-            ,decimal tadawl, decimal premiumActive,decimal differences, decimal alimony)
+            ,decimal tadawl, decimal premiumActive,decimal differences, decimal alimony,int courtname)
         {
             var sararyInfo = new SalaryInfo()
             {
@@ -153,7 +153,7 @@ namespace Almotkaml.HR.Domain
                 Tadawl = tadawl,
                   PremiumActive = premiumActive,
                 Differences=differences,
-                //CourtName  = courtname ,
+                CourtName = courtname,
                 Alimony = alimony,
         };
 

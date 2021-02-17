@@ -1948,6 +1948,8 @@ namespace Almotkaml.HR.EntityCore.Migrations
 
                     b.Property<int?>("CourtId");
 
+                    b.Property<int>("CourtName");
+
                     b.Property<decimal>("Differences");
 
                     b.Property<int?>("EmployeeId");

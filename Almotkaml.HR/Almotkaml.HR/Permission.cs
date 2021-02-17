@@ -49,7 +49,7 @@ namespace Almotkaml.HR
         public bool BankBranch { get; set; }
         public bool Bouns { get; set; }
         public bool Retirement { get; set; }
-        public bool Degree { get; set; }
+        public bool JobInfoDegree { get; set; }
         public bool SituationResolveJob { get; set; }
         public bool City { get; set; }
         public bool Country { get; set; }

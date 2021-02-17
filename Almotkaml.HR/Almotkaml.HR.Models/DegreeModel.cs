@@ -27,5 +27,6 @@ namespace Almotkaml.HR.Models
         public string DateMeritDegreeNow { get; set; } // تاريخ استحقاق الدرجة
         public int MeritBoun { get; set; } // العلاوة المستحقة
         public int JobId { get; set; }
+        public string JobName { get; set; }
     }
 }

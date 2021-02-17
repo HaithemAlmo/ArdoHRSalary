@@ -92,7 +92,7 @@ namespace Almotkaml.HR.Models
         public decimal TotalDiscount { get; set; }// ãÌãæÚ ÇáÎÕãíÇÊ
         
         public int? MonthGrid { get; set; }
-        
+        public int JobNumber { get; set; }
         public int? YearGrid { get; set; }
         public long SalaryId { get; set; }
         public string EmployeeName { get; set; }

@@ -30,7 +30,7 @@ namespace Almotkaml.HR.Models
             Name = nameof(Title.Subunit))]
         public string Subunit { get; set; }
 
-
+        [RegularExpression(@"^[\u0600-\u06FF,-][ \u0600-\u06FF,-]*$", ErrorMessage = "ادخل حروف فقط")]
         [Required(ErrorMessageResourceType = typeof(SharedMessages),
          ErrorMessageResourceName = nameof(SharedMessages.IsRequired))]
         [Display(ResourceType = typeof(Title),

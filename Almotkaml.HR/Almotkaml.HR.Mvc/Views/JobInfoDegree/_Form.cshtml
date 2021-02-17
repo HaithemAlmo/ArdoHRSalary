@@ -20,7 +20,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="form-group">
                             @Html.Label("تصنيف الترقية")
-                            @Html.EnumDropDownListFor(model => model.PromotionType, "--اختر--", new { @class = "field_text form-control", onchange = "$(this.form).submit()" })
+                            @Html.EnumDropDownListFor(model => model.PromotionType, "--اختر--", new { @class = "field_menu form-control", onchange = "$(this.form).submit()" })
                             @*@Html.DropDownList("SearchValue", new SelectListItem[]
                                 {
                                     new SelectListItem() {Text = "--اختر--", Value = ""},
@@ -32,7 +32,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="form-group">
                             @Html.Label("فترة الترقية")
-                            @Html.EnumDropDownListFor(model => model.PromotionSeason, "--اختر--", new { @class = "field_text form-control", onchange = "$(this.form).submit()" })
+                            @Html.EnumDropDownListFor(model => model.PromotionSeason, "--اختر--", new { @class = "field_menu form-control", onchange = "$(this.form).submit()" })
                             @*@Html.DropDownList("SearchValue2", new SelectListItem[]
                                 {
                                     new SelectListItem() {Text = "--اختر--", Value = ""},
@@ -60,12 +60,12 @@
                                 <th>ر.ت</th>
                                 <th>الرقم الوظيفي</th>
                                 <th>الاسـم</th>
-                                <th>الوحدة التنظيمية</th>
-                                <th>الإدارة/القسم</th>
+                                @*<th>الوحدة التنظيمية</th>*@
+                                @*<th>الإدارة/القسم</th>*@
                                 <th>العلاوة الحالية</th>
                                 <th>الدرجة الحالية</th>
                                 <th>تاريخ الدرجة الحالية</th>
-                                <th>العلاوة المستحقة</th>
+                                @*<th>العلاوة المستحقة</th>*@
                                 <th>الدرجة المستحقة</th>
                                 <th>تاريخ الاستحقاق</th>
                                 @*<th>المسمى الوظيفي</th>*@
@@ -87,12 +87,12 @@
                                     <td>@count</td>
                                     <td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].JobNumber)</td>
                                     <td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].ArabicFullName)</td>
-                                    <td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].DepartmentName)</td>
-                                    <td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].DivisionName)</td>
+                                    @*<td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].DepartmentName)</td>*@
+                                    @*<td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].DivisionName)</td>*@
                                     <td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].Boun)</td>
                                     <td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].DegreeNow)</td>
                                     <td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].DateDegreeNow)</td>
-                                    <td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].MeritBoun)</td>
+                                    @*<td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].MeritBoun)</td>*@
                                     <td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].MeritDegreeNow)</td>
                                     <td>@Html.DisplayFor(modelItem => Model.DegreeGrid[i].DateMeritDegreeNow)</td>
 

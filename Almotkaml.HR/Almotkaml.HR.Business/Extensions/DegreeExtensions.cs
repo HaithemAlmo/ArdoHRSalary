@@ -52,6 +52,7 @@ namespace Almotkaml.HR.Business.Extensions
                      ? secondHalfYear.AddYears(7).FormatToString()
                      : "",
                     JobId = employee.JobInfo?.JobId ?? 0,
+                    JobName = employee.JobInfo?.Job?.Name,
                 });
             }
             return grid;

@@ -84,7 +84,7 @@ namespace Almotkaml.HR.Models
         public ICollection<AdvanseListItem> AdvanseListItem { get; set; } = new HashSet<AdvanseListItem>();
         public IList<TemporaryPremmiumListItem> TemporaryPremiumListItem { get; set; } = new List<TemporaryPremmiumListItem>();
         public IList<NotTemporaryPremmiumListE> NotTemporaryPremiumList { get; set; } = new List<NotTemporaryPremmiumListE>();
-
+        public IEnumerable<CourtListItem> CourtList { get; set; } = new List<CourtListItem>();
         public IList<EmployeeAdvancePymentListItem> AdvancPremiumList { get; set; } = new List<EmployeeAdvancePymentListItem>();
         //  public IList<EmployeeAdvancePymentListItem> AdvancPremiumList { get; set; } = new List<EmployeeAdvancePymentListItem>();
         public IList<NotTemEmployeePremiumListItemEE> NotTemEmployeePremiumListItem { get; set; } = new List<NotTemEmployeePremiumListItemEE>();
@@ -96,8 +96,8 @@ namespace Almotkaml.HR.Models
         [Display(ResourceType = typeof(Title), Name = nameof(Title.BankBranch))]
         public int BankBranchId { get; set; }
 
-        //[Display(ResourceType = typeof(Title), Name = nameof(Title.Court))]
-        //public int CourtId { get; set; }
+        [Display(ResourceType = typeof(Title), Name = nameof(Title.Court))]
+        public int CourtName { get; set; }
 
         [Display(ResourceType = typeof(Title), Name = nameof(Title.stamptest))]
         public GuaranteeType GuaranteeTypeSafe { get; set; }
